@@ -1,11 +1,11 @@
 (function() {
   var office = new L.LatLng(41.384, 2.200);
   // replace "toner" here with "terrain" or "watercolor"
-  // var layer = new L.StamenTileLayer("toner");
-  var layer = new L.StamenTileLayer("watercolor");
+  var layer = new L.StamenTileLayer("toner");
+  // var layer = new L.StamenTileLayer("watercolor");
 
   var map = new L.Map("map");
-  map.setView(office, 4).addLayer(layer);
+  map.setView(office, 12).addLayer(layer);
 	
 	// Add a marker
   marker = new L.Marker(office);
