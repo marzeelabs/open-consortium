@@ -1,3 +1,6 @@
 [submodule "bootstrap"]
 	path = lib/bootstrap
 	url = git@github.com:twitter/bootstrap.git
+[submodule "tweet"]
+	path = tweet
+	url = git://github.com/seaofclouds/tweet.git
