@@ -1,7 +1,7 @@
-[submodule "bootstrap"]
+[submodule "lib/bootstrap"]
 	path = lib/bootstrap
 	url = git@github.com:twitter/bootstrap.git
-[submodule "tweet"]
+[submodule "lib/tweet"]
 	path = lib/tweet
 	url = git://github.com/seaofclouds/tweet.git
 [submodule "lib/leaflet"]
