@@ -27,7 +27,7 @@ jQuery(function($){
 
 
 $('#twitter-url').popover({
-  placement: 'right',
+  placement: 'bottom',
   content: function() {
     return $("#tweet").html();
   }
