@@ -43,3 +43,13 @@
 #tweet .tweet_list li {
   height: 4em;
 }
+
+/* TEMP */
+#myCarousel {
+  display: none;
+}
+
+#twitter-url {
+  float:right
+}
+
