@@ -6,7 +6,7 @@ $('.carousel').carousel({
 /* jquery.tweet */
 jQuery(function($){
   $("#tweet").tweet({
-    username: "nunoveloso",
+    username: "openconsortium",
     page: 1,
     avatar_size: 32,
     count: 1,
