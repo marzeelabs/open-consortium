@@ -1,4 +1,0 @@
-open-consortium
-===============
-
-Open Consortium
