@@ -53,3 +53,18 @@
   float:right
 }
 
+
+body {
+    background-color: #FFFFFF;
+    color: #333333;
+    font-family: Lato,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 13px;
+    line-height: 18px;
+    margin: 0;
+}
+
+p {
+  font-family: Lato,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 13px;
+    line-height: 18px;
+    mar
