@@ -2,13 +2,14 @@ $('.carousel').carousel({
   interval: 2000
 })
 
+
 /* jquery.tweet */
 jQuery(function($){
   $("#tweet").tweet({
     username: "nunoveloso",
     page: 1,
     avatar_size: 32,
-    count: 5,
+    count: 1,
     loading_text: "loading ..."
   }).bind("loaded", function() {
     var ul = $(this).find(".tweet_list");
@@ -21,5 +22,14 @@ jQuery(function($){
       }, 5000);
     };
     ticker();
-  });
+  }).hide();
 });
+
+
+$('#twitter-url').popover({
+  placement: 'right',
+  content: function() {
+    return $("#tweet").html();
+  }
+});
+
