@@ -6,4 +6,4 @@
 	url = git://github.com/seaofclouds/tweet.git
 [submodule "lib/leaflet"]
 	path = lib/leaflet
-	url = https://github.com/CloudMade/Leaflet.git
+	url = git://github.com/CloudMade/Leaflet.git
