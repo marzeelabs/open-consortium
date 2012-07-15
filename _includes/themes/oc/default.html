@@ -1,8 +1,26 @@
 {% include themes/oc/tag_head.html %}
 
-<body>
+<body data-spy="scroll" class="{{ page.category }}">
+
+  <div class="navbar navbar-fixed-top">
+    <div class="navbar-inner">
+      <div class="container">
+        <a id="twitter-url" href="http://twitter.com/openconsortium" rel="" title="@OpenConsortium" class="brand">
+          Follow @OpenConsortium
+        </a>
+      </div>
+    </div>
+  </div>
+
 
   <div class="container">
+
+    <!-- Main hero unit for a primary marketing message or call to action -->
+    <div class="hero-unit">
+      <center>
+        <img src="/assets/img/oc_logo_600.png" alt="openconsortium-logo"/>
+      </center>
+    </div>
 
     <div class="content">
       {{ content }}
