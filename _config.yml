@@ -23,7 +23,7 @@ team :
     roles :
       - author
       - blogger
-  nuno:
+  tobias:
     name : Tobias
     twitter : tobias
     roles :
