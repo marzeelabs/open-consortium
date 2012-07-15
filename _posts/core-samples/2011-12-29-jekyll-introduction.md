@@ -1,7 +1,8 @@
 ---
-layout: post
-category : lessons
+layout: blog
+category : blog
 tags : [intro, beginner, jekyll, tutorial]
+author: peter 
 ---
 {% include JB/setup %}
 
