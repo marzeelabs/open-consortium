@@ -18,8 +18,8 @@
         <img src="http://placehold.it/64x64" alt="{{ author[1].name | downcase | replace: ' ', '-'}}" title="{{ author[1].name }}" />
       </div>
       <div class="span6">
-        <h4>{{ author[1].name }}</h4>
-        <div class="date"><span>{{ page.date | date_to_long_string }}</span></div>
+        <h5>{{ author[1].name }}</h5>
+        <div class="date"><span>on {{ page.date | date_to_long_string }}</span></div>
       </div>
     </div>
   {% endif %}
