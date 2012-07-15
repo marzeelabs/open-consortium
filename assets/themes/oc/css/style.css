@@ -1,71 +1,67 @@
-/* Override some defaults */
-html, body {
-  background-color: #eee;
-}
-.navbar {
-  margin-bottom: 0;
-}
-.container > footer {
-  margin-top: 20px;
-}
-.container > footer p {
-  text-align: center; /* center align it with the container */
-}
+/*@import url(http://fonts.googleapis.com/css?family=Lato);*/
 
-/* The white background content wrapper */
-.content {
-  background-color: #fff;
-  padding: 20px;
-  margin: 0 -20px; /* negative indent the amount of the padding to maintain the grid system */
-  -webkit-border-radius: 0 0 6px 6px;
-     -moz-border-radius: 0 0 6px 6px;
-          border-radius: 0 0 6px 6px;
-  -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.15);
-     -moz-box-shadow: 0 1px 2px rgba(0,0,0,.15);
-          box-shadow: 0 1px 2px rgba(0,0,0,.15);
-}
-
-/* Page header tweaks */
-.page-header {
-  background-color: #f5f5f5;
-  padding: 20px 20px 10px;
-  margin: -20px -20px 20px;
-}
-
-.topbar .btn {
-  border: 0;
-}
+@import url(https://fonts.googleapis.com/css?family=Lato:300italic,700italic,300,700);
 
 
-/* tag_box ======================================================== */
+/* jquery.tweet */
+.tweet,
+.query {
 
-.tag_box {
-	list-style:none;
-	margin:0;
-	padding:5px 0 ;
-	overflow:hidden;
 }
-.tag_box li {
-	line-height:28px;
+
+.tweet_list {
+  -webkit-border-radius: 0.5em;
+  -moz-border-radius: 0.5em;
+  border-radius: 0.5em;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  overflow-y: hidden;
 }
-.tag_box.inline li {
-	float:left;
+  
+.tweet_list li {
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 0.5em;
+  list-style-type: none;
 }
-.tag_box a {
-	padding: 3px 6px;
-	margin: 2px;
-	background: #eee;
-	color:#005F6B;
-	border-radius: 3px;
-	text-decoration:none;
+
+.tweet_list li a {
 }
-.tag_box a span{
-	vertical-align:super;
-	font-size:0.8em;
+
+.tweet_list .tweet_even {
 }
-.tag_box a.active {
-	background:#57A957;
-	border:1px solid #4C964D;
-	color:#FFF;
+
+.tweet_list .tweet_avatar {
+  padding-right: .5em; float: left;
 }
-	
+
+.tweet_list .tweet_avatar img {
+  vertical-align: middle;
+}
+
+#tweet ul.tweet_list {
+  height:4em;
+  overflow-y:hidden;
+}
+#tweet .tweet_list li {
+  height: 4em;
+}
+
+/* TEMP */
+#myCarousel {
+  display: none;
+}
+
+#twitter-url {
+  float:right
+}
+
+
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+p {
+  font-family: 'Lato', sans-serif;
+}
