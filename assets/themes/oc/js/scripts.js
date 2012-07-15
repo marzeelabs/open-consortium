@@ -26,7 +26,7 @@ jQuery(function($){
 });
 
 
-$('#twitter-url').popover({
+$('#twitter-url_').popover({
   placement: 'bottom',
   content: function() {
     return $("#tweet").html();
