@@ -1,0 +1,37 @@
+{% for author in site.team %}
+  {% if author[0] == page.author %}
+    {% assign auhtor_found = true %}
+    {% for role in author[1].roles %}
+      {% if role == "blogger" %}
+        {% assign is_blogger = true %}
+      {% endif %}
+    {% endfor %}
+    {% unless is_blogger %}
+      <div class="alert">
+        <button class="close" data-dismiss="alert">×</button>
+        <h4 class="alert-heading">Warning!</h4>
+        Although <em>{{ page.author }}</em> is a valid team member, she is not set as a blogger. Please double check.
+      </div>
+    {% endunless %}
+    <div class="row">
+      <div class="span6">
+        <img src="http://placehold.it/64x64" alt="{{ author[1].name | downcase | replace: ' ', '-'}}" title="{{ author[1].name }}" />
+      </div>
+      <div class="span6">
+        <h4>{{ author[1].name }}</h4>
+        <div class="date"><span>{{ page.date | date_to_long_string }}</span></div>
+      </div>
+    </div>
+  {% endif %}
+{% endfor %}
+
+{% unless auhtor_found %}
+<div class="alert alert-error">
+  <button class="close" data-dismiss="alert">×</button>
+  <h4 class="alert-heading">ERROR!</h4>
+  The author <em>{{ page.author }}</em> does not seem to be a team member. Make sure you add it to the <code>_config.yml</code> file.
+</div>
+{% endunless %}
+
+
+
