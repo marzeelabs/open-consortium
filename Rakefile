@@ -9,8 +9,10 @@ CONFIG = {
   'themes' => File.join(SOURCE, "_includes", "themes"),
   'layouts' => File.join(SOURCE, "_layouts"),
   'posts' => File.join(SOURCE, "_posts"),
-  'post_ext' => "md",
-  'theme_package_version' => "0.1.0"
+  'post_ext' => "textile", # can be: md, textile, html
+  'theme_package_version' => "0.1.0",
+  # Nuno from here
+  'multilingual' => true # true or false
 }
 
 # Path configuration helper
@@ -40,7 +42,7 @@ module JB
   end #Path
 end #JB
 
-# Usage: rake post title="A Title" [date="2012-02-09"]
+# Usage: rake post title="A Title" [date="2012-02-09"] [locale="es_AR"] [category="A Category"]
 desc "Begin a new post in #{CONFIG['posts']}"
 task :post do
   abort("rake aborted: '#{CONFIG['posts']}' directory not found.") unless FileTest.directory?(CONFIG['posts'])
@@ -52,31 +54,51 @@ task :post do
     puts "Error - date format must be YYYY-MM-DD, please check you typed it correctly!"
     exit -1
   end
-  filename = File.join(CONFIG['posts'], "#{date}-#{slug}.#{CONFIG['post_ext']}")
+  lang_prefix = ''
+  lang = ''
+  if CONFIG['multilingual']
+    locale = ENV["locale"] || ""
+    lang = locale.strip.gsub(/\_\w+$/, '')
+    lang_prefix = "#{lang}/"
+  end
+  category = ENV["category"] || "uncategorised"
+  category_slug = category.downcase.strip.gsub(' ', '-').gsub(/[^\w-]/, '')
+  category_layout = (category == 'uncategorised' ? 'post' : category_slug)
+  puts category_layout
+  filename = File.join(CONFIG['posts'], lang, category_slug, "#{date}-#{slug}.#{CONFIG['post_ext']}")
   if File.exist?(filename)
     abort("rake aborted!") if ask("#{filename} already exists. Do you want to overwrite?", ['y', 'n']) == 'n'
   end
   
+  mkdir_p File.dirname(filename)
   puts "Creating new post: #{filename}"
   open(filename, 'w') do |post|
     post.puts "---"
-    post.puts "layout: post"
+    post.puts "layout: #{category}"
     post.puts "title: \"#{title.gsub(/-/,' ')}\""
+    if CONFIG['multilingual']
+      post.puts "locale: \"#{locale}\""
+    end
     post.puts 'description: ""'
-    post.puts "category: "
+    post.puts "category: \"#{lang_prefix}#{category_slug}\""
     post.puts "tags: []"
     post.puts "---"
     post.puts "{% include JB/setup %}"
   end
 end # task :post
 
-# Usage: rake page name="about.html"
+# Usage: rake page name="about.html" locale="es_AR"
 # You can also specify a sub-directory path.
 # If you don't specify a file extention we create an index.html at the path specified
 desc "Create a new page."
 task :page do
-  name = ENV["name"] || "new-page.md"
-  filename = File.join(SOURCE, "#{name}")
+  name = ENV["name"] || "new-page.#{CONFIG['post_ext']}"
+  lang = ''
+  if CONFIG['multilingual']
+    locale = ENV["locale"] || ""
+    lang = locale.strip.gsub(/\_\w+$/, '')
+  end
+  filename = File.join(SOURCE, lang, "#{name}")
   filename = File.join(filename, "index.html") if File.extname(filename) == ""
   title = File.basename(filename, File.extname(filename)).gsub(/[\W\_]/, " ").gsub(/\b\w/){$&.upcase}
   if File.exist?(filename)
@@ -88,6 +110,9 @@ task :page do
   open(filename, 'w') do |post|
     post.puts "---"
     post.puts "layout: page"
+    if CONFIG['multilingual']
+      post.puts "locale: \"#{locale}\""
+    end
     post.puts "title: \"#{title}\""
     post.puts 'description: ""'
     post.puts "---"
