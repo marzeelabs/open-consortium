@@ -1,0 +1,14 @@
+---
+permalink: team/peter-vanhee
+layout: post
+title: "Peter Vanhee"
+locale: ""
+description: ""
+category: "team"
+tags: []
+short_bio: "Peter is Belgian"
+member: peter
+---
+{% include JB/setup %}
+
+{{ page | debug }}
