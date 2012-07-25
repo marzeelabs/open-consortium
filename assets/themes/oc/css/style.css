@@ -60,8 +60,14 @@
 
 body {
   font-family: 'Lato', sans-serif;
+  padding-top: 60px;
+  padding-bottom: 40px;
 }
 
 p {
   font-family: 'Lato', sans-serif;
+}
+
+.hero-unit {
+  padding: 0px;
 }
