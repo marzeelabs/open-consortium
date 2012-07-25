@@ -20,6 +20,15 @@
       <div class="span6">
         <h5>{{ author[1].name }}</h5>
         <div class="date"><span>on {{ page.date | date_to_long_string }}</span></div>
+
+        {% for post in site.posts %}
+          {% if post.category == 'team' and author[0] == page.author %}
+            <div class="short-bio">
+              {{ post.short_bio }}
+            </div>
+          {% endif %}
+        {% endfor %}
+
       </div>
     </div>
   {% endif %}
