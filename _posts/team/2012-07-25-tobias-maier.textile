@@ -1,5 +1,5 @@
 ---
-permalink: team/tobias-meier
+permalink: team/tobias-maier
 layout: team
 title: "Tobias Maier"
 locale: ""

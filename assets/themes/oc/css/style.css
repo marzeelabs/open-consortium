@@ -71,3 +71,13 @@ p {
 .hero-unit {
   padding: 0px;
 }
+
+#map {
+  border:1px solid #CCCCCC;
+  height:300px;
+  margin-bottom:20px;
+}
+
+.btn-right {
+    float: right;
+}
