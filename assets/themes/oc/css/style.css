@@ -72,6 +72,19 @@ p {
   padding: 0px;
 }
 
+
+
+#map {
+  border:1px solid #CCCCCC;
+  height:300px;
+  margin-bottom:20px;
+}
+
+.btn-right {
+  float: right;
+}
+
+
 /* blog ======================================================== */
 ul.thumbnails .thumbnail .thumb {
   width: 150px;
@@ -87,5 +100,3 @@ ul.thumbnails .thumbnail .thumb {
 
   margin-left: auto;
   margin-right: auto;
-  
-}
