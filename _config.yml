@@ -141,6 +141,12 @@ JB :
 LIB_PATH : "/assets/lib"
 IMG_PATH : "/assets/images"
 
+blog :
+  default_image : 
+    full : "/assets/images/oc_square_logo_111.png"
+    thumb : "/assets/images/oc_square_logo_111.png"
+
+
 # misc Open Consortium
 oc :
   twitter : OpenConsortium

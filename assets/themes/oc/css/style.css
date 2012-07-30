@@ -71,3 +71,21 @@ p {
 .hero-unit {
   padding: 0px;
 }
+
+/* blog ======================================================== */
+ul.thumbnails .thumbnail .thumb {
+  width: 150px;
+  height: 100px;
+  box-shadow: inset rgba(0, 0, 0, .25) 0px 0px 40px;
+  -moz-box-shadow: inset rgba(0,0,0,.25) 0px 0px 40px;
+  -webkit-box-shadow: inset rgba(0, 0, 0, .25) 0px 0px 40px;
+  
+  overflow: hidden;
+  text-indent: -999px;
+  display: block;
+  background: white 50% 50% no-repeat;
+
+  margin-left: auto;
+  margin-right: auto;
+  
+}

@@ -1,0 +1,47 @@
+---
+layout: page
+locale: "en_GB"
+title: "Blog"
+description: ""
+group: "menu"
+weight: 2
+---
+{% include JB/setup %}
+
+{% assign posts_collate = site.posts %}
+{% capture category_filter %}{{ page.url | replace_first: '/', '' | replace: site.JB.archive_path, '' | replace: '/index.html', '' }}{% endcapture %}
+
+<ul class="thumbnails">
+{% for post in posts_collate  %}
+
+  {% if post.category == category_filter or category_filter == '_all' %}
+    <li class="span6">
+      <a href="{{ post.url }}">  
+        <div class="row">      
+          <div class="span2">
+            <div class="thumbnail">
+              {% if post.default_image.thumb %}
+                {% capture default_image_thumb %}{{ post.default_image.thumb }}{% endcapture %}
+              {% else %}
+                {% capture default_image_thumb %}{{ site.blog.default_image.thumb }}{% endcapture %}
+              {% endif %}
+              <img class="thumb" src="{{ default_image_thumb }}" alt="">
+              {% assign default_image_thumb = nil %}
+            </div>
+          </div>
+          <div class="span4">
+            <div class="caption">
+              <h5>{{ post.title }}</h5>
+              <p>{{ post.description }}</p>
+              <p>{{ post.date | date: "%e %B %Y" }}</p>
+            </div>
+          </div>
+        </div>
+      </a>
+    </li>
+  {% endif %}
+{% endfor %}
+</ul>
+
+{% assign posts_collate = nil %}
+{% assign category_filter = nil %}
