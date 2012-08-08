@@ -10,26 +10,24 @@
       <div class="alert">
         <button class="close" data-dismiss="alert">×</button>
         <h4 class="alert-heading">Warning!</h4>
-        Although <em>{{ page.author }}</em> is a valid team member, she is not set as a blogger. Please double check.
+        Although <em>{{ page.author }}</em> is a valid team member, she/he is not set as a blogger. Please double check.
       </div>
     {% endunless %}
-    <div class="row">
-      <div class="span6">
-        <img src="http://placehold.it/128x128" alt="{{ author[1].name | downcase | replace: ' ', '-'}}" title="{{ author[1].name }}" />
-      </div>
-      <div class="span6">
-        <h5>{{ author[1].name }}</h5>
-        <div class="date"><span>on {{ page.date | date_to_long_string }}</span></div>
-
-        {% for post in site.posts %}
-          {% if post.category == 'team' and author[0] == page.author %}
+    <div class="row">      
+      {% for post in site.posts %}
+        {% if post.category == 'team' and post.author == page.author %}            
+          <div class="span6">        
+            <img src="http://placehold.it/50x50" alt="{{ author[1].name | downcase | replace: ' ', '-'}}" title="{{ author[1].name }}" />
+          </div>
+          <div class="span6">
+            <h5>{{ author[1].name }}</h5>
+            <div class="date"><span>on {{ page.date | date_to_long_string }}</span></div>
             <div class="short-bio">
               {{ post.short_bio }}
             </div>
-          {% endif %}
-        {% endfor %}
-
-      </div>
+          </div>
+        {% endif %}
+      {% endfor %}
     </div>
   {% endif %}
 {% endfor %}
