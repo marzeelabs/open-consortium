@@ -47,8 +47,15 @@ jQuery(function($){
   	'http://urls.api.twitter.com/1/urls/count.json?url=' + url + '&callback=?', 
   	function (data) {
   		// do something to do what you want with data.count here
-  		$(".tweet-count").text(data.count);
-      // console.log("Retweets: " + data.count);
+  		if (data.count) {
+  		  if (data.count > 1) {
+  		    html = data.count + ' tweets link';
+  		  } else {
+  		    html = 'One tweet links';
+  		  }
+  		  html += ' to this post';
+  		  $(".tweet-count").text(html);
+  		}
   	}
   );
   
@@ -81,6 +88,16 @@ jQuery(function($){
           $(".tweets").html(t).addClass('loaded');
       }
   });
+  
+  // Initialize Facebook SDK
+  // <div id="fb-root"></div>
+  (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=219025435178";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
   
   
 });

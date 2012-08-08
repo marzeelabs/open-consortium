@@ -176,8 +176,11 @@ ul.thumbnails .thumbnail .thumb {
 
 .follow .title { font-size:18px; }
 
-
-
+.facebook {
+  border-top: 1px solid #CCCCCC;
+  margin: 10px 0 0;
+  padding-top: 19px;
+}
 
 
 
