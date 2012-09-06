@@ -5,6 +5,14 @@
   <div class="navbar navbar-fixed-top">
     <div class="navbar-inner">
       <div class="container">
+        <ul class="nav {{ group }}">
+          <!-- main menu -->
+          <li class="divider-vertical"></li>
+          {% assign pages_list = site.pages %}
+          {% assign group = 'menu' %}
+          {% include custom/pages_list %}
+        </ul>
+        
         <a id="twitter-url" href="http://twitter.com/{{ site.oc.twitter }}" rel="" title="@{{ site.oc.twitter }}" class="brand">
           Follow @{{ site.oc.twitter }}
         </a>
@@ -17,7 +25,7 @@
     <!-- Main hero unit for a primary marketing message or call to action -->
     <div class="hero-unit">
       <center>
-        <h1 class="visuallyhidden">Open Consortium</h1>
+        <h1 class="hidden">Open Consortium</h1>
         <a href="/">
           <img src="{{ site.IMG_PATH }}/oc_logo_600.png" alt="openconsortium-logo"/>
         </a>

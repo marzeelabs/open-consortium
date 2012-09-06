@@ -1,0 +1,129 @@
+{% comment %}<!--
+The pages_list include is a listing helper.
+Usage:
+  1) assign the 'pages_list' variable to a valid array of pages or posts.
+  2) include JB/pages_list
+  example:
+    <ul>
+      {% assign pages_list = site.pages %}  
+      {% include JB/pages_list %}
+    </ul>
+    
+  Grouping: (optional): 
+    assign the 'group' variable to constrain the list to only pages/posts
+    in the given group. Note you must define the group manually in the page/post
+    meta-data to use this feature.
+    Grouping is mainly helpful for non-post pages.
+    If you want to group posts, it's easier/better to tag them, then pass the tagged posts array.
+    i.e. site.tags.cool_tag (this returns an array of posts tagged: cool_tag)
+    
+  This helper can be seen in use at: ../_layouts/default.html
+-->{% endcomment %}
+
+{% assign string = '' %}
+
+{% for node in pages_list %}
+
+  {% if node.title != null %}
+
+    {% if group == null or group == node.group %}
+
+      {% if node.locale != null %}
+        {% capture node_lang %}{{ node.locale | split : '_' | first }}{% endcapture %}
+      {% endif %}
+
+      {% if node_lang == lang %}
+
+        {% capture node_clean_url %}{{ node.url }}{% endcapture %}
+        {% capture node_clean_url %}{{ node_clean_url | replace: "/index.html", "" }}{% endcapture %}
+        {% capture node_clean_url %}{{ node_clean_url | replace: "/index.textile", "" }}{% endcapture %}
+        {% capture node_clean_url %}{{ node_clean_url | replace: "/index.md", "" }}{% endcapture %}
+        
+        {% capture node_group %}{{ node_clean_url | split: "/" | last }}{% endcapture %}
+
+        <!-- dropdown-menu: {{ node_group }} -->
+          {% capture sub_group %}{{node_group}}{% endcapture %}
+
+          {% for sub_node in pages_list %}
+            {% if sub_node.title != null %}
+              {% if sub_group == null or sub_group == sub_node.group %}
+                {% if sub_node.locale != null %}
+                  {% capture sub_node_lang %}{{ sub_node.locale | split : '_' | first }}{% endcapture %}
+                {% endif %}
+
+                {% if sub_node_lang == lang %}
+
+                  {% capture sub_node_clean_url %}{{ sub_node.url }}{% endcapture %}
+                  {% capture sub_node_clean_url %}{{ sub_node_clean_url | replace: "/index.html", "" }}{% endcapture %}
+                  {% capture sub_node_clean_url %}{{ sub_node_clean_url | replace: "/index.textile", "" }}{% endcapture %}
+                  {% capture sub_node_clean_url %}{{ sub_node_clean_url | replace: "/index.md", "" }}{% endcapture %}
+
+                  {% if page.url == sub_node.url %}
+                    {% capture sub_li_classes %}{{ sub_li_classes }} active{% endcapture %}
+                    {% capture sub_a_classes %}{{ sub_a_classes }} active{% endcapture %}
+                    {% capture li_classes %}{{ li_classes }} active{% endcapture %}
+                    {% capture a_classes %}{{ a_classes }} active{% endcapture %}
+                  {% endif %}
+
+                  {% capture sub_lis %}{{ sub_node.weight }}#
+                    <li class="{{ sub_li_classes }}">
+                      <a href="{{ BASE_PATH }}{{ sub_node_clean_url }}" class="{{ sub_a_classes }}">{{ sub_node.title }}</a>
+                      {{ sub_sub_string }}
+                    </li>|{{ sub_lis }}
+                  {% endcapture %}
+
+                  {% assign sub_li_classes = '' %}
+                  {% assign sub_a_classes = '' %}
+
+                {% endif %}
+
+              {% endif %}
+
+            {% endif %}
+
+          {% endfor %}
+
+          {% if sub_lis != null and sub_lis != "" %}
+
+            {% capture sub_lis %}<ul class="dropdown-menu">{{ sub_lis | sort }}</ul>{% endcapture %}
+
+            {% capture li_classes %}{{ li_classes }} dropdown expanded{% endcapture %}
+            {% capture a_classes %}{{ a_classes }} dropdown-toggle{% endcapture %}
+            {% capture caret %}<b class="caret"></b>{% endcapture %}
+            {% capture data_elements %}data-toggle="dropdown" data-target="#"{% endcapture %}
+          {% endif %}
+        <!-- / dropdown-menu -->
+
+        {% if page.url == node.url %}
+          {% capture li_classes %}{{ li_classes }} active{% endcapture %}
+          {% capture a_classes %}{{ a_classes }} active{% endcapture %}
+        {% endif %}
+        
+        {% capture lis %}{{ node.weight }}#
+          <li class="{{ li_classes }}">
+            <a href="{{ BASE_PATH }}{{ node_clean_url }}" class="{{ a_classes }}" {{ data_elements }}>
+              {{ node.title }}{{ caret }}
+            </a>
+            {{ sub_lis }}
+          </li>|{{ lis }}
+        {% endcapture %}
+
+        {% assign sub_lis = '' %}
+        {% assign li_classes = '' %}
+        {% assign a_classes = '' %}
+
+      {% endif %}
+
+    {% endif %}
+
+  {% endif %}
+
+{% endfor %}
+
+
+{{ lis | sort }}
+
+{% assign pages_list = nil %}
+{% assign group = nil %}
+{% assign lis = nil %}
+
