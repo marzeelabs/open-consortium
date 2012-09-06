@@ -97,10 +97,6 @@ Usage:
           {% capture a_classes %}{{ a_classes }} active{% endcapture %}
         {% endif %}
         
-        {% if node_clean_url == "" %}
-          {% assign node_clean_url = '/' %}
-        {% endif %}
-        
         {% capture lis %}{{ node.weight }}#
           <li class="{{ li_classes }}">
             <a href="{{ BASE_PATH }}{{ node_clean_url }}" class="{{ a_classes }}" {{ data_elements }}>
