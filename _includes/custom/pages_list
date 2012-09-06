@@ -37,6 +37,10 @@ Usage:
         {% capture node_clean_url %}{{ node_clean_url | replace: "/index.textile", "" }}{% endcapture %}
         {% capture node_clean_url %}{{ node_clean_url | replace: "/index.md", "" }}{% endcapture %}
         
+        {% if node_clean_url == "" %}
+          {% assign node_clean_url = '/' %}
+        {% endif %}
+        
         {% capture node_group %}{{ node_clean_url | split: "/" | last }}{% endcapture %}
 
         <!-- dropdown-menu: {{ node_group }} -->
