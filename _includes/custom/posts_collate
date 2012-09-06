@@ -55,5 +55,6 @@ Usage:
   {% endif %}
 {% endfor %}
 
+{% assign posts_max = nil %}
 {% assign posts_collate = nil %}
 {% assign category = nil %}

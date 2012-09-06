@@ -34,9 +34,49 @@ group: menu
 
   <div class="span6">
     <h2>... and we blog</h2>
-    <h3>For more successful collaboration</h3>
-     <p>Our solutions for the exchange of internal data, resources and ideas catalyze the performance of your consortium. We organize and optimize the interaction between consortium members, resulting in better access to technical infrastructure and personal expertise and a measurable increase in productivity.</p>
-    <!-- <p><a class="btn" data-toggle="modal" href="#b">Learn more &raquo;</a></p> -->
+
+    {% assign posts_collate = site.posts %}
+    {% assign posts_max = 2 %}    
+    {% capture category_filter %}{{ page.url | replace_first: '/', '' | replace: site.JB.archive_path, '' | replace: '/index.html', '' }}{% endcapture %}
+
+    <ul class="thumbnails">
+    {% for post in posts_collate  %}
+
+      {% if post.category == category_filter or category_filter == '_all' %}
+      {% if posts_max > 0 %}
+        {% posts_max | minus: 1 | posts_max %}
+        {{ posts_max | debug }}
+        <li class="span6">
+          <a href="{{ post.url }}">  
+            <div class="row">      
+              <div class="span2">
+                <div class="thumbnail">
+                  {% if post.default_image.thumb %}
+                    {% capture default_image_thumb %}{{ post.default_image.thumb }}{% endcapture %}
+                  {% else %}
+                    {% capture default_image_thumb %}{{ site.blog.default_image.thumb }}{% endcapture %}
+                  {% endif %}
+                  <img class="thumb" src="{{ default_image_thumb }}" alt="">
+                  {% assign default_image_thumb = nil %}
+                </div>
+              </div>
+              <div class="span4">
+                <div class="caption">
+                  <h5>{{ post.title }}</h5>
+                  <p>{{ post.description }}</p>
+                  <p>{{ post.date | date: "%e %B %Y" }}</p>
+                </div>
+              </div>
+            </div>
+          </a>
+        </li>
+      {% endif %}
+      {% endif %}
+    {% endfor %}
+    </ul>
+
+    {% assign posts_collate = nil %}
+    {% assign category_filter = nil %}
  </div>
 
 </div>
