@@ -1,6 +1,6 @@
 ---
 layout: blog
-category : blog
+category : 
 tags : [intro, beginner, jekyll, tutorial]
 author: peter 
 ---

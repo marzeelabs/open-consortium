@@ -3,10 +3,24 @@ layout: page
 locale: ""
 title: "Contact"
 description: ""
+group: menu
+weight: 100
 ---
 {% include JB/setup %}
 
-<div id="map" style="height: 350px"></div>
+Email us at info@openconsortium.eu
+Address: ....
+
+<div class="row">
+  <div class="span6">
+    AA
+  </div>
+  <div class="span6">
+    <div id="map" style="height: 350px"></div>
+  </div>
+</div>
+
+
 
 
 <script>
@@ -42,9 +56,10 @@ description: ""
   var myIcon = new OCIcon();
   // var myIcon = new LeafIcon();
   
-  map.setView(new L.LatLng(41.383931, 2.199927), 14).addLayer(layer);
-  marker = new L.Marker(new L.LatLng(41.383931, 2.199927), {icon: myIcon});
+  map.setView(new L.LatLng(41.383931, 2.199927), 5).addLayer(layer);
+  // marker = new L.Marker(new L.LatLng(41.383931, 2.199927), {icon: myIcon});
+  marker = new L.Marker(new L.LatLng(41.383931, 2.199927));
   
   map.addLayer(marker);
-  marker.bindPopup("Open Consortium<br/>Calle Escullera de Poblenou 15<br/>08005 Barcelona<br/><b>SPAIN</b>.<br/><a id='email' class='btn btn-large' href='mailto:infoREMOVE@marzeelabsTHIS.org' title='Want to know more?'>Contact Us</a>").openPopup();
+  marker.bindPopup("Open Consortium<br/>Calle Escullera de Poblenou 15<br/>08005 Barcelona<br/><b>SPAIN</b>.<br/><a id='email' class='btn btn-large' href='mailto:infoREMOVE@marzeelabsTHIS.org' title='Want to know more?'>Contact Us</a>");
 </script>
