@@ -32,8 +32,6 @@ Usage:
         {% capture node_lang %}{{ node.locale | split : '_' | first }}{% endcapture %}
       {% endif %}
 
-      {% if node_lang == lang %}
-
         {% capture node_clean_url %}{{ node.url }}{% endcapture %}
         {% capture node_clean_url %}{{ node_clean_url | replace: "/index.html", "" }}{% endcapture %}
         {% capture node_clean_url %}{{ node_clean_url | replace: "/index.textile", "" }}{% endcapture %}
@@ -112,7 +110,7 @@ Usage:
         {% assign li_classes = '' %}
         {% assign a_classes = '' %}
 
-      {% endif %}
+
 
     {% endif %}
 
