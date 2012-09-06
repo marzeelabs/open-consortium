@@ -10,7 +10,7 @@ pygments: true
 # so be sure to set them if your theme uses them.
 #
 title : Open Consortium
-tagline: 
+slogan : Tech and Communication solutions for consortia in the life sciences
 team :
   nuno:
     name : Nuno Veloso
