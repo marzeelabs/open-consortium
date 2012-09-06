@@ -3,23 +3,20 @@
 </div>
 
 <div class="row">
-  <div class="span8">
-    {{ content }}
-    {% include JB/comments %}
-  </div>
   
-  <div class="span4">
-    <h4>Published</h4>
+  <div class="span2">
     {% include themes/oc/blog_author.html  %}
-
+    
     {% unless page.tags == empty %}
+    <div class="tags">
       <h4>Tags</h4>
       <ul class="tag_box">
       {% assign tags_list = page.tags %}
       {% include JB/tags_list %}
       </ul>
+    </div>
     {% endunless %}
-  
+    
     <div class="pagination">
       <ul>
       {% if page.previous %}
@@ -54,6 +51,23 @@
         <li class="next disabled"><a>Next &rarr;</a>
       {% endif %}
       </ul>
-    </div>  
+    </div>
+    
+  </div>
+  
+  <div class="span7">
+    {{ content }}
+    {% include JB/comments %}
+  </div>
+  
+  <div class="span3">
+    
+    <div class="follow">
+      <strong>
+        <span class="tweet-count"></span> tweets link to this post.
+      </strong>
+      <div class="tweets"></div>
+    </div>
+  
   </div>
 </div>
