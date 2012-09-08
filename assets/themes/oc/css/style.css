@@ -221,11 +221,12 @@ ul.thumbnails .thumbnail .thumb {
     color: #FFFFFF;
 }
 
-.teaser a {
+.teaser {
   font-size: 1.1em;
+}
+
+.teaser a, .teaser-home a {
   display: block;
-/*  min-height: 150px;*/
-/*  padding: 0 20px 10px;*/
   color: #000000;
   text-decoration: none;
 }
@@ -246,6 +247,36 @@ ul.thumbnails .thumbnail .thumb {
   list-style: none;
 }
 
+.more-link {
+  text-align: right;
+}
+
+#products .span6 h2, #talk .span6 h2 {
+  text-align: center;
+}
+
+#products .more-link {
+  font-weight: bold;
+  text-align: center;
+}
+
+#slogan {
+  text-align: center;
+}
+
+.slogan-text {
+  font-size: 20px;
+}
+
+
+#slogan .btn {
+/*  color: #FFFFFF;*/
+  font-size: 20px;
+  font-weight: bold;
+  margin: 30px 0;
+  padding: 12px 26px;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+}
 
 
 

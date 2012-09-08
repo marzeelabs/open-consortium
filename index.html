@@ -13,7 +13,7 @@ group: menu
     <a href="/">
       <img src="{{ site.IMG_PATH }}/oc_logo_600.png" alt="openconsortium-logo"/>
     </a>
-    <h2>{{ site.slogan }}</h2>
+    <!-- <h2>{{ site.slogan }}</h2> -->
   </center>
 </div>
 
@@ -21,73 +21,101 @@ group: menu
 <div id="products" class="row">
   <div class="span6">
     <h2>Technology</h2>
-    <h3>Your consortium is unique, show it</h3>
-    <p>We provide unique and professional visual solutions for your consortium - developed by top-notch designers. Our Consortium Identity package contains more than just a great logo. Letterheads, presentation templates, poster layouts, business cards. We cover all visual aspects of your consortium.</p>
-    <!-- <p><a class="btn" data-toggle="modal" href="#a">Learn more &raquo;</a></p> -->
+    <h1><small>Open-source tech solutions to drive your consortium</small></h1>
+      <p>
+      We design a unique and professional visual solution for your consortium, and set up and maintain the communication infrastructure tailored to your needs. Our modular technology packages include web solutions for external communication based on award winning open-source software, as well as data and knowledge sharing infrastructure and full laboratory information management systems for handling internal data exchange.
+      </p>
+    <div class="more-link">
+      <a class="btn btn-info" href="#a">Learn more &raquo;</a>
+    </div>
   </div>
   
   <div class="span6">
     <h2>Communication</h2>
-    <h3>Communication strategies for the public dissemination of your science.</h3>
+    <h1><small>Strategies for the public dissemination of your science.</small></h1>
     <p>We take care of communicating your results - focused to science-savvy communities or to the general public. We offer regular website updates, reports from conferences and meetings, background articles, press releases and much more. We use classical routes, as well as new media tools for the dissemination of your results. We understand what you work on and we are experienced in communicating science to the public.</p>
-    <!-- <p><a class="btn" data-toggle="modal" href="#a">Learn more &raquo;</a></p> -->
+    <div class="more-link">
+      <a class="btn btn-info" href="#a">Learn more &raquo;</a>
+    </div>
   </div>
 </div>
 
+<hr/>
+
+<!-- Your consortium is unique, show it
+We provide unique and professional visual solutions for your consortium - developed by top-notch designers. Our Consortium Identity package contains more than just a great logo. Letterheads, presentation templates, poster layouts, business cards. We cover all visual aspects of your consortium.
+
+So you can focus on what you are good at
+We set up and maintain the communication infrastructure tailored to your needs.  -->
+
+<!-- <div id="slogan" class="row">
+  <div class="well well-large">
+    <div class="slogan-text">
+      Open Consortium provides Tech and Communication Solutions for Consortia in the Life Sciences.
+    </div>
+      <a class="btn btn-large btn-info" href="/contact" title="Contact Us">Contact Us</a>
+  </div>
+</div>
+
+<hr/> -->
+
 <!-- Row of 2 columns -->
-<div id="about" class="row">
+<div id="talk" class="row">
 
   <div class="span6">
-    <h2>We tweet...</h2>
+    <h2>We tweet</h2>
     <a class="twitter-timeline" href="https://twitter.com/openconsortium" data-widget-id="243807105688145921">Tweets by @openconsortium</a>
     <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
   </div>
 
   <div class="span6">
-    <h2>... and we blog</h2>
+    <h2>We blog</h2>
+    
+    {% for post in site.categories.blog  %}
 
-    {% assign posts_collate = site.posts %}
-    {% assign posts_max = 2 %}    
-    {% capture category_filter %}{{ page.url | replace_first: '/', '' | replace: site.JB.archive_path, '' | replace: '/index.html', '' }}{% endcapture %}
-
-    <ul class="thumbnails">
-    {% for post in posts_collate  %}
-
-      {% if post.category == category_filter or category_filter == '_all' %}
-        {% if posts_max > 0 %}
-          {% posts_max | minus: 1 | posts_max %}
-          {{ posts_max | debug }}
-          <li class="span6">
-            <a href="{{ post.url }}">  
-              <div class="row">      
-                <div class="span2">
-                  <div class="thumbnail">
-                    {% if post.default_image.thumb %}
-                      {% capture default_image_thumb %}{{ post.default_image.thumb }}{% endcapture %}
-                    {% else %}
-                      {% capture default_image_thumb %}{{ site.blog.default_image.thumb }}{% endcapture %}
-                    {% endif %}
-                    <img class="thumb" src="{{ default_image_thumb }}" alt="">
-                    {% assign default_image_thumb = nil %}
-                  </div>
-                </div>
-                <div class="span4">
-                  <div class="caption">
-                    <h5>{{ post.title }}</h5>
-                    <p>{{ post.description }}</p>
-                    <p>{{ post.date | date: "%e %B %Y" }}</p>
-                  </div>
-                </div>
-              </div>
-            </a>
-          </li>
+      <!-- Find the author -->
+      {% for author in site.team %}
+        {% if author[0] == post.author %}
+          {% assign curr_author = author[1] %}
         {% endif %}
-      {% endif %}
-    {% endfor %}
-    </ul>
+      {% endfor %}
 
-    {% assign posts_collate = nil %}
-    {% assign category_filter = nil %}
+      <div class="row">
+        <span class="span1">        
+          <img src="http://placekitten.com/50/50" alt="{{ curr_author.name | downcase | replace: ' ', '-'}}" title="{{ curr_author.name }}" class="img-circle img-polaroid" />
+        </span>
+        
+        <span class="span5">
+        
+        <!-- <span class="span6">       -->
+          <div class="teaser-home">
+            <a href="{{ BASE_PATH }}{{ post.url }}">
+            <!-- <h4>{{ post.title }} <small>by <b>{{ curr_author.name}}</b></small></h4> -->
+            <h4>{{ post.title }} <small>{{ post.date | date_to_long_string }}</small></h4>
+            {{ post.content | strip_html | truncatewords:20}}
+            </a>
+          </div>
+          <!-- <div class="tags tags-teaser">
+            {% assign tags_list = post.tags %}
+            {% include JB/tags_list %}
+          </div> -->
+        </span>
+      </div>
+
+      {% if forloop.last == false %}
+        <hr/>
+      {% endif %}
+
+    {% endfor %}
+    
+    <br/>
+    <p class="more-link">
+      <strong>
+        <a title="Fleetio fleet management software reviews" href="/testimonials"> Read more blog posts</a>
+        →
+      </strong>
+    </p>
+        
  </div>
 
 </div>
