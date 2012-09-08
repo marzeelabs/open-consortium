@@ -8,15 +8,98 @@ weight: 100
 ---
 {% include JB/setup %}
 
-Email us at info@openconsortium.eu
-Address: ....
-
 <div class="row">
   <div class="span6">
-    AA
+    
+    <h4>Want to work with us?</h4>
+      <p>Send us an email or pass by our office. We'd love to chat with you.</p>
+    <!-- <button class="btn btn-large btn-primary" type="button">Email us</button> -->
+      <p>
+        <i class="icon-envelope"> </i> You can send us an email at <a href="mailto:info@openconsortium.org">info@openconsortium.org</a> and we'll get in touch in with you.</br>
+        <i class="icon-headphones"> </i> Or call us on Skype: <a href="skype:openconsortium">openconsortium</a>
+      </p>
+      <p>
+        <!-- <a id="email" class="btn btn-info" href="mailto:info@openconsortium.org" title="Want to know more?"><i class="icon-bullhorn icon-white">  </i>  <b>Send us an email</b></a> -->
+        <a id="email" class="btn btn-info" href="mailto:info@openconsortium.org" title="Want to know more?"><span class="add-on"><i class="icon-envelope icon-white"> </i></span> <b>Send us an email</b></a>
+      </p>    
+    <!-- <a id="email" class="btn btn-large btn-primary" href="mailto:info@openconsortium.org" title="Want to know more?"><i class="icon-white icon-envelope">Send us an email</i></a> -->
+    <br>
+    <h4>Meet our Team</h4>
+    
+      <p>We are two young professionals with a shared interest in science, technology and communication.</p>
+      
+      
+      
+      
+      {% assign team_collate = site.categories.team %}
+      <ul class="thumbnails">
+        {% for person in team_collate %}
+          <li class="span3">
+            <div class="thumbnail">
+            
+              <!-- <img src="http://placekitten.com/100/100" alt="{{ author[1].name | downcase | replace: ' ', '-'}}" title="{{ author[1].name }}" class="img-circle img-polaroid" /> -->
+            
+            
+              <a href="{{ BASE_PATH }}{{ person.permalink }}">
+                <img src="http://placekitten.com/270/100" alt="{{ person.title}}" title="{{ person.title}}">
+              </a>
+              <h5>{{ person.title}}</h5>
+              <p>{{ person.short_bio}}</p>
+              <address>
+                <i class="icon-envelope"> </i> <a href="mailto:{{ person.email}}">{{ person.email}}</a>
+              </address>
+              <!-- {{ person | debug }} -->
+            </div>
+          </li>
+        {% endfor %}
+      </ul>
+      {% assign team_collate = nil %}
+      
+      
+      
+      <!-- <ul class="thumbnails">
+        <li class="span3">
+          <div class="thumbnail">
+            <img src="http://placekitten.com/270/100" alt="">
+            <h5>Tobias Maier</h5>
+            <p>Thumbnail caption...</p>
+          </div>
+        </li>
+        <li class="span3">
+          <div class="thumbnail">
+            <img src="http://placekitten.com/270/100" alt="" class="img-polaroid">
+            <h5>Peter Vanhee</h5>
+            <p>Thumbnail caption...</p>
+          </div>
+        </li>
+      </ul> -->
+    
+
+    
   </div>
   <div class="span6">
-    <div id="map" style="height: 350px"></div>
+    <h4>Where to find us</h4>
+      <p>We live and work in the center of Barcelona, Spain, a modern city in Europe and a hub for science, innovation and technology.</p>
+      <div class="well well-small">
+        <!-- <i class="icon-bullhorn"></i> -->
+        <address><i class="icon-map-marker"> </i>
+          <strong>Open Consortium</strong><br>
+          Calle Escullera de Poblenou 15<br>
+          08005 Barcelona, Spain<br>
+        </address>
+      </div>
+      
+      
+      
+      <!-- <p><div class="well well-small"><i class="icon-search icon-white"></i>
+        Calle Escullera de Poblenou 15<br/>
+        08005 Barcelona<br/>
+        SPAIN
+      </div></p> -->
+    
+      
+    
+      <div id="map" style="height: 350px; width: 100%"></div>
   </div>
 </div>
 
@@ -27,7 +110,8 @@ Address: ....
   var map = new L.Map('map');
   // var url = 'http://{s}.tile.cloudmade.com/BC9A493B41014CAABB98F0471D759707/997/256/{z}/{x}/{y}.png';
   // var url = 'http://{s}.tile.stamen.com/watercolor/{z}/{x}/{y}.jpg';
-  var url = 'http://{s}.tiles.mapbox.com/v3/mapbox.mapbox-streets/{z}/{x}/{y}.png32';
+  // var url = 'http://{s}.tiles.mapbox.com/v3/mapbox.mapbox-streets/{z}/{x}/{y}.png32';
+  var url = 'http://{s}.tiles.mapbox.com/v3/mapbox.mapbox-chester/{z}/{x}/{y}.png32';
   var attribution = 'Map data &copy; 2011 OpenStreetMap contributors, Imagery &copy; 2011 CloudMade';
   var layer = new L.TileLayer(url, {maxZoom: 18, attribution: attribution});
   
@@ -61,5 +145,5 @@ Address: ....
   marker = new L.Marker(new L.LatLng(41.383931, 2.199927));
   
   map.addLayer(marker);
-  marker.bindPopup("Open Consortium<br/>Calle Escullera de Poblenou 15<br/>08005 Barcelona<br/><b>SPAIN</b>.<br/><a id='email' class='btn btn-large' href='mailto:infoREMOVE@marzeelabsTHIS.org' title='Want to know more?'>Contact Us</a>");
+  marker.bindPopup("Calle Escullera de Poblenou 15<br/>08005 Barcelona<br/>SPAIN");
 </script>

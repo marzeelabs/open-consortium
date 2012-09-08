@@ -8,6 +8,7 @@ category: "team"
 tags: []
 short_bio: "Tobias is our science communication expert. He is also an avid science writer with five years of experience in science communication."
 author: tobias
+email: tobias@openconsortium.eu
 ---
 {% include JB/setup %}
 

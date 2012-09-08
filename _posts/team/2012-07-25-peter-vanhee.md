@@ -6,8 +6,9 @@ locale: ""
 description: ""
 category: "team"
 tags: []
-short_bio: "Peter is Belgian"
+short_bio: "Peter is our technology expert, is deeply interested in scientific discovery, and has over six years building websites using the latest technologies."
 author: peter
+email: peter@openconsortium.eu
 ---
 {% include JB/setup %}
 

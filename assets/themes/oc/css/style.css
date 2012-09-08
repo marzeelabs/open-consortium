@@ -193,6 +193,9 @@ ul.thumbnails .thumbnail .thumb {
     text-decoration: none;
 }
 
+.well address {
+  margin-bottom: 0px;
+}
 
 
 
