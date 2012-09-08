@@ -8,40 +8,36 @@ weight: 10
 ---
 {% include JB/setup %}
 
-{% assign posts_collate = site.posts %}
-{% capture category_filter %}{{ page.url | replace_first: '/', '' | replace: site.JB.archive_path, '' | replace: '/index.html', '' }}{% endcapture %}
+{% for post in site.categories.blog  %}
 
-<ul class="thumbnails">
-{% for post in posts_collate  %}
-
-  {% if post.category == category_filter or category_filter == '_all' %}
-    <li class="span6">
-      <a href="{{ post.url }}">  
-        <div class="row">      
-          <div class="span2">
-            <div class="thumbnail">
-              {% if post.default_image.thumb %}
-                {% capture default_image_thumb %}{{ post.default_image.thumb }}{% endcapture %}
-              {% else %}
-                {% capture default_image_thumb %}{{ site.blog.default_image.thumb }}{% endcapture %}
-              {% endif %}
-              <img class="thumb" src="{{ default_image_thumb }}" alt="">
-              {% assign default_image_thumb = nil %}
-            </div>
-          </div>
-          <div class="span4">
-            <div class="caption">
-              <h5>{{ post.title }}</h5>
-              <p>{{ post.description }}</p>
-              <p>{{ post.date | date: "%e %B %Y" }}</p>
-            </div>
-          </div>
-        </div>
-      </a>
-    </li>
+  <!-- Find the author -->
+  {% for author in site.team %}
+    {% if author[0] == post.author %}
+      {% assign curr_author = author[1] %}
+    {% endif %}
+  {% endfor %}
+  
+  
+  <div class="row">
+    <span class="span2">        
+      <img src="http://placekitten.com/100/100" alt="{{ curr_author.name | downcase | replace: ' ', '-'}}" title="{{ curr_author.name }}" class="img-circle img-polaroid" />
+    </span>
+    <span class="span10">      
+      <div class="teaser">
+        <a href="{{ BASE_PATH }}{{ post.url }}">
+        <h4>{{ post.title }} <small>{{ post.date | date_to_long_string }}</small></h4>
+        {{ post.content | strip_html | truncatewords:50}}
+        </a>
+      </div>
+      <div class="tags tags-teaser">
+        {% assign tags_list = post.tags %}
+        {% include JB/tags_list %}
+      </div>
+    </span>    
+  </div>
+    
+  {% if forloop.last == false %}
+    <hr/>
   {% endif %}
+    
 {% endfor %}
-</ul>
-
-{% assign posts_collate = nil %}
-{% assign category_filter = nil %}

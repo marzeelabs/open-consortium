@@ -18,12 +18,15 @@ Usage:
 -->{% endcomment %}
 
 {% if tags_list.first[0] == null %}
+  <ul>
   {% for tag in tags_list %} 
+    <li>
     <span class="label label-info">
   	  <a href="{{ BASE_PATH }}{{ site.JB.tags_path }}#{{ tag }}-ref">{{ tag }}</a>
     </span>
-  	<br/>
+  	</li>
   {% endfor %}
+  </ul>
 {% else %}
   <ul>
   {% for tag in tags_list %} 

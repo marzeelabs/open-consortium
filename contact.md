@@ -24,7 +24,7 @@ weight: 5
     <br>
     
     <h4>Meet our Team</h4>
-      <p>We are two young professionals with a shared interest in science, technology and communication.</p>
+      <p>We are young professionals with a shared interest in science, technology and communication.</p>
       {% assign team_collate = site.categories.team %}
       <ul class="thumbnails">
         {% for person in team_collate %}
@@ -44,7 +44,7 @@ weight: 5
         {% endfor %}
       </ul>
       {% assign team_collate = nil %}    
-
+      <p>We can also count on <a href="http://twitter.com/nunoveloso">Nuno Veloso</a>, open-source contributor and all-round technologist, and <a href="http://twitter.com/fidibiko">Joao Belchior</a>, designer and creator of the logo of Open Consortium.</p>
     
   </div>
   <div class="span6">
@@ -58,7 +58,7 @@ weight: 5
           08005 Barcelona, Spain<br>
         </address>
       </div>
-      <div id="map" style="height: 350px; width: 100%"></div>
+      <div id="map" style="height: 400px; width: 100%"></div>
   </div>
 </div>
 
@@ -99,7 +99,7 @@ weight: 5
   var myIcon = new OCIcon();
   // var myIcon = new LeafIcon();
   
-  map.setView(new L.LatLng(41.383931, 2.199927), 5).addLayer(layer);
+  map.setView(new L.LatLng(41.383931, 2.199927), 4).addLayer(layer);
   // marker = new L.Marker(new L.LatLng(41.383931, 2.199927), {icon: myIcon});
   marker = new L.Marker(new L.LatLng(41.383931, 2.199927));
   

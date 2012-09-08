@@ -221,7 +221,30 @@ ul.thumbnails .thumbnail .thumb {
     color: #FFFFFF;
 }
 
+.teaser a {
+  font-size: 1.1em;
+  display: block;
+/*  min-height: 150px;*/
+/*  padding: 0 20px 10px;*/
+  color: #000000;
+  text-decoration: none;
+}
 
+.tags-teaser li {
+  display: inline;
+  list-style-type: none;
+  padding-right: 5px;
+}
+
+
+.tags-teaser ul, .tags ul {
+  margin: 5px 0 5px 0;
+  padding: 0;
+}
+
+.tags > ul {
+  list-style: none;
+}
 
 
 

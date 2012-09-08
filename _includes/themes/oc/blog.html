@@ -5,8 +5,10 @@
     {% unless page.tags == empty %}
     <br/>
     <div class="row">
-      {% assign tags_list = page.tags %}
-      {% include JB/tags_list %}
+      <div class="tags">
+        {% assign tags_list = page.tags %}
+        {% include JB/tags_list %}
+      </div>
     </div>
     {% endunless %}
     

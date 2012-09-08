@@ -6,6 +6,7 @@ description: ""
 category: "blog"
 tags: [European Commission, FP7, Horizon2020]
 author: tobias
+teaser:
 ---
 {% include JB/setup %}
 
