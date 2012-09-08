@@ -4,7 +4,7 @@ locale: ""
 title: "Contact"
 description: ""
 group: menu
-weight: 100
+weight: 5
 ---
 {% include JB/setup %}
 
@@ -13,67 +13,37 @@ weight: 100
     
     <h4>Want to work with us?</h4>
       <p>Send us an email or pass by our office. We'd love to chat with you.</p>
-    <!-- <button class="btn btn-large btn-primary" type="button">Email us</button> -->
       <p>
         <i class="icon-envelope"> </i> You can send us an email at <a href="mailto:info@openconsortium.org">info@openconsortium.org</a> and we'll get in touch in with you.</br>
         <i class="icon-headphones"> </i> Or call us on Skype: <a href="skype:openconsortium">openconsortium</a>
       </p>
       <p>
-        <!-- <a id="email" class="btn btn-info" href="mailto:info@openconsortium.org" title="Want to know more?"><i class="icon-bullhorn icon-white">  </i>  <b>Send us an email</b></a> -->
         <a id="email" class="btn btn-info" href="mailto:info@openconsortium.org" title="Want to know more?"><span class="add-on"><i class="icon-envelope icon-white"> </i></span> <b>Send us an email</b></a>
       </p>    
-    <!-- <a id="email" class="btn btn-large btn-primary" href="mailto:info@openconsortium.org" title="Want to know more?"><i class="icon-white icon-envelope">Send us an email</i></a> -->
-    <br>
-    <h4>Meet our Team</h4>
     
+    <br>
+    
+    <h4>Meet our Team</h4>
       <p>We are two young professionals with a shared interest in science, technology and communication.</p>
-      
-      
-      
-      
       {% assign team_collate = site.categories.team %}
       <ul class="thumbnails">
         {% for person in team_collate %}
           <li class="span3">
-            <div class="thumbnail">
-            
-              <!-- <img src="http://placekitten.com/100/100" alt="{{ author[1].name | downcase | replace: ' ', '-'}}" title="{{ author[1].name }}" class="img-circle img-polaroid" /> -->
-            
-            
+            <div class="thumbnail">            
               <a href="{{ BASE_PATH }}{{ person.permalink }}">
                 <img src="http://placekitten.com/270/100" alt="{{ person.title}}" title="{{ person.title}}">
               </a>
               <h5>{{ person.title}}</h5>
               <p>{{ person.short_bio}}</p>
               <address>
-                <i class="icon-envelope"> </i> <a href="mailto:{{ person.email}}">{{ person.email}}</a>
+                <a href="mailto:{{ person.email}}">{{ person.email}}</a>,
+                <a href="http://twitter.com/{{ person.twitter}}">@{{ person.twitter}}</a>
               </address>
-              <!-- {{ person | debug }} -->
             </div>
           </li>
         {% endfor %}
       </ul>
-      {% assign team_collate = nil %}
-      
-      
-      
-      <!-- <ul class="thumbnails">
-        <li class="span3">
-          <div class="thumbnail">
-            <img src="http://placekitten.com/270/100" alt="">
-            <h5>Tobias Maier</h5>
-            <p>Thumbnail caption...</p>
-          </div>
-        </li>
-        <li class="span3">
-          <div class="thumbnail">
-            <img src="http://placekitten.com/270/100" alt="" class="img-polaroid">
-            <h5>Peter Vanhee</h5>
-            <p>Thumbnail caption...</p>
-          </div>
-        </li>
-      </ul> -->
-    
+      {% assign team_collate = nil %}    
 
     
   </div>
@@ -88,17 +58,6 @@ weight: 100
           08005 Barcelona, Spain<br>
         </address>
       </div>
-      
-      
-      
-      <!-- <p><div class="well well-small"><i class="icon-search icon-white"></i>
-        Calle Escullera de Poblenou 15<br/>
-        08005 Barcelona<br/>
-        SPAIN
-      </div></p> -->
-    
-      
-    
       <div id="map" style="height: 350px; width: 100%"></div>
   </div>
 </div>
@@ -145,5 +104,9 @@ weight: 100
   marker = new L.Marker(new L.LatLng(41.383931, 2.199927));
   
   map.addLayer(marker);
-  marker.bindPopup("Calle Escullera de Poblenou 15<br/>08005 Barcelona<br/>SPAIN");
+  
+  html = 'Calle Escullera de Poblenou 15<br/>08005 Barcelona, Spain<br/><br/>';
+  html += "<a href='https://www.google.com/maps/ms?msa=0&amp;msid=216938678935670822755.0004c2306ab10c2258707&amp;ie=UTF8&amp;ll=41.386166,2.198068&amp;spn=0.00449,0.009589&amp;t=m&amp;source=embed' class='btn btn-small btn-info'><i class='icon-map-marker icon-white' target='_blank'> </i> <b>Open in Google Maps</b></a>";
+  
+  marker.bindPopup(html, {closeButton: false});
 </script>

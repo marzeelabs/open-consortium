@@ -183,12 +183,12 @@ ul.thumbnails .thumbnail .thumb {
   height: 50px;
 }
 
-.label a {
+.label a, .btn a {
     color: #FFFFFF;
     text-decoration: none;
 }
 
-.label a:hover {
+.label a:hover, .btn a:hover {
     color: #FFFFFF;
     text-decoration: none;
 }
@@ -197,8 +197,29 @@ ul.thumbnails .thumbnail .thumb {
   margin-bottom: 0px;
 }
 
+/* leaflet */
 
+.leaflet-popup-content {
+  font: 14px/1.4 'Lato',sans-serif;
+}
+.leaflet-popup-content-wrapper {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+}
+.leaflet-popup-content {
+  margin: 15px;
+}
 
+.leaflet-container {
+  border:1px solid #CCCCCC;
+  height:300px;
+  margin-bottom:20px;
+}
+
+.leaflet-container a.btn {
+    color: #FFFFFF;
+}
 
 
 
