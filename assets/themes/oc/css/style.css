@@ -278,6 +278,19 @@ ul.thumbnails .thumbnail .thumb {
   text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
 }
 
+.navbar a.brand-img {
+/*    color: #FFFFFF;*/
+    display: block;
+    float: left;
+/*    font-size: 20px;*/
+/*    font-weight: 200;*/
+/*    line-height: 1;*/
+    margin-left: -20px;
+    margin-right: 20px;
+/*    padding: 8px 20px 12px;*/
+    padding: 0;
+}
+
 
 
 
