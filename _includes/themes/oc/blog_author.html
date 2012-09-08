@@ -13,19 +13,14 @@
         Although <em>{{ page.author }}</em> is a valid team member, she/he is not set as a blogger. Please double check.
       </div>
     {% endunless %}
-    <div class="row">      
+    <div class="row">
       {% for post in site.posts %}
-        {% if post.category == 'team' and post.author == page.author %}            
-          <div class="span6">        
-            <img src="http://placehold.it/50x50" alt="{{ author[1].name | downcase | replace: ' ', '-'}}" title="{{ author[1].name }}" />
-          </div>
-          <div class="span6">
-            <h5>{{ author[1].name }}</h5>
-            <div class="date"><span>on {{ page.date | date_to_long_string }}</span></div>
-            <div class="short-bio">
-              {{ post.short_bio }}
-            </div>
-          </div>
+        {% if post.category == 'team' and post.author == page.author %}
+          <a href="/{{ post.permalink }}">
+            <img src="http://placekitten.com/100/100" alt="{{ author[1].name | downcase | replace: ' ', '-'}}" title="{{ author[1].name }}" class="img-circle img-polaroid" />
+          </a>
+          <h5>{{ author[1].name }}</h5>
+          <div class="date">{{ page.date | date_to_long_string }}</div>
         {% endif %}
       {% endfor %}
     </div>

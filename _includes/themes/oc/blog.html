@@ -1,62 +1,78 @@
-<div class="page-header">
-  <h1>{{ page.title }}</h1>
-</div>
-
 <div class="row">
   <div class="span2">
     {% include themes/oc/blog_author.html  %}
     
     {% unless page.tags == empty %}
-    <div class="tags">
-      <h4>Tags</h4>
-      <ul class="tag_box">
+    <br/>
+    <div class="row">
       {% assign tags_list = page.tags %}
       {% include JB/tags_list %}
-      </ul>
     </div>
     {% endunless %}
     
-    <div class="pagination">
-      <ul>
+  </div>
+  
+  <div class="span7">
+    <div class="row">
+      <h1>{{ page.title }}</h1> 
+      {{ content }}
+    </div>
+    <hr>
+    <div class="row">
+      {% for post in site.posts %}
+        {% if post.category == 'team' and post.author == page.author %}            
+        <div class="short-bio">
+          {{ post.short_bio }} 
+          {% for author in site.team %}
+            {% if author[0] == post.author %}
+              Follow {{ author[1].name }} at <a href="http://twitter.com/{{ author[1].twitter }}">twitter.com/{{ author[1].twitter }}</a>.
+            {% endif %}
+          {% endfor %}
+          
+        </div>
+        {% endif %}
+      {% endfor %}      
+    </div>
+    <hr>
+    <div class="row">
+      <ul class="pager">
       {% if page.previous %}
         {% assign prev = page.previous %}
 
         {% unless prev.category == page.category %}
           {% assign prev = prev.previous %}
         {% endunless %}
-        
+      
         {% if prev.category == page.category %}
-          <li class="prev"><a href="{{ BASE_PATH }}{{ prev.url }}" title="{{ prev.title }}">&larr; Previous</a></li>
+          <li class="previous"><a href="{{ BASE_PATH }}{{ prev.url }}" title="{{ prev.title }}">&larr; Older</a></li>
         {% else %}
-          <li class="prev disabled"><a>&larr; Previous</a></li>
+          <li class="previous disabled"><a>&larr; Older</a></li>
         {% endif %}
       {% else %}
-        <li class="prev disabled"><a>&larr; Previous</a></li>
+        <li class="next disabled"><a>&larr; Newer</a></li>
       {% endif %}
-        <li><a href="{{ BASE_PATH }}{{ site.JB.archive_path }}">Archive</a></li>
+        <!-- <li><a href="{{ BASE_PATH }}{{ site.JB.archive_path }}">Archive</a></li> -->
       {% if page.next %}
         {% assign next = page.next %}
 
         {% unless next.category == page.category %}
           {% assign next = next.next %}
         {% endunless %}
-      
+    
         {% if next.category == page.category %}
-          <li class="next"><a href="{{ BASE_PATH }}{{ next.url }}" title="{{ next.title }}">Next &rarr;</a></li>
+          <li class="next"><a href="{{ BASE_PATH }}{{ next.url }}" title="{{ next.title }}">Newer &rarr;</a></li>
         {% else %}
-          <li class="next disabled"><a>Next &rarr;</a>
+          <li class="next disabled"><a>Newer &rarr;</a>
         {% endif %}
       {% else %}
-        <li class="next disabled"><a>Next &rarr;</a>
+        <li class="next disabled"><a>Newer &rarr;</a>
       {% endif %}
       </ul>
     </div>
-    
-  </div>
-  
-  <div class="span7">
-    {{ content }}
-    {% include JB/comments %}
+    <hr>
+    <div class="row">
+      {% include JB/comments %}
+    </div>
   </div>
   
   <div class="span3">
@@ -80,19 +96,3 @@
   </div>
 </div>
 
-<div class="row">
-  <div class="span12" id="disqus_thread"></div>
-  <script type="text/javascript">
-      /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
-      var disqus_shortname = 'openconsortium'; // required: replace example with your forum shortname
-
-      /* * * DON'T EDIT BELOW THIS LINE * * */
-      (function() {
-          var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-          dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
-          (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-      })();
-  </script>
-  <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-  <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
-</div>

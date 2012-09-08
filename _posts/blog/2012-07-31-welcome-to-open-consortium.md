@@ -4,7 +4,7 @@ title: "Welcome to Open Consortium"
 locale: ""
 description: ""
 category: "blog"
-tags: []
+tags: [European Commission]
 author: tobias 
 ---
 {% include JB/setup %}

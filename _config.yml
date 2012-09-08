@@ -10,7 +10,7 @@ pygments: true
 # so be sure to set them if your theme uses them.
 #
 title : Open Consortium
-slogan : Tech and Communication solutions for consortia in the life sciences
+slogan : Tech and Communication Solutions for Consortia in the Life Sciences
 team :
   nuno:
     name : Nuno Veloso
@@ -135,6 +135,11 @@ JB :
   # and include your custom code. Your custom file must be defined at:
   #   ./_includes/custom/[HELPER]
   # where [HELPER] is the name of the helper you are overriding.
+  
+  # Peter: use a custom tags list, so we can better control markup etc.
+  # Info on clean overrides here: http://jekyllbootstrap.com/api/bootstrap-api.html#jbtags_list
+  tags_list :
+    provider : "custom"
   
 
 # Nuno's extentions

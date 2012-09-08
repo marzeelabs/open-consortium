@@ -183,6 +183,16 @@ ul.thumbnails .thumbnail .thumb {
   height: 50px;
 }
 
+.label a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.label a:hover {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
 
 
 

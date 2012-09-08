@@ -6,7 +6,7 @@ locale: ""
 description: ""
 category: "team"
 tags: []
-short_bio: "Tobias is blabla"
+short_bio: "Tobias is our science communication expert. He is also an avid science writer with five years of experience in science communication."
 author: tobias
 ---
 {% include JB/setup %}
