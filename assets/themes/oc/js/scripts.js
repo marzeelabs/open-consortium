@@ -24,20 +24,20 @@ jQuery(function($){
   //   ticker();
   // }).hide();
   
-  $(".tweet").tweet({
-      username: "openconsortium",
-      join_text: "auto",
-      avatar_size: 48,
-      count: 5,
-      // auto_join_text_default: "we said,", 
-      // auto_join_text_ed: "we",
-      // auto_join_text_ing: "we were",
-      // auto_join_text_reply: "we replied to",
-      // auto_join_text_url: "we were checking out",
-      auto_join_text_url: "",
-      loading_text: "loading tweets..."
-      template: "BEFORE {text} AFTER"
-  });  
+  // $(".tweet").tweet({
+  //     username: "openconsortium",
+  //     join_text: "auto",
+  //     avatar_size: 48,
+  //     count: 5,
+  //     // auto_join_text_default: "we said,", 
+  //     // auto_join_text_ed: "we",
+  //     // auto_join_text_ing: "we were",
+  //     // auto_join_text_reply: "we replied to",
+  //     // auto_join_text_url: "we were checking out",
+  //     auto_join_text_url: "",
+  //     loading_text: "loading tweets...",
+  //     template: '<div class="row"><span class="span1">{avatar}</span><span class="span5">{text}</span></div>'
+  // });  
   
   // // Get a count for the retweets
   // // Trick from http://ottopress.com/2010/twitters-new-tweet-button-and-the-count-api/
