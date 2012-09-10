@@ -4,7 +4,7 @@ title: "Building Consortium Websites"
 locale: ""
 description: ""
 category: "blog"
-tags: [Website]
+tags: [Website, Technology]
 author: peter 
 ---
 {% include JB/setup %}

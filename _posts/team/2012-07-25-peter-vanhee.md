@@ -11,6 +11,8 @@ author: peter
 email: peter@openconsortium.eu
 twitter: pvhee
 linkedin: petervanhee
+avatar: http://farm9.staticflickr.com/8169/7970279102_83c8019970
+avatar-rect: http://farm9.staticflickr.com/8461/7970291652_0346270462
 ---
 {% include JB/setup %}
 

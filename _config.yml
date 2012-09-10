@@ -15,18 +15,15 @@ slogan : Tech and Communication Solutions for Consortia in the Life Sciences
 team :
   nuno:
     name : Nuno Veloso
-    twitter : nunoveloso
     roles :
       - author
   peter:
     name : Peter Vanhee
-    twitter : pvhee
     roles :
       - author
       - blogger
   tobias:
     name : Tobias Maier
-    twitter : weitergen
     roles :
       - author
       - blogger

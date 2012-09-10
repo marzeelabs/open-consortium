@@ -11,6 +11,8 @@ author: tobias
 email: tobias@openconsortium.eu
 twitter: weitergen
 linkedin: tobiasmaier
+avatar: http://farm9.staticflickr.com/8178/7970309954_363a301829
+avatar-rect: http://farm9.staticflickr.com/8298/7970882158_dec0c38c4a
 ---
 {% include JB/setup %}
 

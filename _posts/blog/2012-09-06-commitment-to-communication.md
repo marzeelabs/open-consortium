@@ -6,13 +6,12 @@ description: ""
 category: "blog"
 tags: [European Commission, FP7, Horizon2020]
 author: tobias
-teaser:
 ---
 {% include JB/setup %}
 
 <p class="lead">The European Commission has a communication problem. At least that’s what we claimed in our <a href="/blog/2012/07/31/welcome-to-open-consortium">previous blog post</a> and we think we do have a point: every year billions of Euros are invested in research and innovation and hardly anyone outside the academic world knows about it.</p>
 
-![FP Funding in Europe over the years](http://farm9.staticflickr.com/8301/7950225894_09bfca481a_z_d.jpg)
+![FP Funding in Europe over the years](http://farm9.staticflickr.com/8301/7950225894_1a57a84335_z.jpg)
 
 Additionally, European science funding is not a recent concept. It has been going on in its current form since 1984, when the first so-called Framework Programme (FP) was launched with a budget of 3.75 bn EUR for four years. European investment in research and innovation has since increased tremendously (see figure above). Under the current FP7 scheme, over 53 bn EUR are being invested and the eighth Framework Programme, termed Horizon 2020, has an allocated budget of over 87 bn EUR. 
 

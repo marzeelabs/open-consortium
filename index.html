@@ -64,6 +64,7 @@ We set up and maintain the communication infrastructure tailored to your needs. 
 
   <div class="span6">
     <h2>We tweet</h2>
+    <div class="tweet"></div>
     <!-- <a class="twitter-timeline" href="https://twitter.com/openconsortium" data-widget-id="243807105688145921">Tweets by @openconsortium</a> -->
     <a class="twitter-timeline" href="https://twitter.com/openconsortium" data-widget-id="244516077642588161">Tweets by @openconsortium</a>
     <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>    
@@ -73,33 +74,26 @@ We set up and maintain the communication infrastructure tailored to your needs. 
     <h2>We blog</h2>
     
     {% for post in site.categories.blog  %}
-
-      <!-- Find the author -->
-      {% for author in site.team %}
-        {% if author[0] == post.author %}
-          {% assign curr_author = author[1] %}
-        {% endif %}
-      {% endfor %}
-
+    
       <div class="row">
-        <span class="span1">        
-          <img src="http://placekitten.com/50/50" alt="{{ curr_author.name | downcase | replace: ' ', '-'}}" title="{{ curr_author.name }}" class="img-circle img-polaroid" />
+        <span class="span1">
+          <!-- Find the author -->
+          {% for author in site.categories.team %}
+            {% if author.author == post.author %}
+              <a href="{{ BASE_PATH }}{{ post.url }}">
+                <img src="{{ author.avatar }}_s.jpg" alt="{{ author.title | downcase | replace: ' ', '-'}}" title="{{ author.title }}" class="img-polaroid" width="75" height="75" />
+              </a> 
+            {% endif %}  
+          {% endfor %}
         </span>
         
-        <span class="span5">
-        
-        <!-- <span class="span6">       -->
+        <span class="span5">        
           <div class="teaser-home">
-            <a href="{{ BASE_PATH }}{{ post.url }}">
-            <!-- <h4>{{ post.title }} <small>by <b>{{ curr_author.name}}</b></small></h4> -->
+            <a href="{{ BASE_PATH }}{{ post.url }}" title="{{ post.title }}">
             <h4>{{ post.title }} <small>{{ post.date | date_to_long_string }}</small></h4>
             {{ post.content | strip_html | truncatewords:20}}
             </a>
           </div>
-          <!-- <div class="tags tags-teaser">
-            {% assign tags_list = post.tags %}
-            {% include JB/tags_list %}
-          </div> -->
         </span>
       </div>
 
@@ -112,7 +106,7 @@ We set up and maintain the communication infrastructure tailored to your needs. 
     <br/>
     <p class="more-link">
       <strong>
-        <a title="Fleetio fleet management software reviews" href="/testimonials"> Read more blog posts</a>
+        <a title="Read more blog posts" href="/blog"> Read more blog posts</a>
         →
       </strong>
     </p>

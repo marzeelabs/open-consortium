@@ -14,7 +14,7 @@ weight: 5
     <h4>Want to work with us?</h4>
       <p>Send us an email or pass by our office. We'd love to chat with you.</p>
       <p>
-        <i class="icon-envelope"> </i> You can send us an email at <a href="mailto:info@openconsortium.org">info@openconsortium.org</a> and we'll get in touch in with you.</br>
+        <i class="icon-envelope"> </i> You can send us an email at <a href="mailto:info@openconsortium.eu">info@openconsortium.eu</a> and we'll get in touch in with you.</br>
         <i class="icon-headphones"> </i> Or call us on Skype: <a href="skype:openconsortium">openconsortium</a>
       </p>
       <p>
@@ -25,25 +25,27 @@ weight: 5
     
     <h4>Meet our Team</h4>
       <p>We are young professionals with a shared interest in science, technology and communication.</p>
-      {% assign team_collate = site.categories.team %}
       <ul class="thumbnails">
-        {% for person in team_collate %}
+        {% for author in site.categories.team %}        
           <li class="span3">
             <div class="thumbnail">            
-              <a href="{{ BASE_PATH }}{{ person.permalink }}">
-                <img src="http://placekitten.com/270/100" alt="{{ person.title}}" title="{{ person.title}}">
+              <a href="/{{ author.permalink }}">
+                <img src="{{ author.avatar-rect}}_m.jpg" alt="{{ author.title }}" title="{{ author.title }}" width="270" height="100">
               </a>
-              <h5>{{ person.title}}</h5>
-              <p>{{ person.short_bio}}</p>
+              <h5>{{ author.title }}</h5>
+              <p>{{ author.short_bio }}</p>
               <address>
-                <a href="mailto:{{ person.email}}">{{ person.email}}</a>,
-                <a href="http://twitter.com/{{ person.twitter}}">@{{ person.twitter}}</a>
+                <a href="mailto:{{ author.email }}">{{ author.email }}</a>,
+                <a href="http://twitter.com/{{ author.twitter }}">@{{ author.twitter }}</a>
               </address>
             </div>
           </li>
         {% endfor %}
       </ul>
-      {% assign team_collate = nil %}    
+      
+      
+      
+      
       <p>We can also count on <a href="http://twitter.com/nunoveloso">Nuno Veloso</a>, open-source contributor and all-round technologist, and <a href="http://twitter.com/fidibiko">Joao Belchior</a>, designer and creator of the logo of Open Consortium.</p>
     
   </div>

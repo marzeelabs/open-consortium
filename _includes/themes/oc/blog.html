@@ -1,17 +1,25 @@
+<!-- Find current author -->
+{% for author in site.categories.team %}
+  {% if author.author == page.author %}
+    {% assign author_curr = author %}
+  {% endif %}  
+{% endfor %}
+
 <div class="row">
-  <div class="span2">
-    {% include themes/oc/blog_author.html  %}
-    
+  <div class="span2 author-block">
+    <a href="/{{ author_curr.permalink }}">
+      <img src="{{ author_curr.avatar }}_q.jpg" alt="{{ author_curr.title | downcase | replace: ' ', '-'}}" title="{{ author_curr.title }}" class="img-polaroid" width="120" height="120" />
+    </a> 
+    <h5>{{ author_curr.title }}</h5>
+    <div class="date">{{ page.date | date_to_long_string }}</div>
+
     {% unless page.tags == empty %}
     <br/>
-    <div class="row">
-      <div class="tags">
-        {% assign tags_list = page.tags %}
-        {% include JB/tags_list %}
-      </div>
+    <div class="tags">
+      {% assign tags_list = page.tags %}
+      {% include JB/tags_list %}
     </div>
     {% endunless %}
-    
   </div>
   
   <div class="span7">
@@ -21,19 +29,10 @@
     </div>
     <hr>
     <div class="row">
-      {% for post in site.posts %}
-        {% if post.category == 'team' and post.author == page.author %}            
-        <div class="short-bio">
-          {{ post.short_bio }} 
-          {% for author in site.team %}
-            {% if author[0] == post.author %}
-              Follow {{ author[1].name }} at <a href="http://twitter.com/{{ author[1].twitter }}">twitter.com/{{ author[1].twitter }}</a>.
-            {% endif %}
-          {% endfor %}
-          
-        </div>
-        {% endif %}
-      {% endfor %}      
+      <div class="short-bio">
+        {{ author_curr.short_bio }} 
+        Follow {{ author_curr.title }} at <a href="http://twitter.com/{{ author_curr.twitter }}">twitter.com/{{ author_curr.twitter }}</a>.
+      </div>
     </div>
     <hr>
     <div class="row">
@@ -77,18 +76,12 @@
     </div>
   </div>
   
-  <div class="span3">
-    
-    <div id="fb-root"></div>
-    
+  <div class="span3">    
     <div class="follow">
-
-      <h5>Let's start a conversation</h5>
-      <!-- <div class="tweets"></div> -->
-      <br/>
-      <a href="https://twitter.com/share" class="twitter-share-button" data-size="large">Tweet</a>
-      <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-
+      <h5>Let's start a conversation</h5>      
+      <div class="twitter">
+        <a href="https://twitter.com/share" class="twitter-share-button" data-size="large">Tweet</a>
+      </div>
       <div class="facebook">        
         <div class="fb-like" data-send="true" data-width="250" data-show-faces="true"></div>
       </div>
