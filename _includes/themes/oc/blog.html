@@ -23,57 +23,49 @@
   </div>
   
   <div class="span7">
-    <div class="row">
-      <h1>{{ page.title }}</h1> 
-      {{ content }}
+    <h1>{{ page.title }}</h1> 
+    {{ content }}
+    <hr>
+    <div class="short-bio">
+      {{ author_curr.short_bio }} 
+      Follow {{ author_curr.title }} at <a href="http://twitter.com/{{ author_curr.twitter }}">twitter.com/{{ author_curr.twitter }}</a>.
     </div>
     <hr>
-    <div class="row">
-      <div class="short-bio">
-        {{ author_curr.short_bio }} 
-        Follow {{ author_curr.title }} at <a href="http://twitter.com/{{ author_curr.twitter }}">twitter.com/{{ author_curr.twitter }}</a>.
-      </div>
-    </div>
-    <hr>
-    <div class="row">
-      <ul class="pager">
-      {% if page.previous %}
-        {% assign prev = page.previous %}
+    <ul class="pager">
+    {% if page.previous %}
+      {% assign prev = page.previous %}
 
-        {% unless prev.category == page.category %}
-          {% assign prev = prev.previous %}
-        {% endunless %}
-      
-        {% if prev.category == page.category %}
-          <li class="previous"><a href="{{ BASE_PATH }}{{ prev.url }}" title="{{ prev.title }}">&larr; Older</a></li>
-        {% else %}
-          <li class="previous disabled"><a>&larr; Older</a></li>
-        {% endif %}
-      {% else %}
-        <li class="next disabled"><a>&larr; Newer</a></li>
-      {% endif %}
-        <!-- <li><a href="{{ BASE_PATH }}{{ site.JB.archive_path }}">Archive</a></li> -->
-      {% if page.next %}
-        {% assign next = page.next %}
-
-        {% unless next.category == page.category %}
-          {% assign next = next.next %}
-        {% endunless %}
+      {% unless prev.category == page.category %}
+        {% assign prev = prev.previous %}
+      {% endunless %}
     
-        {% if next.category == page.category %}
-          <li class="next"><a href="{{ BASE_PATH }}{{ next.url }}" title="{{ next.title }}">Newer &rarr;</a></li>
-        {% else %}
-          <li class="next disabled"><a>Newer &rarr;</a>
-        {% endif %}
+      {% if prev.category == page.category %}
+        <li class="previous"><a href="{{ BASE_PATH }}{{ prev.url }}" title="{{ prev.title }}">&larr; Older</a></li>
+      {% else %}
+        <li class="previous disabled"><a>&larr; Older</a></li>
+      {% endif %}
+    {% else %}
+      <li class="next disabled"><a>&larr; Newer</a></li>
+    {% endif %}
+      <!-- <li><a href="{{ BASE_PATH }}{{ site.JB.archive_path }}">Archive</a></li> -->
+    {% if page.next %}
+      {% assign next = page.next %}
+
+      {% unless next.category == page.category %}
+        {% assign next = next.next %}
+      {% endunless %}
+  
+      {% if next.category == page.category %}
+        <li class="next"><a href="{{ BASE_PATH }}{{ next.url }}" title="{{ next.title }}">Newer &rarr;</a></li>
       {% else %}
         <li class="next disabled"><a>Newer &rarr;</a>
       {% endif %}
-      </ul>
-    </div>
+    {% else %}
+      <li class="next disabled"><a>Newer &rarr;</a>
+    {% endif %}
+    </ul>
     <hr>
-    <div class="row">
-      {% include JB/comments %}
-    </div>
+    {% include JB/comments %}
   </div>
   
   <div class="span3">    

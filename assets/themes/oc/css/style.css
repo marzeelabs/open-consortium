@@ -24,11 +24,9 @@ p {
   font-family: 'Lato', sans-serif;
 }
 
-.hero-unit {
+.home .hero-unit {
   padding: 0px;
 }
-
-
 
 #map {
   border:1px solid #CCCCCC;
