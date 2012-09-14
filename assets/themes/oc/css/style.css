@@ -3,50 +3,6 @@
 @import url(https://fonts.googleapis.com/css?family=Lato:300italic,700italic,300,700);
 
 
-/* jquery.tweet */
-.tweet,
-.query {
-
-}
-
-.tweet_list {
-  -webkit-border-radius: 0.5em;
-  -moz-border-radius: 0.5em;
-  border-radius: 0.5em;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  overflow-y: hidden;
-}
-  
-.tweet_list li {
-  overflow-y: auto;
-  overflow-x: hidden;
-  padding: 0.5em;
-  list-style-type: none;
-}
-
-.tweet_list li a {
-}
-
-.tweet_list .tweet_even {
-}
-
-.tweet_list .tweet_avatar {
-  padding-right: .5em; float: left;
-}
-
-.tweet_list .tweet_avatar img {
-  vertical-align: middle;
-}
-
-#tweet ul.tweet_list {
-  height:4em;
-  overflow-y:hidden;
-}
-#tweet .tweet_list li {
-  height: 4em;
-}
 
 /* TEMP */
 #myCarousel {
@@ -84,6 +40,33 @@ p {
   float: right;
 }
 
+.navbar .brand-logo {
+  margin: 0 10px 0 -20px;
+  padding: 0;
+}
+
+/* twitter ===================================================== */
+.twitter-url-container {
+  
+}
+.twitter-url {
+  float: right;
+  line-height: 40px;
+  font-size: 20px;
+  font-weight: 200;
+  color: #777;
+  text-shadow: 0 1px 0 white;
+}
+@media only screen and (max-width: 980px) {
+  .twitter-url {
+    margin-right: 10px;
+  }
+}
+
+
+#twitter-widget-0 {
+  width: 100%;
+}
 
 /* blog ======================================================== */
 ul.thumbnails .thumbnail .thumb {
