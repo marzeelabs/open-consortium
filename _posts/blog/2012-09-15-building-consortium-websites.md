@@ -10,7 +10,11 @@ comments: false
 ---
 {% include JB/setup %}
 
-<p class="lead">Your consortium website is probably the most important communication tool you have. Open Consortium specializes in building good-looking, feature-rich websites for your scientific consortium, so you can focus on what you are good at and not worry about your website.</p> 
+<p class="lead">Your consortium website is probably the most important communication tool you have. We recently designed and developed three websites for two different science institutes in Barcelona, Spain.</p> 
+
+Building these sites has been a lot of fun, thanks to the enthusiasm of Veronica Raker
+  
+  specializes in building good-looking, feature-rich websites for your scientific consortium, so you can focus on what you are good at and not worry about your website.</p> 
 
 As the consortium coordinator, you would use your website to show new publications, coverage in the press, and announce events like your next consortium meeting. As a consortium partner, you would use it to advertise yourself and your science topics, and look for pre- and postdoctoral candidates to join your lab. And as a visitor, you would use it to learn about the work the consortium is doing. Similar requirements shared by every scientific consortium. That is why Open Consortium has built a website template that addresses all this needs and is easily managed by yourself, not requiring technical expertise.
 
