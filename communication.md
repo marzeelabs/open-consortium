@@ -1,8 +1,10 @@
 ---
 layout: page
 locale: ""
-title: "Communication Solutions"
+title: "Communications"
 description: ""
+group: "menu"
+weight: 2
 ---
 {% include JB/setup %}
 
