@@ -4,7 +4,7 @@ title: "Building our first consortium website"
 locale: ""
 description: ""
 category: "blog"
-tags: [Website, Technology]
+tags: [Technology, Website]
 author: peter 
 comments: true
 ---
@@ -16,7 +16,7 @@ Every scientific consortium needs an website. These websites often must be indep
 
 ![Reprotrain home page, http://reprotrain.eu](http://farm9.staticflickr.com/8299/7992902212_dc69fd266a_c.jpg)
 
-We built such a website for <a href="http://reprotrain.eu" target="_blank">Reprotrain</a>, a Marie Curie training network funded by the 7th Framework Programme. The network aims to provide train researchers in solving problems relating to Male Reproductive Biology and Andrology, hence the use of _sperm cells_ as the identity of the project. Seven research groups and two academic institutes from six countries participate in the consortium, and the consortium is managed by the group of <a href="#">Rafael Olivia</a> from the <a href="http://www.idibaps.org" target="_blank">IDIBPABS</a> research center in Barcelona, Spain.
+We built such a website for <a href="http://reprotrain.eu" target="_blank">Reprotrain</a>, a Marie Curie training network funded by the 7th Framework Programme. The network aims to provide train researchers in solving problems relating to Male Reproductive Biology and Andrology, hence the use of _sperm cells_ as the identity of the project. Seven research groups and two academic institutes from six countries participate in the consortium, and the consortium is managed by the group of <a href="#">Rafael Olivia</a> from the <a href="http://www.idibaps.org" target="_blank">IDIBABS</a> research center in Barcelona, Spain.
 
 ![Reprotrain researchers, http://reprotrain.eu](http://farm9.staticflickr.com/8039/7992902450_bb24e47cc6_c.jpg)
 
