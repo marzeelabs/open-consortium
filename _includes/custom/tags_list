@@ -22,7 +22,8 @@ Usage:
   {% for tag in tags_list %} 
     <li>
     <span class="label label-info">
-  	  <a href="{{ BASE_PATH }}{{ site.JB.tags_path }}#{{ tag }}-ref">{{ tag }}</a>
+      {{ tag }}
+      <!-- <a href="{{ BASE_PATH }}{{ site.JB.tags_path }}#{{ tag }}-ref">{{ tag }}</a> -->
     </span>
   	</li>
   {% endfor %}
