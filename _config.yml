@@ -11,7 +11,7 @@ pygments: true
 # so be sure to set them if your theme uses them.
 #
 title : Open Consortium
-slogan : Tech and Communication Solutions for Consortia in the Life Sciences
+slogan : Technology and Communication Solutions for Consortia in the Life Sciences
 team :
   nuno:
     name : Nuno Veloso
@@ -36,7 +36,7 @@ team :
 # Else if you are pushing to username.github.com, replace with your username.
 # Finally if you are pushing to a GitHub project page, include the project name at the end.
 #
-production_url : http://openconsortium.org
+production_url : http://openconsortium.eu
 
 # All Jekyll-Bootstrap specific configurations are namespaced into this hash
 #
