@@ -1,21 +1,93 @@
----
-layout: none
----
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">	
 	<channel>
-		<title>{{ site.title }}</title>
-		<description>{{ site.slogan }}</description>
-		<link>{{ site.production_url }}</link>
-		<atom:link href="{{ site.production_url }}/feed.xml" rel="self" type="application/rss+xml" />
-		{% for post in site.categories.blog limit:10 %}
+		<title>Open Consortium</title>
+		<description>Technology and Communication Solutions for Consortia in the Life Sciences</description>
+		<link>http://openconsortium.eu</link>
+		<atom:link href="http://openconsortium.eu/feed.xml" rel="self" type="application/rss+xml" />
+		
 			<item>
-				<title>{{ post.title | xml_escape }}</title>
-				<description>{{ post.content | xml_escape }}</description>
-				<pubDate>{{ post.date | date: "%a, %d %b %Y %H:%M:%S %z" }}</pubDate>
-				<link>{{ site.production_url }}{{ post.url }}</link>
-				<guid isPermaLink="true">{{ site.production_url }}{{ post.url }}</guid>
+				<title>Building our first consortium website</title>
+				<description>&lt;p class='lead'&gt;Your consortium website is probably the most important communication tool you have. We recently launched our first Open Consortium website built on our &lt;a href='/technology.html'&gt;technology package&lt;/a&gt;, for a European research network training new researchers in male reproductive biology and andrology.&lt;/p&gt;
+&lt;p&gt;Every scientific consortium needs an website. These websites often must be independent from the research institutes participating in the consortium, and are managed by one of the research institutes participating in the consortium, the &lt;em&gt;coordinator&lt;/em&gt;. Their needs center around creating a place to publicize the research being conducted, the researchers involved in the project, and as a tool to attract talented young researchers to join the network.&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt='Reprotrain home page, http://reprotrain.eu' src='http://farm9.staticflickr.com/8299/7992902212_dc69fd266a_c.jpg' /&gt;&lt;/p&gt;
+
+&lt;p&gt;We built such a website for &lt;a href='http://reprotrain.eu' target='_blank'&gt;Reprotrain&lt;/a&gt;, a Marie Curie training network funded by the 7th Framework Programme. The network aims to provide train researchers in solving problems relating to Male Reproductive Biology and Andrology, hence the use of &lt;em&gt;sperm cells&lt;/em&gt; as the identity of the project. Seven research groups and two academic institutes from six countries participate in the consortium, and the consortium is managed by the group of &lt;a href='#'&gt;Rafael Olivia&lt;/a&gt; from the &lt;a href='http://www.idibaps.org' target='_blank'&gt;IDIBABS&lt;/a&gt; research center in Barcelona, Spain.&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt='Reprotrain researchers, http://reprotrain.eu' src='http://farm9.staticflickr.com/8039/7992902450_bb24e47cc6_c.jpg' /&gt;&lt;/p&gt;
+
+&lt;p&gt;The website has been built on Drupal 7 and the content is written and maintained by &lt;a href='http://reprotrain.eu/contact' target='_blank'&gt;Valeria de Azcoitia&lt;/a&gt;, Reprotrain&amp;#8217;s project manager. It has a &lt;a href='http://reprotrain.eu/jobs'&gt;job application system&lt;/a&gt;, partner descriptions, dynamic news and events, and much more. Best of all, it looks great on all devices.&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt='Reprotrain responsive, mobile-first design, http://reprotrain.eu' src='http://farm9.staticflickr.com/8454/7992867933_ebbdfb0294_c.jpg' /&gt;&lt;/p&gt;
+&lt;!-- The website has  --&gt;&lt;!-- http://blog.hospitalclinic.org/en/2012/06/reprotrain-nova-generacio-investigadors-biologia-reproductiva-masculina-i-andrologia/ --&gt;&lt;!-- another one for the CRG. ...
+
+NETWORK
+publications
+... --&gt;&lt;!-- [IDIBAPS](http://www.idibaps.org/), 
+
+The website should explain the scientific mission of the project, the researchers involved, and the network that is built to conduct the scientific research.
+
+Open Consortium's technology includes the design an
+
+Building these sites has been a lot of fun, thanks to the enthusiasm of Veronica Raker
+  
+  specializes in building good-looking, feature-rich websites for your scientific consortium, so you can focus on what you are good at and not worry about your website.&lt;/p&gt; 
+
+As the consortium coordinator, you would use your website to show new publications, coverage in the press, and announce events like your next consortium meeting. As a consortium partner, you would use it to advertise yourself and your science topics, and look for pre- and postdoctoral candidates to join your lab. And as a visitor, you would use it to learn about the work the consortium is doing. Similar requirements shared by every scientific consortium. That is why Open Consortium has built a website template that addresses all this needs and is easily managed by yourself, not requiring technical expertise. --&gt;&lt;!-- #### Hire the best people --&gt;&lt;!-- Publish in Nature Jobs, ... etc. --&gt;&lt;!-- #### Looks good everywhere --&gt;&lt;!-- pic of the site on the three devices --&gt;&lt;!-- #### Built using open-source technologies --&gt;&lt;!-- Built on [Drupal 7](http://drupal.org), the [hottest web content system in education today](https://www.acquia.com/five-data-sheets-promoting-drupal), the website can be extended with some of the 5000+ available modules. And probably your institution has someone that is skilled in Drupal to help you out with your technical needs.  --&gt;&lt;!-- Interested? Then please don't hesitate to [contact us](http://localhost:4000/contact.html).
+
+We are working on releasing  --&gt;&lt;!-- BLA B --&gt;&lt;!-- put pics here from the 3 sites we built, and discuss a bit their features --&gt;</description>
+				<pubDate>Sat, 15 Sep 2012 00:00:00 +0200</pubDate>
+				<link>http://openconsortium.eu/blog/2012/09/15/building-reprotrain-consortium-website</link>
+				<guid isPermaLink="true">http://openconsortium.eu/blog/2012/09/15/building-reprotrain-consortium-website</guid>
 			</item>
-		{% endfor %}
+		
+			<item>
+				<title>Commitment to communication</title>
+				<description>&lt;p class='lead'&gt;The European Commission has a communication problem. At least that’s what we claimed in our &lt;a href='/blog/2012/07/31/welcome-to-open-consortium'&gt;previous blog post&lt;/a&gt; and we think we do have a point: every year billions of Euros are invested in research and innovation and hardly anyone outside the academic world knows about it.&lt;/p&gt;
+&lt;p&gt;&lt;img alt='FP Funding in Europe over the years' src='http://farm9.staticflickr.com/8301/7950225894_1a57a84335_z.jpg' /&gt;&lt;/p&gt;
+
+&lt;p&gt;Additionally, European science funding is not a recent concept. It has been going on in its current form since 1984, when the first so-called Framework Programme (FP) was launched with a budget of 3.75 bn EUR for four years. European investment in research and innovation has since increased tremendously (see figure above). Under the current FP7 scheme, over 53 bn EUR are being invested and the eighth Framework Programme, termed Horizon 2020, has an allocated budget of over 87 bn EUR.&lt;/p&gt;
+
+&lt;p&gt;We’ll come back to how this money is actually being spent at a later point and leave it for now as it stands: with this graph and with a couple of quotes from official documents on Horizon 2020, the next Framework Programme:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&amp;#8220;Europe&amp;#8217;s taxpayers have a right to know how their money is invested. Because research and innovation are vital to people&amp;#8217;s futures, it is important to bring the research and innovation activities funded through Horizon 2020 to the attention of the general public, showing in particular the added value of Union level action. This will generate better public understanding, engagement and debate. Information and communication measures will therefore be an integral part of Horizon 2020 implementation.&amp;#8221;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Communication from the Commission to the European Parliament, the Council, the European Economic and Social Committee and the Committee of the Regions, page 13 (see &lt;a href='http://bit.ly/NQGJyd'&gt;pdf&lt;/a&gt;).&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&amp;#8220;Activities to disseminate information and carry out communication activities shall be an integral task under all of the actions supported by Horizon 2020.&amp;#8221;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Proposal for a Regulation of the European Parliament and of the Council establishing Horizon 2020 - The Framework Programme for Research and Innovation, page 23 (see &lt;a href='http://bit.ly/Uy3oOS'&gt;pdf&lt;/a&gt;).&lt;/p&gt;
+
+&lt;p&gt;We see what we can do.&lt;/p&gt;</description>
+				<pubDate>Thu, 06 Sep 2012 00:00:00 +0200</pubDate>
+				<link>http://openconsortium.eu/blog/2012/09/06/commitment-to-communication</link>
+				<guid isPermaLink="true">http://openconsortium.eu/blog/2012/09/06/commitment-to-communication</guid>
+			</item>
+		
+			<item>
+				<title>Welcome to Open Consortium</title>
+				<description>&lt;p&gt;Welcome to OpenConsortium. A little known fact to start of with: the European Commission currently funds basic biomedical research with approximately seven billion EUR per year. How is this money being spent? And how come nobody outside the scientific community knows about this?&lt;/p&gt;
+
+&lt;p&gt;To briefly answer the first question: The largest part of these funds are invested in collaborative research projects involving several laboratories based in different EU member states. These labs often have a common thematic research focus but complementary technical approaches.&lt;/p&gt;
+
+&lt;p&gt;The outcome of these collaborative projects often mark a significant advancement of science - made in Europe. How exactly this is achieved shall be the topic of later articles in this blog, including success stories European science funding has supported.&lt;/p&gt;
+
+&lt;p&gt;The latter questions has a straight forward answer. Obtaining European funding for research is prestigious and highly acknowledged within the scientific community. Then, why is it, that basically nobody knows about it outside the laboratories?&lt;/p&gt;
+
+&lt;p&gt;The European Commission apparently has a communication problem.&lt;/p&gt;
+
+&lt;p&gt;This initial post to our blog should serve to set the scope and to define the mission of Open Consortium: to improve the communication of consortia in the life sciences.&lt;/p&gt;
+
+&lt;p&gt;To find out how we want to achieve this and who we are have a look around our website and the team. Or just wait for future blogposts.&lt;/p&gt;</description>
+				<pubDate>Tue, 31 Jul 2012 00:00:00 +0200</pubDate>
+				<link>http://openconsortium.eu/blog/2012/07/31/welcome-to-open-consortium</link>
+				<guid isPermaLink="true">http://openconsortium.eu/blog/2012/07/31/welcome-to-open-consortium</guid>
+			</item>
+		
 	</channel>
 </rss>
