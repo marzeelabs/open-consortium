@@ -1,0 +1,45 @@
+---
+layout: page
+locale: "en_GB"
+title: "Blog"
+description: ""
+group: menu
+weight: 5
+---
+{% include JB/setup %}
+
+{% for post in site.categories.blog  %}
+
+  <!-- Find current author -->
+  {% for author in site.categories.team %}
+    {% if author.author == post.author %}
+      {% assign author_curr = author %}
+    {% endif %}  
+  {% endfor %}
+  
+  
+  <div class="row">
+    <span class="span2">
+      <a href="{{ BASE_PATH }}{{ post.url }}">
+        <img src="{{ author_curr.avatar }}_q.jpg" alt="{{ author_curr.title | downcase | replace: ' ', '-'}}" title="{{ author_curr.title }}" class="img-polaroid" width="100" height="100"/>
+      </a>
+    </span>
+    <span class="span10">      
+      <div class="teaser">
+        <a href="{{ BASE_PATH }}{{ post.url }}">
+        <h4>{{ post.title }} <small>{{ post.date | date_to_long_string }}</small></h4>
+        {{ post.content | strip_html | truncatewords:50}}
+        </a>
+      </div>
+      <div class="tags tags-teaser">
+        {% assign tags_list = post.tags %}
+        {% include JB/tags_list %}
+      </div>
+    </span>    
+  </div>
+    
+  {% if forloop.last == false %}
+    <hr/>
+  {% endif %}
+    
+{% endfor %}
