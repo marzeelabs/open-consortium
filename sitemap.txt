@@ -1,8 +1,20 @@
----
-# Remember to set production_url in your _config.yml file!
-title : Sitemap
----
-{% for page in site.pages %}
-{{site.production_url}}{{ page.url }}{% endfor %}
-{% for post in site.posts %}
-{{site.production_url}}{{ post.url }}{% endfor %}
+
+http://openconsortium.eu/archive.html
+http://openconsortium.eu/atom.xml
+http://openconsortium.eu/blog/index.html
+http://openconsortium.eu/categories.html
+http://openconsortium.eu/communication.html
+http://openconsortium.eu/contact.html
+http://openconsortium.eu/feed.xml
+http://openconsortium.eu/index.html
+http://openconsortium.eu/pages.html
+http://openconsortium.eu/sitemap.txt
+http://openconsortium.eu/tags.html
+http://openconsortium.eu/technology.html
+
+http://openconsortium.eu/blog/2012/09/15/building-reprotrain-consortium-website
+http://openconsortium.eu/blog/2012/09/06/commitment-to-communication
+http://openconsortium.eu/blog/2012/07/31/welcome-to-open-consortium
+http://openconsortium.euteam/tobias-maier
+http://openconsortium.euteam/peter-vanhee
+http://openconsortium.eu/2011/12/29/jekyll-introduction

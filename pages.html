@@ -1,13 +1,924 @@
----
-layout: page
-title: Pages 
-header: Pages
-group: navigation
----
-{% include JB/setup %}
+
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en"> <!--<![endif]-->
+
+<head>
+
+  <title>Pages | Open Consortium</title>
+  
+  <!-- META -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+    
+      
+      <meta name="author" content="Nuno Veloso">
+      
+    
+  
+    
+      
+      <meta name="author" content="Peter Vanhee">
+      
+    
+      
+    
+  
+    
+      
+      <meta name="author" content="Tobias Maier">
+      
+    
+      
+    
+  
+
+  <!-- ICONS -->
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="apple-touch-icon-144-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="apple-touch-icon-114-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="apple-touch-icon-72-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" href="apple-touch-icon-57-precomposed.png">
+
+  <!-- STYLES -->
+  <!-- Bootstrap -->
+  <link href="/assets/lib/bootstrap/css/bootstrap.css" rel="stylesheet">
+  
+  <!-- custom CSS -->
+  <link href="/assets/themes/oc/css/style.css" rel="stylesheet">
+  
+  <!-- Bootstrap responsive -->
+  <link href="/assets/lib/bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
+
+
+  <!-- SCRIPTS -->
+  <!-- GoogleAanalytics tracking code -->
+  
+
+
+  <script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-31959684-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+
+
+
+  <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+  <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+  
+  <!-- Leaflet -->
+  <script src="/assets/lib/leaflet/leaflet-src.js"></script>
+  <link rel="stylesheet" href="/assets/lib/leaflet/leaflet.css" />
+  <!--[if lte IE 8]>
+    <link rel="stylesheet" href="/assets/lib/leaflet/leaflet.ie.css" />
+  <![endif]-->
+  
+  <!-- Custom JS -->
+  <!-- // <script src="/assets/themes/oc/js/scripts.js"></script> -->
+  <script src="/assets/themes/oc/js/maps.js"></script>
+  
+  <!-- Underscore.js -->
+  <script src="/assets/lib/underscore/underscore.js"></script>
+
+</head>
+
+<body data-spy="scroll" class="">
+
+  <div class="navbar navbar-fixed-top">
+    <div class="navbar-inner">
+      <div class="container">
+        
+        <a class="brand brand-logo" title="Open Consortium" href="/">
+          <!-- <img src="/assets/images/oc_square_logo_128_reasonably_small.png" alt="openconsortium-logo"/> -->
+          <img height="38px" src="/assets/images/oc_square_logo_38.png" alt="openconsortium-logo"/>
+          <!-- <img width="111" height="100%" src="http://www.fleetio.com/images/fleetio-logo-drk-clrarrow-trans-111x28.png" alt="Fleetio Logo"> -->
+        </a>
+        
+        <ul class="nav ">
+          <!-- main menu -->
+          
+          
+          
+
+
+
+
+
+  
+
+    
+
+  
+
+
+
+  
+
+    
+
+  
+
+
+
+  
+
+    
+
+      
+        
+      
+
+        
+        
+        
+        
+        
+        
+        
+        
+
+        <!-- dropdown-menu: blog -->
+          
+
+          
+            
+              
+
+            
+
+          
+            
+              
+
+            
+
+          
+            
+              
+
+            
+
+          
+            
+              
+
+            
+
+          
+            
+              
+
+            
+
+          
+            
+              
+
+            
+
+          
+            
+
+          
+            
+              
+
+            
+
+          
+            
+              
+
+            
+
+          
+            
+              
+
+            
+
+          
+            
+              
+
+            
+
+          
+            
+              
+
+            
+
+          
+
+          
+        <!-- / dropdown-menu -->
+
+        
+        
+        
+
+        
+        
+        
+
+
+
+    
+
+  
+
+
+
+  
+
+    
+
+  
+
+
+
+  
+
+    
+
+      
+        
+      
+
+        
+        
+        
+        
+        
+        
+        
+        
+
+        <!-- dropdown-menu: communication.html -->
+          
+
+          
+            
+              
+
+            
+
+          
+            
+              
+
+            
+
+          
+            
+              
+
+            
+
+          
+            
+              
+
+            
+
+          
+            
+              
+
+            
+
+          
+            
+              
+
+            
+
+          
+            
+
+          
+            
+              
+
+            
+
+          
+            
+              
+
+            
+
+          
+            
+              
+
+            
+
+          
+            
+              
+
+            
+
+          
+            
+              
+
+            
+
+          
+
+          
+        <!-- / dropdown-menu -->
+
+        
+        
+        
+
+        
+        
+        
+
+
+
+    
+
+  
+
+
+
+  
+
+    
+
+      
+        
+      
+
+        
+        
+        
+        
+        
+        
+        
+        
+
+        <!-- dropdown-menu: contact.html -->
+          
+
+          
+            
+              
+
+            
+
+          
+            
+              
+
+            
+
+          
+            
+              
+
+            
+
+          
+            
+              
+
+            
+
+          
+            
+              
+
+            
+
+          
+            
+              
+
+            
+
+          
+            
+
+          
+            
+              
+
+            
+
+          
+            
+              
+
+            
+
+          
+            
+              
+
+            
+
+          
+            
+              
+
+            
+
+          
+            
+              
+
+            
+
+          
+
+          
+        <!-- / dropdown-menu -->
+
+        
+        
+        
+
+        
+        
+        
+
+
+
+    
+
+  
+
+
+
+  
+
+
+
+  
+
+    
+
+      
+
+        
+        
+        
+        
+        
+        
+          
+        
+        
+        
+
+        <!-- dropdown-menu:  -->
+          
+
+          
+            
+              
+
+            
+
+          
+            
+              
+
+            
+
+          
+            
+              
+
+            
+
+          
+            
+              
+
+            
+
+          
+            
+              
+
+            
+
+          
+            
+              
+
+            
+
+          
+            
+
+          
+            
+              
+
+            
+
+          
+            
+              
+
+            
+
+          
+            
+              
+
+            
+
+          
+            
+              
+
+            
+
+          
+            
+              
+
+            
+
+          
+
+          
+        <!-- / dropdown-menu -->
+
+        
+        
+        
+
+        
+        
+        
+
+
+
+    
+
+  
+
+
+
+  
+
+    
+
+  
+
+
+
+  
+
+    
+
+  
+
+
+
+  
+
+    
+
+  
+
+
+
+  
+
+    
+
+      
+        
+      
+
+        
+        
+        
+        
+        
+        
+        
+        
+
+        <!-- dropdown-menu: technology.html -->
+          
+
+          
+            
+              
+
+            
+
+          
+            
+              
+
+            
+
+          
+            
+              
+
+            
+
+          
+            
+              
+
+            
+
+          
+            
+              
+
+            
+
+          
+            
+              
+
+            
+
+          
+            
+
+          
+            
+              
+
+            
+
+          
+            
+              
+
+            
+
+          
+            
+              
+
+            
+
+          
+            
+              
+
+            
+
+          
+            
+              
+
+            
+
+          
+
+          
+        <!-- / dropdown-menu -->
+
+        
+        
+        
+
+        
+        
+        
+
+
+
+    
+
+  
+
+
+
+
+1#
+          <li class="">
+            <a href="/technology.html" class="" >
+              Technology
+            </a>
+            
+          </li>|0#
+          <li class="">
+            <a href="/" class="" >
+              Home
+            </a>
+            
+          </li>|6#
+          <li class="">
+            <a href="/contact.html" class="" >
+              Contact
+            </a>
+            
+          </li>|2#
+          <li class="">
+            <a href="/communication.html" class="" >
+              Communication
+            </a>
+            
+          </li>|5#
+          <li class="">
+            <a href="/blog" class="" >
+              Blog
+            </a>
+            
+          </li>|
+        
+        
+        
+        
+        
+
+
+
+
+
+
+        </ul>
+        
+        <a class="twitter-url" href="http://twitter.com/OpenConsortium" rel="" title="@OpenConsortium">Follow @OpenConsortium</a>
+
+      </div>
+    </div>
+  </div>
+ 
+  <div class="container">
+    
+    <div class="content">
+      
+<div class="page-header">
+  <h1>Pages </h1>
+</div>
+
+<div class="row">
+  <div class="span12">
+    
 
 <h2>All Pages</h2>
 <ul>
-{% assign pages_list = site.pages %}
-{% include JB/pages_list %}
+
+
+
+
+  
+    
+      
+      	
+      	<li><a href="/archive.html">Archive</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/atom.xml">Atom Feed</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/blog/index.html">Blog</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/categories.html">Categories</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/communication.html">Communication</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/contact.html">Contact</a></li>
+      	
+      
+    
+  
+    
+  
+    
+      
+      	
+      	<li><a href="/index.html">Home</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li class="active"><a href="/pages.html" class="active">Pages</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/sitemap.txt">Sitemap</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/tags.html">Tags</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/technology.html">Technology</a></li>
+      	
+      
+    
+  
+
+
+
 </ul>
+
+  </div>
+</div>
+
+
+    </div>
+
+  </div> <!-- /container -->
+
+</body>
+  
+<footer class="container" role="footer">
+  <hr>
+  <div class="row">
+    <div class="span4">
+      <p>&copy; Open Consortium 2012</p>
+    </div>
+    <div class="span4 pagination-centered">
+    </div>
+    <div class="span4 pagination-right">
+    </div>
+  </div>
+</footer><!-- / footer -->
+
+
+<!-- JAVASCRIPT -->
+<!-- Placed at the end of the document so the pages load faster -->
+<!-- jQuery CDN'd -->
+<script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+<!-- Twitter Bootstrap -->
+<script src="/assets/lib/bootstrap/js/bootstrap.min.js"></script>
+<!-- jquery.tweet -->
+<script src="/assets/lib/tweet/jquery.tweet.js"></script>
+<!-- custom JS -->
+<script src="/assets/themes/oc/js/scripts.js"></script>
+
+</html>
+
