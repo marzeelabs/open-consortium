@@ -1,0 +1,52 @@
+{% include themes/oc/tag_head.html %}
+
+<body data-spy="scroll" class="{{ page.category }}">
+
+  <div class="navbar navbar-fixed-top">
+    <div class="navbar-inner">
+      <div class="container">
+        
+        <a class="brand brand-logo" title="Open Consortium" href="/">
+          <!-- <img src="{{ site.IMG_PATH }}/oc_square_logo_128_reasonably_small.png" alt="openconsortium-logo"/> -->
+          <img height="38px" src="{{ site.IMG_PATH }}/oc_square_logo_38.png" alt="openconsortium-logo"/>
+          <!-- <img width="111" height="100%" src="http://www.fleetio.com/images/fleetio-logo-drk-clrarrow-trans-111x28.png" alt="Fleetio Logo"> -->
+        </a>
+        
+        <ul class="nav {{ group }}">
+          <!-- main menu -->
+          {% assign pages_list = site.pages %}
+          {% assign group = 'menu' %}
+          {% include custom/pages_list %}
+        </ul>
+        
+        <a class="twitter-url" href="http://twitter.com/{{ site.oc.twitter }}" rel="" title="@{{ site.oc.twitter }}">Follow @{{ site.oc.twitter }}</a>
+
+      </div>
+    </div>
+  </div>
+ 
+  <div class="container">
+    
+    <div class="content">
+      {{ content }}
+    </div>
+
+  </div> <!-- /container -->
+
+</body>
+  
+{% include themes/oc/tag_footer.html %}
+
+
+<!-- JAVASCRIPT -->
+<!-- Placed at the end of the document so the pages load faster -->
+<!-- jQuery CDN'd -->
+<script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+<!-- Twitter Bootstrap -->
+<script src="{{ site.LIB_PATH }}/bootstrap/js/bootstrap.min.js"></script>
+<!-- jquery.tweet -->
+<script src="{{ site.LIB_PATH }}/tweet/jquery.tweet.js"></script>
+<!-- custom JS -->
+<script src="{{ ASSET_PATH }}/js/scripts.js"></script>
+
+</html>
