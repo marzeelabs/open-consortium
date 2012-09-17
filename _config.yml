@@ -6,6 +6,7 @@ exclude: [".rvmrc", ".rbenv-version", ".gitignore", "README.md", "Rakefile", "ch
 
 auto: true
 pygments: true
+safe: false
 
 # Themes are encouraged to use these universal variables 
 # so be sure to set them if your theme uses them.
