@@ -75,7 +75,7 @@ We set up and maintain the communication infrastructure tailored to your needs. 
   <div class="span6">
     <h2>We blog</h2>
     
-    {% for post in site.categories.blog  %}
+    {% for post in site.categories.blog limit:3 %}
     
       <div class="row">
         <span class="span1">
