@@ -27,6 +27,17 @@ team :
     roles :
       - author
       - blogger
+menu :
+  - title: Home
+    url: /index.html
+  - title: Technology
+    url: /technology.html
+  - title: Communication
+    url: /communication.html
+  - title: Blog
+    url: /blog
+  - title: Contact
+    url: /contact.html
 
 # The production_url is only used when full-domain names are needed
 # such as sitemap.txt 
