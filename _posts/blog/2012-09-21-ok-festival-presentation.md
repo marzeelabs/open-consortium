@@ -17,7 +17,7 @@ published: true
 
 _Tobias introducing Open Consortium (left) and Peter on the creation of data hubs using Drupal and Open Data (right)._
 
-We presented at the topic stream [Open Data in Business Research](http://okfestival.org/open-data-in-business-research/) together with Maria Krestyaninova from [Simbioms](http://simbioms.org), who showcased technology to manage large sets of data within scientific consortia. Our session was [live streamed](http://okfestival.org/stream) and well received by the participants, have a look at our slides below.
+We presented at the topic stream [Open Data in Business Research](http://okfestival.org/open-data-in-business-research/) together with Maria Krestyaninova from [Simbioms](http://simbioms.org), who showcased technology to manage large sets of data within scientific consortia. Our session was live streamed and recorded. If you missed it, you can watch it online [here](http://bambuser.com/v/2995559) (start from minute 36:34). Or have a look at our slides below.
 
 <iframe src="http://www.slideshare.net/slideshow/embed_code/14371259?rel=0" width="597" height="486" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC;border-width:1px 1px 0;margin-bottom:5px"> </iframe> 
 
