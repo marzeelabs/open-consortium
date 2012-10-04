@@ -11,7 +11,9 @@ published: true
 ---
 {% include JB/setup %}
 
-<p class="lead">At Open Consortium, we offer communication solutions for science consortia involving both technical infrastructure and content dissemination strategies. Therefore, getting first hand information on data access and communication policies on a European level is vital for us. After all, science consortia funded under the framework programs of the European Commission are potential customers for our services.</p>
+<p class="lead">One main topic stream of the Open Knowledge festival in Helsinki was on Open Research and Education. Sessions of particular interest for us touched on open research data and in particular on Open Access publishing. Carl-Christian Buhr of the European Commission gave a comprehensive summary of the EC policies on this topic - with surprising perspectives.</p>
+
+At Open Consortium, we offer communication solutions for science consortia involving both technical infrastructure and content dissemination strategies. Therefore, getting first hand information on data access and communication policies on a European level is vital for us. After all, science consortia funded under the framework programs of the European Commission are potential customers for our services.
 
 Carl-Christian Buhr, member of the team of Neelie Kroes, Vice president of the European Commission, gave an informative talk on EC-Open Access policies the <a href="http://okfestival.org" target="_blank">Open Knowledge Festival</a> in Helsinki, where Peter and me <a href="http://openconsortium.eu/blog/2012/09/21/ok-festival-presentation">presented Open Consortium</a>.
 
