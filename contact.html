@@ -10,7 +10,7 @@ weight: 6
 
 <div class="row">
   <div class="span6">
-    
+
     <h4>Want to work with us?</h4>
       <p>Send us an email or pass by our office. We'd love to chat with you.</p>
       <p>
@@ -19,16 +19,16 @@ weight: 6
       </p>
       <p>
         <a id="email" class="btn btn-info" href="mailto:info@openconsortium.org" title="Want to know more?"><span class="add-on"><i class="icon-envelope icon-white"> </i></span> <b>Send us an email</b></a>
-      </p>    
-    
+      </p>
+
     <br>
-    
+
     <h4>Meet our Team</h4>
       <p>We are young professionals with a shared interest in science, technology and communication.</p>
       <ul class="thumbnails">
-        {% for author in site.categories.team %}        
+        {% for author in site.categories.team %}
           <li class="span3">
-            <div class="thumbnail">            
+            <div class="thumbnail">
               <a href="/{{ author.permalink }}">
                 <img src="{{ author.avatar-rect}}_m.jpg" alt="{{ author.title }}" title="{{ author.title }}" width="270" height="100">
               </a>
@@ -44,7 +44,7 @@ weight: 6
       </ul>
 
       <p>We can also count on <a href="http://twitter.com/nunoveloso">Nuno Veloso</a>, open-source contributor and all-round technologist, and <a href="http://twitter.com/fidibiko">Joao Belchior</a>, designer and creator of the logo of Open Consortium.</p>
-    
+
   </div>
   <div class="span6">
     <h4>Where to find us</h4>
@@ -68,12 +68,13 @@ weight: 6
   var map = new L.Map('map');
   // var url = 'http://{s}.tile.cloudmade.com/BC9A493B41014CAABB98F0471D759707/997/256/{z}/{x}/{y}.png';
   // var url = 'http://{s}.tile.stamen.com/watercolor/{z}/{x}/{y}.jpg';
+  var url = 'http://{s}.tile.stamen.com/toner/{z}/{x}/{y}.jpg';
   // var url = 'http://{s}.tiles.mapbox.com/v3/mapbox.mapbox-streets/{z}/{x}/{y}.png32';
-  var url = 'http://{s}.tiles.mapbox.com/v3/mapbox.mapbox-chester/{z}/{x}/{y}.png32';
+  // var url = 'http://{s}.tiles.mapbox.com/v3/mapbox.mapbox-warden/{z}/{x}/{y}.png32';
   // var url = 'http://{s}.tiles.mapbox.com/v3/mapbox.world-light/{z}/{x}/{y}.png32';
   var attribution = 'Map data &copy; 2011 OpenStreetMap contributors, Imagery &copy; 2011 CloudMade';
   var layer = new L.TileLayer(url, {maxZoom: 18, attribution: attribution});
-  
+
   var OCIcon = L.Icon.extend({
     options: {
       iconUrl: '{{ site.IMG_PATH }}/oc_square_logo_128_reasonably_small.png',
@@ -93,20 +94,20 @@ weight: 6
        shadowSize: new L.Point(68, 95),
        iconAnchor: new L.Point(22, 94),
        popupAnchor: new L.Point(-3, -76)
-    } 
+    }
   });
-    
+
   var myIcon = new OCIcon();
   // var myIcon = new LeafIcon();
-  
+
   map.setView(new L.LatLng(41.383931, 2.199927), 4).addLayer(layer);
   // marker = new L.Marker(new L.LatLng(41.383931, 2.199927), {icon: myIcon});
   marker = new L.Marker(new L.LatLng(41.383931, 2.199927));
-  
+
   map.addLayer(marker);
-  
+
   html = 'Calle Escullera de Poblenou 15<br/>08005 Barcelona, Spain<br/><br/>';
   html += "<a href='https://www.google.com/maps/ms?msa=0&amp;msid=216938678935670822755.0004c2306ab10c2258707&amp;ie=UTF8&amp;ll=41.386166,2.198068&amp;spn=0.00449,0.009589&amp;t=m&amp;source=embed' class='btn btn-small btn-info'><i class='icon-map-marker icon-white' target='_blank'> </i> <b>Open in Google Maps</b></a>";
-  
+
   marker.bindPopup(html, {closeButton: false});
 </script>
