@@ -7,7 +7,8 @@ $(document).ready(function() {
 
   new L.Control.GeoSearch({
     provider: new L.GeoSearch.Provider.Google(),
-    zoomLevel: 10,
+    zoomLevel: 12,
+    searchLabel: "search partners..."
   }).addTo(map);
 
   L.tileLayer('http://{s}.tile.cloudmade.com/{key}/22677/256/{z}/{x}/{y}.png', {
