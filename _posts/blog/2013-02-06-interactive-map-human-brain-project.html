@@ -1,0 +1,60 @@
+---
+layout: blog
+title: "An interactive map of the partners of the Human Brain Project"
+locale: ""
+description: ""
+category: "blog"
+tags: [European Commission]
+author: peter
+comments: true
+published: true
+---
+
+{% include JB/setup %}
+
+<!-- Markercluster -->
+<link href="{{ site.LIB_PATH }}/leaflet_markercluster/MarkerCluster.css" rel="stylesheet">
+<link href="{{ site.LIB_PATH }}/leaflet_markercluster/MarkerCluster.Default.css" rel="stylesheet">
+<!--[if lte IE 8]><link rel="stylesheet" href="{{ site.LIB_PATH }}/leaflet_markercluster/MarkerCluster.Default.ie.css" /><![endif]-->
+<script src="{{ site.LIB_PATH }}/leaflet_markercluster/leaflet.markercluster.js"></script>
+
+<!-- Leaflet plugins -->
+<script src="{{ site.LIB_PATH }}/leaflet.fullscreen/Control.FullScreen.js"></script>
+<script src="{{ site.LIB_PATH }}/Leaflet.label/leaflet.label.js"></script>
+<link rel="stylesheet" href="{{ site.LIB_PATH }}/Leaflet.label/leaflet.label.css" />
+<script src="{{ site.LIB_PATH }}/L.GeoSearch/js/l.control.geosearch.js"></script>
+<script src="{{ site.LIB_PATH }}/L.GeoSearch/js/l.geosearch.provider.google.js"></script>
+<link rel="stylesheet" href="{{ site.LIB_PATH }}/L.GeoSearch/css/l.geosearch.css" />
+
+<p>
+  In our <a href="#">last post</a>, we briefly introduced the two new European science flagship projects. The Human Brain project and the Graphene receive extraordinary high funding to tackle extraordinary challenges. The basic  question underlying the <a href="http://www.humanbrainproject.eu/" target="_blank">Human Brain Project</a> sounds misleadingly simple:
+</p>
+
+<blockquote>"How do the pieces of the brain work together?"</blockquote>
+
+<p>
+   The real challenge becomes obvious when considering the huge complexity of this large human organ, consisting of billions of neurons forming trillions of connections with each other.
+</p>
+
+<p>
+  The consortium addresses fundamental questions of medicine with the goal to understand and objectively diagnose and treat brain related diseases. Ultimately, the project aims at modelling an entire brain in a computer in order to simulate neuronal processes. This challenge is currently not feasible and depends on future hard- and software development. However, building such an <i>in silico</i> brain will allow to ask and answer questions that are yet beyond imagination.
+</p>
+
+<p>
+  Henry Markram, co-director of the Human Brain Project sums up this truly awe-inspiring project in his own words:
+</p>
+
+<blockquote>
+  "It's an infrastructure in order to build and simulate the human brain, objectively classify brain diseases and build radically new computing devices."
+</blockquote>
+
+<p>
+  We thought to leave the HBP consortium up to the task of building this big network and instead provide a geographical visualization of the research network. This should certainly help to understand this huge collaborative science project, which currently consists of more than 80 European and international research institutions. The whole project is planned to last ten years and we at Open Consortium intend to follow the progress of their work.
+</p>
+
+<!-- Map script -->
+<script src="{{ ASSET_PATH }}oc/js/leaflet-network.js"></script>
+
+<div id="map-hb" style="width: 100%; height: 400px"></div>
+<em>The partner network of the Human Brain flagship project, taken from the <a href="http://www.humanbrainproject.eu/partners.html" target="_blank">project's partner page</a> as of February 2013. Click the hubs to expand and discover the partners involved in this network. You can also use the search box to search for locations or institutes.</em>
+

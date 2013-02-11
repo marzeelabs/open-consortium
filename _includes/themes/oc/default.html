@@ -5,25 +5,25 @@
   <div class="navbar navbar-fixed-top">
     <div class="navbar-inner">
       <div class="container">
-        
+
         <a class="brand brand-logo" title="Open Consortium" href="/">
           <img height="38px" src="{{ site.IMG_PATH }}/oc_square_logo_38.png" alt="openconsortium-logo"/>
         </a>
-        
+
         <ul class="nav {{ group }}">
           {% for link in site.menu %}
             <li{% if link.url == page.url %} class="active"{% endif %}><a href="{{ link.url}}">{{ link.title }}</a></li>
           {% endfor %}
         </ul>
-        
+
         <a class="twitter-url" href="http://twitter.com/{{ site.oc.twitter }}" rel="" title="@{{ site.oc.twitter }}">Follow @{{ site.oc.twitter }}</a>
 
       </div>
     </div>
   </div>
- 
+
   <div class="container">
-    
+
     <div class="content">
       {{ content }}
     </div>
@@ -31,14 +31,12 @@
   </div> <!-- /container -->
 
 </body>
-  
+
 {% include themes/oc/tag_footer.html %}
 
 
 <!-- JAVASCRIPT -->
 <!-- Placed at the end of the document so the pages load faster -->
-<!-- jQuery CDN'd -->
-<script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
 <!-- Twitter Bootstrap -->
 <script src="{{ site.LIB_PATH }}/bootstrap/js/bootstrap.min.js"></script>
 <!-- jquery.tweet -->
