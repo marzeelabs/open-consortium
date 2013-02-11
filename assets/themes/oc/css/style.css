@@ -45,7 +45,7 @@ p {
 
 /* twitter ===================================================== */
 .twitter-url-container {
-  
+
 }
 .twitter-url {
   float: right;
@@ -73,7 +73,7 @@ ul.thumbnails .thumbnail .thumb {
   box-shadow: inset rgba(0, 0, 0, .25) 0px 0px 40px;
   -moz-box-shadow: inset rgba(0,0,0,.25) 0px 0px 40px;
   -webkit-box-shadow: inset rgba(0, 0, 0, .25) 0px 0px 40px;
-  
+
   overflow: hidden;
   text-indent: -999px;
   display: block;
@@ -108,7 +108,7 @@ ul.thumbnails .thumbnail .thumb {
   transition:opacity .5s;
   -moz-transition:opacity .5s;
   -webkit-transition:opacity .5s;
-}  
+}
 
 .follow .tweets.loaded { opacity:1; }
 
@@ -278,8 +278,13 @@ ul.thumbnails .thumbnail .thumb {
 
 
 
+/* For Leaflet plugins, if used */
+
+.leaflet-control-zoom-fullscreen { background-image: url(../img/icon-fullscreen.png); }
+.leaflet-control-zoom-fullscreen.last { margin-top: 5px }
 
 
-
-
+#leaflet-control-geosearch-qry {
+  margin-bottom: 0px;
+}
 
