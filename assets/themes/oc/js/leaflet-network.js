@@ -19,8 +19,10 @@ $(document).ready(function() {
       key: 'BC9A493B41014CAABB98F0471D759707'
     }).addTo(map);
 
-    var markers = new L.MarkerClusterGroup();
+    // Add geolocate control
+    L.control.locate().addTo(map);
 
+    var markers = new L.MarkerClusterGroup();
 
     loadGist(gistid, function (data) {
       var layer = L.geoJson(data, {
