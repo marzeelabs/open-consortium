@@ -6,7 +6,7 @@ locale: ""
 description: ""
 category: "team"
 tags: []
-short_bio: "Tobias is our science communication expert. He is also an avid science writer with five years of experience in science communication."
+short_bio: "<a href='http://about.me/tobiasmaier' target='blank'>Tobias Maier</a> is a science communication professional with a ten year track record in biomedical research. He is the founder of <a href='http://recentlyapp.com/' target='blank'>Recently</a>, a web app allowing scientists to stay up to date with what is being published in their field. He also writes a popular science blog in German called <a href='http://www.weitergen.de/' target='blank'>WeiterGen</a>."
 author: tobias
 email: tobias@openconsortium.eu
 twitter: weitergen
