@@ -37,6 +37,8 @@ menu :
     url: /communication.html
   - title: Blog
     url: /blog
+  - title: Jobs
+    url: /jobs.html
   - title: Contact
     url: /contact.html
 
