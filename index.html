@@ -31,13 +31,16 @@ group: menu
       <a class="btn btn-info" href="/technology.html">Learn more &raquo;</a>
     </div>
   </div>
-  
+
   <div class="span6">
-    <h2>Communication</h2>
-    <h1><small>Strategies for the public dissemination of your science</small></h1>
-    <p>We take care of communicating your results - focused to science-savvy communities or to the general public. We offer regular website updates, reports from conferences and meetings, background articles, press releases and much more. We use classical routes, as well as new media tools for the dissemination of your results. We understand what you work on and we are experienced in communicating science to the public.</p>
+    <h2>Training</h2>
+    <h1><small>Manage your websites independently</small></h1>
+
+    <p>
+Nobody knows better than you what you want to show on your website, so why don't you build the site yourself? We train you so you become independent in updating and managing both content and users and your website, and help you out with any problems that you might have. Have a look at our <a href="http://docs.openconsortium.eu">training material</a> to get a better idea.
+    </p>
     <div class="more-link">
-      <a class="btn btn-info" href="/communication.html">Learn more &raquo;</a>
+      <a class="btn btn-info" href="/technology.html">Learn more &raquo;</a>
     </div>
   </div>
 </div>
@@ -69,14 +72,14 @@ We set up and maintain the communication infrastructure tailored to your needs. 
     <!-- <div class="tweet"></div> -->
     <!-- <a class="twitter-timeline" href="https://twitter.com/openconsortium" data-widget-id="243807105688145921">Tweets by @openconsortium</a> -->
     <a class="twitter-timeline" href="https://twitter.com/openconsortium" data-widget-id="244516077642588161">Tweets by @openconsortium</a>
-    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>    
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
   </div>
 
   <div class="span6">
     <h2>We blog</h2>
-    
+
     {% for post in site.categories.blog limit:3 %}
-    
+
       <div class="row">
         <span class="span1">
           <!-- Find the author -->
@@ -84,12 +87,12 @@ We set up and maintain the communication infrastructure tailored to your needs. 
             {% if author.author == post.author %}
               <a href="{{ BASE_PATH }}{{ post.url }}">
                 <img src="{{ author.avatar }}_s.jpg" alt="{{ author.title | downcase | replace: ' ', '-'}}" title="{{ author.title }}" class="img-polaroid" width="75" height="75" />
-              </a> 
-            {% endif %}  
+              </a>
+            {% endif %}
           {% endfor %}
         </span>
-        
-        <span class="span5">        
+
+        <span class="span5">
           <div class="teaser-home">
             <a href="{{ BASE_PATH }}{{ post.url }}" title="{{ post.title }}">
             <h4>{{ post.title }} <small>{{ post.date | date_to_long_string }}</small></h4>
@@ -104,7 +107,7 @@ We set up and maintain the communication infrastructure tailored to your needs. 
       {% endif %}
 
     {% endfor %}
-    
+
     <br/>
     <p class="more-link">
       <strong>
@@ -112,7 +115,7 @@ We set up and maintain the communication infrastructure tailored to your needs. 
         →
       </strong>
     </p>
-        
+
  </div>
 
 </div>
