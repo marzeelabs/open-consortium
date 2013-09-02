@@ -6,7 +6,7 @@ locale: ""
 description: ""
 category: "team"
 tags: []
-short_bio: "Peter is our technology expert. He has a keen interest in scientific discovery and has over six years building websites using the latest technologies."
+short_bio: "Peter is our technology expert. He holds a PhD in bio-engineering sciences and has a keen interest in scientific discovery. He has over six years building websites using the latest technologies and currently heads <a href='http://marzeelabs.org'>Marzee Labs</a>."
 author: peter
 email: peter@openconsortium.eu
 twitter: pvhee

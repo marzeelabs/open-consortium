@@ -1,10 +1,10 @@
 ---
 layout: page
 locale: ""
-title: "Contact"
+title: "Network"
 description: ""
 group: menu
-weight: 6
+weight: 7
 ---
 {% include JB/setup %}
 
@@ -27,24 +27,19 @@ weight: 6
       <p>We are young professionals with a shared interest in science, technology and communication.</p>
       <ul class="thumbnails">
         {% for author in site.categories.team %}
-        
-          {% if author.author != 'tobias' %}  
-
-            <li class="span3">
-              <div class="thumbnail">
-                <a href="/{{ author.permalink }}">
-                  <img src="{{ author.avatar-rect}}_m.jpg" alt="{{ author.title }}" title="{{ author.title }}" width="270" height="100">
-                </a>
-                <h5>{{ author.title }}</h5>
-                <p>{{ author.short_bio }}</p>
-                <address>
-                  <a href="mailto:{{ author.email }}">{{ author.email }}</a>,
-                  <a href="http://twitter.com/{{ author.twitter }}">@{{ author.twitter }}</a>
-                </address>
-              </div>
-            </li>
-
-          {% endif %}
+          <li class="span3">
+            <div class="thumbnail">
+              <a href="/{{ author.permalink }}">
+                <img src="{{ author.avatar-rect}}_m.jpg" alt="{{ author.title }}" title="{{ author.title }}" width="270" height="100">
+              </a>
+              <h5>{{ author.title }}</h5>
+              <p>{{ author.short_bio }}</p>
+              <address>
+                <a href="mailto:{{ author.email }}">{{ author.email }}</a>,
+                <a href="http://twitter.com/{{ author.twitter }}">@{{ author.twitter }}</a>
+              </address>
+            </div>
+          </li>
         {% endfor %}
       </ul>
 

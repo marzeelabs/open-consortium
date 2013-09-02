@@ -13,6 +13,7 @@ twitter: weitergen
 linkedin: tobiasmaier
 avatar: http://farm9.staticflickr.com/8178/7970309954_0bcd8789cd
 avatar-rect: http://farm9.staticflickr.com/8298/7970882158_e53df55519
+published: true
 ---
 {% include JB/setup %}
 
