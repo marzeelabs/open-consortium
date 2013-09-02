@@ -232,7 +232,9 @@ ul.thumbnails .thumbnail .thumb {
   text-align: right;
 }
 
-#products .span6 h2, #talk .span6 h2 {
+#products .span6 h2,
+#talk .span6 h2,
+#clients .span12 h2 {
   text-align: center;
 }
 
@@ -274,6 +276,50 @@ ul.thumbnails .thumbnail .thumb {
 
 .author-block img {
   margin-top: 10px;
+}
+
+
+/* clients */
+
+#clients ul {
+  list-style: none outside none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+#clients ul li {
+  list-style: none outside none;
+  display: inline-block;
+  vertical-align: middle;
+  *zoom: 1;
+  margin: 10px 20px;
+}
+#clients a {
+  display: block;
+  background: url(../../../images/clients.png) no-repeat 0 0;
+  height: 60px;
+  text-indent: -999px;
+  overflow: hidden;
+}
+#clients a.crg {
+  width: 116px;
+  background-position: 0 0;
+}
+#clients a.embl {
+  width: 140px;
+  background-position: -140px 0;
+}
+#clients a.hospital-clinic {
+  width: 108px;
+  background-position: -310px 0;
+}
+#clients a.universitat-mainz {
+  width: 120px;
+  background-position: -646px 0;
+}
+#clients a.jgu-giessen {
+  width: 66px;
+  background-position: -800px 0;
 }
 
 
