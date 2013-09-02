@@ -33,10 +33,10 @@ menu :
     url: /index.html
   - title: Technology
     url: /technology.html
-  - title: Communication
-    url: /communication.html
   - title: Blog
     url: /blog
+  - title: Jobs
+    url: /jobs.html
   - title: Contact
     url: /contact.html
 
