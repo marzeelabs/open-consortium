@@ -1,0 +1,8 @@
+extends /_layouts/_html
+
+block page_content
+
+  != yield
+
+  unless (current.path[0] === "index")
+    include ./_partials/_footer

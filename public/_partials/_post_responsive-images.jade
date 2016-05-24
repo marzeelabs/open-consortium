@@ -1,0 +1,20 @@
+//- Responsive images for blog posts.
+//- Enhances all occurences of local <img> by adding srcset and sizes attributes
+//- Additionally, looks for a class prefix on mardown as {class}![alt](url)
+//-
+//- Uses the yield variable
+
+- var postImages = yield.match(/(?:{.+?})?<img(.+?)>/gi) || '';
+
+each postResponsiveImage, postImageIndex in postImages
+  - var postImageFilename = postResponsiveImage.match(/(?:src=["'])(.+?)(?:["'])/)[1].split('.');
+  - var postImageExtension = postImageFilename.pop();
+  - postImageFilename = postImageFilename.join('.');
+  - var postResponsiveImageSrcset = 'srcset="' + postImageFilename + '-small.' + postImageExtension + ' ' + breakpoints.small + 'w, ' + postImageFilename + '-medium.' + postImageExtension + ' ' + breakpoints.medium + 'w, ' + postImageFilename + '-regular.' + postImageExtension + ' ' + breakpoints.regular + 'w, ' + postImageFilename + '-large.' + postImageExtension + ' ' + breakpoints.large + 'w' + '" sizes="(max-width: 980px) 65vw, (min-width: 981px) 70vw" />';
+  - var postResponsiveImageClasses = postResponsiveImage.match(/{(.+?)}/) || '';
+  if postResponsiveImageClasses.length
+    - postResponsiveImage = postResponsiveImage.replace(postResponsiveImageClasses[0], '');
+    - postResponsiveImageSrcset = 'class="' + postResponsiveImageClasses[1] + '" ' + postResponsiveImageSrcset;
+  if postImageFilename.lastIndexOf('http', 0) !== 0
+    - postResponsiveImage = postResponsiveImage.replace(/(\/||\/\s)?>/, postResponsiveImageSrcset);
+    - yield = yield.replace(postImages[postImageIndex], postResponsiveImage);

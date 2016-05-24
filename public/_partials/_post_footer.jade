@@ -1,0 +1,15 @@
+//- Meta information for a post.
+//- Uses the member variable information and the date
+//-
+//- If the postFooterImage variable is set also prints the member avatar
+//-
+//- If the variable postFooterTags is assigned (usually with values from the metadata),
+//- it also prints the post's tags
+
+.post-footer
+  if postFooterTags
+    .post-footer__tags
+      each postTag, postTagIndex in postFooterTags
+        if (postTagIndex > 0)
+          |,&nbsp;
+        span(href="##{postTag}")!= postTag

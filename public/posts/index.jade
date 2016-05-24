@@ -1,0 +1,16 @@
+- function excerpt(content) {
+  - if(!content || content.indexOf("<!-- more -->") === -1) return content;
+  - else return content.split("<!-- more -->")[0];
+- }
+
+.blog
+  include ../_partials/_latest_posts.jade
+  each post in latestPosts
+    //- Get the author of the post
+    .blog__item
+      h2.blog__item-title: a(href="/posts/#{ post.slug }")= post.title
+      p.blog__item-description!= excerpt(partial(post.slug + '.md'))
+      - var postFooterDate = post.date;
+      - var postFooterImage = true;
+      - var postFooterTags = post.tags;
+      include ../_partials/_post_footer

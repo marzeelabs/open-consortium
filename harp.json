@@ -1,0 +1,16 @@
+{
+  "globals": {
+    "title": "Marzee Labs",
+    "tagline": "Boilerplate for static Harp",
+    "twitter": "marzeelabs",
+    "production_url": "http://marzeelabs.org",
+    "disqus": false,
+    "analytics": false,
+    "breakpoints": {
+      "small": 460,
+      "medium": 680,
+      "regular": 820,
+      "large": 1400
+    }
+  }
+}
