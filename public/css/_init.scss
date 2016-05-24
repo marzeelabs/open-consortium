@@ -23,11 +23,11 @@ $graceful-usage-threshold: 0.2;
 // use in the normalize.scss file.
 // @see http://compass-style.org/reference/compass/typography/vertical_rhythm/
 
-$base-font-family: "PT Sans", sans-serif;
-$code-font-family: "PT Mono", monospace;
+$base-font-family: "Roboto", sans-serif;
+$code-font-family: "Roboto", monospace;
 $base-font-size:   21px; // The font size set on the root html element.
 $base-line-height: 8px; // This line-height determines the basic unit of vertical rhythm.
-$georgia: Georgia, Times, "Times New Roman", serif;
+//$georgia: Georgia, Times, "Times New Roman", serif;
 
 $h1-font-size: 45px;
 $h2-font-size: 27px;
@@ -54,22 +54,10 @@ $palettes: (
   white: (
     base: rgb(255, 255, 255) // #fff palette(white)
   ),
-  mzgreen: (
-    base: rgb(0, 237, 219), // 00EDDB palette(mzgreen)
-    mid-dark: rgb(0, 186, 172) // #00BAAC palette(mzgreen, mid-dark)
-  ),
-  mzorange: (
-    base: rgb(233, 75, 53) // #e94b34 palette(mzorange)
-  ),
-  blue: (
-    base: rgb(44, 151, 222), // #2c97de palette(blue)
-    mid-dark: rgb(34, 127, 187), // #227fbb palette(blue, mid-dark)
-    dark: rgb(5, 19, 51) // #051333 palette(blue, dark)
-  ),
-  greyshblue: (
-    light: rgb(236, 240, 241), // #ecf0f1 palette(greyshblue, light)
-    base: rgb(197, 204, 209), // #c5ccd1 palette(greyshblue)
-    dark: rgb(43, 62, 81)  // #2b3e51 palette(greyshblue, dark)
+  ocblue: (
+    base: rgb(0, 179, 208), // #00b3d0 palette(ocblue)
+    mid-dark: rgb(43, 62, 81), // #2b3e51 palette(ocblue, mid-dark)
+    dark: rgb(0, 46, 67) // #2b3e51 palette(ocblue, dark)
   )
 );
 
