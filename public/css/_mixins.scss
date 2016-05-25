@@ -1,0 +1,21 @@
+// Reset menus and lists
+@mixin reset-list {
+  list-style: none outside none;
+  list-style-image: none;
+  margin: 0;
+  padding: 0;
+
+  & li {
+    list-style: none outside none;
+  }
+}
+
+// Transparency
+@mixin transparent($color, $alpha) {
+  $rgba: rgba($color, $alpha);
+  $ie-hex-str: ie-hex-str($rgba);
+  background-color: transparent;
+  background-color: $rgba;
+  zoom: 1;
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#{$ie-hex-str}',endColorstr='#{$ie-hex-str}');
+}
