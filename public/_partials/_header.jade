@@ -3,10 +3,12 @@ header
     div(class='#{current.path[0] === "index" ? "navigation navigation--home" : "navigation"}')
       span.navigation__logo-mobile
         a(href='/')
-          img(src='/images/logo.svg', alt='Open Consortium')
+          img(src='../images/home/logo-menu-icon.svg', alt='Open Consortium')
       .navigation__mobile-menu__toggle
         span.navigation__mobile-menu__icon
       ul.navigation__mobile-menu
+        li.navigation__item
+          a(href='#') Home
         li.navigation__item
           a(href='#') Features
         li.navigation__item

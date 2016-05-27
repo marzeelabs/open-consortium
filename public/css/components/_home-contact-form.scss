@@ -1,0 +1,32 @@
+.home-contact-form{
+  background: palette(white);
+  min-height: 500px;
+  text-align: center;
+  width: auto;
+  margin: 0 auto;
+  overflow: auto;
+
+  p{
+    color: palette(ocblue);
+  }
+
+}
+
+.home-contact-form__title{
+  font-size:$h2-font-size;
+  font-weight: 100;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  margin: 0px auto 20px auto;
+ }
+
+input {
+  background: none;
+}
+
+input {
+  border-radius: 3px;
+  box-shadow: none;
+  border: thin solid palete(grey, xxx-light);
+}
+

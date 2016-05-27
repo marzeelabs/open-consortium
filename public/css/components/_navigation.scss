@@ -1,6 +1,4 @@
 // Navigation styles
-
-
 .navigation {
   @include reset-list();
   width: 100%;
@@ -177,7 +175,7 @@
 
   @include breakpoint($break-medium) {
     position: absolute;
-    right: 0;
+    right: 10px;
     top: 0;
     bottom: 0;
     margin: auto;
@@ -207,7 +205,7 @@
 
   img {
     height: 100%;
-    width: auto;
+    width: 40px;
   }
 
   @include breakpoint($break-medium) {

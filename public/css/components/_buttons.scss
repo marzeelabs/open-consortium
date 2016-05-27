@@ -20,3 +20,15 @@
   }
 
 }
+
+
+.button__blue {
+  border: thin solid palette(ocblue);
+  color: palette(ocblue);
+
+  &:hover{
+    color: palette(white);
+    background: palette(ocblue);
+  }
+
+}

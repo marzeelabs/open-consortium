@@ -2,26 +2,33 @@
 
     @include breakpoint(max-width $break-small) {
       background: url(../images/home/home-bg-top-small.png) no-repeat center top palette(ocblue, mid-dark) ;
+      background-size: cover;
     }
 
     @include breakpoint((min-width $break-small + 1px) (max-width $break-medium-small) ) {
       background: url(../images/home/home-bg-top-medium-small.png) no-repeat center top palette(ocblue, mid-dark) ;
+      background-size: cover;
     }
 
     @include breakpoint((min-width $break-medium-small + 1px) (max-width $break-medium) ) {
       background: url(../images/home/home-bg-top-medium.png) no-repeat center top palette(ocblue, mid-dark) ;
+      background-size: cover;
     }
 
     @include breakpoint((min-width $break-medium + 1px) (max-width $break-large) ) {
       background: url(../images/home/home-bg-top-large.png) no-repeat center top palette(ocblue, mid-dark) ;
+      background-size: cover;
     }
 
     @include breakpoint((min-width $break-large + 1px) (max-width $break-big) ) {
       background: url(../images/home/home-bg-top-big.png) no-repeat center top palette(ocblue, mid-dark) ;
+      background-size: cover;
+
     }
 
     @include breakpoint(min-width $break-big) {
-      background: url(../images/home/home-bg-top-big.png) no-repeat center top palette(ocblue, mid-dark) ;
+      background: url(../images/home/home-bg-top-big.png) no-repeat center top palette(ocblue, mid-dark);
+      background-size: cover;
     }
 
   height: 395px;

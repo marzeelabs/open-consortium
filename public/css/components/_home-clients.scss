@@ -1,0 +1,29 @@
+.clients-container{
+  background: palette(white);
+  min-height: 50px;
+  text-align: center;
+  width: auto;
+  margin: 0 auto;
+  overflow: auto;
+
+  p{
+    color: palette(ocblue);
+  }
+
+}
+
+.clients-container__title{
+  font-size:$h2-font-size;
+  font-weight: 100;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  margin: 0px auto 20px auto;
+ }
+
+.client-container__separator{
+ width:90%;
+ display: block;
+ background-color: palette(grey, xxx-light);
+ height: 1px;
+ margin: 0 auto 50px auto;
+ }

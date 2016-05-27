@@ -47,10 +47,10 @@
 .home-features__container{
   min-height: 325px;
   width: 90%;
-  margin:20px auto 50px auto;
-  background: red;
+  margin:40px auto 50px auto;
 }
 
+/* Left section*/
 .home-features__container-left{
   background: palette(black);   min-height: 325px;
   @include span(6);
@@ -64,22 +64,28 @@
   @include breakpoint(min-width $break-medium){
     @include span(isolate 2 at 1);
   };
+}
 
-.list__features-left li{
+.list_left_text{
   display: block;
   font-size: 16px;
   font-weight: 300;
   color: palette(ocblue);
   letter-spacing: 0.2em;
-  width: 100%;
+  width: 90%;
   height: 60px;
+  float:left;
   vertical-align: middle;
-  text-align: right; border: red solid thin;
+  text-align: right;
+  border: red solid thin;
 }
 
-.list__features-left-icon{
+.list_left-icon{
   color: palette(ocblue);
-  padding-left: 10px;
+  font-size: 40px;
+  margin-top: 10px;
+  display: block;
+  float: right;
   :after {
     content: '\e902';
     font-family: 'open-consortium';
@@ -88,8 +94,7 @@
 }
 
 
-}
-
+/* Right section*/
 .home-features__container-right{
   background: palette(white);
   min-height: 325px;
@@ -101,8 +106,9 @@
 
 }
 
+/* Centre section*/
 .home-features__container-comp{
-  background: palette(ocblue);
+  background: url(../images/home/imac_bg.png) no-repeat center top;
   min-height: 325px;
   @include span(6);
 
@@ -110,15 +116,4 @@
     @include span(isolate 2 at 3);
   };
 
-}
-
-
-
-
-.home-summary{
-  background: palette(ocblue, x-dark);
-  height: 395px;
-  text-align: center;
-  width: auto;
-  margin: 0 auto;
 }

@@ -19,19 +19,49 @@ section.home-features
 
   section.home-features__container
     section.home-features__container-left
-      ul.list__features-left
-        li Highlight research
-          span.list__features-left-icon
-        li Highlight researchers
+      include ./_partials/_home_features_left
 
     section.home-features__container-right
+
     section.home-features__container-comp
 
 
 
 section.home-summary
-  p home summary
+  p.home-summary__title All in All,<br>
+    span.home-summary__title-variation open source Technology & TRAINING<br>
+    |to power your consortium
+
+  p.home-summary__subtitle
+    |Open-source tech solutions to drive your&nbsp;
+    span.home-intro__phrase-br
+    |consortium plus manage your websites&nbsp;
+    span.home-intro__phrase-br
+    |independently.
+
+  div.home-summary__title-separator
+
+  p.home-summary__title These are our core values
+
+  section.home-summary__values
+    ul.home-summary__valueslist
+
+  a(href='#').button Ready to launch?
 
 
+section.activity-container
+  p.activity-container__title transmitting
+  span.activity-container__title-separator
+
+
+section.clients-container
+  div.client-container__separator
+
+  p.clients-container__title Our Clients
+
+  div.client-container__separator
+
+
+include ./_partials/_home_contact_form
 
 include ./_partials/_footer
