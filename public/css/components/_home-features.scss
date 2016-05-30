@@ -1,4 +1,4 @@
-.home-features{
+.home-features {
   background: url(../images/home/features_bg.png) no-repeat center top palette(ocblue, dark);
   min-height: 395px;
   text-align: center;
@@ -8,7 +8,7 @@
   overflow:auto;
 }
 
-.home-features__title{
+.home-features__title {
   color: palette(ocblue);
   text-transform: uppercase;
   font-weight: 300;
@@ -19,7 +19,7 @@
   margin: 0 auto;
   line-height: 1.2;
 
-  @include breakpoint(min-width $break-large){
+  @include breakpoint(min-width $break-large) {
     font-size: $h2-font-size;
     line-height: 1.5;
     font-weight:100;
@@ -27,7 +27,7 @@
 
 }
 
-.home-features__subtitle{
+.home-features__subtitle {
   color: palette(white);
   text-transform: uppercase;
   font-weight: 300;
@@ -38,14 +38,14 @@
   padding-top: 10px;
   margin: 0 auto;
 
-  @include breakpoint(min-width $break-large){
+  @include breakpoint(min-width $break-large) {
     font-size: $h4-font-size;
     font-weight:100;
   };
 
 }
 
-.home-features__container{
+.home-features__container {
   min-height: 325px;
   width: 90%;
   margin:40px auto 50px auto;
@@ -59,53 +59,75 @@
   margin-bottom: 30px;
 }
 
-.oc-feature h1{
+.oc-feature h1 {
   font-size: 16px;
   font-weight: 300;
   color: palette(ocblue);
   letter-spacing: 0.2em;
 }
 
-.oc-feature span{
+.oc-feature span {
   color: palette(ocblue);
   font-size: 40px;
 }
 
 /* Left section*/
-.home-features__container-left{
+.home-features__container-left {
   min-height: 325px;
-  @include span(6);
 
-  @include breakpoint(min-width $break-medium){
-    @include span(isolate 2 at 1);
+  @include breakpoint(max-width $break-medium + 1px) {
+    .oc-feature {
+      display: table;
+    }
+
+    .oc-feature h1 {
+      padding-left: 55px;
+      display: table-cell;
+      vertical-align: middle;
+      text-align: left;
+    }
+
+    .oc-feature span {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 40px;
+    }
+
+    @include span(6);
+
   };
 
-  .oc-feature {
-    display: table;
-  }
+  @include breakpoint((min-width $break-medium + 1px)) {
+    @include span(isolate 2 at 1);
 
-  .oc-feature h1{
-    padding-right: 55px;
-    display: table-cell;
-    vertical-align: middle;
-    text-align: right;
-  }
+    .oc-feature {
+      display: table;
+    }
 
-  .oc-feature span{
-    position: absolute;
-    top: 0;
-    right: 0;
-    height: 45px;
-  }
+    .oc-feature h1 {
+      padding-right: 55px;
+      display: table-cell;
+      vertical-align: middle;
+      text-align: right;
+    }
+
+    .oc-feature span {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 40px;
+    }
+  };
 
 }
 
 /* Right section*/
-.home-features__container-right{
+.home-features__container-right {
   min-height: 325px;
   @include span(6);
 
-  @include breakpoint(min-width $break-medium){
+  @include breakpoint(min-width $break-medium) {
     @include span(isolate 2 at 5);
   };
 
@@ -113,14 +135,14 @@
     display: table;
   }
 
-  .oc-feature h1{
+  .oc-feature h1 {
     padding-left: 55px;
     display: table-cell;
     vertical-align: middle;
     text-align: left;
   }
 
-  .oc-feature span{
+  .oc-feature span {
     position: absolute;
     top: 0;
     left: 0;
@@ -130,13 +152,13 @@
 }
 
 /* Centre section*/
-.home-features__container-comp{
+.home-features__container-comp {
   background: url(../images/home/imac_bg.png) no-repeat center top;
   background-size: contain;
   min-height: 325px;
   @include span(6);
 
-  @include breakpoint(min-width $break-medium){
+  @include breakpoint(min-width $break-medium) {
     @include span(isolate 2 at 3);
   };
 

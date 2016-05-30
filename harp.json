@@ -23,10 +23,40 @@
         "side": "left",
         "icon": "researchers"
       },
+      "visualise-consortium": {
+        "title": "Visualise your consortium",
+        "side": "left",
+        "icon": "visualise"
+      },
+      "publicise-events": {
+        "title": "Publicise events",
+        "side": "left",
+        "icon": "events"
+      },
+      "social-media-integration": {
+        "title": "Social media integration",
+        "side": "left",
+        "icon": "social"
+      },
       "content-management-tool": {
         "title": "Content management tool",
         "side": "right",
         "icon": "cms"
+      },
+      "responsive-layout": {
+        "title": "Responsive layout",
+        "side": "right",
+        "icon": "responsive"
+      },
+      "promoted-content": {
+        "title": "Promoted content",
+        "side": "right",
+        "icon": "promoted"
+      },
+      "job-offers": {
+        "title": "Job offers",
+        "side": "right",
+        "icon": "jobs"
       }
     }
   }
