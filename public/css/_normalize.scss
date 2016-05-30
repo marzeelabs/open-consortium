@@ -52,7 +52,7 @@ ul {
 
 html {
   font-family: $base-font-family; /* 1 */
-  font-size: 100% * ($base-font-size / 16px); /* 3 */
+  font-size: $base-font-size;
   -ms-text-size-adjust: 100%; /* 2 */
   -webkit-text-size-adjust: 100%; /* 2 */
   // Establish a vertical rhythm unit using $base-line-height.

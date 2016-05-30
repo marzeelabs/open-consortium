@@ -51,132 +51,31 @@
   margin:40px auto 50px auto;
 }
 
-.oc-feature {
-  width: 100%;
-  position: relative;
-  display: block;
-  height: 40px;
-  margin-bottom: 30px;
-}
-
-.oc-feature h1 {
-  font-size: 16px;
-  font-weight: 300;
-  color: palette(ocblue);
-  letter-spacing: 0.2em;
-}
-
-.oc-feature span {
-  color: palette(ocblue);
-  font-size: 40px;
-}
-
 /* Left section*/
 .home-features__container-left {
-  min-height: 325px;
+  color: palette(ocblue);
 
-  @include breakpoint(max-width $break-medium + 1px) {
-    .oc-feature {
-      display: block;
-      position: relative;
-      padding-top: 55px;
-    }
-
-    .oc-feature h1 {
-      text-align: center;
-    }
-
-    .oc-feature span {
-      position: absolute;
-      left: 0;
-      right: 0;
-      margin-left: auto;
-      margin-right: auto;
-      height: 50px;
-      font-size: 50px;
-      top: 0;
-    }
-
+  @include breakpoint(max-width $break-medium) {
     @include span(6);
-
   };
 
   @include breakpoint(min-width $break-medium + 1px) {
     @include span(isolate 2 at 1);
-
-    .oc-feature {
-      display: table;
-    }
-
-    .oc-feature h1 {
-      padding-right: 55px;
-      display: table-cell;
-      vertical-align: middle;
-      text-align: right;
-    }
-
-    .oc-feature span {
-      position: absolute;
-      top: 0;
-      right: 0;
-      height: 40px;
-    }
   };
 
 }
 
 /* Right section*/
 .home-features__container-right {
-  min-height: 325px;
+  color: palette(ocblue);
 
   @include breakpoint(max-width $break-medium + 1) {
-    .oc-feature {
-      display: block;
-      position: relative;
-      padding-top: 55px;
-    }
-
-    .oc-feature h1 {
-      text-align: center;
-    }
-
-    .oc-feature span {
-      position: absolute;
-      left: 0;
-      right: 0;
-      margin-left: auto;
-      margin-right: auto;
-      height: 50px;
-      font-size: 50px;
-      top: 0;
-    }
-
     @include span(6);
-
   };
 
   @include breakpoint((min-width $break-medium + 1px)) {
     @include span(isolate 2 at 5);
-
-    .oc-feature {
-      display: table;
-    }
-
-    .oc-feature h1 {
-      padding-left: 55px;
-      display: table-cell;
-      vertical-align: middle;
-      text-align: left;
-    }
-
-    .oc-feature span {
-      position: absolute;
-      top: 0;
-      left: 0;
-      height: 40px;
-    }
   };
-
 }
 
 /* Centre section*/

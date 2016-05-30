@@ -1,0 +1,73 @@
+.oc-feature {
+  width: 100%;
+  position: relative;
+  @include adjust-font-size-to(16px, 4);
+  margin-bottom: rhythm(4, 16px);
+  box-sizing: border-box;
+  @include pie-clearfix();
+
+  @include breakpoint(max-width $break-medium) {
+    display: block;
+    position: relative;
+  }
+
+  @include breakpoint(min-width $break-medium + 1px) {
+    transform: translateY(50%);
+  }
+}
+
+.oc-feature--right {
+  @include breakpoint(min-width $break-medium + 1px) {
+    text-align: right;
+  }
+}
+
+.oc-feature--left {
+  @include breakpoint(min-width $break-medium + 1px) {
+    text-align: left;
+  }
+}
+
+.oc-feature--large {
+  font-size: 18px;
+}
+
+.oc-feature__title {
+  font-size: 1em;
+  font-weight: 300;
+  letter-spacing: 0.2em;
+
+  @include breakpoint(max-width $break-medium) {
+    text-align: center;
+  }
+
+  @include breakpoint(min-width $break-medium + 1px) {
+    transform: translateY(-50%);
+  }
+}
+
+.oc-feature__icon {
+  font-size: 2.5em; // 40px @ 16px
+
+  .oc-feature--large & {
+    font-size: 3.333em; // 60px @ 18px
+  }
+
+  @include breakpoint(max-width $break-medium) {
+    font-size: 3.125em; // 40px @ 16px
+  }
+
+  @include breakpoint(min-width $break-medium + 1px) {
+    transform: translateY(-50%);
+
+    .oc-feature--right & {
+      float: right;
+      margin-left: 10px;
+    }
+
+    .oc-feature--left & {
+      float: left;
+      margin-right: 10px;
+    }
+  }
+}

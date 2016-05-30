@@ -1,8 +1,11 @@
-unless featureSide
-  - var featureSide = "left";
+unless featureIconPosition
+  - var featureIconPosition = "left";
 
-for feature in features
-  if feature.side == featureSide
-    .oc-feature(class="oc-feature--#{featureSide}")
-      h1 #{feature.title}
-      span(class="oc_icon-#{feature.icon}")
+unless featuresWanted
+  - var featuresWanted = Object.keys(features);
+
+for feature in featuresWanted
+  if features[feature]
+    .oc-feature(class="oc-feature--#{featureIconPosition}")
+      span.oc-feature__icon(class="oc_icon-#{features[feature].icon}")
+      h1.oc-feature__title #{features[feature].title}

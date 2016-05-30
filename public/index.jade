@@ -19,10 +19,17 @@ section.home-features
 
   section.home-features__container
     section.home-features__container-left
+
+      //- Define which features to print
+      - featuresWanted = ['highlight-research', 'highlight-researcher', 'visualise-consortium', 'publicise-events', 'social-media-integration'];
+      - var featureIconPosition = "right";
       include ./_partials/_oc_features
 
     section.home-features__container-right
-      - var featureSide = "right";
+
+      //- Define which features to print
+      - featuresWanted = ['content-management-tool', 'responsive-layout', 'promoted-content', 'job-offers'];
+      - var featureIconPosition = "left";
       include ./_partials/_oc_features
 
     section.home-features__container-comp
