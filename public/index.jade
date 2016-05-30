@@ -41,12 +41,13 @@ section.home-summary
     span.home-intro__phrase-br
     |independently.
 
-  div.home-summary__title-separator
+  .home-summary__title-separator
 
   p.home-summary__title These are our core values
 
   section.home-summary__values
-    ul.home-summary__valueslist
+    include ./_partials/_oc_values
+
 
   a(href='#').button Ready to launch?
 
@@ -57,11 +58,11 @@ section.activity-container
 
 
 section.clients-container
-  div.client-container__separator
+  .client-container__separator
 
   p.clients-container__title Our Clients
 
-  div.client-container__separator
+  .client-container__separator
 
 
 include ./_partials/_home_contact_form

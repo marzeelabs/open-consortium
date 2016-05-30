@@ -77,28 +77,31 @@
 
   @include breakpoint(max-width $break-medium + 1px) {
     .oc-feature {
-      display: table;
+      display: block;
+      position: relative;
+      padding-top: 55px;
     }
 
     .oc-feature h1 {
-      padding-left: 55px;
-      display: table-cell;
-      vertical-align: middle;
-      text-align: left;
+      text-align: center;
     }
 
     .oc-feature span {
       position: absolute;
-      top: 0;
       left: 0;
-      height: 40px;
+      right: 0;
+      margin-left: auto;
+      margin-right: auto;
+      height: 50px;
+      font-size: 50px;
+      top: 0;
     }
 
     @include span(6);
 
   };
 
-  @include breakpoint((min-width $break-medium + 1px)) {
+  @include breakpoint(min-width $break-medium + 1px) {
     @include span(isolate 2 at 1);
 
     .oc-feature {
@@ -125,29 +128,54 @@
 /* Right section*/
 .home-features__container-right {
   min-height: 325px;
-  @include span(6);
 
-  @include breakpoint(min-width $break-medium) {
-    @include span(isolate 2 at 5);
+  @include breakpoint(max-width $break-medium + 1) {
+    .oc-feature {
+      display: block;
+      position: relative;
+      padding-top: 55px;
+    }
+
+    .oc-feature h1 {
+      text-align: center;
+    }
+
+    .oc-feature span {
+      position: absolute;
+      left: 0;
+      right: 0;
+      margin-left: auto;
+      margin-right: auto;
+      height: 50px;
+      font-size: 50px;
+      top: 0;
+    }
+
+    @include span(6);
+
   };
 
-  .oc-feature {
-    display: table;
-  }
+  @include breakpoint((min-width $break-medium + 1px)) {
+    @include span(isolate 2 at 5);
 
-  .oc-feature h1 {
-    padding-left: 55px;
-    display: table-cell;
-    vertical-align: middle;
-    text-align: left;
-  }
+    .oc-feature {
+      display: table;
+    }
 
-  .oc-feature span {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 45px;
-  }
+    .oc-feature h1 {
+      padding-left: 55px;
+      display: table-cell;
+      vertical-align: middle;
+      text-align: left;
+    }
+
+    .oc-feature span {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 40px;
+    }
+  };
 
 }
 

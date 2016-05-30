@@ -58,6 +58,28 @@
         "side": "right",
         "icon": "jobs"
       }
+    },
+    "ocvalues": {
+      "technology": {
+        "title": "Technology",
+        "icon": "technology"
+      },
+      "education": {
+        "title": "Education",
+        "icon": "education"
+      },
+      "innovation": {
+        "title": "Innovation",
+        "icon": "innovation"
+      },
+      "science": {
+        "title": "Science",
+        "icon": "science"
+      },
+      "ppen-source": {
+        "title": "Open Source",
+        "icon": "opensource"
+      }
     }
   }
 }

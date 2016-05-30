@@ -1,5 +1,5 @@
 .home-summary{
-  background: palette(ocblue, x-dark);
+  background: url(../images/home/home-bg-values.jpg) no-repeat center bottom palette(ocblue, x-dark);
   min-height: 395px;
   text-align: center;
   width: auto;
@@ -47,14 +47,34 @@
 
 .home-summary__values{
   width: 90%;
-  margin: 20px auto 50px auto;
+  margin: 25px auto 50px auto;
   min-height: 75px;
   display: block;
+
+  @include breakpoint(min-width $break-large){
+    max-width: 900px;
+  };
+
+
 }
 
-.home-summary__valueslist{
-  min-height: 75px;
-  border: red solid thin;
-  display: block;
-}
+.ocvalue{
+  @include span(1 of 5);
 
+  span{
+    font-size: 50px;
+    color: palette(ocblue);
+  }
+
+  h1{
+    color: palette(white);
+    font-weight: 300;
+    font-size: 12px;
+
+    @include breakpoint(min-width $break-medium-small+1){
+      font-size: 14px;
+    };
+
+  }
+
+}
