@@ -11,6 +11,23 @@
       "medium": 680,
       "regular": 820,
       "large": 1400
+    },
+    "features": {
+      "highlight-research": {
+        "title": "Highlight research",
+        "side": "left",
+        "icon": "science"
+      },
+      "highlight-researcher": {
+        "title": "Highlight researchers",
+        "side": "left",
+        "icon": "researchers"
+      },
+      "content-management-tool": {
+        "title": "Content management tool",
+        "side": "right",
+        "icon": "cms"
+      }
     }
   }
 }

@@ -4,6 +4,7 @@
   text-align: center;
   width: auto;
   margin: 0 auto;
+  padding-bottom: 15px;
   overflow:auto;
 }
 
@@ -50,53 +51,53 @@
   margin:40px auto 50px auto;
 }
 
-/* Left section*/
-.home-features__container-left{
-  background: palette(black);   min-height: 325px;
-  @include span(6);
-
-    ul{
-      padding: 0;
-      width: 100%;
-      display: table;
-    }
-
-  @include breakpoint(min-width $break-medium){
-    @include span(isolate 2 at 1);
-  };
+.oc-feature {
+  width: 100%;
+  position: relative;
+  display: block;
+  height: 45px;
+  margin-bottom: 30px;
 }
 
-.list_left_text{
-  display: block;
+.oc-feature h1{
   font-size: 16px;
   font-weight: 300;
   color: palette(ocblue);
   letter-spacing: 0.2em;
-  width: 90%;
-  height: 60px;
-  float:left;
-  vertical-align: middle;
-  text-align: right;
-  border: red solid thin;
 }
 
-.list_left-icon{
+.oc-feature span{
   color: palette(ocblue);
   font-size: 40px;
-  margin-top: 10px;
-  display: block;
-  float: right;
-  :after {
-    content: '\e902';
-    font-family: 'open-consortium';
-    speak: none;
-  }
 }
 
+/* Left section*/
+.home-features__container-left{
+  min-height: 325px;
+  @include span(6);
+
+  @include breakpoint(min-width $break-medium){
+    @include span(isolate 2 at 1);
+  };
+
+  .oc-feature h1{
+    float: right;
+    margin-right: 55px;
+    margin-top: 10px;
+    text-align: right;
+  }
+
+  .oc-feature span{
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 45px;
+  }
+
+}
 
 /* Right section*/
 .home-features__container-right{
-  background: palette(white);
   min-height: 325px;
   @include span(6);
 
@@ -104,11 +105,26 @@
     @include span(isolate 2 at 5);
   };
 
+  .oc-feature h1{
+    float: left;
+    margin-left: 55px;
+    margin-top: 10px;
+    text-align: left;
+  }
+
+  .oc-feature span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 45px;
+  }
+
 }
 
 /* Centre section*/
 .home-features__container-comp{
   background: url(../images/home/imac_bg.png) no-repeat center top;
+  background-size: contain;
   min-height: 325px;
   @include span(6);
 

@@ -1,0 +1,8 @@
+unless featureSide
+  - var featureSide = "left";
+
+for feature in features
+  if feature.side == featureSide
+    .oc-feature(class="oc-feature--#{featureSide}")
+      h1 #{feature.title}
+      span(class="oc_icon-#{feature.icon}")
