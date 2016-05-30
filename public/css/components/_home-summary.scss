@@ -61,6 +61,11 @@
 .ocvalue{
   @include span(1 of 5);
 
+  @include breakpoint(max-width $break-extra-small){
+    @include span(5 of 5);
+    margin-bottom: 20px;
+  };
+
   span{
     font-size: 50px;
     color: palette(ocblue);
@@ -70,6 +75,11 @@
     color: palette(white);
     font-weight: 300;
     font-size: 12px;
+
+    @include breakpoint(max-width $break-extra-small+1){
+      font-size: 18px;
+      color: palette(ocblue);
+    };
 
     @include breakpoint(min-width $break-medium-small+1){
       font-size: 14px;
