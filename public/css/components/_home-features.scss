@@ -2,6 +2,7 @@
   background: url(../images/home/features_bg.png) no-repeat center top palette(ocblue, dark);
   min-height: 395px;
   text-align: center;
+  color: palette(ocblue);
   width: auto;
   margin: 0 auto;
   padding-bottom: 15px;
@@ -9,7 +10,6 @@
 }
 
 .home-features__title {
-  color: palette(ocblue);
   text-transform: uppercase;
   font-weight: 300;
   font-size: 16px;
@@ -53,7 +53,6 @@
 
 /* Left section*/
 .home-features__container-left {
-  color: palette(ocblue);
 
   @include breakpoint(max-width $break-medium) {
     @include span(6);
@@ -67,7 +66,6 @@
 
 /* Right section*/
 .home-features__container-right {
-  color: palette(ocblue);
 
   @include breakpoint(max-width $break-medium + 1) {
     @include span(6);

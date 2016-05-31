@@ -1,0 +1,57 @@
+.oc-client{
+  width: 80%;
+  margin: 20px auto 50px auto;
+  min-height: 60px;
+  list-style: none outside none;
+  text-align: center;
+}
+
+.oc-clients__list{
+  @include breakpoint(max-width $break-small){
+    width: 100%;
+    display: block;
+    text-align: center;
+    margin: 0 auto 30px auto;
+  }
+
+  list-style: none outside none;
+  display: inline-block;
+  vertical-align: middle;
+  *zoom: 1;
+  margin: 10px 20px;
+}
+
+.oc-clients__list a{
+  @include breakpoint(max-width $break-small){
+    margin: 0 auto;
+  }
+
+  height: 60px;
+  display: block;
+  overflow: hidden;
+}
+
+.oc-client-a{
+  background: url(../images/home/clients.png) no-repeat 0 0;
+  width:116px;
+}
+
+.oc-client-b{
+  background: url(../images/home/clients.png) no-repeat -140px 0px;
+  width:140px;
+}
+
+.oc-client-c{
+  background: url(../images/home/clients.png) no-repeat -310px 0px;
+  width:108px;
+}
+
+.oc-client-d{
+  background: url(../images/home/clients.png) no-repeat -646px 0px;
+  width:120px;
+}
+
+.oc-client-e{
+  background: url(../images/home/clients.png) no-repeat -800px 0px;
+  width:66px;
+}

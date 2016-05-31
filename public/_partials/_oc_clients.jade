@@ -1,0 +1,18 @@
+section.clients-container
+  .client-container__separator
+
+  p.clients-container__title Our Clients
+
+  ul.oc-client
+    for occlient in ocClients
+      li.oc-clients__list
+        a(href='#{occlient.url}' target="_blank" title="#{occlient.title}" alt="#{occlient.title}" class="#{occlient.class}")
+
+  p.clients-container__title What they say about us
+
+  .clients-testimonials
+    p.clients-testimonial Open Consortium gave us the opportunity to share our research openly and with ease and confidence.
+
+    p.clients-testimonial__author The Author
+
+  .client-container__separator

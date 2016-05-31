@@ -54,11 +54,9 @@
   @include breakpoint(min-width $break-large){
     max-width: 900px;
   };
-
-
 }
 
-.ocvalue{
+.oc-value{
   @include span(1 of 5);
 
   @include breakpoint(max-width $break-extra-small){
@@ -84,7 +82,5 @@
     @include breakpoint(min-width $break-medium-small+1){
       font-size: 14px;
     };
-
   }
-
 }

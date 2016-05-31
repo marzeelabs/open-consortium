@@ -12,7 +12,7 @@
       "regular": 820,
       "large": 1400
     },
-    "features": {
+    "ocFeatures": {
       "highlight-research": {
         "title": "Highlight research",
         "side": "left",
@@ -59,7 +59,7 @@
         "icon": "jobs"
       }
     },
-    "ocvalues": {
+    "ocValues": {
       "technology": {
         "title": "Technology",
         "icon": "technology"
@@ -76,9 +76,36 @@
         "title": "Science",
         "icon": "science"
       },
-      "ppen-source": {
+      "open-source": {
         "title": "Open Source",
         "icon": "opensource"
+      }
+    },
+     "ocClients": {
+      "crg": {
+        "title": "CRG, Center for Genomic Regulation",
+        "url": "http://www.crg.eu/",
+        "class":"oc-client-a"
+      },
+        "embl": {
+        "title": "EMBL, Germany",
+        "url": "http://www.embl.de/index.php",
+        "class":"oc-client-b"
+      },
+        "hospital-clinic": {
+        "title": "Hospital Clinic, Barcelona, Spain",
+        "url": "http://www.hospitalclinic.org/",
+        "class":"oc-client-c"
+      },
+        "univ-mainz": {
+        "title": "Universität Mainz, Germany",
+        "url": "http://www.uni-mainz.de/eng/",
+        "class":"oc-client-d"
+      },
+        "jgu-giessen": {
+        "title": "JGU Giessen, Germany",
+        "url": "http://www.uni-giessen.de/cms/",
+        "class":"oc-client-e"
       }
     }
   }
