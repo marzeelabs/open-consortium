@@ -1,24 +1,11 @@
+section.marzee-labs-footer
+  .marzee-labs-container
+    .marzee-labs__logo
+      img(src='/images/home/marzeelabs-logo.svg', alt='Marzee Labs')
+    .marzee-labs__title
+      p © Open Consortium  is supported by&nbsp;
+       a.marzee-labs__link(href="http://marzeelabs.org/" target="_blank" alt="Marzee Labs") MARZEE LABS
+       |, a leading drupal development company.
+
 footer.footer
-  .footer-top(class='#{current.path[0] === "index" ? "footer-top--home" : ""}')
-
-    h1.footer-top__title Feel free to follow us
-
-    ul
-      a(href="http://www.twitter.com/marzeelabs", target='_blank')
-        li.footer-top__item
-          span.icon-twitter
-
-      a(href="http://www.linkedin.com/company/marzee-labs", target='_blank')
-        li.footer-top__item
-          span.icon-linkedin
-
-      a(href="http://www.facebook.com/marzeelabs", target='_blank')
-        li.footer-top__item
-          span.icon-facebook
-
-      a(href="http://github.com/marzeelabs", target='_blank')
-        li.footer-top__item
-          span.icon-github
-
-  .footer-bottom
-    p.footer-bottom__info &copy; Marzee Labs 2016
+    p.footer-bottom__info &copy; Open Consortium #{new Date().getFullYear()}

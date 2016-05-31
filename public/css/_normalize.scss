@@ -14,7 +14,7 @@ a {
   text-decoration: none;
 
   &:hover {
-    color: palette(black);
+    //color: palette(black);
   }
 }
 
@@ -23,14 +23,14 @@ p {
   margin: 0;
 
   a {
-    //color: palette(black);
+    /*color: palette(black);
     border-bottom: 3px solid rgba(palette(black), 0.15);
     box-shadow: inset 0 -5px 0 rgba(palette(black), 0.15);
 
     &:hover {
       color: palette(black);
       background: rgba(palette(black), 0.15);
-    }
+    }*/
   }
 }
 
