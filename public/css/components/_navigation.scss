@@ -5,12 +5,12 @@
   max-height: 60px;
   padding: 10px 0;
   text-align: center;
+  position: relative;
   background-color: palette(ocblue);
 
   &.navigation--home {
 
     @include breakpoint($break-medium) {
-      position: fixed;
       position: fixed;
       top: 0;
       left: 0;

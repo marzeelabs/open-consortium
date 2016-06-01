@@ -2,10 +2,11 @@
 
 body {
   color: palette(black);
+  background-color: palette(ocblue);
 }
 
 body.body--home{
-  background-color: palette(ocblue);
+  //background-color: palette(ocblue);
   //color: (palette(white));
 }
 

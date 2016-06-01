@@ -1,0 +1,107 @@
+.features-intro{
+    @include breakpoint(max-width $break-small) {
+      background: url(../images/features/features-bg-top-small.jpg) no-repeat center top palette(black) ;
+      background-size: cover;
+    }
+
+    @include breakpoint((min-width $break-small + 1px) (max-width $break-medium-small) ) {
+      background: url(../images/features/features-bg-top-medium-small.jpg) no-repeat center top palette(black) ;
+      background-size: cover;
+    }
+
+    @include breakpoint((min-width $break-medium-small + 1px) (max-width $break-medium) ) {
+      background: url(../images/features/features-bg-top-medium.jpg) no-repeat center top palette(black) ;
+      background-size: cover;
+    }
+
+    @include breakpoint((min-width $break-medium + 1px) (max-width $break-large) ) {
+      background: url(../images/features/features-bg-top-large.jpg) no-repeat center top palette(black) ;
+      background-size: cover;
+    }
+
+    @include breakpoint((min-width $break-large + 1px) (max-width $break-big) ) {
+      background: url(../images/features/features-bg-top-big.jpg) no-repeat center top palette(black) ;
+      background-size: cover;
+
+    }
+
+    @include breakpoint(min-width $break-big) {
+      background: url(../images/features/features-bg-top-big.jpg) no-repeat center top palette(black);
+      background-size: cover;
+    }
+
+  height: 355px;
+  text-align: center;
+  width: auto;
+  margin: 0 auto;
+  color: palette(white);
+}
+
+.features-intro__logo{
+  max-width: 295px;
+  height: auto;
+  margin-top: 140px;
+  margin-bottom: 20px;
+
+  @include breakpoint(min-width $break-large) {
+    max-width: 360px;
+    margin-top: 110px;
+  };
+}
+
+.features-intro__phrase{
+  font-weight: 300;
+  font-size: 14px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  line-height: 1.4;
+  max-width: 80%;
+  margin: 0 auto 20px auto;
+
+  @include breakpoint(min-width $break-large) {
+    font-weight: 100;
+    font-size: 22px;
+  };
+}
+
+.features-context-intro{
+  width: 100%;
+  //min-height: 300px;
+  background: palette(ocblue, dark);
+  text-align: center;
+  overflow: hidden;
+}
+
+.features-context__title, .features-context__subtitle{
+  color: palette(ocblue);
+  font-size:20px;
+  font-weight: 100;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+
+  @include breakpoint (min-width $break-medium + 1){
+    font-size:30px;
+  }
+}
+
+.features-context__title{
+  margin: 35px auto 20px auto;
+}
+
+.features-context__subtitle{
+  margin: 20px auto 35px auto;
+}
+
+.features-context__content{
+  color: palette(white);
+  font-weight: 300;
+  @include adjust-font-size-to(12px, 3);
+  letter-spacing: 0.2em;
+  width: 85%;
+  margin: 0 auto;
+
+  @include breakpoint (min-width $break-medium + 1){
+    width: 60%;
+    @include adjust-font-size-to(14px, 3);
+  }
+}

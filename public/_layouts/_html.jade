@@ -27,7 +27,7 @@ html(lang='en')
     // CSS
     link(rel='stylesheet', href='/css/app.css')
     // Modernizr
-    //- script(src='/js/modernizr-custom.min.js')
+    script(src='/js/modernizr-custom.min.js')
 
     //- include ../_partials/analytics
 
@@ -38,6 +38,6 @@ html(lang='en')
     block page_content
 
     //- Add JS
-    //- script(src='/js/site.min.js')
-    //- if (current.path[0] === "index")
-        script(src='/js/home.min.js')
+     script(src='/js/site.min.js')
+     if (current.path[0] === "index")
+     script(src='/js/home.min.js')
