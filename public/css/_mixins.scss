@@ -19,3 +19,27 @@
   zoom: 1;
   filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#{$ie-hex-str}',endColorstr='#{$ie-hex-str}');
 }
+
+
+%section-title-fake-class {
+  font-weight: 100;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+}
+
+// Styles for section title
+@mixin section-title(
+  $font-size: $h2-font-size,
+  $line-height: 4,
+  $mobile-font-size: 18px,
+  $mobile-line-height: 3,
+  $color: ocblue) {
+
+    @include adjust-font-size-to($mobile-font-size, $mobile-line-height);
+    @extend %section-title-fake-class;
+    color: palette($color);
+
+    @include breakpoint(min-width $break-large) {
+      @include adjust-font-size-to($font-size, $line-height);
+    }
+}

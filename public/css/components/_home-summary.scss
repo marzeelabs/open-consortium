@@ -8,18 +8,15 @@
   padding-bottom: 50px;
 }
 
-.home-summary__title{
-  color: palette(ocblue);
-  font-size:18px;
-  font-weight: 100;
-  text-transform: uppercase;
-  letter-spacing: 0.2em;
+.home-summary__title {
+  @include section-title(18px);
+  @extend %section-title-fake-class;
   margin: 40px auto 15px auto;
   width: 90%;
 }
 
-.home-summary__title-variation{
-  font-size:$h2-font-size;
+.home-summary__title__highlight {
+  font-size: $h2-font-size;
 }
 
 .home-summary__subtitle{

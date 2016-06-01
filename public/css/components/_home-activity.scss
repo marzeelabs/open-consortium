@@ -13,11 +13,17 @@
 }
 
 .activity-container__title{
-  font-size:$h2-font-size;
-  font-weight: 100;
-  text-transform: uppercase;
-  letter-spacing: 0.2em;
+  @include section-title();
+  display: inline-block;
   margin: 50px auto 20px auto;
+
+  &:after {
+    content: "";
+    width: 100%;
+    margin-top: 20px;
+    border-bottom: 1px solid;
+    display: block;
+  }
  }
 
 .activity-container__title-separator{

@@ -3,43 +3,28 @@
   min-height: 395px;
   text-align: center;
   color: palette(ocblue);
-  width: auto;
-  margin: 0 auto;
-  padding-bottom: 15px;
+  padding: 0 20px 15px;
   overflow:auto;
 }
 
 .home-features__title {
-  text-transform: uppercase;
+  //@include section-title();
+  @extend %section-title-fake-class;
+
   font-weight: 300;
-  font-size: 16px;
-  letter-spacing: 0.2em;
   padding-top: 45px;
-  width: 80%;
-  margin: 0 auto;
-  line-height: 1.2;
 
   @include breakpoint(min-width $break-large) {
-    font-size: $h2-font-size;
-    line-height: 1.5;
     font-weight:100;
   };
-
 }
 
 .home-features__subtitle {
-  color: palette(white);
-  text-transform: uppercase;
+  @include section-title($h4-font-size, 4, 12px, 3, white);
   font-weight: 300;
-  font-size: 12px;
-  letter-spacing: 0.2em;
-  line-height: 1.2;
-  width: 80%;
   padding-top: 10px;
-  margin: 0 auto;
 
   @include breakpoint(min-width $break-large) {
-    font-size: $h4-font-size;
     font-weight:100;
   };
 

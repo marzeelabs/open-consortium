@@ -14,11 +14,8 @@
 }
 
 .home-contact-form__title{
-  font-size:$h2-font-size;
-  font-weight: 100;
-  text-transform: uppercase;
-  letter-spacing: 0.2em;
-  margin: 0px auto 20px auto;
+  @include section-title();
+  margin-bottom: 20px;
  }
 
 input {
