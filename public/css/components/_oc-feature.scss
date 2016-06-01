@@ -30,6 +30,7 @@
 
 .oc-feature--large {
   font-size: 18px;
+  margin-bottom: 80px;
 }
 
 .oc-feature__title {
@@ -44,6 +45,10 @@
   @include breakpoint(min-width $break-medium + 1px) {
     transform: translateY(-50%);
   }
+  .oc-feature--large & {
+   // transform: translateY(0);
+    margin-top: 0px;
+  }
 }
 
 .oc-feature__icon {
@@ -51,10 +56,13 @@
 
   .oc-feature--large & {
     font-size: 3.333em; // 60px @ 18px
+    //transform: translateY(0);
+    //margin-top: 0px;
   }
 
   @include breakpoint(max-width $break-medium) {
     font-size: 3.125em; // 40px @ 16px
+    margin-bottom: 10px;
   }
 
   @include breakpoint(min-width $break-medium + 1px) {
@@ -71,3 +79,20 @@
     }
   }
 }
+
+
+.oc-feature__image{
+  width: 480px;
+  float: left;
+  height: 215px;
+  background: palette(ocblue);
+  //@include span(isolate 2 at 1);
+}
+
+.oc-feature__description{
+  display:block;
+  @include adjust-font-size-to(16px, 3);
+  letter-spacing: 0.2em;
+  padding: 0;
+}
+
