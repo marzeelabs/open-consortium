@@ -70,26 +70,45 @@
   background: palette(ocblue, dark);
   text-align: center;
   overflow: hidden;
+
+  &:after {
+  	left: 50%;
+  	border: solid transparent;
+  	content: " ";
+  	height: 0;
+  	width: 0;
+  	position: absolute;
+  	pointer-events: none;
+  	border-color: rgba(palette(ocblue, dark), 0);
+  	border-top-color: palette(ocblue, dark);
+  	border-width: 15px;
+  	margin-left: -15px;
+  }
 }
 
 .features-context__title, .features-context__subtitle{
   color: palette(ocblue);
-  font-size:20px;
   font-weight: 100;
   text-transform: uppercase;
   letter-spacing: 0.2em;
+}
+
+.features-context__title{
+  margin: 35px auto 20px auto;
+  font-size:20px;
 
   @include breakpoint (min-width $break-medium + 1){
     font-size:30px;
   }
 }
 
-.features-context__title{
-  margin: 35px auto 20px auto;
-}
-
 .features-context__subtitle{
-  margin: 20px auto 35px auto;
+  margin: 20px auto 20px auto;
+  font-size:15px;
+
+  @include breakpoint (min-width $break-medium + 1){
+    font-size:20px;
+  }
 }
 
 .features-context__content{
