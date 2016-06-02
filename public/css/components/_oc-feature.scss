@@ -1,19 +1,10 @@
+//- FEATURE CONTAINER (general style)
 .oc-feature {
-  width: 100%;
-  position: relative;
   @include adjust-font-size-to(16px, 4);
   margin-bottom: rhythm(4, 16px);
   box-sizing: border-box;
-  @include pie-clearfix();
-
-  @include breakpoint(max-width $break-medium) {
-    display: block;
-    position: relative;
-  }
-
-  @include breakpoint(min-width $break-medium + 1px) {
-    transform: translateY(50%);
-  }
+  //@include pie-clearfix();
+  @include container(1000px);
 }
 
 .oc-feature--right {
@@ -28,11 +19,65 @@
   }
 }
 
+//- FEATURE LARGE (features page only)
 .oc-feature--large {
   font-size: 18px;
-  margin-bottom: 80px;
+  border-bottom: palette(grey, xxx-light) thin solid;
+  padding-bottom: 40px;
+
+  @include breakpoint(min-width $break-medium + 1px) {
+
+    @include odd(){ //- creates the even / odd rhythm
+      .oc-feature__content{
+        @include span (isolate 3 at 1)
+      }
+      .oc-feature__image-wrapper{
+        @include span (isolate 3 at 4)
+      }
+      .oc-feature__title{
+        float:right;
+      }
+      .oc-feature__icon{
+        margin-left: 15px;
+        float:right;
+      }
+    };
+  }
+  @include last();
 }
 
+.oc-feature__content{
+  .oc-feature--large & {
+    @include span (isolate 3 at 4)
+
+    @include breakpoint(max-width $break-medium) {
+      border: blue solid thin;
+      @include span (6 at 1);
+    }
+  }
+}
+
+//- FEATURE IMAGE WRAPPER
+
+.oc-feature__image-wrapper{
+  @include span (isolate 3 at 1);
+
+  @include breakpoint(max-width $break-medium) {
+    border: red solid thin;
+    @include span (6 at 1);
+  }
+}
+//- FEATURE TITLE WRAPPER
+
+.oc-feature__title-wrapper{
+  @include pie-clearfix();
+
+  @include breakpoint(min-width $break-medium + 1px) {
+    transform: translateY(50%);
+  }
+}
+
+//- FEATURE TITLE
 .oc-feature__title {
   font-size: 1em;
   font-weight: 300;
@@ -45,19 +90,18 @@
   @include breakpoint(min-width $break-medium + 1px) {
     transform: translateY(-50%);
   }
-  .oc-feature--large & {
-   // transform: translateY(0);
-    margin-top: 0px;
-  }
 }
 
+//- FEATURE ICON
 .oc-feature__icon {
   font-size: 2.5em; // 40px @ 16px
 
   .oc-feature--large & {
     font-size: 3.333em; // 60px @ 18px
-    //transform: translateY(0);
-    //margin-top: 0px;
+
+    @include breakpoint(min-width $break-medium + 1px) {
+      transform: translateY(-50%);
+    }
   }
 
   @include breakpoint(max-width $break-medium) {
@@ -80,19 +124,22 @@
   }
 }
 
-
+//- FEATURE IMAGE
 .oc-feature__image{
   width: 480px;
-  float: left;
   height: 215px;
   background: palette(ocblue);
-  //@include span(isolate 2 at 1);
+
+  @include breakpoint(max-width $break-medium + 1px) {
+    width: 265px;
+    height: 120px;
+    margin: 0 auto;
+  }
 }
 
+//- FEATURE DESCRIPTION
 .oc-feature__description{
-  display:block;
   @include adjust-font-size-to(16px, 3);
-  letter-spacing: 0.2em;
   padding: 0;
+  margin-top: 10px;
 }
-

@@ -6,12 +6,18 @@ unless featuresWanted
 
 for feature in featuresWanted
   if ocFeatures[feature]
-    .oc-feature(class="oc-feature--#{featureIconPosition}")
-      .oc-feature__icon(class="oc_icon-#{ocFeatures[feature].icon}")
-      h1.oc-feature__title #{ocFeatures[feature].title}
+    .oc-feature(class='oc-feature--#{featureIconPosition} #{featureSize === "large" ? "oc-feature--large" : ""}')
 
       if featureImage
-        .oc-feature__image #{ocFeatures[feature].image}
+        .oc-feature__image-wrapper
+          .oc-feature__image #{ocFeatures[feature].image}
 
-      if featureDescription
-        p.oc-feature__description #{ocFeatures[feature].description}
+      .oc-feature__content
+        .oc-feature__title-wrapper(class='oc-feature__title-wrapper--#{featureIconPosition}')
+          .oc-feature__icon(class='oc_icon-#{ocFeatures[feature].icon}')
+          h1.oc-feature__title #{ocFeatures[feature].title}
+
+        if featureDescription
+          p.oc-feature__description #{ocFeatures[feature].description}
+
+
