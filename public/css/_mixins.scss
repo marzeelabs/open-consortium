@@ -52,10 +52,3 @@
     @content;
   }
 }
-
-@mixin last() {
-  &:last-child {
-    border: none;
-    padding-bottom: 0;
-  }
-}

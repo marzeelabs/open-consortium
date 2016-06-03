@@ -23,10 +23,10 @@
 .oc-feature--large {
   font-size: 18px;
   border-bottom: palette(grey, xxx-light) thin solid;
-  padding-bottom: 40px;
+  padding-bottom: 20px;
 
-  @include breakpoint(min-width $break-medium + 1px) {
-
+  @include breakpoint(min-width $break-medium-small + 1px) {
+    padding-bottom: 40px;
     @include odd(){ //- creates the even / odd rhythm
       .oc-feature__content{
         @include span (isolate 3 at 1)
@@ -36,6 +36,9 @@
       }
       .oc-feature__title{
         float:right;
+        max-width: 200px;
+        text-align: right;
+
       }
       .oc-feature__icon{
         margin-left: 15px;
@@ -43,16 +46,30 @@
       }
     };
   }
-  @include last();
+
+  .oc-feature__title{
+
+    @include breakpoint(min-width $break-medium-small + 1px) {
+      float:left;
+      max-width: 200px;
+      text-align: left;
+    }
+
+  }
+
+  &:last-child {
+    border: none;
+    padding-bottom: 0;
+  }
 }
 
 .oc-feature__content{
-  .oc-feature--large & {
-    @include span (isolate 3 at 4)
 
-    @include breakpoint(max-width $break-medium) {
-      border: blue solid thin;
-      @include span (6 at 1);
+  .oc-feature--large & {
+    margin-bottom: 20px;
+
+    @include breakpoint(min-width $break-medium-small + 1px) {
+       @include span (isolate 3 at 4);
     }
   }
 }
@@ -60,20 +77,20 @@
 //- FEATURE IMAGE WRAPPER
 
 .oc-feature__image-wrapper{
-  @include span (isolate 3 at 1);
 
-  @include breakpoint(max-width $break-medium) {
-    border: red solid thin;
-    @include span (6 at 1);
+  @include breakpoint(min-width $break-medium-small + 1px) {
+      @include span (isolate 3 at 1);
   }
 }
 //- FEATURE TITLE WRAPPER
 
 .oc-feature__title-wrapper{
-  @include pie-clearfix();
 
   @include breakpoint(min-width $break-medium + 1px) {
     transform: translateY(50%);
+  }
+  .oc-feature--large &{
+      @include pie-clearfix();
   }
 }
 
@@ -99,14 +116,16 @@
   .oc-feature--large & {
     font-size: 3.333em; // 60px @ 18px
 
-    @include breakpoint(min-width $break-medium + 1px) {
-      transform: translateY(-50%);
+    @include breakpoint(max-width $break-medium) {
+      font-size: 2.5em; // 40px @ 16px
+      margin: 0 auto 10px auto;
+      width: 45px;
     }
   }
 
   @include breakpoint(max-width $break-medium) {
     font-size: 3.125em; // 40px @ 16px
-    margin-bottom: 10px;
+    margin-bottom: 5px;
   }
 
   @include breakpoint(min-width $break-medium + 1px) {
@@ -126,15 +145,9 @@
 
 //- FEATURE IMAGE
 .oc-feature__image{
-  width: 480px;
-  height: 215px;
+  width: 100%;
+  min-height: 215px;
   background: palette(ocblue);
-
-  @include breakpoint(max-width $break-medium + 1px) {
-    width: 265px;
-    height: 120px;
-    margin: 0 auto;
-  }
 }
 
 //- FEATURE DESCRIPTION

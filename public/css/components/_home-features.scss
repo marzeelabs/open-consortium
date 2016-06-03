@@ -8,8 +8,8 @@
 }
 
 .home-features__title {
-  //@include section-title();
-  @extend %section-title-fake-class;
+  @include section-title();
+  //@extend %section-title-fake-class;
 
   font-weight: 300;
   padding-top: 45px;
@@ -22,7 +22,6 @@
 .home-features__subtitle {
   @include section-title($h4-font-size, 4, 12px, 3, white);
   font-weight: 300;
-  padding-top: 10px;
 
   @include breakpoint(min-width $break-large) {
     font-weight:100;
