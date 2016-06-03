@@ -1,8 +1,39 @@
 .features-drupal{
-  background: palette(ocblue, dark);
+      @include breakpoint(max-width $break-small) {
+      background: url(../images/features/features-bg-top-small.jpg) no-repeat center bottom palette(black) ;
+      background-size: cover;
+    }
+
+    @include breakpoint((min-width $break-small + 1px) (max-width $break-medium-small) ) {
+      background: url(../images/features/features-bg-top-medium-small.jpg) no-repeat center bottom palette(black) ;
+      background-size: cover;
+    }
+
+    @include breakpoint((min-width $break-medium-small + 1px) (max-width $break-medium) ) {
+      background: url(../images/features/features-bg-top-medium.jpg) no-repeat center bottom palette(black) ;
+      background-size: cover;
+    }
+
+    @include breakpoint((min-width $break-medium + 1px) (max-width $break-large) ) {
+      background: url(../images/features/features-bg-top-large.jpg) no-repeat center bottom palette(black) ;
+      background-size: cover;
+    }
+
+    @include breakpoint((min-width $break-large + 1px) (max-width $break-big) ) {
+      background: url(../images/features/features-bg-top-big.jpg) no-repeat center bottom palette(black) ;
+      background-size: cover;
+
+    }
+
+    @include breakpoint(min-width $break-big) {
+      background: url(../images/features/features-bg-bottom-large.jpg) no-repeat center bottom palette(ocblue, x-dark);
+      background-size: contain;
+    }
+
   color: palette(white);
   text-align: center;
   padding: 50px 20px;
+  min-height: 350px;
 
   h1{
     @include section-title($h4-font-size, 4, 30px);
@@ -19,7 +50,7 @@
   }
 
   p{
-    @include adjust-font-size-to(12px, 3);
+    @include adjust-font-size-to(12px, 4);
     font-weight: 300;
     letter-spacing: 0.2em;
     text-transform: uppercase;
@@ -27,17 +58,17 @@
 
     @include breakpoint (min-width $break-large + 1){
       max-width: 1000px;
-      margin: 0 auto 20px auto;
+      margin: 0 auto 40px auto;
     }
   }
 }
 
 .features-drupal__title_break{
-  @include section-title($h3-font-size);
+  display: block;
+  margin-top: 5px;
 
   @include breakpoint (min-width $break-large + 1){
-    @include section-title($h3-font-size,3, 16px);
-    display: block;
+    @include adjust-font-size-to(18px, 3);
   }
 }
 
