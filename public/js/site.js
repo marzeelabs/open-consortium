@@ -19,7 +19,7 @@ $(function() {
             $logoElement = $(".navigation__item--logo");
 
         if ($("body").scrollTop() > '300' ) {
-          $logoElement.addClass(logovisibleClass); console.log("GIRAFAS");
+          $logoElement.addClass(logovisibleClass);
         } else {
           $logoElement.removeClass(logovisibleClass);
         }

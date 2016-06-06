@@ -33,7 +33,10 @@ gulp.task('serve', function (done) {
     /**
      * Watch for JS changes
      */
-    gulp.watch(["public/js/*.js", "!public/js/*.min.js"], ['build']);
+    gulp.watch(["public/js/*.js", "!public/js/*.min.js"], ['uglify'], function () {
+      reload();
+      cp.exec('harp compile . www', {stdio: 'inherit'});
+    });
     /**
      * Watch for image changes
      */
@@ -116,6 +119,7 @@ gulp.task('jimp', function (done) {
 
 gulp.task('uglify', function (done) {
   gulp.src(['public/jquery/jquery-1.10.2.min.js', 'public/js/site.js']).pipe(concat('site.min.js')).pipe(uglify()).pipe(gulp.dest('public/js'));
+  done();
 });
 
 /**
