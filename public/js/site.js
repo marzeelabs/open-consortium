@@ -18,8 +18,8 @@ $(function() {
             logovisibleClass = 'visible-logo',
             $logoElement = $(".navigation__item--logo");
 
-        if ($("body").scrollTop() > '300' ) {
-          $logoElement.addClass(logovisibleClass); console.log("GIRAFAS");
+        if ($("body").scrollTop() > '200' ) {
+          $logoElement.addClass(logovisibleClass);
         } else {
           $logoElement.removeClass(logovisibleClass);
         }
