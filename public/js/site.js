@@ -1,16 +1,15 @@
 $(function() {
   var breakMobile = 730, // viewport px breakpoint
 
-      collapseHeader = function() {
+      fixedHeader = function() {
         var viewportWidth = $( window ).width(),
-            collapseClass = 'navigation--collapsed',
-            $navElement = $(".navigation--home");
+            fixedClass = 'navigation--fixed-top',
+            $navElement = $(".navigation");
 
         if ($("body").scrollTop() > '1' && viewportWidth >= breakMobile) {
-          $navElement.addClass(collapseClass);
-          console.log("hellos ");
+          $navElement.addClass(fixedClass);
         } else {
-          $navElement.removeClass(collapseClass);
+          $navElement.removeClass(fixedClass);
         }
       },
 
@@ -30,12 +29,11 @@ $(function() {
       // Force close mobile navigation when clicking anywhere (except the toggle button itself)
       $( document ).on('mousedown touchstart', function(event) {
         if (!$(event.target).closest(".navigation__mobile-menu__toggle").length) {
-          $(".navigation--home.is-open").removeClass('is-open');
-          console.log("hello 2");
+          $(".navigation.is-open").removeClass('is-open');
         }
       });
 
   // Call on DOM ready
-  $( window ).scroll(collapseHeader);
+  $( window ).scroll(fixedHeader);
   replaceMailto();
 });

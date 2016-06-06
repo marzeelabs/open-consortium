@@ -149,9 +149,8 @@
 
 //- FEATURE IMAGE
 .oc-feature__image{
-  width: 480;
-  min-height: 270px;
-  background: palette(ocblue);
+  max-width: 480;
+  background: palette(white);
 }
 
 //- FEATURE DESCRIPTION

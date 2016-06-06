@@ -24,7 +24,7 @@
         "title": "Highlight researchers",
         "side": "left",
         "icon": "researchers",
-        "image":"highlight_researchers",
+        "image":"highlight_researcher",
         "description":"Text for descriptions. We can help you communicate your research and take that headache away with our communication and technology platform. It is based on open-source software, with focus on external communication."
       },
       "visualise-consortium": {
@@ -38,7 +38,7 @@
         "title": "Publicise events",
         "side": "left",
         "icon": "events",
-        "image":"",
+        "image":"events",
         "description":"Text for descriptions. We can help you communicate your research and take that headache away with our communication and technology platform. It is based on open-source software, with focus on external communication."
       },
       "social-media-integration": {
@@ -59,21 +59,21 @@
         "title": "Responsive layout",
         "side": "right",
         "icon": "responsive",
-        "image":"",
+        "image":"responsive_layout",
         "description":"Text for descriptions. We can help you communicate your research and take that headache away with our communication and technology platform. It is based on open-source software, with focus on external communication."
       },
       "promoted-content": {
         "title": "Promoted content",
         "side": "right",
         "icon": "promoted",
-        "image":"",
+        "image":"promoted_content",
         "description":"Text for descriptions. We can help you communicate your research and take that headache away with our communication and technology platform. It is based on open-source software, with focus on external communication."
       },
       "job-offers": {
         "title": "Job offers",
         "side": "right",
         "icon": "jobs",
-        "image":"",
+        "image":"job_offers",
         "description":"Text for descriptions. We can help you communicate your research and take that headache away with our communication and technology platform. It is based on open-source software, with focus on external communication."
       }
     },
