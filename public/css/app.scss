@@ -21,7 +21,8 @@
 @import '../../node_modules/compass-mixins/lib/compass/typography/text/ellipsis';
 
 //Mixins
-@import "mixins";
+@import "mixins",
+  "vendors/family";
 
 //Normalize
 @import "normalize";

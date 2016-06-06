@@ -1,10 +1,9 @@
 section.home-contact-form
   p.home-contact-form__title GET IN TOUCH WITH US
 
-  <form action="#">
-  Name:<br>
-  <input type="text" value=""><br>
-  Email:<br>
-  <input type="text" name="lastname" value=""><br><br>
-  <input type="submit" value="Submit" class="button button__blue">
-  </form>
+  form(action="#")
+    | Name: <br>
+    input(type="text" value="")
+    | Email: <br>
+    input(type="text" name="lastname" value="")
+    input(type="submit" value="Submit" class="button button__blue")

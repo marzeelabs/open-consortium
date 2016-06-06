@@ -27,6 +27,7 @@
 
   @include breakpoint(min-width $break-medium-small + 1px) {
     padding-bottom: 40px;
+
     @include odd(){ //- creates the even / odd rhythm
       .oc-feature__content{
         @include span (isolate 3 at 1)
@@ -38,25 +39,28 @@
         float:right;
         max-width: 200px;
         text-align: right;
-
       }
       .oc-feature__icon{
         margin-left: 15px;
         float:right;
       }
     };
+
+    @include even(){
+      .oc-feature__icon{
+        float:left;
+        margin-right: 15px;
+      }
+    }
   }
 
   .oc-feature__title{
-
     @include breakpoint(min-width $break-medium-small + 1px) {
       float:left;
       max-width: 200px;
       text-align: left;
     }
-
   }
-
   &:last-child {
     border: none;
     padding-bottom: 0;
@@ -145,8 +149,8 @@
 
 //- FEATURE IMAGE
 .oc-feature__image{
-  width: 100%;
-  min-height: 215px;
+  width: 480;
+  min-height: 270px;
   background: palette(ocblue);
 }
 

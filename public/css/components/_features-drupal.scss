@@ -1,26 +1,26 @@
 .features-drupal{
       @include breakpoint(max-width $break-small) {
-      background: url(../images/features/features-bg-top-small.jpg) no-repeat center bottom palette(black) ;
+      background: url(../images/features/features-bg-bottom-small.jpg) no-repeat center bottom palette(black) ;
       background-size: cover;
     }
 
     @include breakpoint((min-width $break-small + 1px) (max-width $break-medium-small) ) {
-      background: url(../images/features/features-bg-top-medium-small.jpg) no-repeat center bottom palette(black) ;
+      background: url(../images/features/features-bg-bottom-medium-small.jpg) no-repeat center bottom palette(black) ;
       background-size: cover;
     }
 
     @include breakpoint((min-width $break-medium-small + 1px) (max-width $break-medium) ) {
-      background: url(../images/features/features-bg-top-medium.jpg) no-repeat center bottom palette(black) ;
+      background: url(../images/features/features-bg-bottom-medium-small.jpg) no-repeat center bottom palette(black) ;
       background-size: cover;
     }
 
     @include breakpoint((min-width $break-medium + 1px) (max-width $break-large) ) {
-      background: url(../images/features/features-bg-top-large.jpg) no-repeat center bottom palette(black) ;
+      background: url(../images/features/features-bg-bottom-medium.jpg) no-repeat center bottom palette(black) ;
       background-size: cover;
     }
 
     @include breakpoint((min-width $break-large + 1px) (max-width $break-big) ) {
-      background: url(../images/features/features-bg-top-big.jpg) no-repeat center bottom palette(black) ;
+      background: url(../images/features/features-bg-bottom-large.jpg) no-repeat center bottom palette(black) ;
       background-size: cover;
 
     }

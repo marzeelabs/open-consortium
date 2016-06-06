@@ -8,20 +8,6 @@
   position: relative;
   background-color: palette(ocblue);
 
-  &.navigation--home {
-
-    @include breakpoint($break-medium) {
-      position: fixed;
-      top: 0;
-      left: 0;
-      z-index: 9999;
-      max-height: 120px;
-      @include transition-property(background);
-      @include transition-duration(0.2s);
-      background: transparent;
-    }
-  }
-
   &.navigation--collapsed {
     background-color: palette(ocblue);
   }
@@ -33,6 +19,17 @@
     left: 0;
     z-index: 9999;
     padding: 0;
+  }
+
+  @include breakpoint($break-medium) {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    max-height: 120px;
+    @include transition-property(background);
+    @include transition-duration(0.2s);
+    background: transparent;
   }
 }
 
@@ -155,11 +152,6 @@
   img {
     height: 100%;
     width: auto;
-  }
-
-  .navigation--home & {
-    width: 100px;
-    height: 100px;
   }
 
   .navigation--collapsed & {

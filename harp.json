@@ -17,21 +17,21 @@
         "title": "Highlight research",
         "side": "left",
         "icon": "science",
-        "image": "sscascas",
+        "image": "highlight_research",
         "description":"Text for descriptions. We can help you communicate your research and take that headache away with our communication and technology platform. It is based on open-source software, with focus on external communication."
       },
       "highlight-researcher": {
         "title": "Highlight researchers",
         "side": "left",
         "icon": "researchers",
-        "image":"",
+        "image":"highlight_researchers",
         "description":"Text for descriptions. We can help you communicate your research and take that headache away with our communication and technology platform. It is based on open-source software, with focus on external communication."
       },
       "visualise-consortium": {
         "title": "Visualise your consortium",
         "side": "left",
         "icon": "visualise",
-        "image":"",
+        "image":"visualise_consortium",
         "description":"Text for descriptions. We can help you communicate your research and take that headache away with our communication and technology platform. It is based on open-source software, with focus on external communication."
       },
       "publicise-events": {
@@ -45,14 +45,14 @@
         "title": "Social media integration",
         "side": "left",
         "icon": "social",
-        "image":"",
+        "image":"social_media_integration",
         "description":"Text for descriptions. We can help you communicate your research and take that headache away with our communication and technology platform. It is based on open-source software, with focus on external communication."
       },
       "content-management-tool": {
         "title": "Content management tool",
         "side": "right",
         "icon": "cms",
-        "image":"",
+        "image":"cms",
         "description":"Text for descriptions. We can help you communicate your research and take that headache away with our communication and technology platform. It is based on open-source software, with focus on external communication."
       },
       "responsive-layout": {

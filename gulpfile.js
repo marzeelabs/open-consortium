@@ -115,9 +115,7 @@ gulp.task('jimp', function (done) {
 });
 
 gulp.task('uglify', function (done) {
-    // gulp.src(['public/jquery/jquery-1.10.2.min.js', 'public/js/site.js']).pipe(concat('site.min.js')).pipe(uglify()).pipe(gulp.dest('public/js'));
-    // gulp.src(['public/jquery/jquery.color.min.js', 'public/js/paper-full.min.js']).pipe(concat('home.min.js')).pipe(gulp.dest('public/js'));
-    // gulp.src(['public/js/mzwaves.js']).pipe(concat('mzwaves.min.js')).pipe(uglify()).pipe(gulp.dest('public/js')).on('end', done);
+  gulp.src(['public/jquery/jquery-1.10.2.min.js', 'public/js/site.js']).pipe(concat('site.min.js')).pipe(uglify()).pipe(gulp.dest('public/js'));
 });
 
 /**
