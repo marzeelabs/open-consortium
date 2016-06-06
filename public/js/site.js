@@ -13,6 +13,18 @@ $(function() {
         }
       },
 
+      showLogo = function() {
+        var viewLogotop = 300,
+            logovisibleClass = 'visible-logo',
+            $logoElement = $(".navigation__item--logo");
+
+        if ($("body").scrollTop() > '300' ) {
+          $logoElement.addClass(logovisibleClass); console.log("GIRAFAS");
+        } else {
+          $logoElement.removeClass(logovisibleClass);
+        }
+      },
+
       replaceMailto = function() {
         var $emailElement = $(".contact-button__email");
 
@@ -34,6 +46,16 @@ $(function() {
       });
 
   // Call on DOM ready
+
+  /*$('.homefeatures__carousel').flickity({
+    // options
+    cellAlign: 'left',
+    imagesLoaded: true,
+    freeScroll: true,
+    wrapAround: true
+  });*/
+
   $( window ).scroll(fixedHeader);
+  $( window ).scroll(showLogo);
   replaceMailto();
 });

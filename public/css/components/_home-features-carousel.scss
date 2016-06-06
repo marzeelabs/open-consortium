@@ -1,0 +1,32 @@
+.homefeatures__carousel-item {
+  margin: 0;
+  position: relative;
+}
+
+.homefeatures__carousel-item--small {
+  width: 150px ;
+}
+
+.homefeatures__carousel-item--square {
+  width: 200px;
+}
+
+.homefeatures__carousel-item--medium {
+  width: 267px;
+}
+
+.homefeatures__carousel-item--large {
+  width: 300px;
+}
+
+.homefeatures__carousel-author {
+  position: absolute;
+  @include adjust-font-size-to(10px);
+  bottom: 2px;
+  right: 5px;
+
+  a {
+    color: rgba(palette(white), 0.8);
+  }
+}
+

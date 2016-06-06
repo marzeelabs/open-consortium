@@ -7,9 +7,12 @@ header
       .navigation__mobile-menu__toggle
         span.navigation__mobile-menu__icon
       ul.navigation__mobile-menu
-        li.navigation__item
+        li.navigation__item.navigation__item--logo
+          a(href='/')
+            img(src='../images/home/logo-menu-icon.svg', alt='Open Consortium')
+        li.navigation__item(class="#{ current.source == 'index' ? 'is-active' : '' }")
           a(href='/') Home
-        li.navigation__item
+        li.navigation__item(class="#{ current.source == 'features' ? 'is-active' : '' }")
           a(href='/features') Features
         li.navigation__item
           a(href='#') Blog
