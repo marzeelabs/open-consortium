@@ -10,22 +10,27 @@
   right: 0;
   margin-left: auto;
   margin-right: auto;
+  pointer-events: none;
 }
 
 .homefeatures__carousel-wrapper {
   overflow: hidden;
-  width:100%;
-  padding-bottom: 56.3%;
-  text-align: center;
-  position: absolute; border: thin solid red;
+  width: 94%;
+  position: absolute;
   z-index: 1;
-  top:15px;
-  left: 0;
+  top: 10px;
+  left: 3%;
 }
 
-.homefeatures__carousel-item {
-  margin: 0 auto;
-  position: relative;
+/* carousel height */
+.carousel {
+  height: 268px;
+}
+
+/* cell inherit height from carousel */
+.carousel-cell {
+  height: 100%;
+  width: 100%;
 }
 
 /*

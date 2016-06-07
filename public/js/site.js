@@ -48,11 +48,26 @@ $(function() {
 
   // Call on DOM ready
 
-  $('.homefeatures__carousel-wrapper').flickity({
-    cellAlign: 'left',
+  $('.carousel').flickity({
+    autoPlay: true,
+    setGallerySize: false,
+    wrapAround: true,
     imagesLoaded: true,
+    prevNextButtons: false,
+    pageDots: false,
     freeScroll: true,
-    wrapAround: true
+    autoPlay: true
+  });
+
+  $('.carousel_testimonials').flickity({
+    autoPlay: true,
+    //setGallerySize: false,
+    wrapAround: true,
+    imagesLoaded: true,
+    prevNextButtons: false,
+    pageDots: true,
+    freeScroll: true,
+    autoPlay: true
   });
 
 
