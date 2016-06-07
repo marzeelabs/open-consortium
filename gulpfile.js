@@ -1,3 +1,4 @@
+var _           = require('lodash');
 var gulp        = require('gulp');
 var browserSync = require('browser-sync');
 var reload      = browserSync.reload;
@@ -54,11 +55,26 @@ gulp.task('serve', function (done) {
   });
 });
 
+/**
+ * Copy assets from NODE Modules
+ */
+gulp.task('copy-assets', function(done) {
+    var assets = {
+        js: [
+            './node_modules/flickity/dist/flickity.pkgd.min.js'
+        ],
+        'css/vendors': ['./node_modules/flickity/dist/flickity.min.css']
+    };
+    _(assets).forEach(function (assets, type) {
+       gulp.src(assets).pipe(gulp.dest('./public/'+type))
+       .on('close', done);
+    });
+});
 
 /**
  * Build the Harp Site
  */
-gulp.task('build', ['jimp', 'uglify'], function (done) {
+gulp.task('build', ['copy-assets', 'jimp', 'uglify'], function (done) {
   cp.exec('harp compile . www', {stdio: 'inherit'})
     .on('close', done);
 });
@@ -119,7 +135,7 @@ gulp.task('jimp', function (done) {
 });
 
 gulp.task('uglify', function (done) {
-  gulp.src(['public/jquery/jquery-1.10.2.min.js', 'public/js/site.js']).pipe(concat('site.min.js')).pipe(uglify()).pipe(gulp.dest('public/js'));
+  gulp.src(['public/jquery/jquery-1.10.2.min.js','public/js/flickity.pkgd.min.js', 'public/js/site.js']).pipe(concat('site.min.js')).pipe(uglify()).pipe(gulp.dest('public/js'));
   done();
 });
 

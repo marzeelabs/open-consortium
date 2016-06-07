@@ -48,13 +48,13 @@ $(function() {
 
   // Call on DOM ready
 
+  $('.homefeatures__carousel-wrapper').flickity({
+    cellAlign: 'left',
+    imagesLoaded: true,
+    freeScroll: true,
+    wrapAround: true
+  });
 
-      $('.homefeatures__carousel-wrapper').flickity( {
-        cellAlign: 'left',
-        imagesLoaded: true,
-        freeScroll: true,
-        wrapAround: true
-      });
 
   $(window).on('resize scroll', fixedHeader);
   $(window).on('resize scroll', showLogo);
