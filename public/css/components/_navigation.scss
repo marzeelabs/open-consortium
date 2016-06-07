@@ -158,28 +158,6 @@
 }
 
 
-.navigation__item--logo {
-  width: 40px;
-  height: 40px;
-  opacity: 0;
-  position: absolute;
-  left: 10px;
-
-  img {
-    height: 40px;
-    width: auto;
-  }
-
-  &.visible-logo {
-    opacity: 1;
-    transition: opacity, 1s ease-in-out;
-  }
-
-  @include breakpoint(max-width $break-medium - 1px) {
-    display: none;
-  }
-}
-
 .navigation__right {
 
   @include breakpoint($break-medium) {
@@ -218,6 +196,28 @@
   }
 
   @include breakpoint($break-medium) {
+    display: none;
+  }
+}
+
+.navigation__item--logo {
+  width: 40px;
+  height: 40px;
+  display:none;
+  //opacity:0;
+  position: absolute;
+  left: 10px;
+
+  img {
+    height: 40px;
+    width: auto;
+  }
+
+  &.visible-logo {
+    display: block;
+  }
+
+  @include breakpoint(max-width $break-medium - 1px) {
     display: none;
   }
 }
