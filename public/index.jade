@@ -33,7 +33,12 @@ section.home-features
       include ./_partials/_oc_features
 
     section.home-features__container-comp
-      .homefeatures__carousel
+      .home-features__container-all
+        .homefeatures__carousel-covermac
+
+        - var featureImage = "true";
+        .homefeatures__carousel-wrapper
+          include ./_partials/_oc_features_carousel
 
 
 

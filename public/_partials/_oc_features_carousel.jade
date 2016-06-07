@@ -1,0 +1,12 @@
+
+unless featuresWanted
+  - var featuresWanted = Object.keys(ocFeatures);
+
+for feature in featuresWanted
+  if ocFeatures[feature]
+    if featureImage
+      .homefeatures__carousel-item
+        img(src='/images/features/feature/#{ocFeatures[feature].image}.jpg', alt='#{ocFeatures[feature].title.toLowerCase().replace(" ", "-")}', title='#{ocFeatures[feature].title}')
+
+
+

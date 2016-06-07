@@ -1,8 +1,34 @@
+
+.homefeatures__carousel-covermac{
+  background: url(../images/home/imac_bg.png) no-repeat center top;
+  background-size: contain;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 10;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.homefeatures__carousel-wrapper {
+  overflow: hidden;
+  width:100%;
+  padding-bottom: 56.3%;
+  text-align: center;
+  position: absolute; border: thin solid red;
+  z-index: 1;
+  top:15px;
+  left: 0;
+}
+
 .homefeatures__carousel-item {
-  margin: 0;
+  margin: 0 auto;
   position: relative;
 }
 
+/*
 .homefeatures__carousel-item--small {
   width: 150px ;
 }
@@ -18,15 +44,4 @@
 .homefeatures__carousel-item--large {
   width: 300px;
 }
-
-.homefeatures__carousel-author {
-  position: absolute;
-  @include adjust-font-size-to(10px);
-  bottom: 2px;
-  right: 5px;
-
-  a {
-    color: rgba(palette(white), 0.8);
-  }
-}
-
+*/

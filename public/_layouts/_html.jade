@@ -25,6 +25,7 @@ html(lang='en')
     // FONTS
     link(href='https://fonts.googleapis.com/css?family=Roboto:100,400,700,300,300italic', rel='stylesheet', type='text/css')
     // CSS
+    link(rel='stylesheet', href='/css/vendors/flickity.min.css')
     link(rel='stylesheet', href='/css/app.css')
     // Modernizr
     script(src='/js/modernizr-custom.min.js')
@@ -38,5 +39,6 @@ html(lang='en')
     block page_content
 
     //- Add JS
-    //script(src='/js/flickity.pkgd.min.js')
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js')
+    script(src='/js/flickity.pkgd.min.js')
     script(src='/js/site.min.js')

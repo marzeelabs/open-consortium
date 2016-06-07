@@ -14,17 +14,14 @@ $(function() {
       },
 
       showLogo = function() {
-        var viewLogotop = 300,
+        var viewportWidth = $( window ).width(),
             logovisibleClass = 'visible-logo',
             $logoElement = $(".navigation__item--logo");
 
-        if ($("body").scrollTop() > '150' ) {
+        if ($("body").scrollTop() > '150' && viewportWidth >= breakMobile) {
           $logoElement.addClass(logovisibleClass);
-          $logoElement.fadeIn( "slow" );
         } else {
-          $logoElement.fadeOut( "slow", function() {
-            $logoElement.removeClass(logovisibleClass);
-          });
+         $logoElement.removeClass(logovisibleClass);
         }
       },
 
@@ -48,17 +45,18 @@ $(function() {
         }
       });
 
+
   // Call on DOM ready
 
-  /*$('.homefeatures__carousel').flickity({
-    // options
-    cellAlign: 'left',
-    imagesLoaded: true,
-    freeScroll: true,
-    wrapAround: true
-  });*/
 
-  $( window ).scroll(fixedHeader);
-  $( window ).scroll(showLogo);
+      $('.homefeatures__carousel-wrapper').flickity( {
+        cellAlign: 'left',
+        imagesLoaded: true,
+        freeScroll: true,
+        wrapAround: true
+      });
+
+  $(window).on('resize scroll', fixedHeader);
+  $(window).on('resize scroll', showLogo);
   replaceMailto();
 });

@@ -1,10 +1,10 @@
 .home-features {
   background: url(../images/home/home-features_bg.jpg) no-repeat center top palette(ocblue, dark);
-  min-height: 395px;
+ // min-height: 395px;
   text-align: center;
   color: palette(ocblue);
   padding: 0 20px 15px;
-  overflow:auto;
+  overflow: hidden;
 }
 
 .home-features__title {
@@ -30,7 +30,6 @@
 }
 
 .home-features__container {
-  min-height: 325px;
   width: 90%;
   margin:40px auto 50px auto;
 }
@@ -62,13 +61,14 @@
 
 /* Centre section*/
 .home-features__container-comp {
-  background: url(../images/home/imac_bg.png) no-repeat center top;
-  background-size: contain;
-  min-height: 325px;
   @include span(6);
 
   @include breakpoint(min-width $break-medium) {
     @include span(isolate 2 at 3);
   };
+}
 
+.home-features__container-all{
+  position: relative;
+  padding-bottom: 83.5%;
 }
