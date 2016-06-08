@@ -20,14 +20,14 @@
     }
 
     @include breakpoint((min-width $break-large + 1px) (max-width $break-big) ) {
-      background: url(../images/features/features-bg-top-big.jpg) no-repeat center top palette(black) ;
+      background: url(../images/features/features-bg-top-large.jpg) no-repeat center top palette(black) ;
       background-size: cover;
 
     }
 
     @include breakpoint(min-width $break-big) {
-      background: url(../images/features/features-bg-top-big.jpg) no-repeat center top palette(black);
-      background-size: cover;
+      background: url(../images/features/features-bg-top-large.jpg) no-repeat center top palette(black);
+      background-size: contain;
     }
 
   height: 355px;
