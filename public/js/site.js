@@ -59,7 +59,7 @@ $(function() {
     autoPlay: true
   });
 
-  $('.carousel_testimonials').flickity({
+  $('.carousel__testimonials-wrapper').flickity({
     autoPlay: true,
     //setGallerySize: false,
     wrapAround: true,

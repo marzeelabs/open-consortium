@@ -1,6 +1,5 @@
 .home-features {
   background: url(../images/home/home-features_bg.jpg) no-repeat center top palette(ocblue, dark);
- // min-height: 395px;
   text-align: center;
   color: palette(ocblue);
   padding: 0 20px 15px;
@@ -9,7 +8,6 @@
 
 .home-features__title {
   @include section-title();
-  //@extend %section-title-fake-class;
 
   font-weight: 300;
   padding-top: 45px;
@@ -30,8 +28,9 @@
 }
 
 .home-features__container {
-  width: 90%;
-  margin:40px auto 50px auto;
+  margin:40px auto 0px auto;
+  padding:0 10px 0;
+  @include container(1000px);
 }
 
 /* Left section*/
@@ -42,6 +41,10 @@
   };
 
   @include breakpoint(min-width $break-medium + 1px) {
+    @include span(isolate 3 at 1);
+  };
+
+    @include breakpoint(min-width $break-large + 1px) {
     @include span(isolate 2 at 1);
   };
 
@@ -50,21 +53,36 @@
 /* Right section*/
 .home-features__container-right {
 
-  @include breakpoint(max-width $break-medium + 1) {
+  @include breakpoint(max-width $break-medium) {
     @include span(6);
   };
 
   @include breakpoint((min-width $break-medium + 1px)) {
+    @include span(isolate 3 at 4);
+  };
+
+  @include breakpoint((min-width $break-large + 1px)) {
     @include span(isolate 2 at 5);
   };
 }
 
 /* Centre section*/
 .home-features__container-comp {
-  @include span(6);
 
-  @include breakpoint(min-width $break-medium) {
+  @include breakpoint(max-width $break-medium) {
+    @include span(4);
+    @include squish(1);
+  };
+
+   @include breakpoint(min-width $break-medium + 1px) {
+    @include span(isolate 3 at 2);
+    margin-top: 350px;
+     @include pre(25%);
+  };
+
+  @include breakpoint(min-width $break-large + 1px) {
     @include span(isolate 2 at 3);
+    margin-top: 0px;
   };
 }
 

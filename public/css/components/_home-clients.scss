@@ -1,9 +1,9 @@
 .clients-container{
   background: palette(white);
-  min-height: 50px;
   text-align: center;
-  margin: 0 auto;
-  overflow: auto;
+  overflow: hidden;
+  height: 1%;
+  padding-bottom:20px;
 }
 
 .clients-container__title{
