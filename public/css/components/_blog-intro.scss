@@ -22,7 +22,6 @@
     @include breakpoint((min-width $break-large + 1px) (max-width $break-big) ) {
       background: url(../images/blog/blog-bg-top-large.jpg) no-repeat center top palette(black) ;
       background-size: cover;
-
     }
 
     @include breakpoint(min-width $break-big) {

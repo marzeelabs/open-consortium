@@ -21,10 +21,13 @@
 }
 
 
-%section-title-fake-class {
-  font-weight: 100;
+%section-title-reset-single-post {
+  font-weight: 300;
   text-transform: uppercase;
   letter-spacing: 0.2em;
+  color: palette(ocblue);
+  padding-bottom: 0;
+  margin-bottom: 0;
 }
 
 // Styles for section title
@@ -36,10 +39,20 @@
   $color: ocblue) {
 
     @include adjust-font-size-to($mobile-font-size, $mobile-line-height);
-    @extend %section-title-fake-class;
+    font-weight: 100;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
     color: palette($color);
 
     @include breakpoint(min-width $break-large) {
       @include adjust-font-size-to($font-size, $line-height);
     }
+}
+
+@mixin section-text-copy(){
+  font-weight: 300;
+  letter-spacing: 0.1em;
+  color: palette(grey, mid-dark);
+
+  @include adjust-font-size-to(14px, 3);
 }

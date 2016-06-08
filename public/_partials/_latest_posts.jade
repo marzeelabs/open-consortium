@@ -1,7 +1,7 @@
 //- This partial gives you a variable called latestPosts, a sorted array of the latest posts
 //- It also adds to each post object the attribute "slug", which is the original key
 - var latestPosts = [];
-for post, slug in public.posts._data.posts
+for post, slug in public.blog._data.posts
     unless post.published === false
       - latestPosts.push(post);
       - latestPosts[latestPosts.length - 1].slug = slug;

@@ -46,29 +46,28 @@ $(function() {
       });
 
 
-  // Call on DOM ready
+      // Call on DOM ready
 
-  $('.carousel').flickity({
-    autoPlay: true,
-    setGallerySize: false,
-    wrapAround: true,
-    imagesLoaded: true,
-    prevNextButtons: false,
-    pageDots: false,
-    freeScroll: true,
-    autoPlay: true
-  });
+      $('.carousel').flickity({
+        autoPlay: true,
+        setGallerySize: false,
+        wrapAround: true,
+        imagesLoaded: true,
+        prevNextButtons: false,
+        pageDots: false,
+        freeScroll: true,
+        autoPlay: true
+      });
 
-  $('.carousel__testimonials-wrapper').flickity({
-    autoPlay: true,
-    //setGallerySize: false,
-    wrapAround: true,
-    imagesLoaded: true,
-    prevNextButtons: false,
-    pageDots: true,
-    freeScroll: true,
-    autoPlay: true
-  });
+      $('.carousel__testimonials-wrapper').flickity({
+        autoPlay: true,
+        wrapAround: true,
+        imagesLoaded: true,
+        prevNextButtons: false,
+        pageDots: true,
+        freeScroll: true,
+        autoPlay: true
+      });
 
 
   $(window).on('resize scroll', fixedHeader);

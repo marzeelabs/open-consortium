@@ -15,6 +15,11 @@ footer {
 .section-inner {
   margin-left: auto;
   margin-right: auto;
-  @include container(1260px);
+ @include container(1260px);
   padding: 0 10px;
+}
+
+.section-inner--large {
+  width:100%;
+  padding: 0;
 }

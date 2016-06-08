@@ -1,0 +1,30 @@
+
+section.blog-intro
+  img.blog-intro__logo(src='/images/home/logo-home.svg', alt='Open Consortium')
+  p.blog-intro__phrase Blog
+
+section.blog__posts-container
+
+  - function excerpt(content) {
+    - if(!content || content.indexOf("<!-- more -->") === -1) return content;
+    - else return content.split("<!-- more -->")[0];
+  - }
+
+    include ../_partials/_latest_posts.jade
+    each post in latestPosts
+      //- Get the author of the post
+      .blog__posts-wrapper
+
+        h1.blog__post-item-title
+          a(href="/blog/#{ post.slug }")= post.title
+
+        h4.blog__post-item-date
+          a(href="/blog/#{ post.slug }")= post.date
+        .blog__post-item-description
+
+          != excerpt(partial(post.slug + '.md'))
+          - var postFooterImage = true;
+          - var postFooterDate = post.date;
+          - var postFooterTags = post.tags;
+
+          include ../_partials/_post_footer

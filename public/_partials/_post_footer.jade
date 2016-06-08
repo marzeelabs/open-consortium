@@ -6,10 +6,10 @@
 //- If the variable postFooterTags is assigned (usually with values from the metadata),
 //- it also prints the post's tags
 
-.post-footer
+.post__footer
   if postFooterTags
-    .post-footer__tags
+    .post__footer-tags
       each postTag, postTagIndex in postFooterTags
         if (postTagIndex > 0)
-          |,&nbsp;
+          |&nbsp;&nbsp;
         span(href="##{postTag}")!= postTag
