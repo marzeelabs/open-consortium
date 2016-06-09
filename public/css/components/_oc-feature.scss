@@ -24,6 +24,7 @@
   font-size: 18px;
   border-bottom: palette(grey, xxx-light) thin solid;
   padding-bottom: 20px;
+  text-align: center;
 
   @include breakpoint(min-width $break-medium-small + 1px) {
     padding-bottom: 40px;

@@ -3,7 +3,7 @@
   text-align: center;
   overflow: hidden;
   height: 1%;
-  padding-bottom:20px;
+  padding: 0 20px 20px;
 }
 
 .clients-container__title{
@@ -11,7 +11,7 @@
 }
 
 .client-container__separator{
- width:90%;
+ width:100%;
  display: block;
  background-color: palette(grey, xxx-light);
  height: 1px;

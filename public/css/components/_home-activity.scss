@@ -1,21 +1,23 @@
-.activity-container{
+.activity__container{
   background: palette(white);
-  min-height: 500px;
-  text-align: center;
-  width: auto;
   margin: 0 auto;
-  overflow: auto;
-
-  p{
-    color: palette(ocblue);
-  }
+  text-align: center;
+  padding: 0 20px 20px;
+  height: 1%;
+  overflow: hidden;
 
 }
 
-.activity-container__title{
+.activity__container-title-wrapper {
+  margin: 50px auto 20px auto;
+}
+
+
+.activity__container-title {
+
   @include section-title();
   display: inline-block;
-  margin: 50px auto 20px auto;
+
 
   &:after {
     content: "";
@@ -32,4 +34,12 @@
   display: block;
   background-color: palette(ocblue);
   margin: 0 auto;
+}
+
+.activity__content-title{
+  @include section-title(18px);
+}
+
+.activity__container-content {
+  @include container(1000px)
 }

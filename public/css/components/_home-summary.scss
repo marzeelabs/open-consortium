@@ -26,6 +26,7 @@
   letter-spacing: 0.2em;
   margin: 0 auto 15px auto;
   width: 90%;
+  line-height: 1.5;
 
   @include breakpoint(min-width $break-large){
     font-size:18px;

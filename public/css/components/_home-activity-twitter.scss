@@ -1,0 +1,11 @@
+.activity__twitter{
+  background: blue;
+  min-height: 30px;
+
+  @include span(6);
+
+  @include breakpoint(min-width $break-medium + 1px){
+    @include span(3 at 1);
+  }
+
+}

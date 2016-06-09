@@ -10,7 +10,7 @@ section.blog__posts-container
     - else return content.split("<!-- more -->")[0];
   - }
 
-    include ../_partials/_latest_posts.jade
+    include ../_partials/_latest_posts
     each post in latestPosts
       //- Get the author of the post
       .blog__posts-wrapper
