@@ -11,26 +11,17 @@
 
   font-weight: 300;
   padding-top: 45px;
-
-  @include breakpoint(min-width $break-large) {
-    font-weight:100;
-  };
 }
 
 .home-features__subtitle {
   @include section-title($h4-font-size, 4, 12px, 3, white);
   font-weight: 300;
-
-  @include breakpoint(min-width $break-large) {
-    font-weight:100;
-  };
-
 }
 
 .home-features__container {
   margin:40px auto 0px auto;
   padding:0 10px 0;
-  @include container(1000px);
+  @include container(1100px);
 }
 
 /* Left section*/

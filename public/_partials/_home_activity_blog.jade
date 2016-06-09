@@ -3,17 +3,23 @@
   - else return content.split("<!-- more -->")[0];
 - }
 
-  include _latest_posts
-  .activity__blog-post
-    a.activity__blog-post(href='/blog/#{ latestPosts[0].slug }')
-      .activity__blog-content-date!= latestPosts[0].date
-      .activity__blog-content-title!= latestPosts[0].title
-      .activity__blog-content-description!= excerpt(partial('/blog/' + latestPosts[0].slug + '.md'))
+include _latest_posts
+    ul
+      li.activity__blog-post
+        a(href="/blog/#{ post.slug }")
+          .activity__blog-content-date= post.date
+          .activity__blog-content-title= post.title
+          .activity__blog-content-description!= excerpt(partial('/blog/' + post.slug + '.md'))
 
-  .activity__blog-post
-    a.activity__blog-post(href='/blog/#{ latestPosts[1].slug }')
-      .activity__blog-content-date!= latestPosts[1].date
-      .activity__blog-content-title!= latestPosts[1].title
-      .activity__blog-content-description!= excerpt(partial('/blog/' + latestPosts[1].slug + '.md'))
+    //  while n < 2
+    //  - n++
+    //     li
+    //       a.activity__blog-post(href="/blog/#{ post.slug }")
+    //         .activity__blog-content-date= post.date
+    //         .activity__blog-content-title= post.title
+    //         .activity__blog-content-description!= excerpt(partial('/blog/' + post.slug + '.md'))
 
-a(href='#').button.button__blue More posts
+
+
+a(href='/blog').button.button__blue More posts
+

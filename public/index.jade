@@ -7,7 +7,7 @@ section.home-intro
     span.home-intro__phrase-br2
     |Make it powerful.
 
-  a(href='#').button Know more
+  a(href='/features').button Know more
 
   //a(href='#').button.button--secondary know more
 
@@ -65,7 +65,7 @@ section.home-summary
     include ./_partials/_oc_values
 
 
-  a(href='#').button Ready to launch?
+  a(href='/#home-contact-form').button Ready to launch?
 
 
 section.activity__container
@@ -76,11 +76,12 @@ section.activity__container
   .activity__container-content
 
     .activity__twitter
+      h1.activity__content-title From Twitter
+      .activity__twitter-content
+        include ./_partials/_home_activity_twitter
 
     .activity__blog
-
       h1.activity__content-title From the blog
-
       .activity__blog-content
         include ./_partials/_home_activity_blog
 

@@ -50,17 +50,13 @@
 }
 
 .features-intro__phrase{
-  font-weight: 300;
-  font-size: 14px;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
-  line-height: 1.4;
+  @include section-title(14px, 3);
   max-width: 80%;
   margin: 0 auto 20px auto;
+  color: palette(white);
 
   @include breakpoint(min-width $break-large) {
-    font-weight: 100;
-    font-size: 22px;
+    font-size: 20px;
   };
 }
 

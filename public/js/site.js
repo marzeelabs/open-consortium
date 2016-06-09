@@ -45,7 +45,6 @@ $(function() {
         }
       });
 
-
       // Call on DOM ready
 
       $('.carousel').flickity({
@@ -68,7 +67,6 @@ $(function() {
         freeScroll: true,
         autoPlay: true
       });
-
 
   $(window).on('resize scroll', fixedHeader);
   $(window).on('resize scroll', showLogo);

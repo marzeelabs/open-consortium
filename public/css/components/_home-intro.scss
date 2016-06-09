@@ -52,19 +52,14 @@
 }
 
 .home-intro__phrase{
-  font-weight: 300;
-  font-size: 14px;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
-  line-height: 1.5;
+  @include section-title(12px, 2.5);
   max-width: 80%;
   margin: 0 auto 20px auto;
+  color: palette(white);
 
   @include breakpoint(min-width $break-large) {
-    font-weight: 100;
     font-size: 20px;
   };
-
 }
 
 span.home-intro__phrase-br{

@@ -12,12 +12,10 @@
   margin: 50px auto 20px auto;
 }
 
-
 .activity__container-title {
 
   @include section-title();
   display: inline-block;
-
 
   &:after {
     content: "";
@@ -38,6 +36,9 @@
 
 .activity__content-title{
   @include section-title(18px);
+  @include breakpoint(min-width $break-large){
+    font-weight: 300;
+  }
 }
 
 .activity__container-content {
