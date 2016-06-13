@@ -1,4 +1,4 @@
-.features__drupal{
+.contacts__intro{
       @include breakpoint(max-width $break-small) {
       background: url(../images/features/features-bg-bottom-small.jpg) no-repeat center bottom palette(ocblue, x-dark) ;
       background-size: cover;
@@ -30,54 +30,76 @@
       background-size: contain;
     }
 
-  color: palette(white);
+  height: 355px;
   text-align: center;
-  padding: 50px 20px;
-  min-height: 350px;
-
-  h1{
-    @include section-title($h4-font-size, 4, 30px);
-    @include breakpoint (min-width $break-medium + 1){
-      font-size:30px;
-    }
-  }
-
-  h2{
-    @include section-title($h3-font-size, 3, 18px);
-    @include breakpoint (min-width $break-large + 1){
-      font-size:$h3-font-size;
-    }
-  }
-
-  p{
-    @include adjust-font-size-to(12px, 4);
-    font-weight: 300;
-    letter-spacing: 0.2em;
-    text-transform: uppercase;
-    margin-bottom: 20px;
-
-    @include breakpoint (min-width $break-large + 1){
-      max-width: 1000px;
-      margin: 0 auto 40px auto;
-    }
-  }
-}
-
-.features__drupal-title-break{
-  display: block;
-  margin-top: 5px;
-
-  @include breakpoint (min-width $break-large + 1){
-    @include adjust-font-size-to(18px, 3);
-  }
-}
-
-.features__drupal-link{
+  width: auto;
+  margin: 0 auto;
   color: palette(white);
-  text-decoration: underline;
+}
 
-  &:hover{
-    text-decoration: none;
-    color: palette(ocblue);
+.contacts__intro-logo{
+  max-width: 295px;
+  height: auto;
+  margin-top: 140px;
+  margin-bottom: 20px;
+
+  @include breakpoint(min-width $break-large) {
+    max-width: 360px;
+    margin-top: 110px;
+  };
+}
+
+.contacts__intro-phrase{
+  @include section-title(14px, 3);
+  max-width: 80%;
+  margin: 0 auto 20px auto;
+  color: palette(white);
+
+  @include breakpoint(min-width $break-large) {
+    font-size: 20px;
+  };
+}
+
+.contacts__context-intro{
+  background: palette(ocblue, dark);
+  text-align: center;
+  overflow: hidden;
+
+  &:after {
+  	left: 50%;
+  	border: solid transparent;
+  	content: " ";
+  	height: 0;
+  	width: 0;
+  	position: absolute;
+  	pointer-events: none;
+  	border-color: rgba(palette(ocblue, dark), 0);
+  	border-top-color: palette(ocblue, dark);
+  	border-width: 15px;
+  	margin-left: -15px;
+  }
+}
+
+
+.contacts__context-title{
+    margin: 35px auto 20px auto;
+    @include section-title();
+
+  @include breakpoint (min-width $break-medium + 1){
+    font-size:30px;
+  }
+}
+
+.contacts__context-content{
+  color: palette(white);
+  font-weight: 300;
+  @include adjust-font-size-to(12px, 3);
+  letter-spacing: 0.2em;
+  width: 85%;
+  margin: 0 auto 40px auto;
+
+  @include breakpoint (min-width $break-medium + 1){
+    width: 60%;
+    @include adjust-font-size-to(14px, 3);
   }
 }

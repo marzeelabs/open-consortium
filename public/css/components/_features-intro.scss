@@ -1,4 +1,4 @@
-.features-intro{
+.features__intro{
     @include breakpoint(max-width $break-small) {
       background: url(../images/features/features-bg-top-small.jpg) no-repeat center top palette(black) ;
       background-size: cover;
@@ -37,7 +37,7 @@
   color: palette(white);
 }
 
-.features-intro__logo{
+.features__intro-logo{
   max-width: 295px;
   height: auto;
   margin-top: 140px;
@@ -49,7 +49,7 @@
   };
 }
 
-.features-intro__phrase{
+.features__intro-phrase{
   @include section-title(14px, 3);
   max-width: 80%;
   margin: 0 auto 20px auto;
@@ -60,7 +60,7 @@
   };
 }
 
-.features-context-intro{
+.features__context-intro{
   background: palette(ocblue, dark);
   text-align: center;
   overflow: hidden;
@@ -80,11 +80,11 @@
   }
 }
 
-.features-context__title, .features-context__subtitle{
+.features__context-title, .features__context-subtitle{
     @include section-title();
 }
 
-.features-context__title{
+.features__context-title{
     margin: 35px auto 20px auto;
 
   @include breakpoint (min-width $break-medium + 1){
@@ -92,7 +92,7 @@
   }
 }
 
-.features-context__subtitle{
+.features__context-subtitle{
   margin: 20px auto 20px auto;
   font-size:15px;
 
@@ -101,7 +101,7 @@
   }
 }
 
-.features-context__content{
+.features__context-content{
   color: palette(white);
   font-weight: 300;
   @include adjust-font-size-to(12px, 3);

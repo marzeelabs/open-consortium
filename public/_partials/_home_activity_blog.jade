@@ -3,21 +3,23 @@
   - else return content.split("<!-- more -->")[0];
 - }
 
-include _latest_posts
-    ul
-      li.activity__blog-post
-        a(href="/blog/#{ post.slug }")
-          .activity__blog-content-date= post.date
-          .activity__blog-content-title= post.title
-          .activity__blog-content-description!= excerpt(partial('/blog/' + post.slug + '.md'))
+- var n = 0
 
-    //  while n < 2
-    //  - n++
-    //     li
-    //       a.activity__blog-post(href="/blog/#{ post.slug }")
-    //         .activity__blog-content-date= post.date
-    //         .activity__blog-content-title= post.title
-    //         .activity__blog-content-description!= excerpt(partial('/blog/' + post.slug + '.md'))
+ul.activity__blog-list
+  include _latest_posts
+    li.activity__blog-post
+      a(href="/blog/#{ post.slug }")
+        .activity__blog-content-date= post.date
+        .activity__blog-content-title= post.title
+        .activity__blog-content-description!= excerpt(partial('/blog/' + post.slug + '.md'))
+
+  //  while n < 2
+  //  - n++
+  //     li
+  //       a.activity__blog-post(href="/blog/#{ post.slug }")
+  //         .activity__blog-content-date= post.date
+  //         .activity__blog-content-title= post.title
+  //         .activity__blog-content-description!= excerpt(partial('/blog/' + post.slug + '.md'))
 
 
 
