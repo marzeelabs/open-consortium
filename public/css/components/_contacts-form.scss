@@ -1,11 +1,3 @@
-.contacts__form-container{
-  background: palette(white);
-  padding: 40px 20px;
-  height:1%;
-  overflow: hidden;
-
-}
-
 .mailchimp {
   text-align: center;
   background: palette(white);
@@ -35,16 +27,16 @@
 
 .mailchimp__inputs {
   height: 70px;
-  margin: 0 auto 40px auto;
+  margin: 0 auto 20px auto;
   font-weight: 300;
 
   @include breakpoint(max-width $break-small) {
-    height: 30px;
+    height: 40px;
     font-size: 14px;
   }
 
   @include breakpoint($break-small $break-medium-small) {
-    height: 35px;
+    height: 45px;
     font-size: 14px;
   }
 
@@ -55,18 +47,50 @@
 
   @include breakpoint($break-medium $break-large) {
     font-size: $h4-font-size;
+    margin: 0 auto 40px auto;
   }
+}
+
+
+.mailchimp__inputs--message-field{
+  height: 200px;
+  margin-bottom: 30px;
+  font-weight: 300;
 }
 
 .mailchimp__inputs__content {
   width: 70%;
   height: 100%;
   padding: 0;
+  border: thin solid palette(grey);
+  color: palette(grey);
+  text-indent: 20px;
+  margin-bottom: 40px;
+  @include container(650px);
+}
+
+.mailchimp__inputs textarea{
+  width: 70%;
+  height: 200px;
+  padding: 0;
   //border: none;
   border: thin solid palette(grey);
   color: palette(grey);
   text-indent: 20px;
   margin-bottom: 40px;
+  @include container(650px);
+}
+
+
+#select__dropdown-list{
+  width: 70%;
+  height: 100%;
+  padding: 0;
+  border: thin solid palette(grey);
+  color: palette(grey);
+  text-indent: 20px;
+  margin-bottom: 40px;
+  @include container(650px);
 }
 
 .mailchimp__inputs__submit {

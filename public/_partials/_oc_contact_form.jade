@@ -2,20 +2,32 @@
 
     //- Begin MailChimp Signup Form
     #mc_embed_signup
-      form#mc-embedded-subscribe-form.mailchimp__validate(action="//marzeelabs.us10.list-manage.com/subscribe/post?u=76a4ba46ab49fe5f31cd00bad&amp;id=1406e6e677", method="post", name="mc-embedded-subscribe-form", target="_blank", novalidate)
+      form#mc-embedded-subscribe-form.mailchimp__validate(action="#", method="post", name="mc-embedded-subscribe-form", target="_blank", novalidate)
         #mc_embed_signup_scroll
           // real people should not fill this in and expect good things - do not remove this or risk form bot signups
           .mailchimp__bot(style="position: absolute; left: -5000px;")
-            input(type="text", name="b_76a4ba46ab49fe5f31cd00bad_1406e6e677", tabindex="-1", value="")
+            input(type="text", name="", tabindex="-1", value="")
 
           .mailchimp__inputs
-            input#mce-EMAIL.mailchimp__inputs__content(type="name", value="", name="NAME", placeholder="Your name", required)
+            input#mce-NAME.mailchimp__inputs__content(type="name", value="", name="NAME", placeholder="Your name", required)
 
           .mailchimp__inputs
             input#mce-EMAIL.mailchimp__inputs__content(type="email", value="", name="EMAIL", placeholder="Your e-mail", required)
 
           .mailchimp__inputs
-            input#mc-embedded-subscribe.mailchimp__inputs__submit(type="submit", value="SEND", name="subscribe")
+            select#select__dropdown-list(name="")
+              option.pre-selected Select your role
+              option Teacher
+              option Student
+              option Researcher
+              option Investor
+
+          .mailchimp__inputs--message-field
+            textarea#mce-MESSAGE.mailchimp__inputs__content(type="message", value="", name="MESSAGE", placeholder="Your message")
+
+          .mailchimp__inputs
+            input#mc-embedded-subscribe.mailchimp__inputs__submit(type="submit", value="SEND", name="send")
+
 
 
 

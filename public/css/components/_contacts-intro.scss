@@ -103,3 +103,10 @@
     @include adjust-font-size-to(14px, 3);
   }
 }
+
+.contacts__form-container{
+  background: palette(white);
+  padding: 60px 20px 40px 20px;
+  height:1%;
+  overflow: hidden;
+}
