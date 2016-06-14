@@ -16,9 +16,9 @@ header
           a(href='/features') Features
         li.navigation__item(class="#{ current.path[1] == 'index' ? 'is-active' : '' }")
           a(href='/blog') Blog
-        li.navigation__item
-          a(href='/#who-we-are') Jobs
-        li.navigation__item
+        li.navigation__item(class="#{ current.path[0] == 'jobs' ? 'is-active' : '' }")
+          a(href='/jobs') Jobs
+        li.navigation__item(class="#{ current.path[0] == 'contacts' ? 'is-active' : '' }")
           a(href='/contacts') Contacts
         li.navigation__item.navigation__right
           a(href='https://twitter.com/openconsortium?ref_src=twsrc%5Etfw' target='_blank') Follow us
