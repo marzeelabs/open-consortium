@@ -12,7 +12,7 @@
       margin-bottom: 30px;
     }
   }
-  .button{
+  .button__404{
     @include adjust-font-size-to(14px, 3);
 
     @include breakpoint(min-width $break-large + 1px){
@@ -82,9 +82,10 @@
     transform: translateX(0px);
   }
   to {
-    transform: translateX(-2000px);
+    transform: translateX(-5000px);
   }
 }
+
 
 //- ANIMATION ICON
 
