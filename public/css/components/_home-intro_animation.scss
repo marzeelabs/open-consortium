@@ -73,7 +73,7 @@
 }
 
 
-@keyframes gwd-gen-1egngwdanimation_gwd-keyframes {
+@keyframes oc__outter_line-keyframes {
   0% {
     transform: rotateZ(-91deg);
     opacity: 0;
@@ -86,11 +86,11 @@
   }
 }
 
-.intro__logo-animation-container .gwd-gen-1egngwdanimation {
-  animation: gwd-gen-1egngwdanimation_gwd-keyframes 0.3s linear 0.4s 1 normal forwards;
+.intro__logo-animation-container .oc__outter_line {
+  animation: oc__outter_line-keyframes 0.3s linear 0.4s 1 normal forwards;
 }
 
-@keyframes gwd-gen-5uu9gwdanimation_gwd-keyframes {
+@keyframes oc__inner_line-keyframes {
   0% {
     transform: rotateZ(-95deg);
     transform-origin: 50% 50% 0;
@@ -109,11 +109,11 @@
   }
 }
 
-.intro__logo-animation-container .gwd-gen-5uu9gwdanimation {
-  animation: gwd-gen-5uu9gwdanimation_gwd-keyframes 0.4s linear 0.4s 1 normal forwards;
+.intro__logo-animation-container .oc__inner_line {
+  animation: oc__inner_line-keyframes 0.4s linear 0.4s 1 normal forwards;
 }
 
-@keyframes gwd-gen-1utxgwdanimation_gwd-keyframes {
+@keyframes oc__rocket-keyframes {
   0% {
     transform: translate3d(-30px, 18px, 0px);
     opacity: 0;
@@ -135,11 +135,11 @@
   }
 }
 
-.intro__logo-animation-container .gwd-gen-1utxgwdanimation {
-  animation: gwd-gen-1utxgwdanimation_gwd-keyframes 0.5s linear 0.8s 1 normal forwards;
+.intro__logo-animation-container .oc__rocket {
+  animation: oc__rocket-keyframes 0.5s linear 0.8s 1 normal forwards;
 }
 
-@keyframes gwd-gen-14o9gwdanimation_gwd-keyframes {
+@keyframes oc_fire_rocket-keyframes {
   0% {
     opacity: 0;
     transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1);
@@ -167,6 +167,6 @@
   }
 }
 
-.intro__logo-animation-container .gwd-gen-14o9gwdanimation {
-  animation: gwd-gen-14o9gwdanimation_gwd-keyframes 0.9s linear 0.4s 1 normal forwards;
+.intro__logo-animation-container .oc_fire_rocket {
+  animation: oc_fire_rocket-keyframes 0.9s linear 0.4s 1 normal forwards;
 }
