@@ -13,7 +13,7 @@
 //- Animation logo
 .intro__logo-animation-container {
   position: relative;
-  max-width: 295px;
+  width: 100%;
   margin: 0 auto;
   transform: translateZ(0px);
   height: auto;
@@ -37,10 +37,11 @@
   position: absolute;
   width: 50%;
   left: 50%;
-  top: 8%;
-  transform: translate3d(-54.54%, 18px, 0px);
+  top: 10%;
+  transform: translate3d(-54.54%, 0, 0);
   transform-style: preserve-3d;
   opacity: 0;
+  animation: oc__rocket-keyframes 0.5s linear 0.8s 1 normal forwards;
 }
 
 .oc__outter_line {
@@ -51,122 +52,94 @@
   transform-origin: 50% 50%;
   transform: rotateZ(-91deg);
   opacity: 0;
+  animation: oc__outter_line-keyframes 0.3s linear 0.4s 1 normal forwards;
 }
 
 .oc__inner_line {
   position: absolute;
   height: 100%;
-  top: 0px;
+  top: 0;
   left: 0;
   opacity: 0;
   transform: rotateZ(-95deg);
   transform-style: preserve-3d;
+  animation: oc__inner_line-keyframes 0.4s linear 0.4s 1 normal forwards;
 }
 
 .oc_fire_rocket {
   position: absolute;
   width: 21%;
   left: 40%;
-  top: 33%;
+  top: 35%;
   opacity: 0;
   transform-style: preserve-3d;
+  animation: oc_fire_rocket-keyframes 0.9s linear 0.4s 1 normal forwards;
 }
 
 
 @keyframes oc__outter_line-keyframes {
   0% {
     transform: rotateZ(-91deg);
+    transform-origin: 50% 50% 0;
     opacity: 0;
-    animation-timing-function: linear;
   }
   100% {
     transform: rotateZ(0deg);
-    opacity: 0.98;
-    animation-timing-function: linear;
+    opacity: 1;
   }
-}
-
-.intro__logo-animation-container .oc__outter_line {
-  animation: oc__outter_line-keyframes 0.3s linear 0.4s 1 normal forwards;
 }
 
 @keyframes oc__inner_line-keyframes {
   0% {
     transform: rotateZ(-95deg);
     transform-origin: 50% 50% 0;
-    animation-timing-function: linear;
   }
   50% {
     opacity: 0;
     transform: rotateZ(-18deg);
-    animation-timing-function: linear;
   }
   100% {
     opacity: 1;
     transform: rotateZ(0deg);
     transform-origin: 50% 50% 0;
-    animation-timing-function: linear;
   }
-}
-
-.intro__logo-animation-container .oc__inner_line {
-  animation: oc__inner_line-keyframes 0.4s linear 0.4s 1 normal forwards;
 }
 
 @keyframes oc__rocket-keyframes {
   0% {
-    transform: translate3d(-30px, 18px, 0px);
+    transform: translate3d(-46.88%, 32.73%, 0);
     opacity: 0;
-    animation-timing-function: linear;
   }
   40% {
     opacity: 1;
-    animation-timing-function: linear;
   }
   60% {
-    transform: translate3d(7px, -3px, 0px);
-    opacity: 1;
-    animation-timing-function: linear;
+    transform: translate3d(12.73%, -4.69%, 0);
   }
   100% {
-    transform: translate3d(0px, 0px, 0px);
     opacity: 1;
-    animation-timing-function: linear;
+    transform: translate3d(0, 0, 0);
   }
-}
-
-.intro__logo-animation-container .oc__rocket {
-  animation: oc__rocket-keyframes 0.5s linear 0.8s 1 normal forwards;
 }
 
 @keyframes oc_fire_rocket-keyframes {
   0% {
-    opacity: 0;
-    transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1);
-    animation-timing-function: linear;
+    transform: translate3d(0, 0, 0) scale3d(1, 1, 1);
   }
   44.44% {
     opacity: 0;
-    transform: translate3d(-23px, 14px, 0px) scale3d(0.675926, 0.697368, 1);
-    animation-timing-function: linear;
+    transform: translate3d(-85.19%, 73.68%, 0) scale3d(0.675926, 0.697368, 1);
   }
   66.67% {
     opacity: 1;
-    transform: translate3d(-3px, 3px, 0px) scale3d(1, 1, 1);
-    animation-timing-function: linear;
+    transform: translate3d(-11.11%, 15.79%, 0) scale3d(1, 1, 1);
   }
   77.78% {
     opacity: 1;
-    transform: translate3d(0px, 1px, 0px) scale3d(1.8125, 1.66447, 1);
-    animation-timing-function: linear;
+    transform: translate3d(0, 5.26%, 0) scale3d(1.8125, 1.66447, 1);
   }
   100% {
     opacity: 0;
-    transform: translate3d(1px, 0px, 0px) scale3d(1.08738, 1.06744, 1);
-    animation-timing-function: linear;
+    transform: translate3d(3.70%, 0, 0) scale3d(1.08738, 1.06744, 1);
   }
-}
-
-.intro__logo-animation-container .oc_fire_rocket {
-  animation: oc_fire_rocket-keyframes 0.9s linear 0.4s 1 normal forwards;
 }

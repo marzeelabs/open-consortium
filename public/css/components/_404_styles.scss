@@ -86,74 +86,7 @@
   }
 }
 
-
 //- ANIMATION ICON
-
-.gwd-page-container {
-  position: relative;
-  width: 100%;
-  height: 100%;
-}
-.gwd-page-content {
-  transform: perspective(1400px) matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
-  transform-style: preserve-3d;
-  position: absolute;
-  background-color: transparent;
-}
-.gwd-page-wrapper {
-  position: absolute;
-  transform: translateZ(0px);
-  background-color: rgb(255, 255, 255);
-}
-.gwd-page-size {
-  width: 100%;
-  height: 100%;
-}
-.rocket {
-  position: absolute;
-  width: 61px;
-  height: 47px;
-  left: 21px;
-  top: 0px;
-  background-image: none;
-}
-.gwd-div-m1c6 {
-  background-image: none;
-  background-color: rgb(67, 65, 65);
-}
-.fire__rocket {
-  position: absolute;
-  transform: translate3d(18px, 0px, 0px);
-  left: 11px;
-  top: 21px;
-  width: 18px;
-  height: 6px;
-  transform-origin: 9.08503px 3.07413px 0px;
-  transform-style: preserve-3d;
-  opacity: 1;
-}
-@keyframes fire__rocket-keyframes {
-  0% {
-    transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1);
-    opacity: 1;
-    animation-timing-function: linear;
-  }
-  66.67% {
-    transform: translate3d(-5px, 0px, 0px) scale3d(1.61111, 1.61111, 1);
-    opacity: 0.5;
-    animation-timing-function: linear;
-  }
-  100% {
-    transform: translate3d(-4px, 0px, 0px) scale3d(1.50103, 1.50103, 1);
-    opacity: 0;
-    animation-timing-function: linear;
-  }
-}
-
-.error__404-icon-anim .fire__rocket {
-  animation: fire__rocket-keyframes 0.3s linear 0s infinite normal forwards;
-}
-
 .error__404-icon-anim-container {
   width: 82px;
   height: 47px;
@@ -165,7 +98,43 @@
 .error__404-icon-anim{
   width: 100%;
   padding-bottom: 57.31%;
-  transform: translateX(-20px);
+  transform: translateX(-24.39%);
   position: relative;
   margin: 0 auto;
+}
+
+.rocket {
+  position: absolute;
+  width: 74.39%;
+  height: 100%;
+  left: 25.61%;
+  top: 0;
+  background-image: none;
+}
+
+.fire__rocket {
+  position: absolute;
+  transform: translate3d(50%, 0, 0);
+  left: 12%;
+  top: 44%;
+  width: 21.95%;
+  height: 12.77%;
+  transform-origin: 55.56% 66.33% 0;
+  transform-style: preserve-3d;
+  opacity: 1;
+  animation: fire__rocket-keyframes 0.3s linear 0s infinite normal forwards;
+}
+
+@keyframes fire__rocket-keyframes {
+  0% {
+    transform: translate3d(0, 0, 0) scale3d(1, 1, 1);
+  }
+  66.67% {
+    transform: translate3d(-27.78%, 0, 0) scale3d(1.61111, 1.61111, 1);
+    opacity: 0.5;
+  }
+  100% {
+    transform: translate3d(-22.22%, 0, 0) scale3d(1.50103, 1.50103, 1);
+    opacity: 0;
+  }
 }
