@@ -6,7 +6,7 @@ $(function() {
             fixedClass = 'navigation--fixed-top',
             $navElement = $(".navigation");
 
-        if ($("body").scrollTop() > '1' && viewportWidth >= breakMobile) {
+        if ($(window).scrollTop() > '1' && viewportWidth >= breakMobile) {
           $navElement.addClass(fixedClass);
         } else {
           $navElement.removeClass(fixedClass);
@@ -18,7 +18,7 @@ $(function() {
             logovisibleClass = 'visible-logo',
             $logoElement = $(".navigation__item--logo");
 
-        if ($("body").scrollTop() > '150' && viewportWidth >= breakMobile) {
+        if ($(window).scrollTop() > '150' && viewportWidth >= breakMobile) {
           $logoElement.addClass(logovisibleClass);
         } else {
          $logoElement.removeClass(logovisibleClass);
