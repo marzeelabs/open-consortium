@@ -1,8 +1,8 @@
 .post__single{
   background: palette(white);
-  }
+}
 
-.blog__post-single_cover{
+.blog__post-single_cover {
   height: 400px;
   text-align: center;
   padding: 0 20px 0;
@@ -29,21 +29,21 @@
   };
 }
 
-.blog__post-single-wrapper{
+.blog__post-single-wrapper {
   padding:40px 20px 40px;
 }
 
-.blog__post-single-wrapper{
+.blog__post-single-wrapper {
   @include container(800px);
 
-  p{
+  p {
     font-weight: 400;
     @include adjust-font-size-to(16px, 4);
     letter-spacing: 0.05em;
     margin-bottom: 25px;
   }
 
-  h1, h2, h3, h4, h5{
+  h1, h2, h3, h4, h5 {
     @extend %section-title-reset-single-post;
   }
 
@@ -56,19 +56,18 @@
     }
   }
 
-  img{
+  img {
     margin: 20px auto;
   }
 
-  blockquote{
+  blockquote {
     font-style: italic;
   }
 
-  ol{
+  ol {
     list-style-type: disc;
     font-weight: 300;
     letter-spacing: 0.05em;
     @include adjust-font-size-to(16px)
   }
-
 }

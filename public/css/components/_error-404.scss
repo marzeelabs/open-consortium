@@ -18,6 +18,5 @@
     @include breakpoint(min-width $break-large + 1px) {
       @include adjust-font-size-to(22px, 3);
     }
-
   }
 }

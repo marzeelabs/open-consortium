@@ -11,7 +11,7 @@
   &.navigation--fixed-top {
     background-color: palette(ocblue);
 
-    @include breakpoint (min-width $break-medium + 1 ){
+    @include breakpoint (min-width $break-medium + 1 ) {
       a :hover {
         color: palette(ocblue, x-dark);
         font-weight: 400;
@@ -152,7 +152,7 @@
   }
 }
 
-.is-active a{
+.is-active a {
   color: palette(ocblue);
 }
 
@@ -165,15 +165,6 @@
     top: 0;
     bottom: 0;
     margin: auto;
-
-    & a:after {
-      /*
-      content: "\e605 ";
-      font-family: 'marzeelabs';
-      font-size: 10px;
-      margin-left: 4px;
-      */
-    }
 
     & a.is-active:after {
       content: none;

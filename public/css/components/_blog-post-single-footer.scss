@@ -1,11 +1,11 @@
-.post__footer{
+.post__footer {
   margin-top: 20px;
 }
 
 .post__footer-tags {
   color: palette(ocblue);
 
-  span{
+  span {
     font-weight: 300;
     text-transform: uppercase;
     @include adjust-font-size-to(14px);

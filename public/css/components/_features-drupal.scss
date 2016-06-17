@@ -1,82 +1,82 @@
-.features__drupal{
-      @include breakpoint(max-width $break-small) {
-      background: url(../images/features/features-bg-bottom-small.jpg) no-repeat center bottom palette(ocblue, x-dark) ;
-      background-size: cover;
-    }
+.features__drupal {
+    @include breakpoint(max-width $break-small) {
+    background: url(../images/features/features-bg-bottom-small.jpg) no-repeat center bottom palette(ocblue, x-dark) ;
+    background-size: cover;
+  }
 
-    @include breakpoint((min-width $break-small + 1px) (max-width $break-medium-small) ) {
-      background: url(../images/features/features-bg-bottom-medium-small.jpg) no-repeat center bottom palette(ocblue, x-dark) ;
-      background-size: cover;
-    }
+  @include breakpoint((min-width $break-small + 1px) (max-width $break-medium-small) ) {
+    background: url(../images/features/features-bg-bottom-medium-small.jpg) no-repeat center bottom palette(ocblue, x-dark) ;
+    background-size: cover;
+  }
 
-    @include breakpoint((min-width $break-medium-small + 1px) (max-width $break-medium) ) {
-      background: url(../images/features/features-bg-bottom-medium-small.jpg) no-repeat center bottom palette(ocblue, x-dark) ;
-      background-size: cover;
-    }
+  @include breakpoint((min-width $break-medium-small + 1px) (max-width $break-medium) ) {
+    background: url(../images/features/features-bg-bottom-medium-small.jpg) no-repeat center bottom palette(ocblue, x-dark) ;
+    background-size: cover;
+  }
 
-    @include breakpoint((min-width $break-medium + 1px) (max-width $break-large) ) {
-      background: url(../images/features/features-bg-bottom-medium.jpg) no-repeat center bottom palette(ocblue, x-dark) ;
-      background-size: cover;
-    }
+  @include breakpoint((min-width $break-medium + 1px) (max-width $break-large) ) {
+    background: url(../images/features/features-bg-bottom-medium.jpg) no-repeat center bottom palette(ocblue, x-dark) ;
+    background-size: cover;
+  }
 
-    @include breakpoint((min-width $break-large + 1px) (max-width $break-big) ) {
-      background: url(../images/features/features-bg-bottom-large.jpg) no-repeat center bottom palette(ocblue, x-dark) ;
-      background-size: cover;
+  @include breakpoint((min-width $break-large + 1px) (max-width $break-big) ) {
+    background: url(../images/features/features-bg-bottom-large.jpg) no-repeat center bottom palette(ocblue, x-dark) ;
+    background-size: cover;
 
-    }
+  }
 
-    @include breakpoint(min-width $break-big) {
-      background: url(../images/features/features-bg-bottom-large.jpg) no-repeat center bottom palette(ocblue, x-dark);
-      background-size: contain;
-    }
+  @include breakpoint(min-width $break-big) {
+    background: url(../images/features/features-bg-bottom-large.jpg) no-repeat center bottom palette(ocblue, x-dark);
+    background-size: contain;
+  }
 
   color: palette(white);
   text-align: center;
   padding: 50px 20px;
   min-height: 350px;
 
-  h1{
+  h1 {
     @include section-title($h4-font-size, 4, 30px);
-    @include breakpoint (min-width $break-medium + 1){
+    @include breakpoint (min-width $break-medium + 1) {
       font-size:30px;
     }
   }
 
-  h2{
+  h2 {
     @include section-title($h3-font-size, 3, 18px);
-    @include breakpoint (min-width $break-large + 1){
+    @include breakpoint (min-width $break-large + 1) {
       font-size:$h3-font-size;
     }
   }
 
-  p{
+  p {
     @include adjust-font-size-to(12px, 4);
     font-weight: 300;
     letter-spacing: 0.2em;
     text-transform: uppercase;
     margin-bottom: 20px;
 
-    @include breakpoint (min-width $break-large + 1){
+    @include breakpoint (min-width $break-large + 1) {
       max-width: 1000px;
       margin: 0 auto 40px auto;
     }
   }
 }
 
-.features__drupal-title-break{
+.features__drupal-title-break {
   display: block;
   margin-top: 5px;
 
-  @include breakpoint (min-width $break-large + 1){
+  @include breakpoint (min-width $break-large + 1) {
     @include adjust-font-size-to(18px, 3);
   }
 }
 
-.features__drupal-link{
+.features__drupal-link {
   color: palette(white);
   text-decoration: underline;
 
-  &:hover{
+  &:hover {
     text-decoration: none;
     color: palette(ocblue);
   }

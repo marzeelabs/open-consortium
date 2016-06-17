@@ -1,9 +1,9 @@
-.blog__posts-container{
+.blog__posts-container {
   background: palette(white) ;
   padding: 50px 20px;
 }
 
-.blog__posts-wrapper{
+.blog__posts-wrapper {
   margin-bottom: 40px;
   padding-bottom: 40px;
   border-bottom: solid thin palette(grey, xxx-light);
@@ -14,15 +14,15 @@
     padding-bottom: 0;
   }
 
-  h1.blog__post-item-title{
+  h1.blog__post-item-title {
     @include section-title();
     margin: 0;
 
-    a{
+    a {
       color: palette(ocblue);
       font-weight: 300;
       text-decoration: none;
-      &:hover{
+      &:hover {
         text-decoration: underline;
       }
     }
@@ -31,7 +31,7 @@
   h4.blog__post-item-date {
     margin: 0;
 
-    a{
+    a {
       @include section-title(14px);
       font-weight: 400;
       color: palette(black);
@@ -39,9 +39,8 @@
       margin: 0;
     }
   }
-  .blog__post-item-description{
-
-     p{
+  .blog__post-item-description {
+     p {
        @include section-text-copy();
      }
   }

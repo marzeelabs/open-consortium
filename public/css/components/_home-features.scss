@@ -63,7 +63,7 @@
     @include squish(1);
   };
 
-   @include breakpoint(min-width $break-medium + 1px) {
+  @include breakpoint(min-width $break-medium + 1px) {
     @include span(isolate 3 at 2);
     margin-top: 350px;
      @include pre(25%);

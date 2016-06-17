@@ -1,34 +1,33 @@
 .contacts__intro {
-      @include breakpoint(max-width $break-small) {
-      background: url(../images/features/features-bg-bottom-small.jpg) no-repeat center bottom palette(ocblue, x-dark) ;
-      background-size: cover;
-    }
+  @include breakpoint(max-width $break-small) {
+    background: url(../images/features/features-bg-bottom-small.jpg) no-repeat center bottom palette(ocblue, x-dark) ;
+    background-size: cover;
+  }
 
-    @include breakpoint((min-width $break-small + 1px) (max-width $break-medium-small) ) {
-      background: url(../images/features/features-bg-bottom-medium-small.jpg) no-repeat center bottom palette(ocblue, x-dark) ;
-      background-size: cover;
-    }
+  @include breakpoint((min-width $break-small + 1px) (max-width $break-medium-small) ) {
+    background: url(../images/features/features-bg-bottom-medium-small.jpg) no-repeat center bottom palette(ocblue, x-dark) ;
+    background-size: cover;
+  }
 
-    @include breakpoint((min-width $break-medium-small + 1px) (max-width $break-medium) ) {
-      background: url(../images/features/features-bg-bottom-medium-small.jpg) no-repeat center bottom palette(ocblue, x-dark) ;
-      background-size: cover;
-    }
+  @include breakpoint((min-width $break-medium-small + 1px) (max-width $break-medium) ) {
+    background: url(../images/features/features-bg-bottom-medium-small.jpg) no-repeat center bottom palette(ocblue, x-dark) ;
+    background-size: cover;
+  }
 
-    @include breakpoint((min-width $break-medium + 1px) (max-width $break-large) ) {
-      background: url(../images/features/features-bg-bottom-medium.jpg) no-repeat center bottom palette(ocblue, x-dark) ;
-      background-size: cover;
-    }
+  @include breakpoint((min-width $break-medium + 1px) (max-width $break-large) ) {
+    background: url(../images/features/features-bg-bottom-medium.jpg) no-repeat center bottom palette(ocblue, x-dark) ;
+    background-size: cover;
+  }
 
-    @include breakpoint((min-width $break-large + 1px) (max-width $break-big) ) {
-      background: url(../images/features/features-bg-bottom-large.jpg) no-repeat center bottom palette(ocblue, x-dark) ;
-      background-size: cover;
+  @include breakpoint((min-width $break-large + 1px) (max-width $break-big) ) {
+    background: url(../images/features/features-bg-bottom-large.jpg) no-repeat center bottom palette(ocblue, x-dark) ;
+    background-size: cover;
+  }
 
-    }
-
-    @include breakpoint(min-width $break-big) {
-      background: url(../images/features/features-bg-bottom-large.jpg) no-repeat center bottom palette(ocblue, x-dark);
-      background-size: contain;
-    }
+  @include breakpoint(min-width $break-big) {
+    background: url(../images/features/features-bg-bottom-large.jpg) no-repeat center bottom palette(ocblue, x-dark);
+    background-size: contain;
+  }
 
   height: 355px;
   text-align: center;

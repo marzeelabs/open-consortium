@@ -29,33 +29,33 @@
   @include breakpoint(min-width $break-medium-small + 1px) {
     padding-bottom: 40px;
 
-    @include odd(){ //- creates the even / odd rhythm
-      .oc-feature__content{
+    @include odd() { //- creates the even / odd rhythm
+      .oc-feature__content {
         @include span (isolate 3 at 1)
       }
-      .oc-feature__image-wrapper{
+      .oc-feature__image-wrapper {
         @include span (isolate 3 at 4)
       }
-      .oc-feature__title{
+      .oc-feature__title {
         float:right;
         max-width: 200px;
         text-align: right;
       }
-      .oc-feature__icon{
+      .oc-feature__icon {
         margin-left: 15px;
         float:right;
       }
     };
 
-    @include even(){
-      .oc-feature__icon{
+    @include even() {
+      .oc-feature__icon {
         float:left;
         margin-right: 15px;
       }
     }
   }
 
-  .oc-feature__title{
+  .oc-feature__title {
     @include breakpoint(min-width $break-medium-small + 1px) {
       float:left;
       max-width: 200px;
@@ -68,7 +68,7 @@
   }
 }
 
-.oc-feature__content{
+.oc-feature__content {
 
   .oc-feature--large & {
     margin-bottom: 20px;
@@ -81,7 +81,7 @@
 
 //- FEATURE IMAGE WRAPPER
 
-.oc-feature__image-wrapper{
+.oc-feature__image-wrapper {
 
   @include breakpoint(min-width $break-medium-small + 1px) {
       @include span (isolate 3 at 1);
@@ -89,12 +89,12 @@
 }
 //- FEATURE TITLE WRAPPER
 
-.oc-feature__title-wrapper{
+.oc-feature__title-wrapper {
 
   @include breakpoint(min-width $break-medium + 1px) {
     transform: translateY(50%);
   }
-  .oc-feature--large &{
+  .oc-feature--large & {
       @include pie-clearfix();
   }
 }
@@ -150,13 +150,13 @@
 }
 
 //- FEATURE IMAGE
-.oc-feature__image{
+.oc-feature__image {
   max-width: 480;
   background: palette(white);
 }
 
 //- FEATURE DESCRIPTION
-.oc-feature__description{
+.oc-feature__description {
   @include adjust-font-size-to(16px, 3);
   padding: 0;
   margin-top: 10px;
