@@ -4,27 +4,6 @@
   width: 100%;
 }
 
-//-.mailchimp__label {
-//-  color: palette(grey, mid-dark);
-//-  font-weight: 300;
-//-
-//-  @include breakpoint(max-width $break-small) {
-//-    font-size: 14px;
-//-  }
-//-
-//-  @include breakpoint($break-small $break-medium-small) {
-//-    font-size: 18px;
-//-  }
-//-
-//-  @include breakpoint($break-medium-small $break-medium) {
-//-    font-size: $h4-font-size;
-//-  }
-//-
-//-  @include breakpoint($break-medium $break-large) {
-//-    font-size: $h3-font-size;
-//-  }
-//-}
-
 .mailchimp__inputs {
   height: 70px;
   margin: 0 auto 20px auto;
@@ -52,7 +31,7 @@
 }
 
 
-.mailchimp__inputs--message-field{
+.mailchimp__inputs--message-field {
   height: 200px;
   margin-bottom: 30px;
   font-weight: 300;
@@ -69,11 +48,10 @@
   @include container(650px);
 }
 
-.mailchimp__inputs textarea{
+.mailchimp__inputs textarea {
   width: 70%;
   height: 200px;
   padding: 0;
-  //border: none;
   border: thin solid palette(grey);
   color: palette(grey);
   text-indent: 20px;
@@ -81,8 +59,7 @@
   @include container(650px);
 }
 
-
-#select__dropdown-list{
+#select__dropdown-list {
   width: 70%;
   height: 100%;
   padding: 0;

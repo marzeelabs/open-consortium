@@ -1,11 +1,10 @@
-.activity__container{
+.activity__container {
   background: palette(white);
   margin: 0 auto;
   text-align: center;
   padding: 0 20px 20px;
   height: 1%;
   overflow: hidden;
-
 }
 
 .activity__container-title-wrapper {
@@ -13,7 +12,6 @@
 }
 
 .activity__container-title {
-
   @include section-title();
   display: inline-block;
 
@@ -24,9 +22,9 @@
     border-bottom: 1px solid;
     display: block;
   }
- }
+}
 
-.activity-container__title-separator{
+.activity-container__title-separator {
   width: 250px;
   height: 1px;
   display: block;
@@ -34,9 +32,10 @@
   margin: 0 auto;
 }
 
-.activity__content-title{
+.activity__content-title {
   @include section-title(18px);
-  @include breakpoint(min-width $break-large){
+
+  @include breakpoint(min-width $break-large) {
     font-weight: 300;
   }
 }

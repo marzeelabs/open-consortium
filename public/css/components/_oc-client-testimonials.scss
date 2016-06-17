@@ -1,22 +1,21 @@
-.clients-testimonials{
+.clients-testimonials {
   margin-bottom: 50px;
   padding: 20px;
   @include container(800px);
   position: relative;
   overflow: hidden;
   height: 1%;
-
 }
 
-.carousel__testimonials-wrapper{
+.carousel-testimonials__wrapper {
    margin-bottom: 20px;
    padding-bottom: 55%;
 
-  @include breakpoint(min-width $break-small + 1px){
+  @include breakpoint(min-width $break-small + 1px) {
     padding-bottom: 25%;
   }
 
-  @include breakpoint(min-width $break-medium + 1px){
+  @include breakpoint(min-width $break-medium + 1px) {
     padding-bottom: 15%;
   }
 
@@ -25,13 +24,13 @@
     width: 100%;
   }
 
-  .carousel-cell {
+  .carousel-testimonials__cell {
     height: 100%;
     width: 100%;
   }
 }
 
-.clients-testimonial{
+.clients-testimonial {
   @include adjust-font-size-to(23px, 4);
   color: palette(ocblue, mid-dark);
   font-style: italic;
@@ -42,7 +41,7 @@
   position: relative;
 
   &:before,
-  &:after{
+  &:after {
     content: '"';
     color: palette(grey, xxx-light);
     vertical-align: bottom;
@@ -52,12 +51,12 @@
     font-weight: 300;
   }
 
-  &:before{
+  &:before {
     margin-right: 0.05em;
     transform: translateY(25%);
   }
 
-  &:after{
+  &:after {
     transform: translateY(100%);
   }
 }
@@ -68,4 +67,3 @@
   text-transform: uppercase;
   color: palette(ocblue, mid-dark);
 }
-

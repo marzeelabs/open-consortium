@@ -10,26 +10,24 @@
   letter-spacing: 0.2em;
   font-weight: 300;
 
-  @include breakpoint(min-width $break-large){
+  @include breakpoint(min-width $break-large) {
     font-size: 18px;
   };
 
-  &:hover{
+  &:hover {
     color: palette(ocblue);
     background: palette(white);
   }
-
 }
 
 .button__blue {
   border: thin solid palette(ocblue);
   color: palette(ocblue);
 
-  &:hover{
+  &:hover {
     color: palette(white);
     background: palette(ocblue);
   }
-
 }
 
 .button-404 {
@@ -44,14 +42,13 @@
   letter-spacing: 0.2em;
   font-weight: 300;
 
-  @include breakpoint(min-width $break-large){
+  @include breakpoint(min-width $break-large) {
     font-size: 18px;
   };
 
-  &:hover{
+  &:hover {
     color: palette(white);
     background: palette(ocblue);
   }
-
 }
 

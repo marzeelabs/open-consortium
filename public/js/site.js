@@ -47,7 +47,7 @@ $(function() {
 
       // Call on DOM ready
 
-      $('.carousel').flickity({
+      $('.home-features__carousel-wrapper__carousel').flickity({
         autoPlay: true,
         setGallerySize: false,
         wrapAround: true,
@@ -58,7 +58,7 @@ $(function() {
         autoPlay: true
       });
 
-      $('.carousel__testimonials-wrapper').flickity({
+      $('.carousel-testimonials__wrapper').flickity({
         autoPlay: true,
         wrapAround: true,
         imagesLoaded: true,

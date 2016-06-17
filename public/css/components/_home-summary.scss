@@ -1,4 +1,4 @@
-.home-summary{
+.home-summary {
   background: url(../images/home/home-bg-values.jpg) no-repeat center bottom palette(ocblue, x-dark);
   min-height: 395px;
   text-align: center;
@@ -18,7 +18,7 @@
   };
 }
 
-.home-summary__subtitle{
+.home-summary__subtitle {
   color: palette(white);
   font-size:14px;
   font-weight: 100;
@@ -28,13 +28,13 @@
   width: 90%;
   line-height: 1.5;
 
-  @include breakpoint(min-width $break-large){
+  @include breakpoint(min-width $break-large) {
     font-size:18px;
   };
 }
 
 
-.home-summary__title-separator{
+.home-summary__title-separator {
   width: 250px;
   height: 1px;
   display: block;
@@ -42,41 +42,41 @@
   margin: 0 auto;
 }
 
-.home-summary__values{
+.home-summary__values {
   width: 90%;
   margin: 25px auto 50px auto;
   min-height: 75px;
   display: block;
 
-  @include breakpoint(min-width $break-large){
+  @include breakpoint(min-width $break-large) {
     max-width: 900px;
   };
 }
 
-.oc-value{
+.oc-value {
   @include span(1 of 5);
 
-  @include breakpoint(max-width $break-extra-small){
+  @include breakpoint(max-width $break-extra-small) {
     @include span(5 of 5);
     margin-bottom: 20px;
   };
 
-  span{
+  span {
     font-size: 50px;
     color: palette(ocblue);
   }
 
-  h1{
+  h1 {
     color: palette(white);
     font-weight: 300;
     font-size: 12px;
 
-    @include breakpoint(max-width $break-extra-small+1){
+    @include breakpoint(max-width $break-extra-small+1) {
       font-size: 18px;
       color: palette(ocblue);
     };
 
-    @include breakpoint(min-width $break-medium-small+1){
+    @include breakpoint(min-width $break-medium-small+1) {
       font-size: 14px;
     };
   }

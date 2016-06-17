@@ -1,4 +1,4 @@
-.home-intro{
+.home-intro {
 
     @include breakpoint(max-width $break-small) {
       background: url(../images/home/home-bg-top-small.jpg) no-repeat center top palette(ocblue, mid-dark) ;
@@ -38,7 +38,7 @@
   color: palette(white);
 }
 
-.home-intro__logo{
+.home-intro__logo {
   max-width: 295px;
   height: auto;
   margin-top: 110px;
@@ -47,11 +47,10 @@
   @include breakpoint(min-width $break-large) {
     max-width: 360px;
     margin-top: 90px;
-
   };
 }
 
-.home-intro__phrase{
+.home-intro__phrase {
   @include section-title(12px, 2.5);
   max-width: 80%;
   margin: 0 auto 20px auto;
@@ -62,19 +61,19 @@
   };
 }
 
-span.home-intro__phrase-br{
+span.home-intro__phrase-br {
   display: none;
 
-  @include breakpoint(min-width $break-medium){
-      display:block;
+  @include breakpoint(min-width $break-medium) {
+    display:block;
   };
 }
 
-span.home-intro__phrase-br2{
+span.home-intro__phrase-br2 {
   display: none;
 
-  @include breakpoint(min-width $break-medium-small){
-      display:block;
+  @include breakpoint(min-width $break-medium-small) {
+    display:block;
   };
 }
 

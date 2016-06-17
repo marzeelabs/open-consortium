@@ -21,14 +21,12 @@ section.home-features
 
   section.home-features__container
     section.home-features__container-left
-
       //- Define which features to print
       - featuresWanted = ['highlight-research', 'highlight-researcher', 'visualise-consortium', 'publicise-events', 'social-media-integration'];
       - var featureIconPosition = "right";
       include ./_partials/_oc_features
 
     section.home-features__container-right
-
       //- Define which features to print
       - featuresWanted = ['content-management-tool', 'responsive-layout', 'promoted-content', 'job-offers'];
       - var featureIconPosition = "left";
@@ -37,14 +35,12 @@ section.home-features
     section.home-features__container-comp
       .home-features__container-all
 
-        .homefeatures__carousel-covermac
+        .home-features__carousel-covermac
 
         - var featureImage = "true";
 
-        .homefeatures__carousel-wrapper
+        .home-features__carousel-wrapper
             include ./_partials/_oc_features_carousel
-
-
 
 section.home-summary
   h1.home-summary__title All in all,<br>
@@ -61,7 +57,7 @@ section.home-summary
 
   .home-summary__title-separator
 
-  p.home-summary__title These are our core values
+  h1.home-summary__title These are our core values
 
   section.home-summary__values
     include ./_partials/_oc_values

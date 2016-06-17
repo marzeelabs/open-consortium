@@ -1,19 +1,14 @@
-
-.homefeatures__carousel-covermac{
+.home-features__carousel-covermac {
   background: url(../images/home/imac_bg.png) no-repeat center top;
   background-size: contain;
   width: 100%;
   height: 100%;
   position: absolute;
   z-index: 10;
-  left: 0;
-  right: 0;
-  margin-left: auto;
-  margin-right: auto;
   pointer-events: none;
 }
 
-.homefeatures__carousel-wrapper {
+.home-features__carousel-wrapper {
   overflow: hidden;
   width: 94%;
   position: absolute;
@@ -22,31 +17,13 @@
   left: 3%;
 }
 
-/* carousel height */
-.carousel {
+// - carousel height
+.home-features__carousel-wrapper__carousel {
   height: 268px;
 }
 
-/* cell inherit height from carousel */
-.carousel-cell {
+// - cell inherit height from carousel
+.home-features__carousel-wrapper__carousel-cell {
   height: 100%;
   width: 100%;
 }
-
-/*
-.homefeatures__carousel-item--small {
-  width: 150px ;
-}
-
-.homefeatures__carousel-item--square {
-  width: 200px;
-}
-
-.homefeatures__carousel-item--medium {
-  width: 267px;
-}
-
-.homefeatures__carousel-item--large {
-  width: 300px;
-}
-*/
