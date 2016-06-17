@@ -1,8 +1,11 @@
-.home-intro__logo-animation{
+.rocket-animation__container{
+  position: relative;
+  width: 100%;
   max-width: 295px;
   padding-top: 110px;
   height: auto;
-  margin: 0 auto 20px auto;
+  margin: 0 auto 15px auto;
+  transform: translateZ(0px);
 
   @include breakpoint(min-width $break-large) {
     max-width: 360px;
@@ -11,29 +14,19 @@
 }
 
 //- Animation logo
-.intro__logo-animation-container {
-  position: relative;
-  width: 100%;
-  margin: 0 auto;
-  transform: translateZ(0px);
-  height: auto;
 
-  @include breakpoint(min-width $break-large) {
-    max-width: 360px;
-  };
-}
-.intro__icon-anim{
+.rocket-animation{
   width: 19.32%;
   padding-bottom: 16.94%;
   position: relative;
   margin: 0 auto;
 }
 
-.oc__lettering {
+.rocket-animation__lettering {
   width: 100%;
   margin-top: 1%;
 }
-.oc__rocket {
+.rocket-animation__rocket {
   position: absolute;
   width: 50%;
   left: 50%;
@@ -41,10 +34,10 @@
   transform: translate3d(-54.54%, 0, 0);
   transform-style: preserve-3d;
   opacity: 0;
-  animation: oc__rocket-keyframes 0.5s linear 0.8s 1 normal forwards;
+  animation: rocket-animation__rocket-keyframes 0.5s linear 0.8s 1 normal forwards;
 }
 
-.oc__outter_line {
+.rocket-animation__outter-line {
   position: absolute;
   left: 0;
   top: 0;
@@ -52,10 +45,10 @@
   transform-origin: 50% 50%;
   transform: rotateZ(-91deg);
   opacity: 0;
-  animation: oc__outter_line-keyframes 0.3s linear 0.4s 1 normal forwards;
+  animation: rocket-animation__outter-line-keyframes 0.3s linear 0.4s 1 normal forwards;
 }
 
-.oc__inner_line {
+.rocket-animation__inner-line {
   position: absolute;
   height: 100%;
   top: 0;
@@ -63,21 +56,21 @@
   opacity: 0;
   transform: rotateZ(-95deg);
   transform-style: preserve-3d;
-  animation: oc__inner_line-keyframes 0.4s linear 0.4s 1 normal forwards;
+  animation: rocket-animation__inner-line-keyframes 0.4s linear 0.4s 1 normal forwards;
 }
 
-.oc_fire_rocket {
+.rocket-animation__fire-rocket {
   position: absolute;
   width: 21%;
   left: 40%;
   top: 35%;
   opacity: 0;
   transform-style: preserve-3d;
-  animation: oc_fire_rocket-keyframes 0.9s linear 0.4s 1 normal forwards;
+  animation: rocket-animation__fire-rocket-keyframes 0.9s linear 0.4s 1 normal forwards;
 }
 
 
-@keyframes oc__outter_line-keyframes {
+@keyframes rocket-animation__outter-line-keyframes {
   0% {
     transform: rotateZ(-91deg);
     transform-origin: 50% 50% 0;
@@ -89,7 +82,7 @@
   }
 }
 
-@keyframes oc__inner_line-keyframes {
+@keyframes rocket-animation__inner-line-keyframes {
   0% {
     transform: rotateZ(-95deg);
     transform-origin: 50% 50% 0;
@@ -105,7 +98,7 @@
   }
 }
 
-@keyframes oc__rocket-keyframes {
+@keyframes rocket-animation__rocket-keyframes {
   0% {
     transform: translate3d(-46.88%, 32.73%, 0);
     opacity: 0;
@@ -122,7 +115,7 @@
   }
 }
 
-@keyframes oc_fire_rocket-keyframes {
+@keyframes rocket-animation__fire-rocket-keyframes {
   0% {
     transform: translate3d(0, 0, 0) scale3d(1, 1, 1);
   }

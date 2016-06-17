@@ -1,11 +1,10 @@
-.error__404-intro
+.error-404
   #stars
   #stars2
   #stars3
-  .error__404-icon-anim-container
-    .error__404-icon-anim
-      img.rocket(src="/images/home/anim_404/rocket.svg")
-      img.fire__rocket(src="/images/home/anim_404/fire_rocket.svg")
+
+  include ./_partials/_rocket_animation_404
+
   p Are you lost?
     span The best thing to do is to
-  a(href='/index').button__404 Get back to known space
+  a(href='/index').button-404 Get back to known space

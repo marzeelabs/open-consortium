@@ -32,8 +32,7 @@
 
 }
 
-
-.button__404 {
+.button-404 {
   @include transition-property(color,background);
   @include transition-duration(0.3s);
   padding: 10px 20px;
