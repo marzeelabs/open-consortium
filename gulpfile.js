@@ -134,9 +134,8 @@ gulp.task('jimp', function (done) {
     })).pipe(gulp.dest(imgDest)).on('end', done);
 });
 
-gulp.task('uglify', function (done) {
-  gulp.src(['public/jquery/jquery-1.10.2.min.js','public/js/flickity.pkgd.min.js', 'public/js/site.js']).pipe(concat('site.min.js')).pipe(uglify()).pipe(gulp.dest('public/js'));
-  done();
+gulp.task('uglify', function () {
+  return gulp.src(['public/jquery/jquery-1.10.2.min.js','public/js/flickity.pkgd.min.js', 'public/js/site.js']).pipe(concat('site.min.js')).pipe(uglify()).pipe(gulp.dest('public/js'));
 });
 
 /**

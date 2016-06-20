@@ -4,14 +4,12 @@ section.home-intro
 
   p.home-intro__phrase
     | Your consortium website might just be your&nbsp;
-    span.home-intro__phrase-br
+    span.phrase-br--medium
     | most important communication tool.&nbsp;
-    span.home-intro__phrase-br2
+    span.phrase-br--small
     |Make it powerful.
 
   a(href='/features').button Know more
-
-  //a(href='#').button.button--secondary know more
 
 section.home-features
 
@@ -19,72 +17,72 @@ section.home-features
 
   h2.home-features__subtitle Check what yours might feature:
 
-  section.home-features__container
-    section.home-features__container-left
+  .home-features__container
+    .home-features__container-left
       //- Define which features to print
       - featuresWanted = ['highlight-research', 'highlight-researcher', 'visualise-consortium', 'publicise-events', 'social-media-integration'];
       - var featureIconPosition = "right";
       include ./_partials/_oc_features
 
-    section.home-features__container-right
+    .home-features__container-right
       //- Define which features to print
       - featuresWanted = ['content-management-tool', 'responsive-layout', 'promoted-content', 'job-offers'];
       - var featureIconPosition = "left";
       include ./_partials/_oc_features
 
-    section.home-features__container-comp
-      .home-features__container-all
+    .home-features__carousel-container
+      .home-features__carousel
 
-        .home-features__carousel-covermac
+        .home-features__carousel-cover
 
         - var featureImage = "true";
 
         .home-features__carousel-wrapper
-            include ./_partials/_oc_features_carousel
+            include ./_partials/_home_features_carousel
 
 section.home-summary
   h1.home-summary__title All in all,<br>
     span.home-summary__title__highlight open source Technology & Training&nbsp;
-    span.home-intro__phrase-br
+    span.phrase-br--medium
     |to power your Consortium
 
   h2.home-summary__subtitle
     |Open-source tech solutions to drive your&nbsp;
-    span.home-intro__phrase-br
+    span.phrase-br--medium
     |consortium plus manage your websites&nbsp;
-    span.home-intro__phrase-br
+    span.phrase-br--medium
     |independently.
 
   .home-summary__title-separator
 
   h1.home-summary__title These are our core values
 
-  section.home-summary__values
+  .home-summary__values
     include ./_partials/_oc_values
 
 
-  a(href='/#home-contact-form').button Ready to launch?
+  a(href='#home-contact-form').button Ready to launch?
 
 
-section.activity__container
+section.home-activity
 
-  .activity__container-title-wrapper
-    h1.activity__container-title Transmitting
+  .home-activity__title-wrapper
+    h1.home-activity__title Transmitting
 
-  .activity__container-content
+  .home-activity__content
 
-    .activity__twitter
-      h1.activity__content-title From Twitter
-      .activity__twitter-content
+    .home-activity__twitter
+      h1.home-activity__twitter-title From Twitter
+      .home-activity__twitter-content
         include ./_partials/_home_activity_twitter
 
-    .activity__blog
-      h1.activity__content-title From the blog
-      .activity__blog-content
-        include ./_partials/_home_activity_blog
+    .home-activity__blog
+      h1.home-activity__blog-title From the blog
+      .home-activity__blog-content
+        include ./_partials/_blog_activity
 
 include ./_partials/_oc_clients
 
-section#home-contact-form
-  h1.home-contact-form__title Get in touch with us
+section.home-contact
+  h1.home-contact__title Get in touch with us
   include ./_partials/_oc_contact_form

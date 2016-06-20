@@ -1,4 +1,4 @@
-#home-contact-form{
+.home-contact {
   background: palette(white);
   text-align: center;
   width: auto;
@@ -6,16 +6,15 @@
   height: 1%;
   overflow: hidden;
 
-  p{
+  p {
     color: palette(ocblue);
   }
-
 }
 
-.home-contact-form__title{
+.home-contact__title {
   @include section-title();
   margin-bottom: 20px;
- }
+}
 
 input {
   background: none;

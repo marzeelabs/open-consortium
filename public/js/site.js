@@ -47,15 +47,13 @@ $(function() {
 
       // Call on DOM ready
 
-      $('.home-features__carousel-wrapper__carousel').flickity({
+      $('.home-features-carousel').flickity({
         autoPlay: true,
         setGallerySize: false,
         wrapAround: true,
         imagesLoaded: true,
         prevNextButtons: false,
-        pageDots: false,
-        freeScroll: true,
-        autoPlay: true
+        pageDots: false
       });
 
       $('.carousel-testimonials__wrapper').flickity({
@@ -63,9 +61,7 @@ $(function() {
         wrapAround: true,
         imagesLoaded: true,
         prevNextButtons: false,
-        pageDots: true,
-        freeScroll: true,
-        autoPlay: true
+        pageDots: true
       });
 
   $(window).on('resize scroll', fixedHeader);

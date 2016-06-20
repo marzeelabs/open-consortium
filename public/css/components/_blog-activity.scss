@@ -1,0 +1,35 @@
+.blog-activity__list-item {
+  margin-bottom: 30px;
+  border-bottom: palette(grey, xxx-light) solid thin;
+  padding-bottom: 20px;
+}
+
+.blog-activity__post {
+  color: palette(grey, mid-dark);
+  text-align: left;
+  font-weight: 300;
+}
+
+.blog-activity__post-date {
+  @include adjust-font-size-to(14px, 3);
+  letter-spacing: 0.05em;
+}
+
+.blog-activity__post-title {
+  @include adjust-font-size-to(18px, 3);
+  letter-spacing: 0.05em;
+  color: palette(black);
+  margin: 0;
+}
+
+.blog-activity__post-description {
+  @include adjust-font-size-to(12px, 2.5);
+  letter-spacing: 0.05em;
+  text-align: left;
+  margin: 0;
+
+  blockquote, strong, em, a, p {
+    color: palette(grey, mid-dark);
+    border: none;
+  }
+}

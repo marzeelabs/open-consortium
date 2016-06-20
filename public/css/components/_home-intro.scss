@@ -59,19 +59,3 @@
     font-size: 20px;
   };
 }
-
-span.home-intro__phrase-br {
-  display: none;
-
-  @include breakpoint(min-width $break-medium) {
-    display:block;
-  };
-}
-
-span.home-intro__phrase-br2 {
-  display: none;
-
-  @include breakpoint(min-width $break-medium-small) {
-    display:block;
-  };
-}

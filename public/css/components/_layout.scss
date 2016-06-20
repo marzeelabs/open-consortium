@@ -23,3 +23,20 @@ footer {
   width:100%;
   padding: 0;
 }
+
+
+.phrase-br--medium {
+  display: none;
+
+  @include breakpoint(min-width $break-medium) {
+    display:block;
+  };
+}
+
+.phrase-br--small {
+  display: none;
+
+  @include breakpoint(min-width $break-medium-small) {
+    display:block;
+  };
+}

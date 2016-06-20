@@ -54,28 +54,3 @@
     @include span(isolate 2 at 5);
   };
 }
-
-/* Centre section*/
-.home-features__container-comp {
-
-  @include breakpoint(max-width $break-medium) {
-    @include span(4);
-    @include squish(1);
-  };
-
-  @include breakpoint(min-width $break-medium + 1px) {
-    @include span(isolate 3 at 2);
-    margin-top: 350px;
-     @include pre(25%);
-  };
-
-  @include breakpoint(min-width $break-large + 1px) {
-    @include span(isolate 2 at 3);
-    margin-top: 0px;
-  };
-}
-
-.home-features__container-all {
-  position: relative;
-  padding-bottom: 83.5%;
-}

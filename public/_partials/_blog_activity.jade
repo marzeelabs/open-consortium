@@ -5,13 +5,13 @@
 
 - var n = 0
 
-ul.activity__blog-list
+ul.blog-activity
   include _latest_posts
-    li.activity__blog-post
-      a(href="/blog/#{ post.slug }")
-        .activity__blog-content-date= post.date
-        .activity__blog-content-title= post.title
-        .activity__blog-content-description!= excerpt(partial('/blog/' + post.slug + '.md'))
+    li.blog-activity__list-item
+      a.blog-activity__post(href="/blog/#{ post.slug }")
+        .blog-activity__post-date= post.date
+        .blog-activity__post-title= post.title
+        .blog-activity__post-description!= excerpt(partial('/blog/' + post.slug + '.md'))
 
   //  while n < 2
   //  - n++

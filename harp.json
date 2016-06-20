@@ -103,27 +103,27 @@
       "crg": {
         "title": "CRG, Center for Genomic Regulation",
         "url": "http://www.crg.eu/",
-        "class":"oc-client-a"
+        "class":"crg"
       },
-        "embl": {
+      "embl": {
         "title": "EMBL, Germany",
         "url": "http://www.embl.de/index.php",
-        "class":"oc-client-b"
+        "class":"embl"
       },
-        "hospital-clinic": {
+      "hospital-clinic": {
         "title": "Hospital Clinic, Barcelona, Spain",
         "url": "http://www.hospitalclinic.org/",
-        "class":"oc-client-c"
+        "class":"hospital-clinic"
       },
-        "univ-mainz": {
+      "univ-mainz": {
         "title": "Universität Mainz, Germany",
         "url": "http://www.uni-mainz.de/eng/",
-        "class":"oc-client-d"
+        "class":"univ-mainz"
       },
-        "jgu-giessen": {
+      "jgu-giessen": {
         "title": "JGU Giessen, Germany",
         "url": "http://www.uni-giessen.de/cms/",
-        "class":"oc-client-e"
+        "class":"jgu-giessen"
       }
     }
   }

@@ -1,16 +1,16 @@
-section.clients-container
-  .client-container__separator
+section.clients
+  .clients__separator
 
-  h1.clients-container__title Our Clients
+  h2.clients__title Our Clients
 
-  ul.oc-client
+  ul.clients__list
     for occlient in ocClients
-      li.oc-clients__list
-        a(href='#{occlient.url}' target="_blank" title="#{occlient.title}" alt="#{occlient.title}" class="#{occlient.class}")
+      li.clients__list-item
+        a(href='#{occlient.url}' target="_blank" title="#{occlient.title}" alt="#{occlient.title}" class="clients__logo--#{occlient.class}")
 
-  h2.clients-container__title What they say about us
+  h2.clients__title What they say about us
 
-  .clients-testimonials
+  .clients__testimonials
     include /_partials/_oc_clients_testimonials
 
-  .client-container__separator
+  .clients__separator
