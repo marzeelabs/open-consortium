@@ -38,6 +38,7 @@
 }
 
 .features__intro-logo {
+  @include element-invisible();
   max-width: 295px;
   height: auto;
   margin-top: 140px;

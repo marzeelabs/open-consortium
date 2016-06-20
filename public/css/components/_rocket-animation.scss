@@ -1,3 +1,7 @@
+.rocket-animation__fallback {
+  @include element-invisible();
+}
+
 .rocket-animation__container {
   position: relative;
   width: 100%;
