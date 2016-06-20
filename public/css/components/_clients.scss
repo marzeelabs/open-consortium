@@ -1,0 +1,74 @@
+.clients {
+  background: palette(white);
+  text-align: center;
+  overflow: hidden;
+  padding: 20px ;
+}
+
+.clients__title {
+  @include section-title();
+}
+
+.clients__separator {
+  width:100%;
+  display: block;
+  background-color: palette(grey, xxx-light);
+  height: 1px;
+  margin: 0 auto 50px auto;
+}
+
+.clients__list {
+  @include reset-list();
+  width: 80%;
+  margin: 20px auto 50px auto;
+  min-height: 60px;
+  text-align: center;
+}
+
+.clients__list-item {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 10px 20px;
+
+  @include breakpoint(max-width $break-small) {
+    width: 100%;
+    display: block;
+    text-align: center;
+    margin: 0 auto 30px auto;
+  }
+
+  a {
+    height: 60px;
+    display: block;
+    overflow: hidden;
+
+    @include breakpoint(max-width $break-small) {
+      margin: 0 auto;
+    }
+  }
+}
+
+.clients__logo--crg {
+  background: url(../images/home/clients.jpg) no-repeat 0 0;
+  width:116px;
+}
+
+.clients__logo--embl {
+  background: url(../images/home/clients.jpg) no-repeat -140px 0px;
+  width:140px;
+}
+
+.clients__logo--hospital-clinic {
+  background: url(../images/home/clients.jpg) no-repeat -310px 0px;
+  width:108px;
+}
+
+.clients__logo--univ-mainz {
+  background: url(../images/home/clients.jpg) no-repeat -646px 0px;
+  width:120px;
+}
+
+.clients__logo--jgu-giessen {
+  background: url(../images/home/clients.jpg) no-repeat -800px 0px;
+  width:66px;
+}

@@ -1,0 +1,130 @@
+{
+  "globals": {
+    "title": "Open Consortium",
+    "tagline": "Boilerplate for static Harp",
+    "twitter": "marzeelabs",
+    "production_url": "http://marzeelabs.org",
+    "disqus": false,
+    "analytics": false,
+    "breakpoints": {
+      "small": 460,
+      "medium": 680,
+      "regular": 820,
+      "large": 1400
+    },
+    "ocFeatures": {
+      "highlight-research": {
+        "title": "Highlight research",
+        "side": "left",
+        "icon": "science",
+        "image": "highlight_research",
+        "description":"Text for descriptions. We can help you communicate your research and take that headache away with our communication and technology platform. It is based on open-source software, with focus on external communication."
+      },
+      "highlight-researcher": {
+        "title": "Highlight researchers",
+        "side": "left",
+        "icon": "researchers",
+        "image":"highlight_researcher",
+        "description":"Text for descriptions. We can help you communicate your research and take that headache away with our communication and technology platform. It is based on open-source software, with focus on external communication."
+      },
+      "visualise-consortium": {
+        "title": "Visualise your consortium",
+        "side": "left",
+        "icon": "visualise",
+        "image":"visualise_consortium",
+        "description":"Text for descriptions. We can help you communicate your research and take that headache away with our communication and technology platform. It is based on open-source software, with focus on external communication."
+      },
+      "publicise-events": {
+        "title": "Publicise events",
+        "side": "left",
+        "icon": "events",
+        "image":"events",
+        "description":"Text for descriptions. We can help you communicate your research and take that headache away with our communication and technology platform. It is based on open-source software, with focus on external communication."
+      },
+      "social-media-integration": {
+        "title": "Social media integration",
+        "side": "left",
+        "icon": "social",
+        "image":"social_media_integration",
+        "description":"Text for descriptions. We can help you communicate your research and take that headache away with our communication and technology platform. It is based on open-source software, with focus on external communication."
+      },
+      "content-management-tool": {
+        "title": "Content management tool",
+        "side": "right",
+        "icon": "cms",
+        "image":"cms",
+        "description":"Text for descriptions. We can help you communicate your research and take that headache away with our communication and technology platform. It is based on open-source software, with focus on external communication."
+      },
+      "responsive-layout": {
+        "title": "Responsive layout",
+        "side": "right",
+        "icon": "responsive",
+        "image":"responsive_layout",
+        "description":"Text for descriptions. We can help you communicate your research and take that headache away with our communication and technology platform. It is based on open-source software, with focus on external communication."
+      },
+      "promoted-content": {
+        "title": "Promoted content",
+        "side": "right",
+        "icon": "promoted",
+        "image":"promoted_content",
+        "description":"Text for descriptions. We can help you communicate your research and take that headache away with our communication and technology platform. It is based on open-source software, with focus on external communication."
+      },
+      "job-offers": {
+        "title": "Job offers",
+        "side": "right",
+        "icon": "jobs",
+        "image":"job_offers",
+        "description":"Text for descriptions. We can help you communicate your research and take that headache away with our communication and technology platform. It is based on open-source software, with focus on external communication."
+      }
+    },
+    "ocValues": {
+      "technology": {
+        "title": "Technology",
+        "icon": "technology"
+      },
+      "education": {
+        "title": "Education",
+        "icon": "education"
+      },
+      "innovation": {
+        "title": "Innovation",
+        "icon": "innovation"
+      },
+      "science": {
+        "title": "Science",
+        "icon": "science"
+      },
+      "open-source": {
+        "title": "Open Source",
+        "icon": "opensource"
+      }
+    },
+     "ocClients": {
+      "crg": {
+        "title": "CRG, Center for Genomic Regulation",
+        "url": "http://www.crg.eu/",
+        "class":"crg"
+      },
+      "embl": {
+        "title": "EMBL, Germany",
+        "url": "http://www.embl.de/index.php",
+        "class":"embl"
+      },
+      "hospital-clinic": {
+        "title": "Hospital Clinic, Barcelona, Spain",
+        "url": "http://www.hospitalclinic.org/",
+        "class":"hospital-clinic"
+      },
+      "univ-mainz": {
+        "title": "Universität Mainz, Germany",
+        "url": "http://www.uni-mainz.de/eng/",
+        "class":"univ-mainz"
+      },
+      "jgu-giessen": {
+        "title": "JGU Giessen, Germany",
+        "url": "http://www.uni-giessen.de/cms/",
+        "class":"jgu-giessen"
+      }
+    }
+  }
+}

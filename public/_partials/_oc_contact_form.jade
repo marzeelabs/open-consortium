@@ -1,0 +1,35 @@
+.mailchimp
+
+    //- Begin MailChimp Signup Form
+    #mc_embed_signup
+      form#mc-embedded-subscribe-form.mailchimp__validate(action="#", method="post", name="mc-embedded-subscribe-form", target="_blank", novalidate)
+        #mc_embed_signup_scroll
+          // real people should not fill this in and expect good things - do not remove this or risk form bot signups
+          .mailchimp__bot(style="position: absolute; left: -5000px;")
+            input(type="text", name="", tabindex="-1", value="")
+
+          .mailchimp__inputs
+            input#mce-NAME.mailchimp__inputs__content(type="name", value="", name="NAME", placeholder="Your name", required)
+
+          .mailchimp__inputs
+            input#mce-EMAIL.mailchimp__inputs__content(type="email", value="", name="EMAIL", placeholder="Your e-mail", required)
+
+          .mailchimp__inputs
+            select#select__dropdown-list(name="")
+              option.pre-selected Select your role
+              option Teacher
+              option Student
+              option Researcher
+              option Investor
+
+          .mailchimp__inputs--message-field
+            textarea#mce-MESSAGE.mailchimp__inputs__content(type="message", value="", name="MESSAGE", placeholder="Your message")
+
+          .mailchimp__inputs
+            input#mc-embedded-subscribe.mailchimp__inputs__submit(type="submit", value="SEND", name="send")
+
+
+
+
+//-          label(for="mce-EMAIL")
+//-            h2.mailchimp__label Email me when there are new posts

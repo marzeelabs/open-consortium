@@ -1,0 +1,9 @@
+//- This partial gives you a variable called latestPosts, a sorted array of the latest posts
+//- It also adds to each post object the attribute "slug", which is the original key
+- var latestPosts = [];
+for post, slug in public.blog._data
+  if (slug !== 'index')
+    unless post.published === false
+      - latestPosts.push(post);
+      - latestPosts[latestPosts.length - 1].slug = slug;
+- latestPosts.sort(function(a, b) {if (a.date < b.date){return 1;} return -1;});

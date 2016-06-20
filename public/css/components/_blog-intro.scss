@@ -1,0 +1,63 @@
+.blog-intro {
+  @include breakpoint(max-width $break-small) {
+    background: url(../images/blog/blog-bg-top-small.jpg) no-repeat center top palette(black) ;
+    background-size: cover;
+  }
+
+  @include breakpoint((min-width $break-small + 1px) (max-width $break-medium-small) ) {
+    background: url(../images/blog/blog-bg-top-medium-small.jpg) no-repeat center top palette(black) ;
+    background-size: cover;
+  }
+
+  @include breakpoint((min-width $break-medium-small + 1px) (max-width $break-medium) ) {
+    background: url(../images/blog/blog-bg-top-medium.jpg) no-repeat center top palette(black) ;
+    background-size: cover;
+  }
+
+  @include breakpoint((min-width $break-medium + 1px) (max-width $break-large) ) {
+    background: url(../images/blog/blog-bg-top-medium.jpg) no-repeat center top palette(black) ;
+    background-size: cover;
+  }
+
+  @include breakpoint((min-width $break-large + 1px) (max-width $break-big) ) {
+    background: url(../images/blog/blog-bg-top-large.jpg) no-repeat center top palette(black) ;
+    background-size: cover;
+  }
+
+  @include breakpoint(min-width $break-big) {
+    background: url(../images/blog/blog-bg-top-large.jpg) no-repeat center top palette(black);
+    background-size: contain;
+  }
+
+  height: 255px;
+  text-align: center;
+  width: auto;
+  margin: 0 auto;
+  color: palette(white);
+}
+
+.blog-intro__logo {
+  max-width: 275px;
+  height: auto;
+  margin-top: 110px;
+  margin-bottom: 20px;
+
+  @include breakpoint(min-width $break-large) {
+    max-width: 300px;
+    margin-top: 90px;
+  };
+}
+
+.blog-intro__phrase {
+  font-weight: 300;
+  font-size: 14px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  line-height: 1.4;
+  max-width: 80%;
+  margin: 0 auto 20px auto;
+
+  @include breakpoint(min-width $break-large) {
+    font-size: 22px;
+  };
+}

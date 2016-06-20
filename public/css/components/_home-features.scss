@@ -1,0 +1,56 @@
+.home-features {
+  background: url(../images/home/home-features_bg.jpg) no-repeat center top palette(ocblue, dark);
+  text-align: center;
+  color: palette(ocblue);
+  padding: 0 20px 15px;
+  overflow: hidden;
+}
+
+.home-features__title {
+  @include section-title();
+  font-weight: 300;
+  padding-top: 45px;
+}
+
+.home-features__subtitle {
+  @include section-title($h4-font-size, 4, 12px, 3, white);
+  font-weight: 300;
+}
+
+.home-features__container {
+  margin:40px auto 0px auto;
+  padding:0 10px 0;
+  @include container(1100px);
+}
+
+/* Left section*/
+.home-features__container-left {
+
+  @include breakpoint(max-width $break-medium) {
+    @include span(6);
+  };
+
+  @include breakpoint(min-width $break-medium + 1px) {
+    @include span(isolate 3 at 1);
+  };
+
+    @include breakpoint(min-width $break-large + 1px) {
+      @include span(isolate 2 at 1);
+  };
+}
+
+/* Right section*/
+.home-features__container-right {
+
+  @include breakpoint(max-width $break-medium) {
+    @include span(6);
+  };
+
+  @include breakpoint((min-width $break-medium + 1px)) {
+    @include span(isolate 3 at 4);
+  };
+
+  @include breakpoint((min-width $break-large + 1px)) {
+    @include span(isolate 2 at 5);
+  };
+}

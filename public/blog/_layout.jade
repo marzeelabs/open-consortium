@@ -1,0 +1,92 @@
+extends /_layouts/_html
+
+block page_content
+
+  .post__single
+
+    if public.blog._data[current.source]['cover-img']
+      - var coverFilename = public.blog._data[current.source]['cover-img'].split('.');
+      - var coverExtension = coverFilename.pop();
+      - coverFilename.join('.');
+
+      style.
+        @media screen and (max-width: 460px) {
+          .blog__post-single_cover {
+            background: url(#{ coverFilename }-small.#{ coverExtension }) center no-repeat;
+            background-size: cover;
+          }
+        }
+        @media screen and (min-width: 461px) and (max-width: 680px) {
+          .blog__post-single_cover {
+            background: url(#{ coverFilename }-medium.#{ coverExtension }) center no-repeat;
+            background-size: cover;
+          }
+        }
+        @media screen and (min-width: 681px) and (max-width: 820px) {
+          .blog__post-single_cover {
+            background: url(#{ coverFilename }-regular.#{ coverExtension }) center no-repeat;
+            background-size: cover;
+          }
+        }
+        @media screen and (min-width: 821px) and (max-width: 1400px) {
+          .blog__post-single_cover {
+            background: url(#{ coverFilename }-large.#{ coverExtension }) center no-repeat;
+            background-size: cover;
+          }
+        }
+        @media screen and (min-width: 1400px) {
+          .blog__post-single_cover {
+            background: url(#{ coverFilename }.#{ coverExtension }) center no-repeat;
+            background-size: cover;
+          }
+        }
+
+
+    .blog__post-single_cover(class='#{public.blog._data[current.source].darkTitles === true ? "blog__post-single_cover--dark" : ""}')
+      h1.blog__post-single-title #{public.blog._data[current.source].title}
+      h3.blog__post-single-subtitle #{public.blog._data[current.source].subtitle}
+
+    .blog__post-single-wrapper
+
+      .blog__post-single
+
+        include ../_partials/_post_responsive-images
+        != yield
+
+        .blog-post__post-footer-wrapper
+          //- var member = members.filter(function (m){return m.username == public.blog._data[current.source].author})[0];
+          - var postFooterDate = public.blog._data[current.source].date;
+          - var postFooterTags = public.blog._data[current.source].tags;
+          include ../_partials/_post_footer
+
+      ul.blog__post-single_share-buttons
+        li
+          a(href="https://twitter.com/intent/tweet?via=marzeelabs&url=#{encodeURIComponent(production_url + '/' + current.path.join('/'))}", target="_blank")
+            span.icon-twitter
+        li
+          a(href="https://www.linkedin.com/shareArticle?url=#{encodeURIComponent(production_url + '/' + current.path.join('/'))}", target="_blank")
+            span.icon-linkedin
+        li
+          a(href="https://www.facebook.com/sharer/sharer.php?u=#{encodeURIComponent(production_url + '/' + current.path.join('/'))}", target="_blank")
+            span.icon-facebook
+
+    //- .blog-post__disqus-wrapper.blog-post__section
+    //-   .section-inner
+    //-     .blog-post__disqus
+    //-       include ../_partials/_disqus
+
+    //- .blog-post__author-wrapper.blog-post__section
+    //-   .section-inner
+    //-     .blog-post__author
+    //-       - var member = members.filter(function (m){return m.username == public.blog._data[current.source].author})[0];
+    //-       include ../_partials/_site_member
+
+  //- .blog-post__mailchimp-wrapper.blog-post__section
+  //-   .section-inner
+  //-     .blog-post__mailchimp
+  //-       include ../_partials/_mailchimp
+
+  //- .pager-wrapper
+    //- include ../_partials/_post_pager
+
+  include ../_partials/_footer

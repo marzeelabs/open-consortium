@@ -1,0 +1,87 @@
+section.home-intro
+  include ./_partials/_rocket_animation
+
+  p.home-intro__phrase
+    | Your consortium website might just be your&nbsp;
+    span.phrase-br--medium
+    | most important communication tool.&nbsp;
+    span.phrase-br--small
+    |Make it powerful.
+
+  a(href='/features').button Know more
+
+section.home-features
+
+  h1.home-features__title Every scientific consortium needs a website.
+
+  h2.home-features__subtitle Check what yours might feature:
+
+  .home-features__container
+    .home-features__container-left
+      //- Define which features to print
+      - featuresWanted = ['highlight-research', 'highlight-researcher', 'visualise-consortium', 'publicise-events', 'social-media-integration'];
+      - var featureIconPosition = "right";
+      include ./_partials/_oc_features
+
+    .home-features__container-right
+      //- Define which features to print
+      - featuresWanted = ['content-management-tool', 'responsive-layout', 'promoted-content', 'job-offers'];
+      - var featureIconPosition = "left";
+      include ./_partials/_oc_features
+
+    .home-features__carousel-container
+      .home-features__carousel
+
+        .home-features__carousel-cover
+
+        - var featureImage = "true";
+
+        .home-features__carousel-wrapper
+            include ./_partials/_home_features_carousel
+
+section.home-summary
+  h1.home-summary__title All in all,<br>
+    span.home-summary__title__highlight open source Technology & Training&nbsp;
+    span.phrase-br--medium
+    |to power your Consortium
+
+  h2.home-summary__subtitle
+    |Open-source tech solutions to drive your&nbsp;
+    span.phrase-br--medium
+    |consortium plus manage your websites&nbsp;
+    span.phrase-br--medium
+    |independently.
+
+  .home-summary__title-separator
+
+  h1.home-summary__title These are our core values
+
+  .home-summary__values
+    include ./_partials/_oc_values
+
+
+  a(href='#home-contact-form').button Ready to launch?
+
+
+section.home-activity
+
+  .home-activity__title-wrapper
+    h1.home-activity__title Transmitting
+
+  .home-activity__content
+
+    .home-activity__twitter
+      h1.home-activity__twitter-title From Twitter
+      .home-activity__twitter-content
+        include ./_partials/_home_activity_twitter
+
+    .home-activity__blog
+      h1.home-activity__blog-title From the blog
+      .home-activity__blog-content
+        include ./_partials/_blog_activity
+
+include ./_partials/_oc_clients
+
+section.home-contact
+  h1.home-contact__title Get in touch with us
+  include ./_partials/_oc_contact_form
