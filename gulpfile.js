@@ -29,7 +29,7 @@ gulp.task('serve', ['build'], function () {
      * Watch for scss changes, tell BrowserSync to refresh main.css
      */
     gulp.watch(["public/**/*.scss"], function () {
-      reload("www/css/app.css", {stream: true});
+      reload("public/css/app.css", {stream: true});
       cp.exec('harp compile . www', {stdio: 'inherit'});
     });
     /**
@@ -37,15 +37,25 @@ gulp.task('serve', ['build'], function () {
     /**
      * Watch for image changes
      */
-    gulp.watch(["public/images/_posts-images/*"], ['jimp']);
+    gulp.watch(["public/_posts-images/*"], ['jimp']);
     gulp.watch(["public/images/**/*"], function () {
       reload();
+      cp.exec('harp compile . www', {stdio: 'inherit'});
+    });
+
+    /**
+     * Watch for JS changes
+     */
+    gulp.watch(["public/_scripts/*.js"], ['uglify']);
+    gulp.watch(["public/js/**/*"], function () {
+      reload();
+      cp.exec('harp compile . www', {stdio: 'inherit'});
     });
 
     /**
      * Watch for all other changes, reload the whole page
      */
-    gulp.watch(["public/js/*.js", "!public/js/*.min.js", "public/**/*.jade", "public/**/*.json", "public/**/*.md", "public/**/*.ejs"], ['uglify'], function () {
+    gulp.watch(["public/**/*.jade", "public/**/*.json", "public/**/*.md", "public/**/*.ejs"], function () {
       reload();
       cp.exec('harp compile . www', {stdio: 'inherit'});
     });
@@ -56,12 +66,12 @@ gulp.task('serve', ['build'], function () {
 /**
  * Build the Harp Site
  */
-gulp.task('build', ['copy-assets', 'jimp', 'uglify'], function () {
+gulp.task('build', ['copy-css-assets', 'copy-js-assets', 'jimp', 'uglify'], function () {
   return cp.exec('harp compile . www', {stdio: 'inherit'})
 });
 
 // Jimp variables
-var imgSrc          = 'public/images/_posts-images/*',
+var imgSrc          = 'public/_posts-images/*',
     imgDest         = 'public/images/posts/',
     imgQuality      = 80,
     largeWidth      = harpConfig.globals.breakpoints.large,
@@ -121,22 +131,6 @@ gulp.task('jimp-small', function() {
 });
 
 /**
- * Copy assets from NODE Modules
- */
-gulp.task('copy-assets', function() {
-    var assets = {
-        js: [
-            './node_modules/flickity/dist/flickity.pkgd.min.js'
-        ],
-        'css/vendors': ['./node_modules/flickity/dist/flickity.min.css']
-    };
-    _(assets).forEach(function (assets, type) {
-      gulp.src(assets).pipe(gulp.dest('./public/'+type))
-    });
-    return cp.exec('harp compile . www', {stdio: 'inherit'});
-});
-
-/**
  * Create responsive images with JIMP
  *
  * We divide this into several tasks so we can have a callback
@@ -150,9 +144,29 @@ gulp.task('jimp', function (callback) {
   );
 });
 
+/**
+ * Copy css assets from NODE Modules
+ */
+gulp.task('copy-css-assets', function() {
+  return gulp.src('./node_modules/flickity/dist/flickity.min.css').pipe(gulp.dest('./public/css/vendors'));
+});
 
+/**
+ * Copy js assets from NODE Modules
+ */
+gulp.task('copy-js-assets', function() {
+  return gulp.src('./node_modules/flickity/dist/flickity.pkgd.min.js').pipe(gulp.dest('./public/_scripts'));
+});
+
+/**
+ * Concatenate JS files
+ */
 gulp.task('uglify', function () {
-  return gulp.src(['public/jquery/jquery-1.10.2.min.js','public/js/flickity.pkgd.min.js', 'public/js/site.js']).pipe(concat('site.min.js')).pipe(uglify()).pipe(gulp.dest('public/js'));
+  return gulp.src([
+    'public/_scripts/jquery-1.10.2.min.js',
+    'public/_scripts/flickity.pkgd.min.js',
+    'public/_scripts/site.js'
+  ]).pipe(concat('site.min.js')).pipe(uglify()).pipe(gulp.dest('public/js'));
 });
 
 /**
