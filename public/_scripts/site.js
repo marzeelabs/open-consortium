@@ -59,11 +59,11 @@ $(function() {
       // Make features clickable
       $('.home-features__container .oc-feature__title-wrapper').each(function(index) {
         $(this).click(function() {
+          console.log("Clicked " + index);
           featuresCarousel.flickity('select', index);
           // Let's also stop the player so we stay on the selected screen
           featuresCarousel.flickity('pausePlayer');
         });
-        // console.log( index + ": " + $( this ).text() );
       })
 
       $('.carousel-testimonials__wrapper').flickity({
