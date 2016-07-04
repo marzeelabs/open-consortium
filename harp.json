@@ -2,7 +2,7 @@
   "globals": {
     "title": "Open Consortium",
     "tagline": "Boilerplate for static Harp",
-    "twitter": "marzeelabs",
+    "twitter": "openconsortium",
     "production_url": "http://marzeelabs.org",
     "disqus": false,
     "analytics": false,
