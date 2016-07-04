@@ -47,7 +47,7 @@ $(function() {
 
       // Call on DOM ready
 
-      $('.home-features-carousel').flickity({
+      var featuresCarousel = $('.home-features-carousel').flickity({
         autoPlay: true,
         setGallerySize: false,
         wrapAround: true,
@@ -55,6 +55,16 @@ $(function() {
         prevNextButtons: false,
         pageDots: false
       });
+
+      // Make features clickable
+      $('.home-features__container .oc-feature__title-wrapper').each(function(index) {
+        $(this).click(function() {
+          featuresCarousel.flickity('select', index);
+          // Let's also stop the player so we stay on the selected screen
+          featuresCarousel.flickity('pausePlayer');
+        });
+        // console.log( index + ": " + $( this ).text() );
+      })
 
       $('.carousel-testimonials__wrapper').flickity({
         autoPlay: true,
