@@ -36,17 +36,10 @@
       },
       "job-offers": {
         "title": "Publicize jobs",
-        "side": "right",
+        "side": "left",
         "icon": "jobs",
         "image":"job_offers",
         "description":"Need to hire in the consortium? A well-thought out job page can make it easier for you to promote your jobs and have applications apply directly via the website."
-      },
-      "social-media-integration": {
-        "title": "Integrate social media",
-        "side": "left",
-        "icon": "social",
-        "image":"social_media_integration",
-        "description":"Text for descriptions. We can help you communicate your research and take that headache away with our communication and technology platform. It is based on open-source software, with focus on external communication."
       },
       "content-management-tool": {
         "title": "A powerful content management tool",
@@ -54,6 +47,13 @@
         "icon": "cms",
         "image":"cms",
         "description":"Nobody knows better than you what you want to show on your website, so why don't you build the site yourself? Powered by the popular Drupal content management system, you can add all the content yourself, whether these are pages, menus, researcher profiles, job openings or projects. We can host the site on our servers, or you can host it at your institute."
+      },
+      "social-media-integration": {
+        "title": "Integrate social media",
+        "side": "right",
+        "icon": "social",
+        "image":"social_media_integration",
+        "description":"Facebook, Twitter, Disqus, you name it. We'll integrate this into the website and make sure you don't have to put content in too many places!"
       },
       "responsive-layout": {
         "title": "Responsive layout",
@@ -63,11 +63,11 @@
         "description":"We follow a systematic approach in designing your identity and website, involving you at every step of the process. And we guarantee that your website will look splendid on every device, whether it is your smartphone on the road, your tablet in the sofa or your computer screen at work."
       },
       "promoted-content": {
-        "title": "Promoted content",
+        "title": "Hosting without headaches",
         "side": "right",
         "icon": "promoted",
         "image":"promoted_content",
-        "description":"Text for descriptions. We can help you communicate your research and take that headache away with our communication and technology platform. It is based on open-source software, with focus on external communication."
+        "description":"Through our partnership with <a href='#'>Pantheon</a>, a leading Drupal hosting platform, hosting the website is a breeze. We can provide you with both a test and a production environment, so that you can preview any changes before they go live. Of course, if you want to host the site yourself, we can also transfer the hosting to your institute."
       }
     },
     "ocValues": {
