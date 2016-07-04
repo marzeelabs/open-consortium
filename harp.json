@@ -46,14 +46,14 @@
         "side": "right",
         "icon": "cms",
         "image":"cms",
-        "description":"Nobody knows better than you what you want to show on your website, so why don't you build the site yourself? Powered by the popular Drupal content management system, you can add all the content yourself, whether these are pages, menus, researcher profiles, job openings or projects. We can host the site on our servers, or you can host it at your institute."
+        "description":"Nobody knows better than you what you want to show on your website, so why don't you build the site yourself? Powered by Drupal, the popular open-source content management system, you can add all the content yourself, whether these are pages, menus, researcher profiles, job openings or projects."
       },
       "social-media-integration": {
         "title": "Integrate social media",
         "side": "right",
         "icon": "social",
         "image":"social_media_integration",
-        "description":"Facebook, Twitter, Disqus, you name it. We'll integrate this into the website and make sure you don't have to put content in too many places!"
+        "description":"Facebook or Twitter, a mailing list, or comments on your blog posts. Your consortium website is ready to talk with all these other websites. You'll reach a larger audience and we'll make sure you don't have to put content in too many places!"
       },
       "responsive-layout": {
         "title": "Responsive layout",
@@ -67,7 +67,7 @@
         "side": "right",
         "icon": "promoted",
         "image":"promoted_content",
-        "description":"Through our partnership with <a href='#'>Pantheon</a>, a leading Drupal hosting platform, hosting the website is a breeze. We can provide you with both a test and a production environment, so that you can preview any changes before they go live. Of course, if you want to host the site yourself, we can also transfer the hosting to your institute."
+        "description":"Through our partnership with <a href='https://pantheon.io/agencies/marzee-labs' target='_blank'>Pantheon</a>, a leading website management platform, hosting your website is a breeze. We can provide you with both a test and a production environment, so that you can preview any changes before they go live. Of course, if you want to host the site yourself, we can also transfer the site to your institute's servers."
       }
     },
     "ocValues": {
