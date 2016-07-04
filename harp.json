@@ -18,62 +18,55 @@
         "side": "left",
         "icon": "science",
         "image": "highlight_research",
-        "description":"Text for descriptions. We can help you communicate your research and take that headache away with our communication and technology platform. It is based on open-source software, with focus on external communication."
-      },
-      "highlight-researcher": {
-        "title": "Highlight researchers",
-        "side": "left",
-        "icon": "researchers",
-        "image":"highlight_researcher",
-        "description":"Text for descriptions. We can help you communicate your research and take that headache away with our communication and technology platform. It is based on open-source software, with focus on external communication."
+        "description":"It's all about the research and the researchers! A beautiful and informative website for your consortium will help inform your target public about the research you are doing and the impact you are having. With Open Consortium, we help you make this easier!"
       },
       "visualise-consortium": {
-        "title": "Visualise your consortium",
+        "title": "Visualise the network",
         "side": "left",
         "icon": "visualise",
         "image":"visualise_consortium",
-        "description":"Text for descriptions. We can help you communicate your research and take that headache away with our communication and technology platform. It is based on open-source software, with focus on external communication."
+        "description":"There is no better way to understand your network than seeing it on an interactive map."
       },
       "publicise-events": {
-        "title": "Publicise events",
+        "title": "Promote events",
         "side": "left",
         "icon": "events",
         "image":"events",
         "description":"Text for descriptions. We can help you communicate your research and take that headache away with our communication and technology platform. It is based on open-source software, with focus on external communication."
       },
+      "job-offers": {
+        "title": "Publicize jobs",
+        "side": "right",
+        "icon": "jobs",
+        "image":"job_offers",
+        "description":"Need to hire in the consortium? A well-thought out job page can make it easier for you to promote your jobs and have applications apply directly via the website."
+      },
       "social-media-integration": {
-        "title": "Social media integration",
+        "title": "Integrate social media",
         "side": "left",
         "icon": "social",
         "image":"social_media_integration",
         "description":"Text for descriptions. We can help you communicate your research and take that headache away with our communication and technology platform. It is based on open-source software, with focus on external communication."
       },
       "content-management-tool": {
-        "title": "Content management tool",
+        "title": "A powerful content management tool",
         "side": "right",
         "icon": "cms",
         "image":"cms",
-        "description":"Text for descriptions. We can help you communicate your research and take that headache away with our communication and technology platform. It is based on open-source software, with focus on external communication."
+        "description":"Nobody knows better than you what you want to show on your website, so why don't you build the site yourself? Powered by the popular Drupal content management system, you can add all the content yourself, whether these are pages, menus, researcher profiles, job openings or projects. We can host the site on our servers, or you can host it at your institute."
       },
       "responsive-layout": {
         "title": "Responsive layout",
         "side": "right",
         "icon": "responsive",
         "image":"responsive_layout",
-        "description":"Text for descriptions. We can help you communicate your research and take that headache away with our communication and technology platform. It is based on open-source software, with focus on external communication."
+        "description":"We follow a systematic approach in designing your identity and website, involving you at every step of the process. And we guarantee that your website will look splendid on every device, whether it is your smartphone on the road, your tablet in the sofa or your computer screen at work."
       },
       "promoted-content": {
         "title": "Promoted content",
         "side": "right",
         "icon": "promoted",
         "image":"promoted_content",
-        "description":"Text for descriptions. We can help you communicate your research and take that headache away with our communication and technology platform. It is based on open-source software, with focus on external communication."
-      },
-      "job-offers": {
-        "title": "Job offers",
-        "side": "right",
-        "icon": "jobs",
-        "image":"job_offers",
         "description":"Text for descriptions. We can help you communicate your research and take that headache away with our communication and technology platform. It is based on open-source software, with focus on external communication."
       }
     },
