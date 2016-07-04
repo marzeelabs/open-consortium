@@ -1,11 +1,11 @@
 {
   "globals": {
     "title": "Open Consortium",
-    "tagline": "Boilerplate for static Harp",
+    "tagline": "Technology to power your science consortium",
     "twitter": "openconsortium",
-    "production_url": "http://marzeelabs.org",
+    "production_url": "http://openconsortium.eu",
     "disqus": false,
-    "analytics": false,
+    "analytics": "UA-31959684-1",
     "breakpoints": {
       "small": 460,
       "medium": 680,
