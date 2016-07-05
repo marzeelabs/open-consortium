@@ -26,15 +26,21 @@
   padding-bottom: 20px;
   text-align: center;
 
-  @include breakpoint(min-width $break-medium-small + 1px) {
+  @include breakpoint(max-width $break-medium-small) {
+    max-width:90%;
+  }
+
+  @include breakpoint($break-medium-small + 1px) {
     padding-bottom: 40px;
 
     @include odd() { //- creates the even / odd rhythm
       .oc-feature__content {
-        @include span (isolate 3 at 1)
+        @include span (isolate 3 at 1);
+        text-align: right;
       }
       .oc-feature__image-wrapper {
-        @include span (isolate 3 at 4)
+        @include span (isolate 3 at 4);
+        text-align: left;
       }
       .oc-feature__title {
         float:right;
@@ -56,7 +62,7 @@
   }
 
   .oc-feature__title {
-    @include breakpoint(min-width $break-medium-small + 1px) {
+    @include breakpoint($break-medium-small + 1px) {
       float:left;
       max-width: 200px;
       text-align: left;
@@ -73,7 +79,7 @@
   .oc-feature--large & {
     margin-bottom: 20px;
 
-    @include breakpoint(min-width $break-medium-small + 1px) {
+    @include breakpoint($break-medium-small + 1px) {
        @include span (isolate 3 at 4);
     }
   }
@@ -83,7 +89,7 @@
 
 .oc-feature__image-wrapper {
 
-  @include breakpoint(min-width $break-medium-small + 1px) {
+  @include breakpoint($break-medium-small + 1px) {
       @include span (isolate 3 at 1);
   }
 }
@@ -91,7 +97,7 @@
 
 .oc-feature__title-wrapper {
 
-  @include breakpoint(min-width $break-medium + 1px) {
+  @include breakpoint($break-medium + 1px) {
     transform: translateY(50%);
   }
   .oc-feature--large & {
@@ -105,11 +111,11 @@
   font-weight: 300;
   letter-spacing: 0.2em;
 
-  @include breakpoint(max-width $break-medium) {
+  @include breakpoint($break-medium) {
     text-align: center;
   }
 
-  @include breakpoint(min-width $break-medium + 1px) {
+  @include breakpoint($break-medium + 1px) {
     transform: translateY(-50%);
   }
 
@@ -134,7 +140,7 @@
     margin-bottom: 5px;
   }
 
-  @include breakpoint(min-width $break-medium + 1px) {
+  @include breakpoint($break-medium + 1px) {
     transform: translateY(-50%);
 
     .oc-feature--right & {
