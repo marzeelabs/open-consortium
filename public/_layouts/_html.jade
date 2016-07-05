@@ -30,8 +30,6 @@ html(lang='en')
     // Modernizr
     //script(src='/js/modernizr-custom.min.js')
 
-    //- include ../_partials/analytics
-
   body(class='#{current.path[0] === "index" ? "body--home" : ""}')
 
     include ../_partials/_header
@@ -41,3 +39,6 @@ html(lang='en')
     //- Add JS
     script(src='/js/site.min.js')
     script(async src="//platform.twitter.com/widgets.js" charset="utf-8")
+
+    if analytics
+      include ../_partials/_analytics
