@@ -5,6 +5,14 @@
   box-sizing: border-box;
   //@include pie-clearfix();
   @include container(1000px);
+
+  .home-features & {
+    cursor: pointer;
+
+    &:hover {
+      color: palette(white);
+    }
+  }
 }
 
 .oc-feature--right {
