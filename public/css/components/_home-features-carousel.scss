@@ -5,9 +5,9 @@
   };
 
   @include breakpoint(min-width $break-medium + 1px) {
-    @include span(isolate 3 at 2);
-    margin-top: 350px;
-     @include pre(25%);
+    @include span(4);
+    margin-top: 280px;
+    @include squish(1);
   };
 
   @include breakpoint(min-width $break-large + 1px) {
@@ -19,6 +19,35 @@
 .home-features__carousel {
   position: relative;
   padding-bottom: 83.5%;
+}
+
+.home-features__carousel-glow {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background: palette(white);
+  top: 70%;
+  left: 45.5%;
+  z-index: 60;
+  border-radius: 30px;
+  filter: blur(3px);
+  animation: carousel-glow-keyframes 0.3s linear 0s infinite normal forwards;
+}
+
+@keyframes carousel-glow-keyframes {
+  0% {
+    transform: scale3d(1, 1, 1);
+    opacity: 0;
+  }
+  50% {
+    transform: scale3d(1.5, 1.5, 1.5);
+    opacity: 1;
+    filter: blur(2px);
+  }
+  100% {
+    transform: scale3d(1, 1, 1);
+    opacity: 0;
+  }
 }
 
 .home-features__carousel-cover {
@@ -35,18 +64,24 @@
   overflow: hidden;
   width: 94%;
   position: absolute;
+  height: 62%;
   z-index: 1;
-  top: 10px;
+  top: 4%;
   left: 3%;
 }
 
 // - carousel height
 .home-features-carousel {
-  height: 268px;
+  height: 100%;
 }
 
 // - cell inherit height from carousel
 .home-features-carousel__cell {
   height: 100%;
   width: 100%;
+
+  img {
+    width: 100%;
+  }
 }
+
