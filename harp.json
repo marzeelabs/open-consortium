@@ -20,13 +20,6 @@
         "image": "highlight_research",
         "description":"Text for descriptions. We can help you communicate your research and take that headache away with our communication and technology platform. It is based on open-source software, with focus on external communication."
       },
-      "highlight-researcher": {
-        "title": "Highlight researchers",
-        "side": "left",
-        "icon": "researchers",
-        "image":"highlight_researcher",
-        "description":"Text for descriptions. We can help you communicate your research and take that headache away with our communication and technology platform. It is based on open-source software, with focus on external communication."
-      },
       "visualise-consortium": {
         "title": "Visualise your consortium",
         "side": "left",
