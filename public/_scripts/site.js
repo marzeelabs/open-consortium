@@ -90,7 +90,7 @@ $(function() {
       });
 
       $('.portfolio-carousel').flickity({
-        autoPlay: true,
+        autoPlay: 3500,
         setGallerySize: false,
         wrapAround: true,
         imagesLoaded: true,
