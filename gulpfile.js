@@ -66,7 +66,7 @@ gulp.task('serve', ['build'], function () {
 /**
  * Build the Harp Site
  */
-gulp.task('build', ['copy-css-assets', 'copy-js-assets', 'jimp', 'uglify'], function () {
+gulp.task('build', ['copy-css-assets', 'jimp', 'uglify'], function () {
   return cp.exec('harp compile . www', {stdio: 'inherit'})
 });
 
@@ -161,7 +161,7 @@ gulp.task('copy-js-assets', function() {
 /**
  * Concatenate JS files
  */
-gulp.task('uglify', function () {
+gulp.task('uglify', ['copy-js-assets'], function () {
   return gulp.src([
     'public/_scripts/jquery-1.10.2.min.js',
     'public/_scripts/flickity.pkgd.min.js',

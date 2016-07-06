@@ -23,6 +23,20 @@ section.features__list
   include ./_partials/_oc_features
 
 
+section.features__portfolio
+
+  h1 Check some of our projects
+
+  .features-carousel__container
+
+    .features-carousel
+      .features-carousel__cover
+
+      - var featureImage = "true";
+
+      .features-carousel__wrapper
+          include ./_partials/_features_portfolio_carousel
+
 section.features__drupal
   h1 Under the Hood
 

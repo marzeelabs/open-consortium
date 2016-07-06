@@ -30,6 +30,17 @@
   }
 }
 
+
+.button--scroller{
+  padding-right: 5px;
+
+    &:after {
+      content: '\e90d';
+      font-family: 'open-consortium';
+      speak: none;
+    }
+}
+
 .button-404 {
   @include transition-property(color,background);
   @include transition-duration(0.3s);

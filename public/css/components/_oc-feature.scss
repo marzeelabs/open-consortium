@@ -5,6 +5,14 @@
   box-sizing: border-box;
   //@include pie-clearfix();
   @include container(1000px);
+
+  .home-features & {
+    cursor: pointer;
+
+    &:hover {
+      color: palette(white);
+    }
+  }
 }
 
 .oc-feature--right {
@@ -34,13 +42,14 @@
     padding-bottom: 40px;
 
     @include odd() { //- creates the even / odd rhythm
+      text-align: right;
+
       .oc-feature__content {
+        padding-right: 0;
         @include span (isolate 3 at 1);
-        text-align: right;
       }
       .oc-feature__image-wrapper {
         @include span (isolate 3 at 4);
-        text-align: left;
       }
       .oc-feature__title {
         float:right;
@@ -49,11 +58,14 @@
       }
       .oc-feature__icon {
         margin-left: 15px;
-        float:right;
+        margin-right: 0;
+        float: right;
       }
     };
 
     @include even() {
+      text-align: left;
+
       .oc-feature__icon {
         float:left;
         margin-right: 15px;
@@ -61,6 +73,20 @@
     }
   }
 
+  a {
+    color: palette(ocblue);
+
+    &:hover {
+      color: palette(ocblue, dark);
+    }
+  }
+
+  .oc-feature__title-wrapper {
+    pointer-events: none;
+    @include breakpoint($break-medium + 1px) {
+      transform: translateY(50%);
+    }
+  }
   .oc-feature__title {
     @include breakpoint($break-medium-small + 1px) {
       float:left;
@@ -97,9 +123,6 @@
 
 .oc-feature__title-wrapper {
 
-  @include breakpoint($break-medium + 1px) {
-    transform: translateY(50%);
-  }
   .oc-feature--large & {
       @include pie-clearfix();
   }
@@ -111,7 +134,7 @@
   font-weight: 300;
   letter-spacing: 0.2em;
 
-  @include breakpoint($break-medium) {
+  @include breakpoint(max-width $break-medium) {
     text-align: center;
   }
 

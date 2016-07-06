@@ -1,4 +1,5 @@
 section.home-intro
+
   include ./_partials/_rocket_animation
 
   p.home-intro__phrase
@@ -8,9 +9,12 @@ section.home-intro
     span.phrase-br--small
     |Make it powerful.
 
-  a(href='/features').button Know more
+  a(href='#oc-features').button.button--scroller Know more
 
-section.home-features
+  .stars-static-bg__container
+    include ./_partials/_star_static_bg
+
+section#oc-features.home-features
 
   h1.home-features__title Every scientific consortium needs a website.
 
@@ -39,6 +43,8 @@ section.home-features
         .home-features__carousel-wrapper
             include ./_partials/_home_features_carousel
 
+  a(href='/features').button Learn more
+
 section.home-summary
   h1.home-summary__title All in all,<br>
     span.home-summary__title__highlight open source Technology & Training&nbsp;
@@ -60,7 +66,7 @@ section.home-summary
     include ./_partials/_oc_values
 
 
-  a(href='#home-contact-form').button Ready to launch?
+  a(href='#contact-us').button.button--scroller Ready to launch?
 
 
 section.home-activity
@@ -82,6 +88,6 @@ section.home-activity
 
 include ./_partials/_oc_clients
 
-section.home-contact
+section#contact-us.home-contact
   h1.home-contact__title Get in touch with us
   include ./_partials/_oc_contact_form
