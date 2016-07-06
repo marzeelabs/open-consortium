@@ -34,15 +34,16 @@
 .home-features__carousel-wrapper {
   overflow: hidden;
   width: 94%;
+  height: 62%;
   position: absolute;
   z-index: 1;
-  top: 10px;
+  top: 5%;
   left: 3%;
 }
 
 // - carousel height
 .home-features-carousel {
-  height: 268px;
+  height: 100%;
 }
 
 // - cell inherit height from carousel

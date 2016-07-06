@@ -89,7 +89,7 @@ $(function() {
         pageDots: true
       });
 
-      $('.features-carousel__wrapper').flickity({
+      $('.portfolio-carousel').flickity({
         autoPlay: true,
         setGallerySize: false,
         wrapAround: true,
