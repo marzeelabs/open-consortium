@@ -15,6 +15,14 @@
   }
 }
 
+.is-selected {
+  color: palette(ocblue);
+
+  @include breakpoint($break-medium + 1px) {
+    color: palette(white);
+  };
+}
+
 .oc-feature--right {
   @include breakpoint(min-width $break-medium + 1px) {
     text-align: right;

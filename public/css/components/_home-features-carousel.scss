@@ -4,20 +4,16 @@
     @include squish(1);
   };
 
-  @include breakpoint(min-width $break-medium + 1px) {
+  @include breakpoint($break-medium + 1px) {
     @include span(4);
     margin-top: 280px;
     @include squish(1);
   };
 
-  @include breakpoint(min-width $break-large + 1px) {
+  @include breakpoint($break-large + 1px) {
     @include span(isolate 2 at 3);
     margin-top: 0px;
   };
-}
-
-.is-selected{
-  color: palette(white);
 }
 
 .home-features__carousel {
