@@ -82,10 +82,8 @@ $(function() {
       })
 
       $('.carousel-testimonials__wrapper').flickity({
-        autoPlay: true,
         wrapAround: true,
-        imagesLoaded: true,
-        prevNextButtons: false,
+        prevNextButtons: true,
         pageDots: true
       });
 
