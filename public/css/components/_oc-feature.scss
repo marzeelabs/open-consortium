@@ -8,6 +8,8 @@
 
   .home-features & {
     cursor: pointer;
+    @include transition(color);
+    @include transition-duration(0.3s);
 
     &:hover {
       color: palette(white);
@@ -21,6 +23,12 @@
   @include breakpoint($break-medium + 1px) {
     color: palette(white);
   };
+}
+
+.not-selected {
+      @include transition(color);
+      @include transition-duration(0.3s);
+      color: palette(ocblue);
 }
 
 .oc-feature--right {

@@ -42,13 +42,46 @@
   top:5%;
   z-index: 1;
   height: 62%;
-  overflow: hidden;
+  //overflow: hidden;
 }
 
 // - carousel height
 .portfolio-carousel {
   height: 100%;
 
+  .previous {
+    left: -18%;
+    transform: scale(0.6);
+    top:35%;
+
+    @include breakpoint($break-small) {
+      transform: scale(0.8);
+      top:40%;
+    }
+
+    @include breakpoint($break-medium) {
+      left: -10%;
+      transform: scale(1);
+      top:50%;
+    }
+  }
+
+  .next {
+    right: -18%;
+    transform: scale(0.6);
+    top:35%;
+
+    @include breakpoint($break-small) {
+      transform: scale(0.8);
+      top:40%;
+    }
+
+    @include breakpoint($break-medium) {
+      right: -10%;
+      transform: scale(1);
+      top:50%;
+    }
+  }
 }
 
 // - cell inherit height from carousel
@@ -56,7 +89,7 @@
   height: 100%;
   width: 100%;
 
-  img{
+  img {
     width:100%;
   }
 }

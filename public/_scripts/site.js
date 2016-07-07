@@ -101,7 +101,7 @@ $(function() {
         setGallerySize: false,
         wrapAround: true,
         imagesLoaded: true,
-        prevNextButtons: false,
+        prevNextButtons: true,
         pageDots: false
       });
 

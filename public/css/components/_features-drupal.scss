@@ -36,7 +36,7 @@
   min-height: 350px;
 
   h1 {
-    @include section-title($h4-font-size, 4, 30px);
+    @include section-title($h4-font-size, 4, 20px);
     @include breakpoint (min-width $break-medium + 1) {
       font-size:30px;
     }
