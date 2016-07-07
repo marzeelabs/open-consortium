@@ -72,21 +72,30 @@ $(function() {
       });
 
       // Make features clickable
-      $('.home-features__container .oc-feature__title-wrapper').each(function(index) {
+      $('.home-features__container .oc-feature').each(function(index) {
         $(this).click(function() {
           console.log("Clicked " + index);
+
+          // Removes is selected class
+          $('.home-features__container .oc-feature').removeClass('is-selected');
+
+          // Adds is selected class
+          $(this).addClass('is-selected');
+
           featuresCarousel.flickity('select', index);
           // Let's also stop the player so we stay on the selected screen
           featuresCarousel.flickity('pausePlayer');
         });
       })
 
+      // testimonials
       $('.carousel-testimonials__wrapper').flickity({
         wrapAround: true,
         prevNextButtons: true,
         pageDots: true
       });
 
+      // Portfolio in Features page
       $('.portfolio-carousel').flickity({
         autoPlay: 3500,
         setGallerySize: false,
