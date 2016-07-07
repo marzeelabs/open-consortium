@@ -35,13 +35,16 @@ section#oc-features.home-features
 
     .home-features__carousel-container
       .home-features__carousel
+        .home-features__carousel-glow__container
+          .home-features__carousel-glow
 
         .home-features__carousel-cover
 
         - var featureImage = "true";
 
         .home-features__carousel-wrapper
-            include ./_partials/_home_features_carousel
+          include ./_partials/_home_features_carousel
+
 
   a(href='/features').button Learn more
 
