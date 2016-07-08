@@ -1,25 +1,23 @@
 .features__drupal {
-    @include breakpoint(max-width $break-small) {
     background: url(../images/features/features-bg-bottom-small.jpg) no-repeat center bottom palette(ocblue, x-dark) ;
     background-size: cover;
-  }
 
-  @include breakpoint(($break-small + 1px) (max-width $break-medium-small) ) {
+  @include breakpoint($break-small + 1px) {
     background: url(../images/features/features-bg-bottom-medium-small.jpg) no-repeat center bottom palette(ocblue, x-dark) ;
     background-size: cover;
   }
 
-  @include breakpoint(($break-medium-small + 1px) (max-width $break-medium) ) {
+  @include breakpoint($break-medium-small + 1px) {
     background: url(../images/features/features-bg-bottom-medium-small.jpg) no-repeat center bottom palette(ocblue, x-dark) ;
     background-size: cover;
   }
 
-  @include breakpoint(($break-medium + 1px) (max-width $break-large) ) {
+  @include breakpoint($break-medium + 1px) {
     background: url(../images/features/features-bg-bottom-medium.jpg) no-repeat center bottom palette(ocblue, x-dark) ;
     background-size: cover;
   }
 
-  @include breakpoint(($break-large + 1px) (max-width $break-big) ) {
+  @include breakpoint($break-large + 1px) {
     background: url(../images/features/features-bg-bottom-large.jpg) no-repeat center bottom palette(ocblue, x-dark) ;
     background-size: cover;
 

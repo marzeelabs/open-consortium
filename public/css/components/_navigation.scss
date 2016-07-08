@@ -11,7 +11,7 @@
   &.navigation--fixed-top {
     background-color: palette(ocblue);
 
-    @include breakpoint ($break-medium + 1 ) {
+    @include breakpoint($break-medium + 1 ) {
       a :hover {
         color: palette(ocblue, x-dark);
         font-weight: 400;
@@ -24,7 +24,7 @@
     }
   }
 
-  @include breakpoint (max-width ($break-medium - 1px)) {
+  @include breakpoint(max-width $break-medium - 1px) {
     position: fixed;
     text-align: left;
     top: 0;
@@ -46,7 +46,7 @@
 }
 
 .navigation__mobile-menu {
-  @include breakpoint(max-width ($break-medium - 1px)) {
+  @include breakpoint(max-width $break-medium - 1px) {
     @include transition-property(max-height);
     @include transition-duration(0.5s);
     max-height: 0;

@@ -1,25 +1,23 @@
 .blog-intro {
-  @include breakpoint(max-width $break-small) {
     background: url(../images/blog/blog-bg-top-small.jpg) no-repeat center top palette(black) ;
     background-size: cover;
-  }
 
-  @include breakpoint(( $break-small + 1px) (max-width $break-medium-small) ) {
+  @include breakpoint($break-small + 1px) {
     background: url(../images/blog/blog-bg-top-medium-small.jpg) no-repeat center top palette(black) ;
     background-size: cover;
   }
 
-  @include breakpoint(($break-medium-small + 1px) (max-width $break-medium) ) {
+  @include breakpoint($break-medium-small + 1px) {
     background: url(../images/blog/blog-bg-top-medium.jpg) no-repeat center top palette(black) ;
     background-size: cover;
   }
 
-  @include breakpoint(($break-medium + 1px) (max-width $break-large) ) {
+  @include breakpoint($break-medium + 1px) {
     background: url(../images/blog/blog-bg-top-medium.jpg) no-repeat center top palette(black) ;
     background-size: cover;
   }
 
-  @include breakpoint(($break-large + 1px) (max-width $break-big) ) {
+  @include breakpoint($break-large + 1px) {
     background: url(../images/blog/blog-bg-top-large.jpg) no-repeat center top palette(black) ;
     background-size: cover;
   }
