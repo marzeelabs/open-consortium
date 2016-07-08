@@ -13,7 +13,7 @@
 }
 
 .home-summary__title__highlight {
-  @include breakpoint(min-width $break-large){
+  @include breakpoint($break-large){
     font-size: $h2-font-size;
   };
 }
@@ -28,7 +28,7 @@
   width: 90%;
   line-height: 1.5;
 
-  @include breakpoint(min-width $break-large) {
+  @include breakpoint($break-large) {
     font-size:18px;
   };
 }
@@ -48,7 +48,7 @@
   min-height: 75px;
   display: block;
 
-  @include breakpoint(min-width $break-large) {
+  @include breakpoint($break-large) {
     max-width: 900px;
   };
 }
@@ -76,7 +76,7 @@
       color: palette(ocblue);
     };
 
-    @include breakpoint(min-width $break-medium-small+1) {
+    @include breakpoint($break-medium-small+1) {
       font-size: 14px;
     };
   }

@@ -4,27 +4,27 @@
     background-size: contain;
   }
 
-  @include breakpoint((min-width $break-small + 1px) (max-width $break-medium-small) ) {
+  @include breakpoint(($break-small + 1px) (max-width $break-medium-small) ) {
     background: url(../images/home/home-bg-top-medium-small.jpg) no-repeat center bottom palette(black);
     background-size: contain;
   }
 
-  @include breakpoint((min-width $break-medium-small + 1px) (max-width $break-medium) ) {
+  @include breakpoint(($break-medium-small + 1px) (max-width $break-medium) ) {
     background: url(../images/home/home-bg-top-medium.jpg) no-repeat center bottom palette(black);
     background-size: contain;
   }
 
-  @include breakpoint((min-width $break-medium + 1px) (max-width $break-large) ) {
+  @include breakpoint(($break-medium + 1px) (max-width $break-large) ) {
     background: url(../images/home/home-bg-top-large.jpg) no-repeat center bottom palette(black);
     background-size: contain;
   }
 
-  @include breakpoint((min-width $break-large + 1px) (max-width $break-big) ) {
+  @include breakpoint(($break-large + 1px) (max-width $break-big) ) {
     background: url(../images/home/home-bg-top-big.jpg) no-repeat center bottom palette(black);
     background-size: contain;
   }
 
-  @include breakpoint(min-width $break-big) {
+  @include breakpoint($break-big) {
     background: url(../images/home/home-bg-top-big.jpg) no-repeat center bottom palette(black);
     background-size: contain;
   }
@@ -45,11 +45,11 @@
     margin: 0 auto 15px auto;
     transform: translateZ(0px);
 
-    @include breakpoint(min-width $break-medium-small) {
+    @include breakpoint($break-medium-small) {
       max-width: 395px;
     };
 
-    @include breakpoint(min-width $break-large) {
+    @include breakpoint($break-large) {
       max-width: 560px;
     };
   }
@@ -61,7 +61,7 @@
   margin: 0 auto 20px auto;
   color: palette(white);
 
-  @include breakpoint(min-width $break-large) {
+  @include breakpoint($break-large) {
     font-size: 20px;
   };
 }

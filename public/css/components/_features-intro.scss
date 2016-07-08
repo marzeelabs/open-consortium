@@ -4,28 +4,28 @@
     background-size: cover;
   }
 
-  @include breakpoint((min-width $break-small + 1px) (max-width $break-medium-small) ) {
+  @include breakpoint(($break-small + 1px) (max-width $break-medium-small) ) {
     background: url(../images/features/features-bg-top-medium-small.jpg) no-repeat center top palette(black) ;
     background-size: cover;
   }
 
-  @include breakpoint((min-width $break-medium-small + 1px) (max-width $break-medium) ) {
+  @include breakpoint(($break-medium-small + 1px) (max-width $break-medium) ) {
     background: url(../images/features/features-bg-top-medium.jpg) no-repeat center top palette(black) ;
     background-size: cover;
   }
 
-  @include breakpoint((min-width $break-medium + 1px) (max-width $break-large) ) {
+  @include breakpoint(($break-medium + 1px) (max-width $break-large) ) {
     background: url(../images/features/features-bg-top-large.jpg) no-repeat center top palette(black) ;
     background-size: cover;
   }
 
-  @include breakpoint((min-width $break-large + 1px) (max-width $break-big) ) {
+  @include breakpoint(($break-large + 1px) (max-width $break-big) ) {
     background: url(../images/features/features-bg-top-large.jpg) no-repeat center top palette(black) ;
     background-size: cover;
 
   }
 
-  @include breakpoint(min-width $break-big) {
+  @include breakpoint($break-big) {
     background: url(../images/features/features-bg-top-large.jpg) no-repeat center top palette(black);
     background-size: contain;
   }
@@ -44,7 +44,7 @@
   margin-top: 140px;
   margin-bottom: 20px;
 
-  @include breakpoint(min-width $break-large) {
+  @include breakpoint($break-large) {
     max-width: 360px;
     margin-top: 110px;
   };
@@ -56,7 +56,7 @@
   margin: 0 auto 20px auto;
   color: palette(white);
 
-  @include breakpoint(min-width $break-large) {
+  @include breakpoint($break-large) {
     font-size: 20px;
   };
 }
@@ -88,7 +88,7 @@
 .features__context-title {
   margin: 35px auto 20px auto;
 
-  @include breakpoint (min-width $break-medium + 1) {
+  @include breakpoint ($break-medium + 1) {
     font-size:30px;
   }
 }
@@ -97,7 +97,7 @@
   margin: 20px auto 20px auto;
   font-size:15px;
 
-  @include breakpoint (min-width $break-medium + 1) {
+  @include breakpoint ($break-medium + 1) {
     font-size:20px;
   }
 }
@@ -110,7 +110,7 @@
   width: 85%;
   margin: 0 auto;
 
-  @include breakpoint (min-width $break-medium + 1) {
+  @include breakpoint ($break-medium + 1) {
     width: 60%;
     @include adjust-font-size-to(14px, 3);
   }

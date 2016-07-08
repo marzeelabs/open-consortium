@@ -43,7 +43,7 @@
     letter-spacing: 0.2em;
     color: palette($color);
 
-    @include breakpoint(min-width $break-large) {
+    @include breakpoint($break-large) {
       @include adjust-font-size-to($font-size, $line-height);
       font-weight: 100;
     }

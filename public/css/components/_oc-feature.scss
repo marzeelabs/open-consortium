@@ -32,13 +32,13 @@
 }
 
 .oc-feature--right {
-  @include breakpoint(min-width $break-medium + 1px) {
+  @include breakpoint($break-medium + 1px) {
     text-align: right;
   }
 }
 
 .oc-feature--left {
-  @include breakpoint(min-width $break-medium + 1px) {
+  @include breakpoint($break-medium + 1px) {
     text-align: left;
   }
 }

@@ -11,7 +11,7 @@
   margin: 0 auto 15px auto;
   transform: translateZ(0px);
 
-  @include breakpoint(min-width $break-large) {
+  @include breakpoint($break-large) {
     max-width: 360px;
     padding-top: 90px;
   };

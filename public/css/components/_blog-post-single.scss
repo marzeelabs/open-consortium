@@ -13,7 +13,7 @@
   color: palette(white);
   padding-top: 180px;
 
-  @include breakpoint(min-width $break-large) {
+  @include breakpoint($break-large) {
     @include adjust-font-size-to(30px);
   };
 }
@@ -24,7 +24,7 @@
   color: palette(white);
   @include adjust-font-size-to(14px);
 
-  @include breakpoint(min-width $break-large) {
+  @include breakpoint($break-large) {
     @include adjust-font-size-to(20px);
   };
 }

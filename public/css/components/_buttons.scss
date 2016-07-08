@@ -10,7 +10,7 @@
   letter-spacing: 0.2em;
   font-weight: 300;
 
-  @include breakpoint(min-width $break-large) {
+  @include breakpoint($break-large) {
     font-size: 18px;
   };
 
@@ -53,7 +53,7 @@
   letter-spacing: 0.2em;
   font-weight: 300;
 
-  @include breakpoint(min-width $break-large) {
+  @include breakpoint($break-large) {
     font-size: 18px;
   };
 
