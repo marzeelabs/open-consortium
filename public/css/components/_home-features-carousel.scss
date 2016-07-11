@@ -4,13 +4,13 @@
     @include squish(1);
   };
 
-  @include breakpoint(min-width $break-medium + 1px) {
+  @include breakpoint($break-medium + 1px) {
     @include span(4);
     margin-top: 280px;
     @include squish(1);
   };
 
-  @include breakpoint(min-width $break-large + 1px) {
+  @include breakpoint($break-large + 1px) {
     @include span(isolate 2 at 3);
     margin-top: 0px;
   };
@@ -19,57 +19,6 @@
 .home-features__carousel {
   position: relative;
   padding-bottom: 83.5%;
-}
-
-
-// -  Carousel screen glow
-
-.home-features__carousel-glow__container {
-  position: absolute;
-  z-index: 60;
-  top: 70.5%;
-  left: 42%;
-  width:85%;
-  overflow: hidden;
-  padding-bottom: 85%;
-}
-
-
-.home-features__carousel-glow {
-  width: 10%;
-  height: 0;
-  padding-left:10%;
-  padding-top: 10%;
-  filter: blur(3px);
-
-  &:after {
-    content: "";
-    display: block;
-    width: 0;
-    height: 0;
-    margin-left:-40px;
-    margin-top:-60px;
-    border-left: 40px solid transparent;
-    border-right: 40px solid transparent;
-    border-top: 60px solid palette(white);
-    filter: blur(3px);
-    animation: carousel-glow-keyframes 0.4s linear 0s infinite normal forwards;
-  }
-}
-
-@keyframes carousel-glow-keyframes {
-  0% {
-    border-top: 60px solid palette(white);
-    opacity: 0;
-  }
-  50% {
-    border-top: 75px solid palette(white);
-    opacity: 0.7;
-  }
-  100% {
-    border-top: 60px solid palette(white);
-    opacity: 0;
-  }
 }
 
 .home-features__carousel-cover {
@@ -85,6 +34,7 @@
 .home-features__carousel-wrapper {
   overflow: hidden;
   width: 94%;
+  height: 62%;
   position: absolute;
   height: 62%;
   z-index: 1;
@@ -106,4 +56,3 @@
     width: 100%;
   }
 }
-

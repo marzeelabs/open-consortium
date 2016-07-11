@@ -8,6 +8,8 @@
 
   .home-features & {
     cursor: pointer;
+    @include transition(color);
+    @include transition-duration(0.3s);
 
     &:hover {
       color: palette(white);
@@ -15,14 +17,28 @@
   }
 }
 
+.is-selected {
+  color: palette(ocblue);
+
+  @include breakpoint($break-medium + 1px) {
+    color: palette(white);
+  };
+}
+
+.not-selected {
+      @include transition(color);
+      @include transition-duration(0.3s);
+      color: palette(ocblue);
+}
+
 .oc-feature--right {
-  @include breakpoint(min-width $break-medium + 1px) {
+  @include breakpoint($break-medium + 1px) {
     text-align: right;
   }
 }
 
 .oc-feature--left {
-  @include breakpoint(min-width $break-medium + 1px) {
+  @include breakpoint($break-medium + 1px) {
     text-align: left;
   }
 }
@@ -34,15 +50,22 @@
   padding-bottom: 20px;
   text-align: center;
 
-  @include breakpoint(min-width $break-medium-small + 1px) {
+  @include breakpoint(max-width $break-medium-small) {
+    max-width:90%;
+  }
+
+  @include breakpoint($break-medium-small + 1px) {
     padding-bottom: 40px;
 
     @include odd() { //- creates the even / odd rhythm
+      text-align: right;
+
       .oc-feature__content {
-        @include span (isolate 3 at 1)
+        padding-right: 0;
+        @include span (isolate 3 at 1);
       }
       .oc-feature__image-wrapper {
-        @include span (isolate 3 at 4)
+        @include span (isolate 3 at 4);
       }
       .oc-feature__title {
         float:right;
@@ -51,11 +74,14 @@
       }
       .oc-feature__icon {
         margin-left: 15px;
-        float:right;
+        margin-right: 0;
+        float: right;
       }
     };
 
     @include even() {
+      text-align: left;
+
       .oc-feature__icon {
         float:left;
         margin-right: 15px;
@@ -63,8 +89,22 @@
     }
   }
 
+  a {
+    color: palette(ocblue);
+
+    &:hover {
+      color: palette(ocblue, dark);
+    }
+  }
+
+  .oc-feature__title-wrapper {
+    pointer-events: none;
+    @include breakpoint($break-medium + 1px) {
+      transform: translateY(50%);
+    }
+  }
   .oc-feature__title {
-    @include breakpoint(min-width $break-medium-small + 1px) {
+    @include breakpoint($break-medium-small + 1px) {
       float:left;
       max-width: 200px;
       text-align: left;
@@ -81,7 +121,7 @@
   .oc-feature--large & {
     margin-bottom: 20px;
 
-    @include breakpoint(min-width $break-medium-small + 1px) {
+    @include breakpoint($break-medium-small + 1px) {
        @include span (isolate 3 at 4);
     }
   }
@@ -91,7 +131,7 @@
 
 .oc-feature__image-wrapper {
 
-  @include breakpoint(min-width $break-medium-small + 1px) {
+  @include breakpoint($break-medium-small + 1px) {
       @include span (isolate 3 at 1);
   }
 }
@@ -99,9 +139,6 @@
 
 .oc-feature__title-wrapper {
 
-  @include breakpoint(min-width $break-medium + 1px) {
-    transform: translateY(50%);
-  }
   .oc-feature--large & {
       @include pie-clearfix();
   }
@@ -117,7 +154,7 @@
     text-align: center;
   }
 
-  @include breakpoint(min-width $break-medium + 1px) {
+  @include breakpoint($break-medium + 1px) {
     transform: translateY(-50%);
   }
 
@@ -142,7 +179,7 @@
     margin-bottom: 5px;
   }
 
-  @include breakpoint(min-width $break-medium + 1px) {
+  @include breakpoint($break-medium + 1px) {
     transform: translateY(-50%);
 
     .oc-feature--right & {

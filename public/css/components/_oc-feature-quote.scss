@@ -1,0 +1,31 @@
+//- FEATURE QUOTE CONTAINER
+.oc-feature-quote {
+  @include adjust-font-size-to(16px, 4);
+  background: palette(grey, xxx-light);
+  width: 100%;
+  padding: 20px 0 20px 0;
+  margin-bottom: rhythm(4, 16px);
+  margin-top: - rhythm(5, 16px);
+  text-align: center;
+  position: relative;
+
+    &:before {
+  	left: 50%;
+  	border: solid transparent;
+  	content: " ";
+  	height: 0;
+  	width: 0;
+  	top: -16px;
+  	position: absolute;
+  	pointer-events: none;
+  	border-color: rgba(palette(grey, xxx-light), 0);
+  	border-bottom-color: palette(grey, xxx-light);
+  	border-width: 8px;
+  	margin-left: -8px;
+  }
+}
+
+.oc-feature-quote__content{
+  @include container(1000px);
+  line-height: 1.5;
+}

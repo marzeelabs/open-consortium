@@ -25,7 +25,8 @@
         "side": "left",
         "icon": "visualise",
         "image":"visualise_consortium",
-        "description":"There is no better way to understand your network than seeing it on an interactive map."
+        "description":"There is no better way to understand your network than seeing it on an interactive map.",
+        "quote":"This is the text for quote. We can help you communicate your research and take that headache away with our communication and technology platform. It is based on open-source software, with focus on external communication."
       },
       "publicise-events": {
         "title": "Promote events",

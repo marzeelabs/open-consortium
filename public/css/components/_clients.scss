@@ -1,7 +1,6 @@
 .clients {
   background: palette(white);
   text-align: center;
-  overflow: hidden;
   padding: 20px ;
 }
 
@@ -14,7 +13,7 @@
   display: block;
   background-color: palette(grey, xxx-light);
   height: 1px;
-  margin: 0 auto 50px auto;
+  margin: 0 auto 40px auto;
 }
 
 .clients__list {

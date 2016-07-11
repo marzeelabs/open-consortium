@@ -28,7 +28,7 @@ footer {
 .phrase-br--medium {
   display: none;
 
-  @include breakpoint(min-width $break-medium) {
+  @include breakpoint($break-medium) {
     display:block;
   };
 }
@@ -36,7 +36,7 @@ footer {
 .phrase-br--small {
   display: none;
 
-  @include breakpoint(min-width $break-medium-small) {
+  @include breakpoint($break-medium-small) {
     display:block;
   };
 }

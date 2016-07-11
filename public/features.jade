@@ -8,10 +8,24 @@ section.features__intro
   p.features__context-subtitle So, what can it do for you?
 
 section.features__list
+
   - var featureSize = "large";
   - var featureImage = "true";
   - var featureDescription = "true";
+
+  - featuresWanted = ['highlight-research', 'highlight-researcher', 'visualise-consortium'];
   include ./_partials/_oc_features
+
+  - featuresWanted = ['visualise-consortium'];
+  include ./_partials/_oc_features_quote
+
+  - featuresWanted = ['publicise-events', 'social-media-integration', 'content-management-tool', 'responsive-layout', 'promoted-content', 'job-offers'];
+  include ./_partials/_oc_features
+
+
+section.portfolio
+  include ./_partials/_portfolio
+
 
 section.features__drupal
   h1 Under the Hood

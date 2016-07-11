@@ -30,11 +30,11 @@
     @include span(6);
   };
 
-  @include breakpoint(min-width $break-medium + 1px) {
+  @include breakpoint($break-medium + 1px) {
     @include span(isolate 3 at 1);
   };
 
-    @include breakpoint(min-width $break-large + 1px) {
+    @include breakpoint($break-large + 1px) {
       @include span(isolate 2 at 1);
   };
 }
@@ -46,11 +46,11 @@
     @include span(6);
   };
 
-  @include breakpoint((min-width $break-medium + 1px)) {
+  @include breakpoint($break-medium + 1px) {
     @include span(isolate 3 at 4);
   };
 
-  @include breakpoint((min-width $break-large + 1px)) {
+  @include breakpoint($break-large + 1px) {
     @include span(isolate 2 at 5);
   };
 }

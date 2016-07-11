@@ -14,7 +14,8 @@ for feature in featuresWanted
           h1.oc-feature__title #{ocFeatures[feature].title}
 
         if featureDescription
-          p.oc-feature__description #{ocFeatures[feature].description}
+          p.oc-feature__description
+            != ocFeatures[feature].description
 
       if featureImage
         .oc-feature__image-wrapper

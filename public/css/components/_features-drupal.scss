@@ -1,31 +1,29 @@
 .features__drupal {
-    @include breakpoint(max-width $break-small) {
     background: url(../images/features/features-bg-bottom-small.jpg) no-repeat center bottom palette(ocblue, x-dark) ;
     background-size: cover;
-  }
 
-  @include breakpoint((min-width $break-small + 1px) (max-width $break-medium-small) ) {
+  @include breakpoint($break-small + 1px) {
     background: url(../images/features/features-bg-bottom-medium-small.jpg) no-repeat center bottom palette(ocblue, x-dark) ;
     background-size: cover;
   }
 
-  @include breakpoint((min-width $break-medium-small + 1px) (max-width $break-medium) ) {
+  @include breakpoint($break-medium-small + 1px) {
     background: url(../images/features/features-bg-bottom-medium-small.jpg) no-repeat center bottom palette(ocblue, x-dark) ;
     background-size: cover;
   }
 
-  @include breakpoint((min-width $break-medium + 1px) (max-width $break-large) ) {
+  @include breakpoint($break-medium + 1px) {
     background: url(../images/features/features-bg-bottom-medium.jpg) no-repeat center bottom palette(ocblue, x-dark) ;
     background-size: cover;
   }
 
-  @include breakpoint((min-width $break-large + 1px) (max-width $break-big) ) {
+  @include breakpoint($break-large + 1px) {
     background: url(../images/features/features-bg-bottom-large.jpg) no-repeat center bottom palette(ocblue, x-dark) ;
     background-size: cover;
 
   }
 
-  @include breakpoint(min-width $break-big) {
+  @include breakpoint($break-big) {
     background: url(../images/features/features-bg-bottom-large.jpg) no-repeat center bottom palette(ocblue, x-dark);
     background-size: contain;
   }
@@ -36,15 +34,15 @@
   min-height: 350px;
 
   h1 {
-    @include section-title($h4-font-size, 4, 30px);
-    @include breakpoint (min-width $break-medium + 1) {
+    @include section-title($h4-font-size, 4, 20px);
+    @include breakpoint ($break-medium + 1) {
       font-size:30px;
     }
   }
 
   h2 {
     @include section-title($h3-font-size, 3, 18px);
-    @include breakpoint (min-width $break-large + 1) {
+    @include breakpoint ($break-large + 1) {
       font-size:$h3-font-size;
     }
   }
@@ -56,7 +54,7 @@
     text-transform: uppercase;
     margin-bottom: 20px;
 
-    @include breakpoint (min-width $break-large + 1) {
+    @include breakpoint ($break-large + 1) {
       max-width: 1000px;
       margin: 0 auto 40px auto;
     }
@@ -67,7 +65,7 @@
   display: block;
   margin-top: 5px;
 
-  @include breakpoint (min-width $break-large + 1) {
+  @include breakpoint ($break-large + 1) {
     @include adjust-font-size-to(18px, 3);
   }
 }
