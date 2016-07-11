@@ -62,6 +62,15 @@ gulp.task('serve', ['build'], function () {
   });
 });
 
+/**
+ * Serve the Harp Site in production
+ */
+gulp.task('serveprod', ['build'], function() {
+  harp.server('.', {
+    port: process.env.PORT || 5000
+  }, function () {
+  });
+});
 
 /**
  * Build the Harp Site
