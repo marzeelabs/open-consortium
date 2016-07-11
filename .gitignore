@@ -6,3 +6,4 @@ Thumbs.db
 .DS_Store
 !.gitkeep
 www/
+public/js/site.min.js

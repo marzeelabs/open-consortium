@@ -1,1 +1,1 @@
-web: NODE_ENV=development harp server --port $PORT
+web: NODE_ENV=development gulp serveprod
