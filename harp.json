@@ -43,7 +43,7 @@
         "description":"Need to hire in the consortium? A well-thought out job page can make it easier for you to promote your jobs and have applications apply directly via the website."
       },
       "content-management-tool": {
-        "title": "A powerful content management tool",
+        "title": "Manage the content yourself",
         "side": "right",
         "icon": "cms",
         "image":"cms",
@@ -57,7 +57,7 @@
         "description":"Facebook or Twitter, a mailing list, or comments on your blog posts. Your consortium website is ready to talk with all these other websites. You'll reach a larger audience and we'll make sure you don't have to put content in too many places!"
       },
       "responsive-layout": {
-        "title": "Responsive layout",
+        "title": "It looks good everywhere",
         "side": "right",
         "icon": "responsive",
         "image":"responsive_layout",
