@@ -1,10 +1,10 @@
-.mailchimp {
+.contact-form {
   text-align: center;
   background: palette(white);
   width: 100%;
 }
 
-.mailchimp__inputs {
+.contact-form__inputs {
   height: 70px;
   margin: 0 auto 20px auto;
   font-weight: 300;
@@ -31,13 +31,13 @@
 }
 
 
-.mailchimp__inputs--message-field {
+.contact-form__inputs--message-field {
   height: 200px;
   margin-bottom: 30px;
   font-weight: 300;
 }
 
-.mailchimp__inputs__content {
+.contact-form__inputs__content {
   width: 70%;
   height: 100%;
   padding: 0;
@@ -48,7 +48,7 @@
   @include container(650px);
 }
 
-.mailchimp__inputs textarea {
+.contact-form__inputs textarea {
   width: 70%;
   height: 200px;
   padding: 0;
@@ -70,7 +70,7 @@
   @include container(650px);
 }
 
-.mailchimp__inputs__submit {
+.contact-form__inputs__submit {
   @include transition(background-color);
   @include transition-duration(0.5s);
   color: palette(white);
