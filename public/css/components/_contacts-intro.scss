@@ -27,28 +27,28 @@
     background-size: contain;
   }
 
-  @extend .commons__intro;
+  @extend %commons__intro;
 }
 
 .contacts__intro-logo {
-  @extend .commons__intro-logo;
+  @extend %commons__intro-logo;
 }
 
 .contacts__intro-phrase {
-  @extend .commons__intro-phrase;
+  @extend %commons__intro-phrase;
 }
 
 .contacts__context-intro {
-  @extend .commons__context-intro;
+  @extend %commons__context-intro;
 }
 
 
 .contacts__context-title {
-  @extend .commons__context-title;
+  @extend %commons__context-title;
 }
 
 .contacts__context-content {
-  @extend .commons__context-content;
+  @extend %commons__context-content;
   margin: 0 auto 40px auto;
 }
 

@@ -1,0 +1,20 @@
+for showcase, slug in public.showcase._data
+  if (slug !== 'index')
+
+  .showcase-list__item
+
+    .showcase-list__item-texts
+
+        h1.showcase-list__item-title #{showcase.title}
+
+        if showcase.description
+          p.showcase-list__item-description #{showcase.description}
+
+        if showcase.url
+          a.showcase-list__item-link(href="#{showcase.url}" target="_blank") #{showcase.url}
+
+
+    if showcase.image
+      .showcase-list__item-image
+          img(src='/images/showcase/showcase/#{showcase.image}.jpg', alt='#{showcase.title.toLowerCase().replace(" ", "-")}', title='#{showcase.title}')
+

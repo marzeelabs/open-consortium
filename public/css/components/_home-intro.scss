@@ -27,7 +27,7 @@
     background-size: contain;
   }
 
-  @extend .commons__intro;
+  @extend %commons__intro;
   height:100vh;
 
 
@@ -45,7 +45,7 @@
 }
 
 .home-intro__phrase {
-  @extend .commons__intro-phrase
+  @extend %commons__intro-phrase
 }
 
 .stars-static-bg__container {

@@ -30,7 +30,7 @@ ul {
 
 //-- Section commons
 
-.commons__intro-logo {
+%commons__intro-logo {
   @include element-invisible();
   max-width: 295px;
   height: auto;
@@ -43,7 +43,7 @@ ul {
   };
 }
 
-.commons__context-title {
+%commons__context-title {
   @include section-title();
   margin: 35px auto 20px auto;
 
@@ -52,7 +52,7 @@ ul {
   }
 }
 
-.commons__context-subtitle {
+%commons__context-subtitle {
   margin: 20px auto 20px auto;
   font-size:15px;
   @include section-title();
@@ -62,7 +62,7 @@ ul {
   }
 }
 
-.commons__context-content {
+%commons__context-content {
   color: palette(white);
   font-weight: 300;
   @include adjust-font-size-to(12px, 3);
@@ -76,7 +76,7 @@ ul {
   }
 }
 
-.commons__intro-phrase {
+%commons__intro-phrase {
   @include section-title(14px, 3);
   max-width: 80%;
   margin: 0 auto 20px auto;
@@ -87,7 +87,7 @@ ul {
   };
 }
 
-.commons__context-intro {
+%commons__context-intro {
   background: palette(ocblue, dark);
   text-align: center;
   overflow: hidden;
@@ -108,7 +108,7 @@ ul {
 }
 
 //- common intro
-.commons__intro {
+%commons__intro {
   height: 355px;
   text-align: center;
   width: auto;

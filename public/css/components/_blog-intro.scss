@@ -27,14 +27,14 @@
     background-size: contain;
   }
 
-  @extend .commons__intro;
+  @extend %commons__intro;
   height: 255px;
 }
 
 .blog-intro__logo {
-  @extend .commons__intro-logo
+  @extend %commons__intro-logo;
 }
 
 .blog-intro__phrase {
-  @extend .commons__intro-phrase
+  @extend %commons__intro-phrase;
 }

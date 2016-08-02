@@ -1,56 +1,56 @@
 .showcase__intro {
-    background: url(../images/features/features-bg-top-small.jpg) no-repeat center top palette(black) ;
+    background: url(../images/showcase/background/showcase-bg-top-small.jpg) no-repeat center top palette(black) ;
     background-size: cover;
 
   @include breakpoint($break-small + 1px) {
-    background: url(../images/features/features-bg-top-medium-small.jpg) no-repeat center top palette(black) ;
+    background: url(../images/showcase/background/showcase-bg-top-medium-small.jpg) no-repeat center top palette(black) ;
     background-size: cover;
   }
 
   @include breakpoint($break-medium-small + 1px) {
-    background: url(../images/features/features-bg-top-medium.jpg) no-repeat center top palette(black) ;
+    background: url(../images/showcase/background/showcase-bg-top-medium.jpg) no-repeat center top palette(black) ;
     background-size: cover;
   }
 
   @include breakpoint($break-medium + 1px) {
-    background: url(../images/features/features-bg-top-large.jpg) no-repeat center top palette(black) ;
+    background: url(../images/showcase/background/showcase-bg-top-large.jpg) no-repeat center top palette(black) ;
     background-size: cover;
   }
 
   @include breakpoint($break-large + 1px) {
-    background: url(../images/features/features-bg-top-large.jpg) no-repeat center top palette(black) ;
+    background: url(../images/showcase/background/showcase-bg-top-large.jpg) no-repeat center top palette(black) ;
     background-size: cover;
 
   }
 
   @include breakpoint($break-big) {
-    background: url(../images/features/features-bg-top-large.jpg) no-repeat center top palette(black);
+    background: url(../images/showcase/background/showcase-bg-top-large.jpg) no-repeat center top palette(black);
     background-size: contain;
   }
 
-  @extend .commons__intro;
+  @extend %commons__intro;
 }
 
 .showcase__intro-logo {
-  @extend .commons__intro-logo;
+  @extend %commons__intro-logo;
 }
 
 .showcase__intro-phrase {
-  @extend .commons__intro-phrase;
+  @extend %commons__intro-phrase;
 }
 
 .showcase__context-intro {
-  @extend .commons__context-intro;
+  @extend %commons__context-intro;
 }
 
 .showcase__context-title {
-  @extend .commons__context-title;
+  @extend %commons__context-title;
 }
 
 .showcase__context-subtitle {
-  @extend .commons__context-subtitle;
+  @extend %commons__context-subtitle;
 }
 
 .showcase__context-content {
-  @extend .commons__context-content;
+  @extend %commons__context-content;
 }

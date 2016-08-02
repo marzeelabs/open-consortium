@@ -28,29 +28,29 @@
     background-size: contain;
   }
 
-  @extend .commons__intro;
+  @extend %commons__intro;
 }
 
 .features__intro-logo {
-  @extend .commons__intro-logo;
+  @extend %commons__intro-logo;
 }
 
 .features__intro-phrase {
-  @extend .commons__intro-phrase;
+  @extend %commons__intro-phrase;
 }
 
 .features__context-intro {
-  @extend .commons__context-intro
+  @extend %commons__context-intro
 }
 
 .features__context-title {
-  @extend .commons__context-title;
+  @extend %commons__context-title;
 }
 
 .features__context-subtitle {
-  @extend .commons__context-subtitle;
+  @extend %commons__context-subtitle;
 }
 
 .features__context-content {
-  @extend .commons__context-content;
+  @extend %commons__context-content;
 }
