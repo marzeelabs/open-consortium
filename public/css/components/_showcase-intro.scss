@@ -1,4 +1,4 @@
-.features__intro {
+.showcase__intro {
     background: url(../images/features/features-bg-top-small.jpg) no-repeat center top palette(black) ;
     background-size: cover;
 
@@ -31,26 +31,26 @@
   @extend .commons__intro;
 }
 
-.features__intro-logo {
+.showcase__intro-logo {
   @extend .commons__intro-logo;
 }
 
-.features__intro-phrase {
+.showcase__intro-phrase {
   @extend .commons__intro-phrase;
 }
 
-.features__context-intro {
-  @extend .commons__context-intro
+.showcase__context-intro {
+  @extend .commons__context-intro;
 }
 
-.features__context-title {
+.showcase__context-title {
   @extend .commons__context-title;
 }
 
-.features__context-subtitle {
+.showcase__context-subtitle {
   @extend .commons__context-subtitle;
 }
 
-.features__context-content {
+.showcase__context-content {
   @extend .commons__context-content;
 }

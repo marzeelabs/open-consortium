@@ -27,21 +27,12 @@
     background-size: contain;
   }
 
-  //height: 395px;
+  @extend .commons__intro;
   height:100vh;
-  text-align: center;
-  width: auto;
-  margin: 0 auto;
-  color: palette(white);
+
 
   .rocket-animation__container {
-    position: relative;
-    width: 100%;
-    max-width: 295px;
     padding-top: 25vh;
-    height: auto;
-    margin: 0 auto 15px auto;
-    transform: translateZ(0px);
 
     @include breakpoint($break-medium-small) {
       max-width: 395px;
@@ -54,14 +45,7 @@
 }
 
 .home-intro__phrase {
-  @include section-title(12px, 2.5);
-  max-width: 80%;
-  margin: 0 auto 20px auto;
-  color: palette(white);
-
-  @include breakpoint($break-large) {
-    font-size: 20px;
-  };
+  @extend .commons__intro-phrase
 }
 
 .stars-static-bg__container {

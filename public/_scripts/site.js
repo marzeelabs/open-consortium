@@ -95,6 +95,7 @@ $(function() {
         pageDots: true
       });
 
+/*
       // Portfolio in Features page
       $('.portfolio-carousel').flickity({
         autoPlay: 3500,
@@ -104,6 +105,7 @@ $(function() {
         prevNextButtons: true,
         pageDots: false
       });
+*/
 
   $(window).on('resize scroll', fixedHeader);
   $(window).on('resize scroll', showLogo);
