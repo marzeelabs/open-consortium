@@ -1,5 +1,5 @@
 .blog__posts-container {
-  background: palette(white) ;
+  background: palette(white);
   padding: 50px 20px;
 }
 
@@ -22,6 +22,7 @@
       color: palette(ocblue);
       font-weight: 300;
       text-decoration: none;
+
       &:hover {
         text-decoration: underline;
       }
@@ -39,7 +40,9 @@
       margin: 0;
     }
   }
+
   .blog__post-item-description {
+
      p {
        @include section-text-copy();
      }

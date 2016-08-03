@@ -12,7 +12,7 @@
     background-color: palette(ocblue);
 
     @include breakpoint($break-medium + 1 ) {
-      a :hover {
+      a:hover {
         color: palette(ocblue, x-dark);
         font-weight: 400;
       }
@@ -139,7 +139,6 @@
     &:hover {
       color: palette(ocblue);
     }
-
   }
 
   @include breakpoint(max-width $break-medium - 1px) {
@@ -150,18 +149,17 @@
   }
 
   @include breakpoint($break-medium) {
-      padding: 10px 20px;
+    padding: 10px 20px;
   }
 
   @include breakpoint($break-large) {
-      padding: 10px 30px;
+    padding: 10px 30px;
   }
 }
 
 .is-active a {
   color: palette(ocblue);
 }
-
 
 .navigation__right {
 
@@ -197,13 +195,11 @@
 }
 
 .navigation__item--logo {
-
   width: 40px;
   height: 40px;
   position: absolute;
   left: 10px;
   opacity: 0;
-
   @include transition-property(opacity);
   @include transition-duration(0.2s);
 

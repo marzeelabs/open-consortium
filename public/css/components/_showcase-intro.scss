@@ -1,4 +1,4 @@
-.showcase__intro {
+.showcase-intro {
     background: url(../images/showcase/background/showcase-bg-top-small.jpg) no-repeat center top palette(black) ;
     background-size: cover;
 
@@ -31,26 +31,27 @@
   @extend %commons__intro;
 }
 
-.showcase__intro-logo {
+.showcase-intro__logo {
   @extend %commons__intro-logo;
 }
 
-.showcase__intro-phrase {
+.showcase-intro__phrase {
   @extend %commons__intro-phrase;
 }
 
-.showcase__context-intro {
+.showcase-intro__context {
   @extend %commons__context-intro;
 }
 
-.showcase__context-title {
+.showcase-intro__context-title {
   @extend %commons__context-title;
 }
 
-.showcase__context-subtitle {
+.showcase-intro__context-subtitle {
   @extend %commons__context-subtitle;
+  margin-bottom: 35px;
 }
 
-.showcase__context-content {
+.showcase-intro__context-content {
   @extend %commons__context-content;
 }

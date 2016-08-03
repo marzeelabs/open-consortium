@@ -35,6 +35,7 @@
 
   h1 {
     @include section-title($h4-font-size, 4, 20px);
+
     @include breakpoint ($break-medium + 1) {
       font-size:30px;
     }
@@ -42,6 +43,7 @@
 
   h2 {
     @include section-title($h3-font-size, 3, 18px);
+
     @include breakpoint ($break-large + 1) {
       font-size:$h3-font-size;
     }

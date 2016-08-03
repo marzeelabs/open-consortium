@@ -1,4 +1,4 @@
-.post__single{
+.post__single {
   background: palette(white);
 }
 
@@ -15,7 +15,7 @@
 
   @include breakpoint($break-large) {
     @include adjust-font-size-to(30px);
-  };
+  }
 }
 
 .blog__post-single-subtitle {
@@ -26,7 +26,7 @@
 
   @include breakpoint($break-large) {
     @include adjust-font-size-to(20px);
-  };
+  }
 }
 
 .blog__post-single-wrapper {
@@ -51,7 +51,7 @@
     color: palette(black);
     text-decoration: underline;
 
-    & :hover{
+    &:hover {
       color: palette(ocblue);
     }
   }

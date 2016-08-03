@@ -3,7 +3,6 @@
   @include adjust-font-size-to(16px, 4);
   margin-bottom: rhythm(4, 16px);
   box-sizing: border-box;
-  //@include pie-clearfix();
   @include container(1000px);
 
   .home-features & {
@@ -22,13 +21,13 @@
 
   @include breakpoint($break-medium + 1px) {
     color: palette(white);
-  };
+  }
 }
 
 .not-selected {
-      @include transition(color);
-      @include transition-duration(0.3s);
-      color: palette(ocblue);
+  @include transition(color);
+  @include transition-duration(0.3s);
+  color: palette(ocblue);
 }
 
 .oc-feature--right {
@@ -64,20 +63,23 @@
         padding-right: 0;
         @include span (isolate 3 at 1);
       }
+
       .oc-feature__image-wrapper {
         @include span (isolate 3 at 4);
       }
+
       .oc-feature__title {
         float:right;
         max-width: 200px;
         text-align: right;
       }
+
       .oc-feature__icon {
         margin-left: 15px;
         margin-right: 0;
         float: right;
       }
-    };
+    }
 
     @include even() {
       text-align: left;
@@ -103,6 +105,7 @@
       transform: translateY(50%);
     }
   }
+
   .oc-feature__title {
     @include breakpoint($break-medium-small + 1px) {
       float:left;
@@ -110,6 +113,7 @@
       text-align: left;
     }
   }
+
   &:last-child {
     border: none;
     padding-bottom: 0;
@@ -135,6 +139,7 @@
       @include span (isolate 3 at 1);
   }
 }
+
 //- FEATURE TITLE WRAPPER
 
 .oc-feature__title-wrapper {
@@ -145,6 +150,7 @@
 }
 
 //- FEATURE TITLE
+
 .oc-feature__title {
   font-size: 1em;
   font-weight: 300;
@@ -157,10 +163,10 @@
   @include breakpoint($break-medium + 1px) {
     transform: translateY(-50%);
   }
-
 }
 
 //- FEATURE ICON
+
 .oc-feature__icon {
   font-size: 2.5em; // 40px @ 16px
 
@@ -195,12 +201,14 @@
 }
 
 //- FEATURE IMAGE
+
 .oc-feature__image {
   max-width: 480;
   background: palette(white);
 }
 
 //- FEATURE DESCRIPTION
+
 .oc-feature__description {
   @include adjust-font-size-to(16px, 3);
   padding: 0;

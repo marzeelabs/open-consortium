@@ -7,19 +7,55 @@
 }
 
 .showcase-list__item {
-  padding: 40px ;
+  padding: 40px 0;
   @include container(1000px);
   border-bottom: palette(grey, xxx-light) thin solid;
 
   &:first-child, &:last-child {
     border-bottom: none;
   }
+
+  &:first-child {
+    padding: 0;
+  }
+
+  @include breakpoint($break-medium-small + 1px) {
+    padding-bottom: 40px;
+
+    @include odd() { //- creates the even / odd rhythm
+      text-align: left;
+
+      .showcase-list__item-image {
+        @include span (isolate 3 at 1);
+      }
+
+      .showcase-list__item-texts {
+        @include span (isolate 3 at 4);
+      }
+    };
+
+    @include even() {
+      text-align: right;
+
+      .showcase-list__item-image {
+        @include span (isolate 3 at 4);
+      }
+
+      .showcase-list__item-texts {
+        @include span (isolate 3 at 1);
+      }
+    }
+  }
 }
 
 .showcase-list__item-texts {
 
-  @include breakpoint($break-medium-small + 1px) {
-    @include span (isolate 3 at 1);
+  @include breakpoint(max-width $break-medium) {
+    margin-bottom: 30px;
+  }
+
+  h1 {
+    color: palette(ocblue);
   }
 }
 
@@ -29,12 +65,8 @@
   img {
     display: block;
     margin: 0 auto;
+    border: 1px solid palette(grey, xxx-light);
   }
-
-  @include breakpoint($break-medium-small + 1px) {
-    @include span (isolate 3 at 4);
-  }
-
 }
 
 .showcase-list__item-title {
@@ -54,5 +86,8 @@
 }
 
 .showcase-list__item-link {
-  cursor: pointer;
+  @include adjust-font-size-to(14px, 3);
+  margin-top: 30px;
+  padding: 5px 15px;
+  display: inline-block;
 }

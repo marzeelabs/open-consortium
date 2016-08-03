@@ -11,7 +11,7 @@ for showcase, slug in public.showcase._data
           p.showcase-list__item-description #{showcase.description}
 
         if showcase.url
-          a.showcase-list__item-link(href="#{showcase.url}" target="_blank") #{showcase.url}
+          a.showcase-list__item-link.button.button__blue(href="#{showcase.url}" target="_blank") Consult #{showcase.title}
 
 
     if showcase.image

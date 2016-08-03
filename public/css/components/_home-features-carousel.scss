@@ -1,19 +1,20 @@
 .home-features__carousel-container {
+
   @include breakpoint(max-width $break-medium) {
     @include span(4);
     @include squish(1);
-  };
+  }
 
   @include breakpoint($break-medium + 1px) {
     @include span(4);
     margin-top: 280px;
     @include squish(1);
-  };
+  }
 
   @include breakpoint($break-large + 1px) {
     @include span(isolate 2 at 3);
     margin-top: 0px;
-  };
+  }
 }
 
 .home-features__carousel {
