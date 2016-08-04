@@ -4,19 +4,19 @@
   },
   "showcase01": {
     "title": "BEAN",
-    "url": "http://beanproject.eu/",
+    "url": "beanproject.eu",
     "image": "bean",
     "description":"Bridging the European and Anatolian Neolithic. Demography, migration, and lifestyle at the advent of civilisation."
   },
   "showcase02": {
     "title": "SyStemAge",
-    "url": "http://systemage.eu/",
-    "image": "systemage_01",
+    "url": "systemage.eu",
+    "image": "systemage_02",
     "description":"Early warning signals of ageing in human stem cells and age-related disorders."
   },
   "showcase03": {
     "title": "BEAN v2",
-    "url": "http://beanproject.eu/",
+    "url": "beanproject.eu",
     "image": "bean",
     "description":"Bridging the European and Anatolian Neolithic. Demography, migration, and lifestyle at the advent of civilisation."
   }

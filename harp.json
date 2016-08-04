@@ -26,21 +26,22 @@
         "icon": "visualise",
         "image":"visualise_consortium",
         "description":"There is no better way to understand your network than seeing it on an interactive map.",
-        "quote":"This is the text for quote. We can help you communicate your research and take that headache away with our communication and technology platform. It is based on open-source software, with focus on external communication."
+        "quote":"We manage several collaborative projects and we need to promote their visibility and disseminate their results on the web. Open Consortium provides us with an easy-to-implement, tailored solution which allows us (and our collaborators) to edit and manage content in an extremely user-friendly interface. Our websites always look neat and accessible. Michela Bertero, Head of International & Scientific Affairs. CRG, Barcelona"
       },
       "publicise-events": {
         "title": "Promote events",
         "side": "left",
         "icon": "events",
         "image":"events",
-        "description":"Text for descriptions. We can help you communicate your research and take that headache away with our communication and technology platform. It is based on open-source software, with focus on external communication."
+        "description":"Need to organize workshops, internal meetings, or scientific conferences? Promote these using the built-in events systen, prominently featured on the homepage. Additionally, event registration can be integrated as well."
       },
       "job-offers": {
         "title": "Publicize jobs",
         "side": "left",
         "icon": "jobs",
         "image":"job_offers",
-        "description":"Need to hire in the consortium? A well-thought out job page can make it easier for you to promote your jobs and have applications apply directly via the website."
+        "description":"Need to hire in the consortium? A well-thought out job page can make it easier for you to promote your jobs and have applications apply directly via the website.",
+        "quote": "Our multinational scientific collaboration was pleased to work with Open Consortium to develop both an attractive and easy-to-navigate public-facing website for our project, as well as a highly functional private intranet to support communication between our scientific researchers. Open Consortium provided us with a web presence that was very effective in augmenting our outreach and dissemination efforts. Karola Kirsanow, Project Manager BEAN network. Mainz, Germany"
       },
       "content-management-tool": {
         "title": "Manage the content yourself",
