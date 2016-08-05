@@ -80,7 +80,9 @@
 }
 
 .showcase-list__item-description {
-  @include adjust-font-size-to(16px, 3);
+  @include adjust-font-size-to(18px, 3.5);
+  font-weight: 300;
+  letter-spacing: 0.1em;
   padding: 0;
   margin-top: 10px;
 }
