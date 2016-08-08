@@ -21,10 +21,10 @@
     "description":"ERC=Science² is a pan-European communications campaign using popular scientific themes such as ‘cities of the future’ or ‘robotics’ to highlight the scientific research funded by the European Research Council and the potential impact it can have on society"
   },
   "showcase04": {
-    "title": "LIBRA",
-    "url": "www.eu-libra.eu",
-    "image": "libra",
-    "description":"LIBRA is an EC funded project which brings together ten research institutes in life sciences in ten European countries. They all are members of the alliance EU-LIFE, which aims to build and promote excellence in life sciences throughout Europe. Their commitment to excellence is also a commitment to gender equality."
+    "title": "EU-LIFE",
+    "url": "eu-life.eu",
+    "image": "eulife",
+    "description":"EU-LIFE is an alliance of top research centres in life sciences to support and strengthen European research excellence."
   },
   "showcase05": {
     "title": "OPATHY",
