@@ -2,8 +2,11 @@
   "globals": {
     "title": "Open Consortium",
     "tagline": "Technology to power your science consortium",
-    "twitter": "openconsortium",
-    "production_url": "http://openconsortium.eu",
+    "description": "Technology for Scientific Consortia. We build websites for your scientific consortium in Europe, using state of the art content management tools such as Drupal.",
+    "keywords": "Consortium, website, drupal, d3, intranet, research, technology, communication, Europe, FP7, Horizon 2020, CMS, network, hosted, open data",
+    "siteName": "Open Consortium",
+    "url": "http://openconsortium.eu",
+    "twitter": "@openconsortium",
     "disqus": false,
     "analytics": "UA-31959684-1",
     "breakpoints": {

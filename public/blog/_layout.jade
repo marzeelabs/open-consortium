@@ -61,13 +61,13 @@ block page_content
 
       ul.blog__post-single_share-buttons
         li
-          a(href="https://twitter.com/intent/tweet?via=marzeelabs&url=#{encodeURIComponent(production_url + '/' + current.path.join('/'))}", target="_blank")
+          a(href="https://twitter.com/intent/tweet?via=marzeelabs&url=#{encodeURIComponent(url + '/' + current.path.join('/'))}", target="_blank")
             span.icon-twitter
         li
-          a(href="https://www.linkedin.com/shareArticle?url=#{encodeURIComponent(production_url + '/' + current.path.join('/'))}", target="_blank")
+          a(href="https://www.linkedin.com/shareArticle?url=#{encodeURIComponent(url + '/' + current.path.join('/'))}", target="_blank")
             span.icon-linkedin
         li
-          a(href="https://www.facebook.com/sharer/sharer.php?u=#{encodeURIComponent(production_url + '/' + current.path.join('/'))}", target="_blank")
+          a(href="https://www.facebook.com/sharer/sharer.php?u=#{encodeURIComponent(url + '/' + current.path.join('/'))}", target="_blank")
             span.icon-facebook
 
     //- .blog-post__disqus-wrapper.blog-post__section
