@@ -19,7 +19,7 @@ html(lang='en')
     meta(property='og:title' content='#{ title }')
     meta(property='og:description' content='#{description}')
     meta(property='og:type' content='website')
-    meta(property='og:url' content="#{url}/#{current.path.join('/').replace('index', '')}")
+    meta(property='og:url' content="#{url}/#{current.path.join('/').replace(/index$/, '')}")
     meta(property='og:site_name' content='#{siteName}')
 
     if coverImg
@@ -30,7 +30,7 @@ html(lang='en')
       meta(property='og:image' content='#{url}/images/default-thumbnail.jpg')
 
     // Twitter
-    meta(name='twitter:card' content='#{description}')
+    meta(name='twitter:card' content='summary_large_image')
     meta(name='twitter:site' content='#{twitter}')
     meta(name='twitter:creator' content='#{twitter}')
     meta(name='twitter:title' content='#{ title }')
