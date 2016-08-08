@@ -1,7 +1,7 @@
 #!/bin/bash
 
-DEPLOY_FROM="production"
-DEPLOY_TO="master"
+DEPLOY_FROM="master"
+DEPLOY_TO="gh-pages"
 
 # Do not deploy when building pull requests.
 # If this build comes from an unmerged pull request, it will be ignored.
