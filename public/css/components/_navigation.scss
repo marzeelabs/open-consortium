@@ -1,0 +1,218 @@
+// Navigation styles
+.navigation {
+  @include reset-list();
+  width: 100%;
+  max-height: 60px;
+  padding: 10px 0;
+  text-align: center;
+  position: relative;
+  background-color: palette(ocblue);
+
+  &.navigation--fixed-top {
+    background-color: palette(ocblue);
+
+    @include breakpoint($break-medium + 1 ) {
+      a:hover {
+        color: palette(ocblue, x-dark);
+        font-weight: 400;
+      }
+
+      .is-active a {
+        color: palette(ocblue, x-dark);
+        font-weight: 400;
+      }
+    }
+  }
+
+  @include breakpoint(max-width $break-medium - 1px) {
+    position: fixed;
+    text-align: left;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    padding: 0;
+  }
+
+  @include breakpoint($break-medium) {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    max-height: 120px;
+    @include transition-property(background);
+    @include transition-duration(0.2s);
+    background: transparent;
+  }
+}
+
+.navigation__mobile-menu {
+  @include breakpoint(max-width $break-medium - 1px) {
+    @include transition-property(max-height);
+    @include transition-duration(0.5s);
+    max-height: 0;
+    text-align: center;
+    overflow: hidden;
+
+    .is-open & {
+      max-height: 800px;
+    }
+  }
+}
+
+.navigation__mobile-menu__icon {
+  @include transition-duration(0.5s);
+  display: block;
+  position: absolute;
+  top: 30px;
+  right: 10px;
+  width: 30px;
+  height: 3px;
+  background-color: palette(white);
+
+  &:before, &:after {
+    @include transition-duration(0.5s);
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: palette(white);
+  }
+
+  &:before {
+    top: -10px;
+  }
+
+  &:after {
+    bottom: -10px;
+  }
+
+  .is-open & {
+    @include rotate(180deg);
+    background: none;
+
+    &:before {
+      top: 0;
+      @include rotate(45deg);
+    }
+
+    &:after {
+      bottom: 0;
+      @include rotate(-45deg);
+    }
+  }
+}
+
+.navigation__mobile-menu__toggle {
+  position: relative;
+  overflow: hidden;
+  margin: 0;
+  height: 60px;
+  cursor: pointer;
+  margin-left: 55px;
+
+  @include breakpoint($break-medium) {
+    display: none;
+  }
+}
+
+.navigation__item {
+  @include inline-block(middle);
+  @include transition-property(width height padding);
+  @include transition-duration(0.5s);
+  height: 32px;
+  padding: 5px 40px;
+  text-transform: uppercase;
+  font-size: $h5-font-size;
+  font-weight: 300;
+  letter-spacing: 0.2em;
+
+  a {
+    @include inline-block();
+    @include transition-property(color);
+    @include transition-duration(0.2s);
+    height: 100%;
+    width: 100%;
+    color: palette(white);
+
+    &:hover {
+      color: palette(ocblue);
+    }
+  }
+
+  @include breakpoint(max-width $break-medium - 1px) {
+    @include transition-duration(0s);
+    display: block;
+    background-color: palette(black);
+    width: auto;
+  }
+
+  @include breakpoint($break-medium) {
+    padding: 10px 20px;
+  }
+
+  @include breakpoint($break-large) {
+    padding: 10px 30px;
+  }
+}
+
+.is-active a {
+  color: palette(ocblue);
+}
+
+.navigation__right {
+
+  @include breakpoint($break-medium) {
+    position: absolute;
+    right: 10px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+
+    & a.is-active:after {
+      content: none;
+    }
+  }
+}
+
+.navigation__logo-mobile {
+  height: 40px;
+  width: auto;
+  @include transition-duration(0s);
+  position: absolute;
+  padding: 10px;
+  z-index: 999;
+
+  img {
+    height: 100%;
+    width: 40px;
+  }
+
+  @include breakpoint($break-medium) {
+    display: none;
+  }
+}
+
+.navigation__item--logo {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  left: 10px;
+  opacity: 0;
+  @include transition-property(opacity);
+  @include transition-duration(0.2s);
+
+  img {
+    height: 40px;
+    width: auto;
+  }
+
+  &.visible-logo {
+    opacity: 1;
+  }
+
+  @include breakpoint(max-width $break-medium - 1px) {
+    display: none;
+  }
+}

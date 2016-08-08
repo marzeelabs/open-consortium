@@ -1,0 +1,43 @@
+header
+  nav.navigation__wrapper
+    div(class='navigation')
+      span.navigation__logo-mobile
+        a(href='/')
+          img(src='../images/home/logo-menu-icon.svg', alt='Open Consortium')
+      .navigation__mobile-menu__toggle
+        span.navigation__mobile-menu__icon
+      ul.navigation__mobile-menu
+
+        li.navigation__item.navigation__item--logo
+          a(href='/')
+            img(src='../images/home/logo-menu-icon.svg', alt='Open Consortium')
+
+
+        li.navigation__item(class="#{ current.path[0] == 'index' ? 'is-active' : '' }")
+          a(href='/') Home
+
+
+        li.navigation__item(class="#{ current.path[0] == 'features' ? 'is-active' : '' }")
+          a(href='/features') Features
+
+
+        li.navigation__item(class="#{ current.path[0] == 'showcase' ? 'is-active' : '' }")
+          a(href='/showcase/') Showcase
+
+
+        li.navigation__item(class="#{ current.path[0] == 'blog' ? 'is-active' : '' }")
+          a(href='/blog/') Blog
+
+
+        //- li.navigation__item(class="#{ current.path[0] == 'jobs' ? 'is-active' : '' }")
+        //-  a(href='/jobs') Jobs
+
+
+        li.navigation__item(class="#{ current.path[0] == 'contacts' ? 'is-active' : '' }")
+          a(href='/contacts') Contact Us
+
+
+        li.navigation__item.navigation__right
+          a(href='https://twitter.com/openconsortium' target='_blank') Follow us
+
+

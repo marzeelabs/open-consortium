@@ -1,0 +1,83 @@
+.features__drupal {
+    background: url(../images/features/features-bg-bottom-small.jpg) no-repeat center bottom palette(ocblue, x-dark) ;
+    background-size: cover;
+
+  @include breakpoint($break-small + 1px) {
+    background: url(../images/features/features-bg-bottom-medium-small.jpg) no-repeat center bottom palette(ocblue, x-dark) ;
+    background-size: cover;
+  }
+
+  @include breakpoint($break-medium-small + 1px) {
+    background: url(../images/features/features-bg-bottom-medium-small.jpg) no-repeat center bottom palette(ocblue, x-dark) ;
+    background-size: cover;
+  }
+
+  @include breakpoint($break-medium + 1px) {
+    background: url(../images/features/features-bg-bottom-medium.jpg) no-repeat center bottom palette(ocblue, x-dark) ;
+    background-size: cover;
+  }
+
+  @include breakpoint($break-large + 1px) {
+    background: url(../images/features/features-bg-bottom-large.jpg) no-repeat center bottom palette(ocblue, x-dark) ;
+    background-size: cover;
+
+  }
+
+  @include breakpoint($break-big) {
+    background: url(../images/features/features-bg-bottom-large.jpg) no-repeat center bottom palette(ocblue, x-dark);
+    background-size: contain;
+  }
+
+  color: palette(white);
+  text-align: center;
+  padding: 50px 20px;
+  min-height: 350px;
+
+  h1 {
+    @include section-title($h4-font-size, 4, 20px);
+
+    @include breakpoint ($break-medium + 1) {
+      font-size:30px;
+    }
+  }
+
+  h2 {
+    @include section-title($h3-font-size, 3, 18px);
+
+    @include breakpoint ($break-large + 1) {
+      font-size:$h3-font-size;
+    }
+  }
+
+  p {
+    @include adjust-font-size-to(12px, 4);
+    font-weight: 300;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+
+    @include breakpoint ($break-large + 1) {
+      max-width: 1000px;
+      margin: 0 auto 40px auto;
+    }
+  }
+}
+
+.features__drupal-title-break {
+  display: block;
+  margin-top: 5px;
+
+  @include breakpoint ($break-large + 1) {
+    @include adjust-font-size-to(18px, 3);
+  }
+}
+
+.features__drupal-link {
+  color: palette(white);
+  text-decoration: underline;
+
+  &:hover {
+    text-decoration: none;
+    color: palette(ocblue);
+  }
+}

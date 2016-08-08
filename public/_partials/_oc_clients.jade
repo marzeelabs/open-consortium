@@ -1,0 +1,16 @@
+section.clients
+  .clients__separator
+
+  h2.clients__title Our Clients
+
+  ul.clients__list
+    for occlient in ocClients
+      li.clients__list-item
+        a(href='#{occlient.url}' target="_blank" title="#{occlient.title}" alt="#{occlient.title}" class="clients__logo--#{occlient.class}")
+
+  h2.clients__title What they say about us
+
+  .clients-testimonials__container
+    include /_partials/_oc_clients_testimonials
+
+  .clients__separator

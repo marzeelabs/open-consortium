@@ -1,0 +1,53 @@
+.marzee-labs-footer {
+  background: palette(ocblue, mid-dark);
+  color: palette(white);
+  @include adjust-font-size-to(12px, 3);
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  padding: 30px 0 ;
+  overflow:hidden ;
+  height: 1%;
+}
+
+.marzee-labs-container {
+  margin: 0 auto;
+  max-width: 390px;
+  text-align: center;
+
+  @include breakpoint($break-small+1) {
+    height: 70px;
+    text-align: left;
+  }
+}
+
+.marzee-labs__logo {
+  width:60px;
+  height: 68px;
+  margin: 0 auto 20px auto;
+
+
+  @include breakpoint($break-small+1) {
+    float:left;
+    margin: 0 20px 0 auto;
+  }
+}
+
+.marzee-labs__title {
+  width: 80%;
+  margin: 0 auto;
+
+  @include breakpoint($break-small+1) {
+    float:left;
+    width: 300px;
+  }
+
+  .marzee-labs__link {
+    color: palette(marzee);
+    font-weight: 400;
+
+    &:hover {
+      color: palette(ocblue);
+    }
+  }
+}

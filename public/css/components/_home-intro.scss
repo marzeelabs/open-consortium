@@ -1,0 +1,59 @@
+.home-intro {
+    background: url(../images/home/home-bg-top-small.jpg) no-repeat center bottom palette(black);
+    background-size: contain;
+
+  @include breakpoint($break-small + 1px) {
+    background: url(../images/home/home-bg-top-medium-small.jpg) no-repeat center bottom palette(black);
+    background-size: contain;
+  }
+
+  @include breakpoint($break-medium-small + 1px) {
+    background: url(../images/home/home-bg-top-medium.jpg) no-repeat center bottom palette(black);
+    background-size: contain;
+  }
+
+  @include breakpoint($break-medium + 1px) {
+    background: url(../images/home/home-bg-top-large.jpg) no-repeat center bottom palette(black);
+    background-size: contain;
+  }
+
+  @include breakpoint($break-large + 1px) {
+    background: url(../images/home/home-bg-top-big.jpg) no-repeat center bottom palette(black);
+    background-size: contain;
+  }
+
+  @include breakpoint($break-big) {
+    background: url(../images/home/home-bg-top-big.jpg) no-repeat center bottom palette(black);
+    background-size: contain;
+  }
+
+  @extend %commons__intro;
+  height:100vh;
+
+  .rocket-animation__container {
+    padding-top: 25vh;
+
+    @include breakpoint($break-medium-small) {
+      max-width: 395px;
+    }
+
+    @include breakpoint($break-large) {
+      max-width: 560px;
+    }
+  }
+}
+
+.home-intro__phrase {
+  @extend %commons__intro-phrase
+}
+
+.stars-static-bg__container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+  height: 80vh;
+  overflow: hidden;
+  pointer-events: none;
+}

@@ -1,0 +1,17 @@
+.post__footer {
+  margin-top: 20px;
+}
+
+.post__footer-tags {
+  color: palette(ocblue);
+
+  span {
+    font-weight: 300;
+    text-transform: uppercase;
+    @include adjust-font-size-to(14px);
+    border: thin solid palette(ocblue);
+    padding: 8px 12px;
+    border-radius: 3px;
+    letter-spacing: 0.2em;
+  }
+}

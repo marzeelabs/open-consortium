@@ -1,0 +1,57 @@
+//- FEATURE QUOTE CONTAINER
+.oc-feature-quote {
+  @include adjust-font-size-to(14px, 3);
+  letter-spacing: 0.1em;
+  font-weight: 300;
+  color: palette(ocblue);
+  background: palette(ocblue, dark);
+  width: 100%;
+  padding: 30px 0 30px 0;
+  margin-bottom: rhythm(4, 16px);
+  margin-top: - rhythm(5, 16px);
+  text-align: center;
+  position: relative;
+
+  &:before {
+    left: 50%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    top: -16px;
+    position: absolute;
+    pointer-events: none;
+    border-color: rgba(palette(ocblue, dark), 0);
+    border-bottom-color: palette(ocblue, dark);
+    border-width: 8px;
+    margin-left: -8px;
+  }
+
+  p {
+
+    &:before,
+    &:after {
+      content: '"';
+      color: palette(ocblue);
+      vertical-align: bottom;
+      position: relative;
+      display: inline-block;
+      @include adjust-font-size-to(72px, 4, 23px); //adjust with base on 23px
+      font-weight: 300;
+    }
+
+    &:before {
+      margin-right: 0.05em;
+      transform: translateY(25%);
+    }
+
+    &:after {
+      transform: translateY(100%);
+    }
+  }
+}
+
+.oc-feature-quote__content {
+  @include container(1000px);
+  padding: 0 20px;
+}

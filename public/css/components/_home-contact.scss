@@ -1,0 +1,25 @@
+.home-contact {
+  background: palette(white);
+  text-align: center;
+  width: auto;
+  padding-bottom: 20px;
+
+  p {
+    color: palette(ocblue);
+  }
+}
+
+.home-contact__title {
+  @include section-title();
+  margin-bottom: 20px;
+}
+
+input {
+  background: none;
+}
+
+input {
+  border-radius: 3px;
+  box-shadow: none;
+  border: thin solid palete(grey, xxx-light);
+}

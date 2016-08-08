@@ -1,1 +1,1 @@
-web: jekyll --server $PORT
+web: NODE_ENV=development gulp serveprod

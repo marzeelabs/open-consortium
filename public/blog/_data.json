@@ -1,0 +1,155 @@
+{
+  "2012-07-31-welcome-to-open-consortium": {
+    "title": "Welcome to Open Consortium",
+    "subtitle": "",
+    "darkTitles": false,
+    "tags": [
+      "European Commission"
+    ],
+    "author": "tobias",
+    "comments": false,
+    "cover-img": "/images/posts/night-sky.jpg",
+    "date": "2012-07-31",
+    "published": true
+  },
+  "2012-09-06-commitment-to-communication": {
+    "title": "Commitment to communication",
+    "subtitle": "",
+    "darkTitles": false,
+    "tags": [
+      "European Commission",
+      "FP7",
+      "Horizon2020"
+    ],
+    "author": "tobias",
+    "comments": false,
+    "cover-img": "/images/posts/night-sky.jpg",
+    "date": "2012-09-06",
+    "published": true
+  },
+  "2012-09-15-building-reprotrain-consortium-website": {
+    "title": "Building our first consortium website",
+    "subtitle": "",
+    "darkTitles": false,
+    "tags": [
+      "Technology",
+      "Website"
+    ],
+    "author": "peter",
+    "comments": false,
+    "cover-img": "/images/posts/night-sky.jpg",
+    "date": "2012-09-15",
+    "published": true
+  },
+  "2012-09-21-ok-festival-presentation": {
+    "title": "Presenting at the Open Knowledge Festival in Helsinki",
+    "subtitle": "",
+    "darkTitles": false,
+    "tags": [
+      "Event"
+    ],
+    "author": "peter",
+    "comments": false,
+    "cover-img": "/images/posts/night-sky.jpg",
+    "date": "2012-09-21",
+    "published": true
+  },
+  "2012-10-04-open-access-policies-european-commission": {
+    "title": "Open Access policies of the European Commission",
+    "subtitle": "",
+    "darkTitles": false,
+    "tags": [
+      "European Commission",
+      "Horizon2020"
+    ],
+    "author": "tobias",
+    "comments": false,
+    "cover-img": "/images/posts/night-sky.jpg",
+    "date": "2012-10-04",
+    "published": true
+  },
+  "2012-10-25-petition-secure-EU-research-budget": {
+    "title": "Why it is important to sign the petition for securing the EU research budget",
+    "subtitle": "",
+    "darkTitles": false,
+    "tags": [
+      "European Commission"
+    ],
+    "author": "tobias",
+    "comments": false,
+    "cover-img": "/images/posts/night-sky.jpg",
+    "date": "2012-10-25",
+    "published": true
+  },
+  "2013-01-28-european-flagship-projects": {
+    "title": "Graphene and the Human Brain: two European science flagship projects",
+    "subtitle": "",
+    "darkTitles": false,
+    "tags": [
+      "European Commission"
+    ],
+    "author": "tobias",
+    "comments": false,
+    "cover-img": "/images/posts/night-sky.jpg",
+    "date": "2013-01-28",
+    "published": true
+  },
+  "2013-02-06-interactive-map-human-brain-project": {
+    "title": "An interactive map of the partners of the Human Brain Project",
+    "subtitle": "",
+    "darkTitles": false,
+    "tags": [
+      "European Commission"
+    ],
+    "author": "peter",
+    "comments": false,
+    "cover-img": "/images/posts/night-sky.jpg",
+    "date": "2013-02-06",
+    "published": false
+  },
+  "2013-09-02-we-are-hiring": {
+    "title": "We are hiring",
+    "subtitle": "",
+    "darkTitles": false,
+    "tags": [
+    ],
+    "author": "peter",
+    "comments": false,
+    "cover-img": "/images/posts/night-sky.jpg",
+    "date": "2013-09-02",
+    "published": true
+  },
+  "2016-01-01-hello-world": {
+    "title": "Hello World",
+    "subtitle": "It's a great time to start using HarpJS",
+    "darkTitles": false,
+    "tags": [
+      "these",
+      "are",
+      "tags"
+    ],
+    "author": "peter",
+    "comments": true,
+    "cover-img": "/images/posts/sky-earth-space-working.jpg",
+    "date": "2016-01-01",
+    "published": false
+  },
+  "2016-05-23-demo-post": {
+    "title": "This is a demo blog post title",
+    "subtitle": "And I'm the subtitle of the demo blog post",
+    "darkTitles": true,
+    "tags": [
+      "these",
+      "are",
+      "tags"
+    ],
+    "author": "luis",
+    "comments": true,
+    "cover-img": "/images/posts/night-sky.jpg",
+    "date": "2016-05-23",
+    "published": false
+  },
+  "index": {
+    "layout": "_index_layout"
+  }
+}

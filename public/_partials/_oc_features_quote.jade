@@ -1,0 +1,11 @@
+
+unless featuresWanted
+  - var featuresWanted = Object.keys(ocFeatures);
+
+for feature in featuresWanted
+  if ocFeatures[feature]
+    .oc-feature-quote
+
+      .oc-feature-quote__content
+
+        p.oc-feature-quote__description #{ocFeatures[feature].quote}

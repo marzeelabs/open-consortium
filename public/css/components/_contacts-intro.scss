@@ -1,0 +1,60 @@
+.contacts__intro {
+    background: url(../images/features/features-bg-bottom-small.jpg) no-repeat center bottom palette(ocblue, x-dark) ;
+    background-size: cover;
+
+  @include breakpoint($break-small + 1px) {
+    background: url(../images/features/features-bg-bottom-medium-small.jpg) no-repeat center bottom palette(ocblue, x-dark) ;
+    background-size: cover;
+  }
+
+  @include breakpoint($break-medium-small + 1px) {
+    background: url(../images/features/features-bg-bottom-medium-small.jpg) no-repeat center bottom palette(ocblue, x-dark) ;
+    background-size: cover;
+  }
+
+  @include breakpoint($break-medium + 1px) {
+    background: url(../images/features/features-bg-bottom-medium.jpg) no-repeat center bottom palette(ocblue, x-dark) ;
+    background-size: cover;
+  }
+
+  @include breakpoint($break-large + 1px) {
+    background: url(../images/features/features-bg-bottom-large.jpg) no-repeat center bottom palette(ocblue, x-dark) ;
+    background-size: cover;
+  }
+
+  @include breakpoint($break-big) {
+    background: url(../images/features/features-bg-bottom-large.jpg) no-repeat center bottom palette(ocblue, x-dark);
+    background-size: contain;
+  }
+
+  @extend %commons__intro;
+}
+
+.contacts__intro-logo {
+  @extend %commons__intro-logo;
+}
+
+.contacts__intro-phrase {
+  @extend %commons__intro-phrase;
+}
+
+.contacts__context-intro {
+  @extend %commons__context-intro;
+}
+
+
+.contacts__context-title {
+  @extend %commons__context-title;
+}
+
+.contacts__context-content {
+  @extend %commons__context-content;
+  margin: 0 auto 40px auto;
+}
+
+.contacts__form-container {
+  background: palette(white);
+  padding: 60px 20px 40px 20px;
+  height:1%;
+  overflow: hidden;
+}
