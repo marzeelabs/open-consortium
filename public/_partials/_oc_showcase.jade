@@ -16,5 +16,6 @@ for showcase, slug in public.showcase._data
 
     if showcase.image
       .showcase-list__item-image
-          img(src='/images/showcase/showcase/#{showcase.image}.jpg', alt='#{showcase.title.toLowerCase().replace(" ", "-")}', title='#{showcase.title}')
+          a(href="http://#{showcase.url}" target="_blank")
+            img(src='/images/showcase/showcase/#{showcase.image}.jpg', alt='#{showcase.title.toLowerCase().replace(" ", "-")}', title='#{showcase.title}')
 
