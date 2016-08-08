@@ -1,5 +1,10 @@
 {
   "index": {
-    "title": "Open Consortium"
+    "title": "Open Consortium",
+    "description": "Technology for Scientific Consortia. We build websites for your scientific consortium in Europe, using state of the art content management tools such as Drupal.",
+    "siteName": "Open Consortium",
+    "keywords": "Consortium, website, drupal, d3, intranet, research, technology, communication, Europe, FP7, Horizon 2020, CMS, network, hosted, open data",
+    "url": "http://openconsortium.eu",
+    "twitter": "@openconsortium"
   }
 }
