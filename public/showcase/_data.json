@@ -12,7 +12,7 @@
     "title": "SyStemAge",
     "url": "systemage.eu",
     "image": "systemage_02",
-    "description":"The project intends to apply integrative systems biology approaches to characterize the molecular players, genes and pathways that are associated with physiological processes of ageing and two age-related disorders."
+    "description":"The SyStemAge project intends to apply integrative systems biology approaches to characterize the molecular players, genes and pathways that are associated with physiological processes of ageing and two age-related disorders."
   },
   "showcase03": {
     "title": "ScienceSquared",
@@ -22,20 +22,20 @@
   },
   "showcase04": {
     "title": "LIBRA",
-    "url": "eu-libra.eu",
+    "url": "www.eu-libra.eu",
     "image": "libra",
-    "description":"LIBRA is EC funded project which brings together ten research institutes in life sciences in ten European countries. They all are members of the alliance EU-LIFE[2], which aims to build and promote excellence in life sciences throughout Europe. Their commitment to excellence is also a commitment to gender equality."
+    "description":"LIBRA is an EC funded project which brings together ten research institutes in life sciences in ten European countries. They all are members of the alliance EU-LIFE, which aims to build and promote excellence in life sciences throughout Europe. Their commitment to excellence is also a commitment to gender equality."
   },
   "showcase05": {
     "title": "OPATHY",
-    "url": "opathy.eu",
+    "url": "www.opathy.eu",
     "image": "opathy",
     "description":"OPATHY is an innovative translational research training network that will explore the potential of next-generation high-throughput technologies, including genomics, transcriptomics and proteomics, to study the interactions of yeasts that cause disease to humans."
   },
   "showcase06": {
     "title": "PRISM",
-    "url": "prism-network.eu/",
+    "url": "prism-network.eu",
     "image": "prism",
-    "description":"PRISM is an EU-funded research and training network that unites nine leading academic and industrial partners from across Europe to understand how the brain represents the physical properties of objects, surfaces and lighting in the surrounding world."
+    "description":"PRISM is a EU-funded research and training network that unites nine leading academic and industrial partners from across Europe to understand how the brain represents the physical properties of objects, surfaces and lighting in the surrounding world."
   }
 }
