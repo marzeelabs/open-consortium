@@ -1,0 +1,117 @@
+/* Resets and defaults */
+
+body {
+  color: palette(black);
+  background-color: palette(ocblue);
+}
+
+body.body--home {
+}
+
+a {
+  text-decoration: none;
+
+  &:hover {
+  }
+}
+
+p {
+  margin: 0;
+
+  a {
+  }
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+//-- Section commons
+
+%commons__intro-logo {
+  @include element-invisible();
+  max-width: 295px;
+  height: auto;
+  margin-top: 140px;
+  margin-bottom: 20px;
+
+  @include breakpoint($break-large) {
+    max-width: 360px;
+    margin-top: 110px;
+  };
+}
+
+%commons__context-title {
+  @include section-title();
+  margin: 35px auto 20px auto;
+
+  @include breakpoint ($break-medium + 1) {
+    font-size: 30px;
+  }
+}
+
+%commons__context-subtitle {
+  margin: 20px auto 20px auto;
+  font-size:15px;
+  @include section-title();
+
+  @include breakpoint ($break-medium + 1) {
+    font-size:20px;
+  }
+}
+
+%commons__context-content {
+  color: palette(white);
+  font-weight: 300;
+  @include adjust-font-size-to(12px, 3);
+  letter-spacing: 0.2em;
+  width: 85%;
+  margin: 0 auto;
+
+  @include breakpoint ($break-medium + 1) {
+    width: 60%;
+    @include adjust-font-size-to(14px, 3);
+  }
+}
+
+%commons__intro-phrase {
+  @include section-title(14px, 3);
+  max-width: 80%;
+  margin: 0 auto 20px auto;
+  color: palette(white);
+
+  @include breakpoint($break-large) {
+    font-size: 20px;
+  };
+}
+
+%commons__context-intro {
+  background: palette(ocblue, dark);
+  text-align: center;
+  overflow: hidden;
+
+  &:after {
+    left: 50%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-color: rgba(palette(ocblue, dark), 0);
+    border-top-color: palette(ocblue, dark);
+    border-width: 15px;
+    margin-left: -15px;
+  }
+}
+
+//- common intro
+%commons__intro {
+  height: 355px;
+  text-align: center;
+  width: auto;
+  margin: 0 auto;
+  color: palette(white);
+}

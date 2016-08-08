@@ -12,7 +12,7 @@
 
   @include breakpoint($break-large) {
     font-size: 18px;
-  };
+  }
 
   &:hover {
     color: palette(ocblue);
@@ -30,15 +30,14 @@
   }
 }
 
-
-.button--scroller{
+.button--scroller {
   padding-right: 5px;
 
-    &:after {
-      content: '\e90d';
-      font-family: 'open-consortium';
-      speak: none;
-    }
+  &:after {
+    content: '\e90d';
+    font-family: 'open-consortium';
+    speak: none;
+  }
 }
 
 .button-404 {
@@ -55,11 +54,10 @@
 
   @include breakpoint($break-large) {
     font-size: 18px;
-  };
+  }
 
   &:hover {
     color: palette(white);
     background: palette(ocblue);
   }
 }
-

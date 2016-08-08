@@ -19,13 +19,20 @@ section.features__list
   - featuresWanted = ['visualise-consortium'];
   include ./_partials/_oc_features_quote
 
-  - featuresWanted = ['publicise-events', 'social-media-integration', 'content-management-tool', 'responsive-layout', 'promoted-content', 'job-offers'];
+  - featuresWanted = ['publicise-events', 'social-media-integration', 'job-offers']
+  include ./_partials/_oc_features
+
+  - featuresWanted = ['job-offers'];
+  include ./_partials/_oc_features_quote
+
+  - featuresWanted = ['content-management-tool', 'responsive-layout', 'promoted-content'];
   include ./_partials/_oc_features
 
 
-section.portfolio
-  include ./_partials/_portfolio
+.features__showcase
 
+  h1.features__context-title Curious to see some of <br/>these sites in real life?
+  a(href='/showcase').button Discover our work
 
 section.features__drupal
   h1 Under the Hood

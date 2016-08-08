@@ -1,0 +1,41 @@
+{
+  "index": {
+    "layout": "_index_layout"
+  },
+  "showcase01": {
+    "title": "BEAN",
+    "url": "beanproject.eu",
+    "image": "bean",
+    "description":"The BEAN Initial Training Network is providing state-of-the-art training to early-stage researchers in the scientific disciplines of anthropology, genomics, simulations and modelling, biostatistics, demography, and prehistoric archaeology, as well as complementary skills in cultural heritage entrepreneurship, public outreach, and scientific publication."
+  },
+  "showcase02": {
+    "title": "SyStemAge",
+    "url": "systemage.eu",
+    "image": "systemage_02",
+    "description":"The SyStemAge project intends to apply integrative systems biology approaches to characterize the molecular players, genes and pathways that are associated with physiological processes of ageing and two age-related disorders."
+  },
+  "showcase03": {
+    "title": "ScienceSquared",
+    "url": "sciencesquared.eu",
+    "image": "erc",
+    "description":"ERC=Science² is a pan-European communications campaign using popular scientific themes such as ‘cities of the future’ or ‘robotics’ to highlight the scientific research funded by the European Research Council and the potential impact it can have on society"
+  },
+  "showcase04": {
+    "title": "LIBRA",
+    "url": "www.eu-libra.eu",
+    "image": "libra",
+    "description":"LIBRA is an EC funded project which brings together ten research institutes in life sciences in ten European countries. They all are members of the alliance EU-LIFE, which aims to build and promote excellence in life sciences throughout Europe. Their commitment to excellence is also a commitment to gender equality."
+  },
+  "showcase05": {
+    "title": "OPATHY",
+    "url": "www.opathy.eu",
+    "image": "opathy",
+    "description":"OPATHY is an innovative translational research training network that will explore the potential of next-generation high-throughput technologies, including genomics, transcriptomics and proteomics, to study the interactions of yeasts that cause disease to humans."
+  },
+  "showcase06": {
+    "title": "PRISM",
+    "url": "prism-network.eu",
+    "image": "prism",
+    "description":"PRISM is a EU-funded research and training network that unites nine leading academic and industrial partners from across Europe to understand how the brain represents the physical properties of objects, surfaces and lighting in the surrounding world."
+  }
+}

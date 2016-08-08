@@ -1,20 +1,49 @@
 doctype html
 html(lang='en')
-  - var page = {};
+
   head
     meta(charset='UTF-8')
     meta(http-equiv='X-UA-Compatible', content='IE=edge,chrome=1')
     meta(name='viewport', content='width=device-width,initial-scale=1')
     if environment !== 'production' || (current.path[0] === 'blog' && current.source !== 'index' && public.blog._data[current.source].published === false)
-        meta(name='robots', content='noindex, nofollow')
+      meta(name='robots', content='noindex, nofollow')
 
     title #{ title } | #{ tagline }
 
-    if page.description
-      meta(name='description' content='#{page.description}')
+    meta(name='description' content='#{description}')
 
-    if page.author
-      meta(name='author' content='#{page.author}')
+    meta(name='author' content='#{author}')
+
+
+    // OG
+    meta(property='og:title' content='#{ title }')
+    meta(property='og:description' content='#{description}')
+    meta(property='og:type' content='website')
+    meta(property='og:url' content="#{url}/#{current.path.join('/').replace('/index', '')}")
+    meta(property='og:site_name' content='#{siteName}')
+
+    if coverImg
+      meta(property='og:image' content='#{url}#{coverImg}')
+    if thumbnail
+      meta(property='og:image' content='#{url}#{thumbnail}')
+    else
+      meta(property='og:image' content='#{url}/images/default-thumbnail.jpg')
+
+    // Twitter
+    meta(name='twitter:card' content='summary_large_image')
+    meta(name='twitter:site' content='#{twitter}')
+    meta(name='twitter:creator' content='#{twitter}')
+    meta(name='twitter:title' content='#{ title }')
+    meta(name='twitter:description' content='#{description}')
+
+    if coverImg
+      meta(name='twitter:image' content='#{url}#{coverImg}')
+    else if thumbnail
+      meta(name='twitter:image' content='#{url}#{thumbnail}')
+    else
+      meta(name='twitter:image' content='#{url}/images/default-thumbnail.jpg')
+
+
 
     // ICONS
     link(rel='shortcut icon', href='/favicon.ico')

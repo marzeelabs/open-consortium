@@ -13,6 +13,7 @@
 }
 
 .home-summary__title__highlight {
+
   @include breakpoint($break-large){
     font-size: $h2-font-size;
   };
@@ -30,7 +31,7 @@
 
   @include breakpoint($break-large) {
     font-size:18px;
-  };
+  }
 }
 
 
@@ -50,7 +51,7 @@
 
   @include breakpoint($break-large) {
     max-width: 900px;
-  };
+  }
 }
 
 .oc-value {
@@ -59,7 +60,7 @@
   @include breakpoint(max-width $break-extra-small) {
     @include span(5 of 5);
     margin-bottom: 20px;
-  };
+  }
 
   span {
     font-size: 50px;
@@ -74,10 +75,10 @@
     @include breakpoint(max-width $break-extra-small+1) {
       font-size: 18px;
       color: palette(ocblue);
-    };
+    }
 
     @include breakpoint($break-medium-small+1) {
       font-size: 14px;
-    };
+    }
   }
 }

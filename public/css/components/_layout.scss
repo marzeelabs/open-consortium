@@ -24,13 +24,12 @@ footer {
   padding: 0;
 }
 
-
 .phrase-br--medium {
   display: none;
 
   @include breakpoint($break-medium) {
     display:block;
-  };
+  }
 }
 
 .phrase-br--small {
@@ -38,5 +37,5 @@ footer {
 
   @include breakpoint($break-medium-small) {
     display:block;
-  };
+  }
 }

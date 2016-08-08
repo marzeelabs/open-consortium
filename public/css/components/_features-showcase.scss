@@ -1,0 +1,28 @@
+.features__showcase {
+  background: url(../images/home/home-bg-values.jpg) no-repeat center bottom palette(ocblue, x-dark);
+  text-align: center;
+  padding: 40px 15px 80px 15px;
+
+  h1 {
+    @include adjust-font-size-to(22px);
+    display: block;
+    margin-bottom: 20px;
+
+    @include breakpoint ($break-medium + 1) {
+      font-size:30px;
+      margin-bottom: 40px;
+    }
+  }
+
+  .button {
+    padding: 15px 30px;
+    color: palette(ocblue);
+    background: palette(white);
+    border: none;
+
+    &:hover {
+      color: palette(white);
+      background: palette(ocblue);
+    }
+  }
+}

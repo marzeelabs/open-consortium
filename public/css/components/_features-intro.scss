@@ -28,88 +28,29 @@
     background-size: contain;
   }
 
-  height: 355px;
-  text-align: center;
-  width: auto;
-  margin: 0 auto;
-  color: palette(white);
+  @extend %commons__intro;
 }
 
 .features__intro-logo {
-  @include element-invisible();
-  max-width: 295px;
-  height: auto;
-  margin-top: 140px;
-  margin-bottom: 20px;
-
-  @include breakpoint($break-large) {
-    max-width: 360px;
-    margin-top: 110px;
-  };
+  @extend %commons__intro-logo;
 }
 
 .features__intro-phrase {
-  @include section-title(14px, 3);
-  max-width: 80%;
-  margin: 0 auto 20px auto;
-  color: palette(white);
-
-  @include breakpoint($break-large) {
-    font-size: 20px;
-  };
+  @extend %commons__intro-phrase;
 }
 
 .features__context-intro {
-  background: palette(ocblue, dark);
-  text-align: center;
-  overflow: hidden;
-
-  &:after {
-  	left: 50%;
-  	border: solid transparent;
-  	content: " ";
-  	height: 0;
-  	width: 0;
-  	position: absolute;
-  	pointer-events: none;
-  	border-color: rgba(palette(ocblue, dark), 0);
-  	border-top-color: palette(ocblue, dark);
-  	border-width: 15px;
-  	margin-left: -15px;
-  }
-}
-
-.features__context-title, .features__context-subtitle {
-  @include section-title();
+  @extend %commons__context-intro
 }
 
 .features__context-title {
-  margin: 35px auto 20px auto;
-
-  @include breakpoint ($break-medium + 1) {
-    font-size:30px;
-  }
+  @extend %commons__context-title;
 }
 
 .features__context-subtitle {
-  margin: 20px auto 20px auto;
-  font-size:15px;
-
-  @include breakpoint ($break-medium + 1) {
-    font-size:20px;
-  }
+  @extend %commons__context-subtitle;
 }
 
 .features__context-content {
-  color: palette(white);
-  font-weight: 300;
-  @include adjust-font-size-to(12px, 3);
-  letter-spacing: 0.2em;
-  width: 85%;
-  margin: 0 auto;
-
-  @include breakpoint ($break-medium + 1) {
-    width: 60%;
-    @include adjust-font-size-to(14px, 3);
-  }
+  @extend %commons__context-content;
 }

@@ -27,6 +27,9 @@
 //Normalize
 @import "normalize";
 
+//Normalize
+@import "base";
+
 //Fonts
 @import "fonts";
 
@@ -49,8 +52,10 @@
   "components/home-contact",
   "components/features-intro",
   "components/features-list",
-  "components/portfolio",
+  "components/features-showcase",
   "components/features-drupal",
+  "components/showcase-intro",
+  "components/showcase-list",
   "components/blog-activity",
   "components/blog-intro",
   "components/blog-posts",
