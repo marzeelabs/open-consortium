@@ -73,7 +73,7 @@ $(function() {
 
       // Make features clickable
       $('.home-features__container .oc-feature').each(function(index) {
-        $(this).click(function() {
+        $(this).hover(function() {
           // Removes is selected class
           $('.home-features__container .oc-feature').removeClass('is-selected');
 
