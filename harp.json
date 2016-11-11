@@ -17,7 +17,7 @@
     },
     "ocFeatures": {
       "highlight-research": {
-        "title": "Highlight research",
+        "title": "Highlight scientific research",
         "side": "left",
         "icon": "science",
         "image": "highlight_research",
@@ -32,11 +32,11 @@
         "quote":"We manage several collaborative projects and we need to promote their visibility and disseminate their results on the web. Open Consortium provides us with an easy-to-implement, tailored solution which allows us (and our collaborators) to edit and manage content in an extremely user-friendly interface. Our websites always look neat and accessible. Michela Bertero, Head of International & Scientific Affairs. CRG, Barcelona"
       },
       "publicise-events": {
-        "title": "Promote events",
+        "title": "Promote science events",
         "side": "left",
         "icon": "events",
         "image":"events",
-        "description":"Need to organize workshops, internal meetings, or scientific conferences? Promote these using the built-in events systen, prominently featured on the homepage. Additionally, event registration can be integrated as well."
+        "description":"Need to organize science events: workshops, internal meetings, or scientific conferences? Promote these using the built-in events system, prominently featured on the homepage. Additionally, event registration can be integrated as well."
       },
       "job-offers": {
         "title": "Publicize jobs",
@@ -47,11 +47,11 @@
         "quote": "Our multinational scientific collaboration was pleased to work with Open Consortium to develop both an attractive and easy-to-navigate public-facing website for our project, as well as a highly functional private intranet to support communication between our scientific researchers. Open Consortium provided us with a web presence that was very effective in augmenting our outreach and dissemination efforts. Karola Kirsanow, Project Manager BEAN network. Mainz, Germany"
       },
       "content-management-tool": {
-        "title": "Manage the content yourself",
+        "title": "Manage the project content",
         "side": "right",
         "icon": "cms",
         "image":"cms",
-        "description":"Nobody knows better than you what you want to show on your website, so why don't you build the site yourself? Powered by Drupal, the popular open-source content management system, you can add all the content yourself, whether these are pages, menus, researcher profiles, job openings or projects."
+        "description":"Nobody knows better than you what your science project needs to show on the web, so why don't you create the website yourself? Powered by <a href='http://drupal.org' target='_blank'>Drupal</a>, the popular open-source content management system, you can add and manage the project content yourself, whether these are pages, menus, researcher profiles, job openings or projects."
       },
       "social-media-integration": {
         "title": "Integrate social media",
@@ -61,14 +61,14 @@
         "description":"Facebook or Twitter, a mailing list, or comments on your blog posts. Your consortium website is ready to talk with all these other websites. You'll reach a larger audience and we'll make sure you don't have to put content in too many places!"
       },
       "responsive-layout": {
-        "title": "It looks good everywhere",
+        "title": "Communicate through different devices. It looks good everywhere",
         "side": "right",
         "icon": "responsive",
         "image":"responsive_layout",
         "description":"We follow a systematic approach in designing your identity and website, involving you at every step of the process. And we guarantee that your website will look splendid on every device, whether it is your smartphone on the road, your tablet in the sofa or your computer screen at work."
       },
       "promoted-content": {
-        "title": "Hosting without headaches",
+        "title": "Host it without headaches",
         "side": "right",
         "icon": "promoted",
         "image":"promoted_content",
