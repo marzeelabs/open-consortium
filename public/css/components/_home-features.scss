@@ -14,7 +14,10 @@
 
 .home-features__subtitle {
   @include section-title($h4-font-size, 4, 12px, 3, white);
+  @include container(1400px);
   font-weight: 300;
+  margin-bottom: 60px;
+  display: block;
 }
 
 .home-features__container {
