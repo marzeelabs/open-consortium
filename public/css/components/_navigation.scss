@@ -54,7 +54,7 @@
     overflow: hidden;
 
     .is-open & {
-      max-height: 800px;
+      max-height: 850px;
     }
   }
 }
@@ -122,7 +122,7 @@
   @include transition-property(width height padding);
   @include transition-duration(0.5s);
   height: 32px;
-  padding: 5px 40px;
+  padding: 10px 40px;
   text-transform: uppercase;
   font-size: $h5-font-size;
   font-weight: 300;
@@ -146,6 +146,7 @@
     display: block;
     background-color: palette(black);
     width: auto;
+    border-bottom: 1px solid palette(ocblue, mid-dark);
   }
 
   @include breakpoint($break-medium) {
@@ -162,10 +163,12 @@
 }
 
 .navigation__right {
+  padding-bottom: 15px;
 
   @include breakpoint($break-medium) {
     position: absolute;
-    right: 10px;
+    padding: 0;
+    right: 20px;
     top: 0;
     bottom: 0;
     margin: auto;
