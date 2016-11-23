@@ -120,13 +120,28 @@
 .navigation__item {
   @include inline-block(middle);
   @include transition-property(width height padding);
-  @include transition-duration(0.5s);
+  @include transition-duration(0);
   height: 32px;
   padding: 10px 40px;
   text-transform: uppercase;
   font-size: $h5-font-size;
   font-weight: 300;
   letter-spacing: 0.2em;
+  border-bottom: 1px solid palette(ocblue, mid-dark);
+  display: block;
+  width: auto;
+
+  @include breakpoint(max-width $break-medium) {
+    background-color: palette(black);
+  }
+
+  @include breakpoint($break-medium) {
+    padding: 10px 20px;
+    @include transition-duration(0.5s);
+    border: none;
+    display: inline-block;
+  }
+
 
   a {
     @include inline-block();
@@ -140,22 +155,6 @@
       color: palette(ocblue);
     }
   }
-
-  @include breakpoint(max-width $break-medium - 1px) {
-    @include transition-duration(0s);
-    display: block;
-    background-color: palette(black);
-    width: auto;
-    border-bottom: 1px solid palette(ocblue, mid-dark);
-  }
-
-  @include breakpoint($break-medium) {
-    padding: 10px 20px;
-  }
-
-  @include breakpoint($break-large) {
-    padding: 10px 30px;
-  }
 }
 
 .is-active a {
@@ -163,7 +162,6 @@
 }
 
 .navigation__right {
-  //padding-bottom: 15px;
 
   @include breakpoint($break-medium) {
     position: absolute;
@@ -180,17 +178,13 @@
 }
 
 .navigation__logo-mobile {
-  height: 40px;
-  width: auto;
+  width: 41px;
   @include transition-duration(0s);
   position: absolute;
-  padding: 10px;
+  left: 10px;
   z-index: 999;
-
-  img {
-    height: 100%;
-    width: 40px;
-  }
+  top: 50%;
+  transform: translateY(-50%);
 
   @include breakpoint($break-medium) {
     display: none;
@@ -198,18 +192,13 @@
 }
 
 .navigation__item--logo {
-  width: 40px;
-  height: 40px;
+  width: 41px;
   position: absolute;
-  left: 10px;
+  left: 0;
+  top: 8px;
   opacity: 0;
   @include transition-property(opacity);
   @include transition-duration(0.2s);
-
-  img {
-    height: 40px;
-    width: auto;
-  }
 
   &.visible-logo {
     opacity: 1;
