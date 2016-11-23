@@ -20,7 +20,7 @@
   }
 }
 
-.button__blue {
+.button--blue {
   border: thin solid palette(ocblue);
   color: palette(ocblue);
 
@@ -40,21 +40,10 @@
   }
 }
 
-.button-404 {
-  @include transition-property(color,background);
-  @include transition-duration(0.3s);
-  padding: 10px 20px;
-  border-radius: 25px;
+.button--404 {
   color: palette(ocblue);
+  border: none;
   background: palette(white);
-  text-transform: uppercase;
-  font-size: 14px;
-  letter-spacing: 0.2em;
-  font-weight: 300;
-
-  @include breakpoint($break-large) {
-    font-size: 18px;
-  }
 
   &:hover {
     color: palette(white);

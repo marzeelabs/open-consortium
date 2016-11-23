@@ -1,4 +1,4 @@
-.home-features__carousel-container {
+.home-features__carousel-container--dark {
 
   @include breakpoint(max-width $break-medium) {
     @include span(4);
@@ -9,7 +9,6 @@
     @include span(4);
     margin-top: 280px;
     @include squish(1);
-    transform: translateY(-22px);
   }
 
   @include breakpoint($break-large + 1px) {
@@ -18,12 +17,12 @@
   }
 }
 
-.home-features__carousel {
+.home-features__carousel--dark {
   position: relative;
   padding-bottom: 83.5%;
 }
 
-.home-features__carousel-cover {
+.home-features__carousel-cover--dark {
   background: url(../images/home/screen_hp.png) no-repeat center top;
   background-size: contain;
   width: 100%;
