@@ -1,53 +1,55 @@
-ul.social-icons-list {
+// - Header icons list
+.social-icons-list {
   text-align: center;
 
-  .footer-social & {
-    width: 120px;
-    margin: 10px auto 5px auto;
+  @include breakpoint($break-medium) {
+    margin: 0 auto;
+  }
+}
+
+.social-icons-list__item {
+  display: inline-block;
+  width: 30px;
+
+  &:first-child {
+    margin-right: 20px;
   }
 
-  .navigation__right & {
-    margin-top: 5px;
-
-    @include breakpoint($break-medium) {
-      margin: 0 auto;
-    }
-  }
-
-  li {
-    display: inline-block;
+  @include breakpoint($break-medium) {
+    margin: 0 auto;
 
     &:first-child {
-      margin-right: 20px;
+      margin-right: 10px;
     }
+  }
+}
+
+// - Footer icons list
+.social-icons-list--large {
+  text-align: center;
+  width: 120px;
+  margin: 10px auto 5px auto;
+}
+
+.social-icons-list--large__item {
+  display: inline-block;
+  width: 50px;
+
+  &:first-child {
+    margin-right: 20px;
+  }
+}
 
 
-    .footer-social & {
-      width: 50px;
-    }
+// shared styles
+.social-icons-list__link {
+  @include transition-property(color);
+  @include transition-duration(0.3s);
+  color: palette(white);
+  display: block;
 
-    .navigation__right & {
-      width: 30px;
-
-      @include breakpoint($break-medium) {
-        margin: 0 auto;
-
-        &:first-child {
-          margin-right: 10px;
-        }
-      }
-    }
-
-    a {
-      @include transition-property(color);
-      @include transition-duration(0.3s);
-      color: palette(white);
-      display: block;
-
-      &:hover {
-        color: palette(ocblue);
-      }
-    }
+  &:hover {
+    color: palette(ocblue);
   }
 
   svg {
