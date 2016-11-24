@@ -1,44 +1,33 @@
-.home-features {
-  background: palette(white);
+.home-features--dark {
+  background: url(../images/home/home-features_bg.jpg) no-repeat center top palette(ocblue, dark);
   text-align: center;
   color: palette(ocblue);
   padding: 0 20px 50px 20px;
   overflow: hidden;
-
-  @include breakpoint($break-medium) {
-    padding: 40px 20px 80px 20px;
-  }
 }
 
-.home-features__title {
+.home-features__title--dark {
   @include section-title();
-  color: palette(ocblue);
-  font-weight: 400;
+  font-weight: 300;
   padding-top: 45px;
 }
 
-.home-features__subtitle {
-  @include section-title($h4-font-size, 4, 12px, 3);
-  @include container(1200px);
+.home-features__subtitle--dark {
+  @include section-title($h4-font-size, 4, 12px, 3, white);
+  @include container(1400px);
   font-weight: 300;
-  color: palette(ocblue, dark);
+  margin-bottom: 60px;
   display: block;
-  text-transform: none;
-  letter-spacing: 0.15em;
-
-  @include breakpoint($break-medium) {
-    margin-bottom: 60px;
-  }
 }
 
-.home-features__container {
-  margin: 50px auto 0px auto;
+.home-features__container--dark {
+  margin:40px auto 0px auto;
   padding:0 10px 0;
   @include container(1400px);
 }
 
 /* Left section*/
-.home-features__container-left {
+.home-features__container-left--dark {
 
   @include breakpoint(max-width $break-medium) {
     @include span(6);
@@ -54,7 +43,7 @@
 }
 
 /* Right section*/
-.home-features__container-right {
+.home-features__container-right--dark {
 
   @include breakpoint(max-width $break-medium) {
     @include span(6);

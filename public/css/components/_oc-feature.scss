@@ -11,7 +11,7 @@
     @include transition-duration(0.3s);
 
     &:hover {
-      color: palette(white);
+      color: palette(ocblue, dark);
     }
   }
 }
@@ -20,7 +20,7 @@
   color: palette(ocblue);
 
   @include breakpoint($break-medium + 1px) {
-    color: palette(white);
+    color: palette(ocblue, dark);
   }
 }
 
@@ -56,7 +56,8 @@
   @include breakpoint($break-medium-small + 1px) {
     padding-bottom: 40px;
 
-    @include odd() { //- creates the even / odd rhythm
+    //- creates the even / odd rhythm
+    @include odd() {
       text-align: right;
 
       .oc-feature__content {
